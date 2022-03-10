@@ -69,17 +69,17 @@ Lors de la vérification de l'ouverture du port, le site peut des fois indiquer 
 
 **3-** Pour pouvoir se connecter à un réseau, c'est très simple, il vous suffira de cliquer sur **Réseau** puis **Rejoindre un réseau...**. Une page de connexion s'affichera vous demandant l'ID du réseau (son nom) ainsi que son mot de passe, avec une petite note de ne pas en mettre s'il n'y en a pas.
 
-**4-** Il vous suffira d'héberger votre serveur et les gens connectés a votre réseau verront le serveur dans la catégorie **Serveurs Local**.
+**4-** Il vous suffira d'héberger votre serveur et les gens connectés a votre réseau verront le serveur dans la catégorie **Serveurs Locaux**.
 
 
 ### Pour Mobile <a id="mobile"></a>
 **1-** Avant de commencer il faut avoir téléchargé l'application Termux, les étapes sont [ici](#termux), et l'avoir lancé.
 
-**2-** Maintenant il faut télécharger le *package* MiniUPNPNC, pour ce faire tapez ``"pkg install miniupnpc"`` et attendez que l'installation se termine. Pour savoir si le package a été installer, regardez si la dernière ligne ressemble à **~ $ **.
+**2-** Maintenant il faut télécharger le *package* MiniUPNPNC, pour ce faire tapez ``"pkg install miniupnpc"`` et attendez que l'installation se termine. Pour savoir si le package a été installer, regardez si la dernière ligne ressemble à ** ~ $ ** .
 
 **3-** Le reste des étapes ne sont pas bien différentes que dans la version PC, juste la syntaxe qui change. Pour ouvrir le port, tapez ``"upnpc -r 6567 TCP 6567 UDP"`` et regardez la ligne **ExternalIPAddress**, c'est l'adresse IP publique de la box qu'il faut donner aux autres.
 
-**4-** Et pour refermer le port, tapez ``"upnpc -d 6567 TCP 6567 UDP"`` et vérifiez bien que la dernière ligne affiche **UPNP_DeletePortMapping() returned : 0** pour savoir s'il a été bien refermé. Et pour quitter l'application, tapez ``"exit"`` puis entrer.
+**4-** Et pour refermer le port, tapez ``"upnpc -d 6567 TCP 6567 UDP"`` et vérifiez bien que la dernière ligne affiche **"UPNP_DeletePortMapping() returned : 0"** pour savoir s'il a été bien refermé. Et pour quitter l'application, tapez ``"exit"`` puis entrer.
 
 **5-** Pour savoir si le port a été bien ouvert ou fermé, regardez la partie **Info** des [étapes pour version PC](#solution-miniupnpc).
 
