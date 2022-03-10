@@ -56,10 +56,10 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
 **5-** Et lorsque vous avez fini de jouer avec vos amis, tapez la commande ``"upnpc-static.exe -d 6567 TCP 6567 UDP"``, puis regarde la dernière ligne. Si elle affiche **UPNP_DeletePortMapping() returned : 0**, c'est que le port a bien été refermé.
 
 
-**Info : **
+**Info :**
 Pour vérifier que le port a bien été ouvert ou fermé, vous pouvez utiliser [cet outil](https://www.yougetsignal.com/tools/open-ports/), en indiquant le port *6567* dans le cadre **Port Number**. Lors du test d'ouverture du port, assurez-vous qu'au préalablement le serveur a été hébergé : si vous utilisez la version serveur de Mindustry, tapez la commande **host** pour l'héberger. Et si vous ne l'utilisez pas, allez dans le menu pause et cliquez sur le bouton **Héberger un serveur**.
 
-**Note : **
+**Note :**
 Lors de la vérification de l'ouverture du port, le site peut des fois indiquer le port comme fermer alors qu'il est bien ouvert.
 
 #### Solution Hamachi <a id="solution-hamachi"></a>
