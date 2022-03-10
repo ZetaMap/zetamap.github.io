@@ -1,4 +1,3 @@
-<title>Comment jouer avec des amis ?</title>
 [<-- Home Page](/)
 
 # Comment jouer avec des amis ? - Tutoriel
@@ -9,16 +8,16 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
 
 
 ## SOMMAIRE
-* [PRÉSENTATION DES LOGICIELS](#présentation)
-  * [MiniUPNPC](#miniupnpc)
-  * [Hamachi](#hamachi)
-  * [Termux](#termux)
-* [TUTOS](#tutos)
-   * [Pour PC](#pc)
-    + [Solution MiniUPNPC](#solution-miniupnpc)
-    + [Solution Hamachi](#solution-hamachi)
-   * [Pour Mobile](#mobile)
-* [CONTACT](#contact)
+1. [PRÉSENTATION DES LOGICIELS](#présentation)
+  1.1. [MiniUPNPC](#miniupnpc)
+  1.2. [Hamachi](#hamachi)
+  1.3. [Termux](#termux)
+2. [TUTOS](#tutos)
+   2.1. [Pour PC](#pc)
+      2.1.1. [Solution MiniUPNPC](#solution-miniupnpc)
+      2.1.2. [Solution Hamachi](#solution-hamachi)
+   2.2. [Pour Mobile](#mobile)
+3. [CONTACT](#contact)
 
 
 
