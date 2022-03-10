@@ -75,7 +75,7 @@ Lors de la vérification de l'ouverture du port, le site peut des fois indiquer 
 ### Pour Mobile <a id="mobile"></a>
 **1-** Avant de commencer il faut avoir téléchargé l'application Termux, les étapes sont [ici](#termux), et l'avoir lancé.
 
-**2-** Maintenant il faut télécharger le *package* MiniUPNPNC, pour ce faire tapez ``"pkg install miniupnpc"`` et attendez que l'installation se termine. Pour savoir si le package a été installer, regardez si la dernière ligne ressemble à ** ~ $ ** .
+**2-** Maintenant il faut télécharger le *package* MiniUPNPNC, pour ce faire tapez ``"pkg install miniupnpc"`` et attendez que l'installation se termine. Pour savoir si le package a été installer, regardez si la dernière ligne ressemble à **\~ \$** .
 
 **3-** Le reste des étapes ne sont pas bien différentes que dans la version PC, juste la syntaxe qui change. Pour ouvrir le port, tapez ``"upnpc -r 6567 TCP 6567 UDP"`` et regardez la ligne **ExternalIPAddress**, c'est l'adresse IP publique de la box qu'il faut donner aux autres.
 
