@@ -9,14 +9,14 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
 
 ## SOMMAIRE
 * [PRÉSENTATION DES LOGICIELS](#présentation)
-    * [MiniUPNPC](#miniupnpc)
-    * [Hamachi](#hamachi)
-    * [Termux](#termux)
+  * [MiniUPNPC](#miniupnpc)
+  * [Hamachi](#hamachi)
+  * [Termux](#termux)
 * [TUTOS](#tutos)
-     * [Pour PC](#pc)
-      * [Solution MiniUPNPC](#solution-miniupnpc)
-      * [Solution Hamachi](#solution-hamachi)
-     * [Pour Mobile](#mobile)
+   * [Pour PC](#pc)
+    * [Solution MiniUPNPC](#solution-miniupnpc)
+    * [Solution Hamachi](#solution-hamachi)
+   * [Pour Mobile](#mobile)
 * [CONTACT](#contact)
 
 
