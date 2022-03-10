@@ -14,8 +14,8 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
   * [Termux](#termux)
 * [TUTOS](#tutos)
    * [Pour PC](#pc)
-    * [Solution MiniUPNPC](#solution-miniupnpc)
-    * [Solution Hamachi](#solution-hamachi)
+      + [Solution MiniUPNPC](#solution-miniupnpc)
+      + [Solution Hamachi](#solution-hamachi)
    * [Pour Mobile](#mobile)
 * [CONTACT](#contact)
 
