@@ -1,3 +1,5 @@
+[<-- Home Page](/)
+
 # Comment jouer avec des amis ? - Tutoriel
 Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez choisir entre plusieurs logiciels, se que je propose et est valable pour mobile et PC.
 
