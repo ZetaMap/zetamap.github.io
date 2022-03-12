@@ -18,6 +18,7 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
       * [Solution Hamachi](#solution-hamachi)
    * [Pour Mobile](#mobile)
 * [CONTACT](#contact)
+  * [Remercîments](#thanks)
 
 
 
@@ -93,5 +94,5 @@ Héberger un serveur sur mobile est souvent une mauvaise idée, surtout s'il est
 Si vous avez des difficultés à réaliser ce tutoriel, n'hésitez pas à m'envoyer un message privé sur discord : ``[BTA] ZetaMap#5093``. 
 
 Pas de spam ou de demandes inutiles svp, sinon je ne répondrai plus aux messages. Merci =)
-#### Remercîment
+#### Remercîments <a id="thanks"></a>
 Je remercie [xorblo-doitus](https://github.com/xorblo-doitus) pour m'avoir aidé sur la correction des fautes, et sur la formulation des phrases. ;)
