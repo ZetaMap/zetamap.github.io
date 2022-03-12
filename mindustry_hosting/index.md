@@ -85,7 +85,7 @@ Lors de la vérification de l'ouverture du port, le site peut des fois indiquer 
 
 
 **Note :**
-Héberger des serveurs sur mobile est souvent une mauvaise idée, surtout publics. Un téléphone n'est jamais fixe dans un réseau. Cette solution fonctionne, mais est instable : vous pouvez vous attendre à des déconnexions répétées, mais toutefois, si vous possédez un PC chez vous, effectuez les [étapes pour PC](#solution-miniupnpc) tout en jouant sur mobile, cela sera plus stable.
+Héberger un serveur sur mobile est souvent une mauvaise idée, surtout s'il est public. Un téléphone n'est jamais fixe dans un réseau. Cette solution fonctionne, mais est instable : vous pouvez vous attendre à des déconnexions répétées, mais toutefois, si vous possédez un PC chez vous, effectuez les [étapes pour PC](#solution-miniupnpc) tout en jouant sur mobile, cela sera plus stable.
 
 
 
