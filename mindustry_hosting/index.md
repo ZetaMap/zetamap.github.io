@@ -1,5 +1,5 @@
 [<-- Home Page](/)
-
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fzetamap.github.io%2Fmindustry_hosting%2F&label=visitors%20(mindustry_hosting)&labelColor=%23697689&countColor=%23dce775&style=flat)
 # Comment jouer avec des amis ? - Tutoriel
 Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez choisir entre plusieurs logiciels. Ce que je propose est valable pour mobile et PC.
 
