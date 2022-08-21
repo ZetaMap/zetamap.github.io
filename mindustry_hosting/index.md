@@ -48,7 +48,7 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
 #### Solution MiniUPNPC <a id="solution-miniupnpc"></a>
 **1-** Tout d'abord, il faut télécharger le logiciel qui se [trouve ici](http://miniupnp.free.fr/files/download.php?file=upnpc-exe-win32-20150918.zip), ensuite dézippez le (je conseille de le faire dans les dossiers de votre jeu pour ne pas le perdre).
 
-**2-** Maintenant il faut ouvrir un terminal de commande pour effectuer la suite du tuto, pour cela, vous pouvez faire : TOUCHE WINDOWS + R, et taper ``"powershell"`` puis entrer.
+**2-** Maintenant il faut ouvrir un terminal de commande pour effectuer la suite du tuto, pour cela, vous pouvez faire : TOUCHE WINDOWS + R, et taper ``"cmd"`` puis entrer ou rechercher ``"cmd"`` dans la barre de recherche Windows.
 
 **3-** Ensuite il faut se déplacer à l'endroit où le logiciel a été dézippé, pour ce faire, tapez ``"cd <emplacement du dossier>"`` dans le terminal.
 
