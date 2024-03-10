@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.html" class="internal-link" title="This class"><wbr></wbr>TCPROSTransport</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#close" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.close">close</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#connect" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.connect">connect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fileno" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.fileno">fileno</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_transport_info" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.get_transport_info">get<wbr></wbr>_transport<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#read_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_header">read<wbr></wbr>_header</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#receive_loop" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_loop">receive<wbr></wbr>_loop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#receive_once" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_once">receive<wbr></wbr>_once</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#send_message" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.send_message">send<wbr></wbr>_message</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_endpoint_id" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_endpoint_id">set<wbr></wbr>_endpoint<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_socket" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_socket">set<wbr></wbr>_socket</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#write_data" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_data">write<wbr></wbr>_data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#write_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_header">write<wbr></wbr>_header</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_reconnect" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._reconnect">_reconnect</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_validate_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._validate_header">_validate<wbr></wbr>_header</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transport_type" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.transport_type">transport<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#callerid_pub" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.callerid_pub">callerid<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dest_address" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.dest_address">dest<wbr></wbr>_address</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#endpoint_id" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.endpoint_id">endpoint<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.header">header</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_latched" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.is_latched">is<wbr></wbr>_latched</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#latch" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.latch">latch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#local_endpoint" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.local_endpoint">local<wbr></wbr>_endpoint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#md5sum" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.md5sum">md5sum</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#protocol" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.protocol">protocol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#read_buff" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_buff">read<wbr></wbr>_buff</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remote_endpoint" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.remote_endpoint">remote<wbr></wbr>_endpoint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#socket" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.socket">socket</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#type" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.type">type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#write_buff" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_buff">write<wbr></wbr>_buff</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fileno" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._fileno">_fileno</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rospy.impl.tcpros_base.html" class="internal-link" title="The parent of this class">tcpros<wbr></wbr>_base</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.TCPROSServer.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSServer"><wbr></wbr>TCPROSServer</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport"><wbr></wbr>TCPROSTransport</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransportProtocol.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransportProtocol"><wbr></wbr>TCPROSTransport<wbr></wbr>Protocol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.TCPServer.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPServer"><wbr></wbr>TCPServer</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#get_tcpros_server_address" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.get_tcpros_server_address">get<wbr></wbr>_tcpros<wbr></wbr>_server<wbr></wbr>_address</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#init_tcpros_server" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.init_tcpros_server">init<wbr></wbr>_tcpros<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#recv_buff" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.recv_buff">recv<wbr></wbr>_buff</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#start_tcpros_server" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.start_tcpros_server">start<wbr></wbr>_tcpros<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_error_connection_handler" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._error_connection_handler">_error<wbr></wbr>_connection<wbr></wbr>_handler</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_is_use_tcp_keepalive" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._is_use_tcp_keepalive">_is<wbr></wbr>_use<wbr></wbr>_tcp<wbr></wbr>_keepalive</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#DEFAULT_BUFF_SIZE" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.DEFAULT_BUFF_SIZE">DEFAULT<wbr></wbr>_BUFF<wbr></wbr>_SIZE</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#TCPROS" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROS">TCPROS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#logger" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.logger">logger</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#python3" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.python3">python3</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_PARAM_TCP_KEEPALIVE" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._PARAM_TCP_KEEPALIVE">_PARAM<wbr></wbr>_TCP<wbr></wbr>_KEEPALIVE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_tcpros_server" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._tcpros_server">_tcpros<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_use_tcp_keepalive" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._use_tcp_keepalive">_use<wbr></wbr>_tcp<wbr></wbr>_keepalive</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html#_use_tcp_keepalive_lock" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base._use_tcp_keepalive_lock">_use<wbr></wbr>_tcp<wbr></wbr>_keepalive<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.html" class="internal-link" title="niryo_libraries.rospy.impl">impl</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.tcpros_base.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base">tcpros_base</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport">TCPROSTransport</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TCPROSTransport</span>(Transport):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.__init__">TCPROSTransport(protocol, name, header)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Generic implementation of TCPROS exchange routines for both topics and services</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2494">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.__init__">__init__</a></code></td>
+    <td>ctor @param name str: identifier @param protocol TCPROSTransportProtocol protocol implementation @param header dict: (optional) handshake header if transport handshake header was already read off of transport...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#close" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.close">close</a></code></td>
+    <td>close i/o and release resources</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#connect" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.connect">connect</a></code></td>
+    <td>Establish TCP connection to the specified address/port. connect() always calls L{write_header()} and L{read_header()} after the connection is made @param dest_addr: destination IP address @type  dest_addr: str @param dest_port: destination port @type  dest_port: int @param endpoint_id: string identifier for connection (for statistics) @type  endpoint_id: str @param timeout: (optional keyword) timeout in seconds @type  timeout: float @raise TransportInitError: if unable to create connection...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#fileno" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.fileno">fileno</a></code></td>
+    <td>Get descriptor for select</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_transport_info" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.get_transport_info">get<wbr></wbr>_transport<wbr></wbr>_info</a></code></td>
+    <td>Get detailed connection information. Similar to getTransportInfo() in 'libros/transport/transport_tcp.cpp' e.g. TCPROS connection on port 41374 to [127.0.0.1:40623 on socket 6]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#read_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_header">read<wbr></wbr>_header</a></code></td>
+    <td>Read TCPROS header from active socket @raise TransportInitError if header fails to validate</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#receive_loop" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_loop">receive<wbr></wbr>_loop</a></code></td>
+    <td>Receive messages until shutdown @param msgs_callback: callback to invoke for new messages received @type  msgs_callback: fn([msg])</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#receive_once" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_once">receive<wbr></wbr>_once</a></code></td>
+    <td>block until messages are read off of socket @return: list of newly received messages @rtype: [Msg] @raise TransportException: if unable to receive message due to error</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#send_message" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.send_message">send<wbr></wbr>_message</a></code></td>
+    <td>Convenience routine for services to send a message across a particular connection. NOTE: write_data is much more efficient if same message is being sent to multiple connections. Not threadsafe. @param msg: message to send @type  msg: Msg @param seq: sequence number for message @type  seq: int @raise TransportException: if error occurred sending message...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_endpoint_id" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_endpoint_id">set<wbr></wbr>_endpoint<wbr></wbr>_id</a></code></td>
+    <td>Set the endpoint_id of this transport. Allows the endpoint_id to be set before the socket is initialized.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_socket" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_socket">set<wbr></wbr>_socket</a></code></td>
+    <td>Set the socket for this transport @param sock: socket @type  sock: socket.socket @param endpoint_id: identifier for connection endpoint @type  endpoint_id: str @raise TransportInitError: if socket has already been set...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#write_data" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_data">write<wbr></wbr>_data</a></code></td>
+    <td>Write raw data to transport @raise TransportInitialiationError: could not be initialized @raise TransportTerminated: no longer open for publishing</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#write_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_header">write<wbr></wbr>_header</a></code></td>
+    <td>Writes the TCPROS header to the active connection.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#transport_type" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.transport_type">transport<wbr></wbr>_type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#callerid_pub" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.callerid_pub">callerid<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dest_address" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.dest_address">dest<wbr></wbr>_address</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#endpoint_id" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.endpoint_id">endpoint<wbr></wbr>_id</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.header">header</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_latched" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.is_latched">is<wbr></wbr>_latched</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#latch" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.latch">latch</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#local_endpoint" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.local_endpoint">local<wbr></wbr>_endpoint</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#md5sum" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.md5sum">md5sum</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#protocol" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.protocol">protocol</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#read_buff" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_buff">read<wbr></wbr>_buff</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#remote_endpoint" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.remote_endpoint">remote<wbr></wbr>_endpoint</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#socket" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.socket">socket</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#type" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.type">type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#write_buff" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_buff">write<wbr></wbr>_buff</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_reconnect" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._reconnect">_reconnect</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_validate_header" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._validate_header">_validate<wbr></wbr>_header</a></code></td>
+    <td>Validate header and initialize fields accordingly @param header: header fields from publisher @type  header: dict @raise TransportInitError: if header fails to validate</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_fileno" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._fileno">_fileno</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, protocol, name, header=None)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>ctor
+@param name str: identifier
+@param protocol TCPROSTransportProtocol protocol implementation
+@param header dict: (optional) handshake header if transport handshake header was
+already read off of transport.
+@raise TransportInitError if transport cannot be initialized according to arguments</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.close">
+    
+  </a>
+  <a name="close">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">close</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#close" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.close">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>close i/o and release resources</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.connect">
+    
+  </a>
+  <a name="connect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">connect</span><span class="function-signature">(self, dest_addr, dest_port, endpoint_id, timeout=None)</span>:
+    
+    <a class="headerLink" href="#connect" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.connect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Establish TCP connection to the specified
+address/port. connect() always calls L{write_header()} and
+L{read_header()} after the connection is made
+@param dest_addr: destination IP address
+@type  dest_addr: str
+@param dest_port: destination port
+@type  dest_port: int
+@param endpoint_id: string identifier for connection (for statistics)
+@type  endpoint_id: str
+@param timeout: (optional keyword) timeout in seconds
+@type  timeout: float
+@raise TransportInitError: if unable to create connection</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.fileno">
+    
+  </a>
+  <a name="fileno">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">fileno</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#fileno" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.fileno">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get descriptor for select</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.get_transport_info">
+    
+  </a>
+  <a name="get_transport_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_transport_info</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_transport_info" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.get_transport_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get detailed connection information.
+Similar to getTransportInfo() in 'libros/transport/transport_tcp.cpp'
+e.g. TCPROS connection on port 41374 to [127.0.0.1:40623 on socket 6]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_header">
+    
+  </a>
+  <a name="read_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">read_header</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#read_header" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_header">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Read TCPROS header from active socket
+@raise TransportInitError if header fails to validate</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_loop">
+    
+  </a>
+  <a name="receive_loop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">receive_loop</span><span class="function-signature">(self, msgs_callback)</span>:
+    
+    <a class="headerLink" href="#receive_loop" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_loop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Receive messages until shutdown
+@param msgs_callback: callback to invoke for new messages received
+@type  msgs_callback: fn([msg])</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_once">
+    
+  </a>
+  <a name="receive_once">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">receive_once</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#receive_once" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.receive_once">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>block until messages are read off of socket
+@return: list of newly received messages
+@rtype: [Msg]
+@raise TransportException: if unable to receive message due to error</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.send_message">
+    
+  </a>
+  <a name="send_message">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">send_message</span><span class="function-signature">(self, msg, seq)</span>:
+    
+    <a class="headerLink" href="#send_message" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.send_message">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convenience routine for services to send a message across a
+particular connection. NOTE: write_data is much more efficient
+if same message is being sent to multiple connections. Not
+threadsafe.
+@param msg: message to send
+@type  msg: Msg
+@param seq: sequence number for message
+@type  seq: int
+@raise TransportException: if error occurred sending message</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_endpoint_id">
+    
+  </a>
+  <a name="set_endpoint_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_endpoint_id</span><span class="function-signature">(self, endpoint_id)</span>:
+    
+    <a class="headerLink" href="#set_endpoint_id" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_endpoint_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the endpoint_id of this transport.
+Allows the endpoint_id to be set before the socket is initialized.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_socket">
+    
+  </a>
+  <a name="set_socket">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_socket</span><span class="function-signature">(self, sock, endpoint_id)</span>:
+    
+    <a class="headerLink" href="#set_socket" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.set_socket">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the socket for this transport
+@param sock: socket
+@type  sock: socket.socket
+@param endpoint_id: identifier for connection endpoint
+@type  endpoint_id: str
+@raise TransportInitError: if socket has already been set</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_data">
+    
+  </a>
+  <a name="write_data">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">write_data</span><span class="function-signature">(self, data)</span>:
+    
+    <a class="headerLink" href="#write_data" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_data">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Write raw data to transport
+@raise TransportInitialiationError: could not be initialized
+@raise TransportTerminated: no longer open for publishing</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_header">
+    
+  </a>
+  <a name="write_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">write_header</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#write_header" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_header">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Writes the TCPROS header to the active connection.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.transport_type">
+    
+  </a>
+  <a name="transport_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">transport_type</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#transport_type" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.transport_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.callerid_pub">
+    
+  </a>
+  <a name="callerid_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">callerid_pub</span> =
+    
+    <a class="headerLink" href="#callerid_pub" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.callerid_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.dest_address">
+    
+  </a>
+  <a name="dest_address">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dest_address</span> =
+    
+    <a class="headerLink" href="#dest_address" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.dest_address">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.endpoint_id">
+    
+  </a>
+  <a name="endpoint_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">endpoint_id</span> =
+    
+    <a class="headerLink" href="#endpoint_id" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.endpoint_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.header">
+    
+  </a>
+  <a name="header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">header</span> =
+    
+    <a class="headerLink" href="#header" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.header">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.is_latched">
+    
+  </a>
+  <a name="is_latched">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_latched</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#is_latched" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.is_latched">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.latch">
+    
+  </a>
+  <a name="latch">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">latch</span> =
+    
+    <a class="headerLink" href="#latch" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.latch">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.local_endpoint">
+    
+  </a>
+  <a name="local_endpoint">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">local_endpoint</span> =
+    
+    <a class="headerLink" href="#local_endpoint" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.local_endpoint">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.md5sum">
+    
+  </a>
+  <a name="md5sum">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">md5sum</span> =
+    
+    <a class="headerLink" href="#md5sum" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.md5sum">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.protocol">
+    
+  </a>
+  <a name="protocol">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">protocol</span> =
+    
+    <a class="headerLink" href="#protocol" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.protocol">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_buff">
+    
+  </a>
+  <a name="read_buff">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">read_buff</span> =
+    
+    <a class="headerLink" href="#read_buff" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.read_buff">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.remote_endpoint">
+    
+  </a>
+  <a name="remote_endpoint">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">remote_endpoint</span> =
+    
+    <a class="headerLink" href="#remote_endpoint" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.remote_endpoint">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.socket">
+    
+  </a>
+  <a name="socket">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">socket</span> =
+    
+    <a class="headerLink" href="#socket" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.socket">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.type">
+    
+  </a>
+  <a name="type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">type</span> =
+    
+    <a class="headerLink" href="#type" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_buff">
+    
+  </a>
+  <a name="write_buff">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">write_buff</span> =
+    
+    <a class="headerLink" href="#write_buff" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport.write_buff">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._reconnect">
+    
+  </a>
+  <a name="_reconnect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_reconnect</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_reconnect" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._reconnect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._validate_header">
+    
+  </a>
+  <a name="_validate_header">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_validate_header</span><span class="function-signature">(self, header)</span>:
+    
+    <a class="headerLink" href="#_validate_header" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._validate_header">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validate header and initialize fields accordingly
+@param header: header fields from publisher
+@type  header: dict
+@raise TransportInitError: if header fails to validate</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._fileno">
+    
+  </a>
+  <a name="_fileno">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_fileno</span> =
+    
+    <a class="headerLink" href="#_fileno" title="niryo_libraries.rospy.impl.tcpros_base.TCPROSTransport._fileno">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

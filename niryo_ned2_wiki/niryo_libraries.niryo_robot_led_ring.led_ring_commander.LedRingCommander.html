@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.html" class="internal-link" title="This class"><wbr></wbr>Led<wbr></wbr>Ring<wbr></wbr>Commander</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#alternate_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.alternate_animation">alternate<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#blink" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink">blink</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#blink_over_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink_over_status">blink<wbr></wbr>_over<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#breath_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.breath_animation">breath<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#chase_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.chase_animation">chase<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#custom_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.custom_animation">custom<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#display_user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.display_user_mode">display<wbr></wbr>_user<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#error_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation">error<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#flashing_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.flashing_animation">flashing<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_robot_status_led_ring_cmd" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.get_robot_status_led_ring_cmd">get<wbr></wbr>_robot<wbr></wbr>_status<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_cmd</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#go_up_and_down_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_and_down_animation">go<wbr></wbr>_up<wbr></wbr>_and<wbr></wbr>_down<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#go_up_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_animation">go<wbr></wbr>_up<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#none_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.none_animation">none<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#notify_current_anim_and_color" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.notify_current_anim_and_color">notify<wbr></wbr>_current<wbr></wbr>_anim<wbr></wbr>_and<wbr></wbr>_color</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rainbow_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_animation">rainbow<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rainbow_chase_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_chase_animation">rainbow<wbr></wbr>_chase<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rainbow_cycle_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_cycle_animation">rainbow<wbr></wbr>_cycle<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.set_user_mode">set<wbr></wbr>_user<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown_check" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown_check">shutdown<wbr></wbr>_check</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#snake_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.snake_animation">snake<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#solid_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.solid_animation">solid<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start_led_ring_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_led_ring_thread">start<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start_user_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_user_thread">start<wbr></wbr>_user<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop_led_ring_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.stop_led_ring_thread">stop<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#user_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation">user<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wait_until_finished" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wait_until_finished">wait<wbr></wbr>_until<wbr></wbr>_finished</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wipe_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wipe_animation">wipe<wbr></wbr>_animation</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_return_after_waiting" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._return_after_waiting">_return<wbr></wbr>_after<wbr></wbr>_waiting</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_niryo_studio" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_niryo_studio">__callback<wbr></wbr>_niryo<wbr></wbr>_studio</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_robot_status">__callback<wbr></wbr>_robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_save_current_point" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_save_current_point">__callback<wbr></wbr>_save<wbr></wbr>_current<wbr></wbr>_point</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_set_led_color" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_color">__callback<wbr></wbr>_set<wbr></wbr>_led<wbr></wbr>_color</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_set_led_ring_user" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_ring_user">__callback<wbr></wbr>_set<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_user</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_wifi_button_state" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_wifi_button_state">__callback<wbr></wbr>_wifi<wbr></wbr>_button<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_publish_led_ring_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._publish_led_ring_status">_publish<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dict_led_ring_methods" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.dict_led_ring_methods">dict<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_methods</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#error_animation_lock" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation_lock">error<wbr></wbr>_animation<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#led_ring_anim" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_anim">led<wbr></wbr>_ring<wbr></wbr>_anim</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#led_ring_animation_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_animation_thread">led<wbr></wbr>_ring<wbr></wbr>_animation<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#led_ring_state" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_state">led<wbr></wbr>_ring<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logs_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.logs_status">logs<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_out_of_bounds" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_out_of_bounds">robot<wbr></wbr>_out<wbr></wbr>_of<wbr></wbr>_bounds</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status">robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_status_str" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_str">robot<wbr></wbr>_status<wbr></wbr>_str</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_status_subscriber" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_subscriber">robot<wbr></wbr>_status<wbr></wbr>_subscriber</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rpi_overheating" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rpi_overheating">rpi<wbr></wbr>_overheating</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#running_status_command" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.running_status_command">running<wbr></wbr>_status<wbr></wbr>_command</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#user_animation_lock" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation_lock">user<wbr></wbr>_animation<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_mode">user<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.is_shutdown">is<wbr></wbr>_shutdown</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__check_shutdown_timer" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__check_shutdown_timer">__check<wbr></wbr>_shutdown<wbr></wbr>_timer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__is_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_shutdown">__is<wbr></wbr>_shutdown</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__is_simulation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_simulation">__is<wbr></wbr>_simulation</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__led_ring_status_pub" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__led_ring_status_pub">__led<wbr></wbr>_ring<wbr></wbr>_status<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__set_led_color_service" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_led_color_service">__set<wbr></wbr>_led<wbr></wbr>_color<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__set_ring_led_user" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_ring_led_user">__set<wbr></wbr>_ring<wbr></wbr>_led<wbr></wbr>_user</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.niryo_robot_led_ring.led_ring_commander.html" class="internal-link" title="The parent of this class">led<wbr></wbr>_ring<wbr></wbr>_commander</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.html" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander"><wbr></wbr>Led<wbr></wbr>Ring<wbr></wbr>Commander</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_led_ring.html" class="internal-link" title="niryo_libraries.niryo_robot_led_ring">niryo_robot_led_ring</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_led_ring.led_ring_commander.html" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander">led_ring_commander</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.html" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander">LedRingCommander</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">LedRingCommander</span>(object):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This class is in charge of the Led Ring Node
+Its main goal is to interpret commands, and use methods from the LedRingCommander class according to this command</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1170">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#alternate_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.alternate_animation">alternate<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#blink" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink">blink</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#blink_over_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink_over_status">blink<wbr></wbr>_over<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#breath_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.breath_animation">breath<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#chase_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.chase_animation">chase<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#custom_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.custom_animation">custom<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#display_user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.display_user_mode">display<wbr></wbr>_user<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#error_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation">error<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#flashing_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.flashing_animation">flashing<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_robot_status_led_ring_cmd" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.get_robot_status_led_ring_cmd">get<wbr></wbr>_robot<wbr></wbr>_status<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_cmd</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#go_up_and_down_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_and_down_animation">go<wbr></wbr>_up<wbr></wbr>_and<wbr></wbr>_down<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#go_up_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_animation">go<wbr></wbr>_up<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#none_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.none_animation">none<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#notify_current_anim_and_color" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.notify_current_anim_and_color">notify<wbr></wbr>_current<wbr></wbr>_anim<wbr></wbr>_and<wbr></wbr>_color</a></code></td>
+    <td>called by the led_ring_anim when the current animation played or the color on the Led Ring is updated, used to publish Led STATUS</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#rainbow_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_animation">rainbow<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#rainbow_chase_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_chase_animation">rainbow<wbr></wbr>_chase<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#rainbow_cycle_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_cycle_animation">rainbow<wbr></wbr>_cycle<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.set_user_mode">set<wbr></wbr>_user<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown">shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown_check" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown_check">shutdown<wbr></wbr>_check</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#snake_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.snake_animation">snake<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#solid_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.solid_animation">solid<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start_led_ring_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_led_ring_thread">start<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_thread</a></code></td>
+    <td>Start a thread to allow the user to control the led. We use a thread to avoid the blocking effect of the Led ring control methods.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start_user_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_user_thread">start<wbr></wbr>_user<wbr></wbr>_thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop_led_ring_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.stop_led_ring_thread">stop<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#user_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation">user<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#wait_until_finished" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wait_until_finished">wait<wbr></wbr>_until<wbr></wbr>_finished</a></code></td>
+    <td>Wait until all iterations of the Led Ring method are done. After that, the led ring is turned off. If function was interrupted, return True.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#wipe_animation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wipe_animation">wipe<wbr></wbr>_animation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dict_led_ring_methods" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.dict_led_ring_methods">dict<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_methods</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#error_animation_lock" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation_lock">error<wbr></wbr>_animation<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#led_ring_anim" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_anim">led<wbr></wbr>_ring<wbr></wbr>_anim</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#led_ring_animation_thread" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_animation_thread">led<wbr></wbr>_ring<wbr></wbr>_animation<wbr></wbr>_thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#led_ring_state" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_state">led<wbr></wbr>_ring<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#logs_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.logs_status">logs<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robot_out_of_bounds" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_out_of_bounds">robot<wbr></wbr>_out<wbr></wbr>_of<wbr></wbr>_bounds</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robot_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status">robot<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robot_status_str" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_str">robot<wbr></wbr>_status<wbr></wbr>_str</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robot_status_subscriber" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_subscriber">robot<wbr></wbr>_status<wbr></wbr>_subscriber</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rpi_overheating" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rpi_overheating">rpi<wbr></wbr>_overheating</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#running_status_command" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.running_status_command">running<wbr></wbr>_status<wbr></wbr>_command</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#user_animation_lock" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation_lock">user<wbr></wbr>_animation<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#user_mode" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_mode">user<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="property">
+    
+    <td>Property</td>
+    <td><code><a href="#is_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.is_shutdown">is<wbr></wbr>_shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#_return_after_waiting" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._return_after_waiting">_return<wbr></wbr>_after<wbr></wbr>_waiting</a></code></td>
+    <td>Return a CommandStatus and a message, after the requested animation was completed</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_niryo_studio" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_niryo_studio">__callback<wbr></wbr>_niryo<wbr></wbr>_studio</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_robot_status">__callback<wbr></wbr>_robot<wbr></wbr>_status</a></code></td>
+    <td>Callback method to set led ring state according to current robot status. This callback takes precedence over the user's led ring control method, if the robot status is not RUNNING_AUTONOMOUS and logs status is not NONE...</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_save_current_point" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_save_current_point">__callback<wbr></wbr>_save<wbr></wbr>_current<wbr></wbr>_point</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_set_led_color" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_color">__callback<wbr></wbr>_set<wbr></wbr>_led<wbr></wbr>_color</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_set_led_ring_user" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_ring_user">__callback<wbr></wbr>_set<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_user</a></code></td>
+    <td>Service to allow the user to control the Led Ring. A new request will interrupt the previous one, if still playing.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_wifi_button_state" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_wifi_button_state">__callback<wbr></wbr>_wifi<wbr></wbr>_button<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_publish_led_ring_status" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._publish_led_ring_status">_publish<wbr></wbr>_led<wbr></wbr>_ring<wbr></wbr>_status</a></code></td>
+    <td>Publish the current status of the Led ring, as a LedRingStatus message : led_mode: either controlled by user or displaying robot status animation_mode: which method is used to animate pixels (solid, flashing,...</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__check_shutdown_timer" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__check_shutdown_timer">__check<wbr></wbr>_shutdown<wbr></wbr>_timer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__is_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_shutdown">__is<wbr></wbr>_shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__is_simulation" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_simulation">__is<wbr></wbr>_simulation</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__led_ring_status_pub" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__led_ring_status_pub">__led<wbr></wbr>_ring<wbr></wbr>_status<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__set_led_color_service" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_led_color_service">__set<wbr></wbr>_led<wbr></wbr>_color<wbr></wbr>_service</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__set_ring_led_user" class="internal-link" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_ring_led_user">__set<wbr></wbr>_ring<wbr></wbr>_led<wbr></wbr>_user</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.alternate_animation">
+    
+  </a>
+  <a name="alternate_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">alternate_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#alternate_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.alternate_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink">
+    
+  </a>
+  <a name="blink">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">blink</span><span class="function-signature">(self, color, iterations, period)</span>:
+    
+    <a class="headerLink" href="#blink" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink_over_status">
+    
+  </a>
+  <a name="blink_over_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">blink_over_status</span><span class="function-signature">(self, color, iterations, period)</span>:
+    
+    <a class="headerLink" href="#blink_over_status" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.blink_over_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.breath_animation">
+    
+  </a>
+  <a name="breath_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">breath_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#breath_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.breath_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.chase_animation">
+    
+  </a>
+  <a name="chase_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">chase_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#chase_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.chase_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.custom_animation">
+    
+  </a>
+  <a name="custom_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">custom_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#custom_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.custom_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.display_user_mode">
+    
+  </a>
+  <a name="display_user_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">display_user_mode</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#display_user_mode" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.display_user_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation">
+    
+  </a>
+  <a name="error_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">error_animation</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#error_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.flashing_animation">
+    
+  </a>
+  <a name="flashing_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">flashing_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#flashing_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.flashing_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.get_robot_status_led_ring_cmd">
+    
+  </a>
+  <a name="get_robot_status_led_ring_cmd">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_robot_status_led_ring_cmd</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_robot_status_led_ring_cmd" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.get_robot_status_led_ring_cmd">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_and_down_animation">
+    
+  </a>
+  <a name="go_up_and_down_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">go_up_and_down_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#go_up_and_down_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_and_down_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_animation">
+    
+  </a>
+  <a name="go_up_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">go_up_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#go_up_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.go_up_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.none_animation">
+    
+  </a>
+  <a name="none_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">none_animation</span><span class="function-signature">(self, _cmd)</span>:
+    
+    <a class="headerLink" href="#none_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.none_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.notify_current_anim_and_color">
+    
+  </a>
+  <a name="notify_current_anim_and_color">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">notify_current_anim_and_color</span><span class="function-signature">(self, _observer)</span>:
+    
+    <a class="headerLink" href="#notify_current_anim_and_color" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.notify_current_anim_and_color">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>called by the led_ring_anim when the current animation played or the color on the Led Ring is updated,
+used to publish Led STATUS</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_animation">
+    
+  </a>
+  <a name="rainbow_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">rainbow_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#rainbow_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_chase_animation">
+    
+  </a>
+  <a name="rainbow_chase_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">rainbow_chase_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#rainbow_chase_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_chase_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_cycle_animation">
+    
+  </a>
+  <a name="rainbow_cycle_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">rainbow_cycle_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#rainbow_cycle_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rainbow_cycle_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.set_user_mode">
+    
+  </a>
+  <a name="set_user_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_user_mode</span><span class="function-signature">(self, boolean)</span>:
+    
+    <a class="headerLink" href="#set_user_mode" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.set_user_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown</span><span class="function-signature">(self, color=None)</span>:
+    
+    <a class="headerLink" href="#shutdown" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown_check">
+    
+  </a>
+  <a name="shutdown_check">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown_check</span><span class="function-signature">(self, *_)</span>:
+    
+    <a class="headerLink" href="#shutdown_check" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.shutdown_check">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.snake_animation">
+    
+  </a>
+  <a name="snake_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">snake_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#snake_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.snake_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.solid_animation">
+    
+  </a>
+  <a name="solid_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">solid_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#solid_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.solid_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_led_ring_thread">
+    
+  </a>
+  <a name="start_led_ring_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start_led_ring_thread</span><span class="function-signature">(self, command)</span>:
+    
+    <a class="headerLink" href="#start_led_ring_thread" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_led_ring_thread">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start a thread to allow the user to control the led.
+We use a thread to avoid the blocking effect of the Led ring
+control methods.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_user_thread">
+    
+  </a>
+  <a name="start_user_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start_user_thread</span><span class="function-signature">(self, command)</span>:
+    
+    <a class="headerLink" href="#start_user_thread" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.start_user_thread">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.stop_led_ring_thread">
+    
+  </a>
+  <a name="stop_led_ring_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop_led_ring_thread</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stop_led_ring_thread" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.stop_led_ring_thread">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation">
+    
+  </a>
+  <a name="user_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">user_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#user_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wait_until_finished">
+    
+  </a>
+  <a name="wait_until_finished">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">wait_until_finished</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#wait_until_finished" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wait_until_finished">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Wait until all iterations of the Led Ring method are done. After that, the led ring is turned off.
+If function was interrupted, return True.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wipe_animation">
+    
+  </a>
+  <a name="wipe_animation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">wipe_animation</span><span class="function-signature">(self, cmd)</span>:
+    
+    <a class="headerLink" href="#wipe_animation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.wipe_animation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.dict_led_ring_methods">
+    
+  </a>
+  <a name="dict_led_ring_methods">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dict_led_ring_methods</span> =
+    
+    <a class="headerLink" href="#dict_led_ring_methods" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.dict_led_ring_methods">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation_lock">
+    
+  </a>
+  <a name="error_animation_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">error_animation_lock</span> =
+    
+    <a class="headerLink" href="#error_animation_lock" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.error_animation_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_anim">
+    
+  </a>
+  <a name="led_ring_anim">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">led_ring_anim</span> =
+    
+    <a class="headerLink" href="#led_ring_anim" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_anim">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_animation_thread">
+    
+  </a>
+  <a name="led_ring_animation_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">led_ring_animation_thread</span> =
+    
+    <a class="headerLink" href="#led_ring_animation_thread" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_animation_thread">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_state">
+    
+  </a>
+  <a name="led_ring_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">led_ring_state</span> =
+    
+    <a class="headerLink" href="#led_ring_state" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.led_ring_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.logs_status">
+    
+  </a>
+  <a name="logs_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logs_status</span> =
+    
+    <a class="headerLink" href="#logs_status" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.logs_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_out_of_bounds">
+    
+  </a>
+  <a name="robot_out_of_bounds">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robot_out_of_bounds</span> =
+    
+    <a class="headerLink" href="#robot_out_of_bounds" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_out_of_bounds">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status">
+    
+  </a>
+  <a name="robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robot_status</span> =
+    
+    <a class="headerLink" href="#robot_status" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_str">
+    
+  </a>
+  <a name="robot_status_str">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robot_status_str</span> =
+    
+    <a class="headerLink" href="#robot_status_str" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_str">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_subscriber">
+    
+  </a>
+  <a name="robot_status_subscriber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robot_status_subscriber</span> =
+    
+    <a class="headerLink" href="#robot_status_subscriber" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.robot_status_subscriber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rpi_overheating">
+    
+  </a>
+  <a name="rpi_overheating">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rpi_overheating</span> =
+    
+    <a class="headerLink" href="#rpi_overheating" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.rpi_overheating">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.running_status_command">
+    
+  </a>
+  <a name="running_status_command">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">running_status_command</span> =
+    
+    <a class="headerLink" href="#running_status_command" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.running_status_command">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation_lock">
+    
+  </a>
+  <a name="user_animation_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">user_animation_lock</span> =
+    
+    <a class="headerLink" href="#user_animation_lock" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_animation_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_mode">
+    
+  </a>
+  <a name="user_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">user_mode</span> =
+    
+    <a class="headerLink" href="#user_mode" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.user_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseproperty">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.is_shutdown">
+    
+  </a>
+  <a name="is_shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    @property<br />
+    <span class="py-defname">is_shutdown</span> =
+    
+    <a class="headerLink" href="#is_shutdown" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.is_shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._return_after_waiting">
+    
+  </a>
+  <a name="_return_after_waiting">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">_return_after_waiting</span><span class="function-signature">(anim_name, iterations, interrupted)</span>:
+    
+    <a class="headerLink" href="#_return_after_waiting" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._return_after_waiting">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a CommandStatus and a message, after the requested animation was completed</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_niryo_studio">
+    
+  </a>
+  <a name="__callback_niryo_studio">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_niryo_studio</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#__callback_niryo_studio" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_niryo_studio">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_robot_status">
+    
+  </a>
+  <a name="__callback_robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_robot_status</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#__callback_robot_status" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Callback method to set led ring state according to current robot status.
+This callback takes precedence over the user's led ring control method, if the
+robot status is not RUNNING_AUTONOMOUS and logs status is not NONE.
+It is triggered only when the robot status changed.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_save_current_point">
+    
+  </a>
+  <a name="__callback_save_current_point">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_save_current_point</span><span class="function-signature">(self, _msg)</span>:
+    
+    <a class="headerLink" href="#__callback_save_current_point" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_save_current_point">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_color">
+    
+  </a>
+  <a name="__callback_set_led_color">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_set_led_color</span><span class="function-signature">(self, req)</span>:
+    
+    <a class="headerLink" href="#__callback_set_led_color" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_color">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_ring_user">
+    
+  </a>
+  <a name="__callback_set_led_ring_user">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_set_led_ring_user</span><span class="function-signature">(self, req)</span>:
+    
+    <a class="headerLink" href="#__callback_set_led_ring_user" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_set_led_ring_user">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Service to allow the user to control the Led Ring. A new request will interrupt the previous one, if still
+playing.</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_wifi_button_state">
+    
+  </a>
+  <a name="__callback_wifi_button_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_wifi_button_state</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#__callback_wifi_button_state" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__callback_wifi_button_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._publish_led_ring_status">
+    
+  </a>
+  <a name="_publish_led_ring_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_publish_led_ring_status</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_publish_led_ring_status" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander._publish_led_ring_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Publish the current status of the Led ring, as a LedRingStatus message :
+led_mode: either controlled by user or displaying robot status
+animation_mode: which method is used to animate pixels (solid, flashing,...), as a LedRingAnimation message
+animation_color: current animation color, except for rainbow methods</p>
+<p>Function called only when one parameter changed.</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__check_shutdown_timer">
+    
+  </a>
+  <a name="__check_shutdown_timer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__check_shutdown_timer</span> =
+    
+    <a class="headerLink" href="#__check_shutdown_timer" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__check_shutdown_timer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_shutdown">
+    
+  </a>
+  <a name="__is_shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__is_shutdown</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#__is_shutdown" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_simulation">
+    
+  </a>
+  <a name="__is_simulation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__is_simulation</span> =
+    
+    <a class="headerLink" href="#__is_simulation" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__is_simulation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__led_ring_status_pub">
+    
+  </a>
+  <a name="__led_ring_status_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__led_ring_status_pub</span> =
+    
+    <a class="headerLink" href="#__led_ring_status_pub" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__led_ring_status_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_led_color_service">
+    
+  </a>
+  <a name="__set_led_color_service">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__set_led_color_service</span> =
+    
+    <a class="headerLink" href="#__set_led_color_service" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_led_color_service">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_ring_led_user">
+    
+  </a>
+  <a name="__set_ring_led_user">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__set_ring_led_user</span> =
+    
+    <a class="headerLink" href="#__set_ring_led_user" title="niryo_libraries.niryo_robot_led_ring.led_ring_commander.LedRingCommander.__set_ring_led_user">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

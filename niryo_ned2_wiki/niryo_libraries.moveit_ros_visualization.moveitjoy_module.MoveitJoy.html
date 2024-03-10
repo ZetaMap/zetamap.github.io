@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.html" class="internal-link" title="This class"><wbr></wbr>Moveit<wbr></wbr>Joy</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#computePoseFromJoy" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.computePoseFromJoy">compute<wbr></wbr>Pose<wbr></wbr>From<wbr></wbr>Joy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#joyCB" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joyCB">joy<wbr></wbr>CB</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#markerCB" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.markerCB">marker<wbr></wbr>CB</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parseSRDF" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.parseSRDF">parse<wbr></wbr>SRDF</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.run">run</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updatePlanningGroup" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePlanningGroup">update<wbr></wbr>Planning<wbr></wbr>Group</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#updatePoseTopic" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePoseTopic">update<wbr></wbr>Pose<wbr></wbr>Topic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#waitForInitialPose" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.waitForInitialPose">wait<wbr></wbr>For<wbr></wbr>Initial<wbr></wbr>Pose</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#counter" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.counter">counter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#current_eef_index" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_eef_index">current<wbr></wbr>_eef<wbr></wbr>_index</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#current_planning_group_index" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_planning_group_index">current<wbr></wbr>_planning<wbr></wbr>_group<wbr></wbr>_index</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#current_pose_topic" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_pose_topic">current<wbr></wbr>_pose<wbr></wbr>_topic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#execute_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.execute_pub">execute<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#frame_id" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.frame_id">frame<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#history" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.history">history</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initial_poses" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initial_poses">initial<wbr></wbr>_poses</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initialize_poses" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialize_poses">initialize<wbr></wbr>_poses</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#initialized" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialized">initialized</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#interactive_marker_sub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.interactive_marker_sub">interactive<wbr></wbr>_marker<wbr></wbr>_sub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#joy_pose_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joy_pose_pub">joy<wbr></wbr>_pose<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#marker_lock" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.marker_lock">marker<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#plan_group_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_group_pub">plan<wbr></wbr>_group<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#plan_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_pub">plan<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#planning_groups" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups">planning<wbr></wbr>_groups</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#planning_groups_keys" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_keys">planning<wbr></wbr>_groups<wbr></wbr>_keys</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#planning_groups_tips" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_tips">planning<wbr></wbr>_groups<wbr></wbr>_tips</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pose_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pose_pub">pose<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pre_pose" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pre_pose">pre<wbr></wbr>_pose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#prev_time" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.prev_time">prev<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.sub">sub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tf_listener" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.tf_listener">tf<wbr></wbr>_listener</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_goal_state_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_goal_state_pub">update<wbr></wbr>_goal<wbr></wbr>_state<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_start_state_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_start_state_pub">update<wbr></wbr>_start<wbr></wbr>_state<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.html" class="internal-link" title="The parent of this class">moveitjoy<wbr></wbr>_module</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.JoyStatus.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.JoyStatus"><wbr></wbr>Joy<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy"><wbr></wbr>Moveit<wbr></wbr>Joy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3DualShockStatus.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3DualShockStatus"><wbr></wbr>PS3<wbr></wbr>Dual<wbr></wbr>Shock<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3Status.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3Status"><wbr></wbr>PS3<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3WiredStatus.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS3WiredStatus"><wbr></wbr>PS3<wbr></wbr>Wired<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS4Status.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS4Status"><wbr></wbr>PS4<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS4WiredStatus.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.PS4WiredStatus"><wbr></wbr>PS4<wbr></wbr>Wired<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.StatusHistory.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.StatusHistory"><wbr></wbr>Status<wbr></wbr>History</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.XBoxStatus.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.XBoxStatus"><wbr></wbr>XBox<wbr></wbr>Status</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.html#signedSquare" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.signedSquare">signed<wbr></wbr>Square</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_ros_visualization.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization">moveit_ros_visualization</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module">moveitjoy_module</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy">MoveitJoy</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">MoveitJoy</span>:</code></p>
+          <p><a href="classIndex.html#niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id990">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#computePoseFromJoy" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.computePoseFromJoy">compute<wbr></wbr>Pose<wbr></wbr>From<wbr></wbr>Joy</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#joyCB" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joyCB">joy<wbr></wbr>CB</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#markerCB" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.markerCB">marker<wbr></wbr>CB</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#parseSRDF" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.parseSRDF">parse<wbr></wbr>SRDF</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#run" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.run">run</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updatePlanningGroup" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePlanningGroup">update<wbr></wbr>Planning<wbr></wbr>Group</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#updatePoseTopic" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePoseTopic">update<wbr></wbr>Pose<wbr></wbr>Topic</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#waitForInitialPose" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.waitForInitialPose">wait<wbr></wbr>For<wbr></wbr>Initial<wbr></wbr>Pose</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#counter" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.counter">counter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#current_eef_index" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_eef_index">current<wbr></wbr>_eef<wbr></wbr>_index</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#current_planning_group_index" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_planning_group_index">current<wbr></wbr>_planning<wbr></wbr>_group<wbr></wbr>_index</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#current_pose_topic" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_pose_topic">current<wbr></wbr>_pose<wbr></wbr>_topic</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#execute_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.execute_pub">execute<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#frame_id" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.frame_id">frame<wbr></wbr>_id</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#history" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.history">history</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#initial_poses" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initial_poses">initial<wbr></wbr>_poses</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#initialize_poses" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialize_poses">initialize<wbr></wbr>_poses</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#initialized" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialized">initialized</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#interactive_marker_sub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.interactive_marker_sub">interactive<wbr></wbr>_marker<wbr></wbr>_sub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#joy_pose_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joy_pose_pub">joy<wbr></wbr>_pose<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#marker_lock" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.marker_lock">marker<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#plan_group_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_group_pub">plan<wbr></wbr>_group<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#plan_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_pub">plan<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#planning_groups" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups">planning<wbr></wbr>_groups</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#planning_groups_keys" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_keys">planning<wbr></wbr>_groups<wbr></wbr>_keys</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#planning_groups_tips" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_tips">planning<wbr></wbr>_groups<wbr></wbr>_tips</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pose_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pose_pub">pose<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pre_pose" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pre_pose">pre<wbr></wbr>_pose</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#prev_time" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.prev_time">prev<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.sub">sub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#tf_listener" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.tf_listener">tf<wbr></wbr>_listener</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#update_goal_state_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_goal_state_pub">update<wbr></wbr>_goal<wbr></wbr>_state<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#update_start_state_pub" class="internal-link" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_start_state_pub">update<wbr></wbr>_start<wbr></wbr>_state<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.computePoseFromJoy">
+    
+  </a>
+  <a name="computePoseFromJoy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">computePoseFromJoy</span><span class="function-signature">(self, pre_pose, status)</span>:
+    
+    <a class="headerLink" href="#computePoseFromJoy" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.computePoseFromJoy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joyCB">
+    
+  </a>
+  <a name="joyCB">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">joyCB</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#joyCB" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joyCB">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.markerCB">
+    
+  </a>
+  <a name="markerCB">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">markerCB</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#markerCB" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.markerCB">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.parseSRDF">
+    
+  </a>
+  <a name="parseSRDF">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">parseSRDF</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#parseSRDF" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.parseSRDF">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.run">
+    
+  </a>
+  <a name="run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">run</span><span class="function-signature">(self, status)</span>:
+    
+    <a class="headerLink" href="#run" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePlanningGroup">
+    
+  </a>
+  <a name="updatePlanningGroup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">updatePlanningGroup</span><span class="function-signature">(self, next_index)</span>:
+    
+    <a class="headerLink" href="#updatePlanningGroup" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePlanningGroup">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePoseTopic">
+    
+  </a>
+  <a name="updatePoseTopic">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">updatePoseTopic</span><span class="function-signature">(self, next_index, wait=True)</span>:
+    
+    <a class="headerLink" href="#updatePoseTopic" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.updatePoseTopic">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.waitForInitialPose">
+    
+  </a>
+  <a name="waitForInitialPose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">waitForInitialPose</span><span class="function-signature">(self, next_topic, timeout=None)</span>:
+    
+    <a class="headerLink" href="#waitForInitialPose" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.waitForInitialPose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.counter">
+    
+  </a>
+  <a name="counter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">counter</span> =
+    
+    <a class="headerLink" href="#counter" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.counter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_eef_index">
+    
+  </a>
+  <a name="current_eef_index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">current_eef_index</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#current_eef_index" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_eef_index">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_planning_group_index">
+    
+  </a>
+  <a name="current_planning_group_index">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">current_planning_group_index</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#current_planning_group_index" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_planning_group_index">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_pose_topic">
+    
+  </a>
+  <a name="current_pose_topic">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">current_pose_topic</span> =
+    
+    <a class="headerLink" href="#current_pose_topic" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.current_pose_topic">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.execute_pub">
+    
+  </a>
+  <a name="execute_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">execute_pub</span> =
+    
+    <a class="headerLink" href="#execute_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.execute_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.frame_id">
+    
+  </a>
+  <a name="frame_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">frame_id</span> =
+    
+    <a class="headerLink" href="#frame_id" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.frame_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.history">
+    
+  </a>
+  <a name="history">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">history</span> =
+    
+    <a class="headerLink" href="#history" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.history">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initial_poses">
+    
+  </a>
+  <a name="initial_poses">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">initial_poses</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#initial_poses" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initial_poses">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialize_poses">
+    
+  </a>
+  <a name="initialize_poses">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">initialize_poses</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#initialize_poses" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialize_poses">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialized">
+    
+  </a>
+  <a name="initialized">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">initialized</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#initialized" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.initialized">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.interactive_marker_sub">
+    
+  </a>
+  <a name="interactive_marker_sub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">interactive_marker_sub</span> =
+    
+    <a class="headerLink" href="#interactive_marker_sub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.interactive_marker_sub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joy_pose_pub">
+    
+  </a>
+  <a name="joy_pose_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">joy_pose_pub</span> =
+    
+    <a class="headerLink" href="#joy_pose_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.joy_pose_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.marker_lock">
+    
+  </a>
+  <a name="marker_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">marker_lock</span> =
+    
+    <a class="headerLink" href="#marker_lock" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.marker_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_group_pub">
+    
+  </a>
+  <a name="plan_group_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">plan_group_pub</span> =
+    
+    <a class="headerLink" href="#plan_group_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_group_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_pub">
+    
+  </a>
+  <a name="plan_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">plan_pub</span> =
+    
+    <a class="headerLink" href="#plan_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.plan_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups">
+    
+  </a>
+  <a name="planning_groups">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">planning_groups</span> =
+    
+    <a class="headerLink" href="#planning_groups" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_keys">
+    
+  </a>
+  <a name="planning_groups_keys">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">planning_groups_keys</span> =
+    
+    <a class="headerLink" href="#planning_groups_keys" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_keys">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_tips">
+    
+  </a>
+  <a name="planning_groups_tips">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">planning_groups_tips</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#planning_groups_tips" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.planning_groups_tips">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pose_pub">
+    
+  </a>
+  <a name="pose_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pose_pub</span> =
+    
+    <a class="headerLink" href="#pose_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pose_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pre_pose">
+    
+  </a>
+  <a name="pre_pose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pre_pose</span> =
+    
+    <a class="headerLink" href="#pre_pose" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.pre_pose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.prev_time">
+    
+  </a>
+  <a name="prev_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">prev_time</span> =
+    
+    <a class="headerLink" href="#prev_time" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.prev_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.sub">
+    
+  </a>
+  <a name="sub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sub</span> =
+    
+    <a class="headerLink" href="#sub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.sub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.tf_listener">
+    
+  </a>
+  <a name="tf_listener">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">tf_listener</span> =
+    
+    <a class="headerLink" href="#tf_listener" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.tf_listener">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_goal_state_pub">
+    
+  </a>
+  <a name="update_goal_state_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">update_goal_state_pub</span> =
+    
+    <a class="headerLink" href="#update_goal_state_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_goal_state_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_start_state_pub">
+    
+  </a>
+  <a name="update_start_state_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">update_start_state_pub</span> =
+    
+    <a class="headerLink" href="#update_start_state_pub" title="niryo_libraries.moveit_ros_visualization.moveitjoy_module.MoveitJoy.update_start_state_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

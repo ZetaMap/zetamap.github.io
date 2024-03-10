@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.urdf_parser_py.urdf.Joint</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.urdf_parser_py.urdf.Joint.html" class="internal-link" title="This class"><wbr></wbr>Joint</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#check_valid" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.check_valid">check<wbr></wbr>_valid</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#joint_type.setter" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type.setter">joint<wbr></wbr>_type<wbr></wbr>.setter</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#TYPES" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.TYPES">TYPES</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#axis" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.axis">axis</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#calibration" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.calibration">calibration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#child" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.child">child</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dynamics" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.dynamics">dynamics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#limit" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.limit">limit</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#mimic" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.mimic">mimic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#name" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#origin" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.origin">origin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parent" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.parent">parent</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#safety_controller" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.safety_controller">safety<wbr></wbr>_controller</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#type" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.type">type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#joint_type" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type">joint<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.urdf_parser_py.urdf.html" class="internal-link" title="The parent of this class">urdf</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Actuator.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Actuator"><wbr></wbr>Actuator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Box.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Box"><wbr></wbr>Box</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Collision.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Collision"><wbr></wbr>Collision</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Color.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Color"><wbr></wbr>Color</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Cylinder.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Cylinder"><wbr></wbr>Cylinder</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.GeometricType.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.GeometricType"><wbr></wbr>Geometric<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Inertia.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Inertia"><wbr></wbr>Inertia</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Inertial.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Inertial"><wbr></wbr>Inertial</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Joint.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint"><wbr></wbr>Joint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.JointCalibration.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.JointCalibration"><wbr></wbr>Joint<wbr></wbr>Calibration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.JointDynamics.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.JointDynamics"><wbr></wbr>Joint<wbr></wbr>Dynamics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.JointLimit.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.JointLimit"><wbr></wbr>Joint<wbr></wbr>Limit</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.JointMimic.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.JointMimic"><wbr></wbr>Joint<wbr></wbr>Mimic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Link.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Link"><wbr></wbr>Link</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.LinkMaterial.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.LinkMaterial"><wbr></wbr>Link<wbr></wbr>Material</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Material.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Material"><wbr></wbr>Material</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Mesh.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Mesh"><wbr></wbr>Mesh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Pose.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Pose"><wbr></wbr>Pose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.PR2Transmission.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.PR2Transmission"><wbr></wbr>PR2<wbr></wbr>Transmission</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Robot.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Robot"><wbr></wbr>Robot</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.SafetyController.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.SafetyController"><wbr></wbr>Safety<wbr></wbr>Controller</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Sphere.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Sphere"><wbr></wbr>Sphere</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Texture.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Texture"><wbr></wbr>Texture</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Transmission.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Transmission"><wbr></wbr>Transmission</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.TransmissionJoint.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.TransmissionJoint"><wbr></wbr>Transmission<wbr></wbr>Joint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.Visual.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Visual"><wbr></wbr>Visual</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.html#name_attribute" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.name_attribute">name<wbr></wbr>_attribute</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.html#origin_element" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.origin_element">origin<wbr></wbr>_element</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.urdf.html#verbose" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.verbose">verbose</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.urdf_parser_py.html" class="internal-link" title="niryo_libraries.urdf_parser_py">urdf_parser_py</a></code><wbr></wbr>.<code><a href="niryo_libraries.urdf_parser_py.urdf.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf">urdf</a></code><wbr></wbr>.<code><a href="niryo_libraries.urdf_parser_py.urdf.Joint.html" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint">Joint</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Joint</span>(xmlr.Object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.__init__">Joint(name, parent, child, joint_type, ...)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.urdf_parser_py.urdf.Joint">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id3006">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#check_valid" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.check_valid">check<wbr></wbr>_valid</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#joint_type.setter" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type.setter">joint<wbr></wbr>_type<wbr></wbr>.setter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#TYPES" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.TYPES">TYPES</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#axis" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.axis">axis</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#calibration" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.calibration">calibration</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#child" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.child">child</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dynamics" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.dynamics">dynamics</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#limit" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.limit">limit</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#mimic" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.mimic">mimic</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#name" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#origin" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.origin">origin</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#parent" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.parent">parent</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#safety_controller" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.safety_controller">safety<wbr></wbr>_controller</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#type" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.type">type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="property">
+    
+    <td>Property</td>
+    <td><code><a href="#joint_type" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type">joint<wbr></wbr>_type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name=None, parent=None, child=None, joint_type=None, axis=None, origin=None, limit=None, dynamics=None, safety_controller=None, calibration=None, mimic=None)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.urdf_parser_py.urdf.Joint.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.check_valid">
+    
+  </a>
+  <a name="check_valid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">check_valid</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#check_valid" title="niryo_libraries.urdf_parser_py.urdf.Joint.check_valid">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type.setter">
+    
+  </a>
+  <a name="joint_type.setter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="#joint_type.setter" class="internal-link" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type.setter">joint_type.setter</a><br />
+    <span class="py-keyword">def</span> <span class="py-defname">joint_type</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#joint_type.setter" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type.setter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.TYPES">
+    
+  </a>
+  <a name="TYPES">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">TYPES</span>: <code>list[<wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#TYPES" title="niryo_libraries.urdf_parser_py.urdf.Joint.TYPES">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>[<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">unknown</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">revolute</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">continuous</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">prismatic</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">floating</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">planar</span><span class="rst-variable-quote">'</span>,
+ <wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">fixed</span><span class="rst-variable-quote">'</span>]</code></pre></td></tr></table>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.axis">
+    
+  </a>
+  <a name="axis">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">axis</span> =
+    
+    <a class="headerLink" href="#axis" title="niryo_libraries.urdf_parser_py.urdf.Joint.axis">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.calibration">
+    
+  </a>
+  <a name="calibration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">calibration</span> =
+    
+    <a class="headerLink" href="#calibration" title="niryo_libraries.urdf_parser_py.urdf.Joint.calibration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.child">
+    
+  </a>
+  <a name="child">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">child</span> =
+    
+    <a class="headerLink" href="#child" title="niryo_libraries.urdf_parser_py.urdf.Joint.child">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.dynamics">
+    
+  </a>
+  <a name="dynamics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dynamics</span> =
+    
+    <a class="headerLink" href="#dynamics" title="niryo_libraries.urdf_parser_py.urdf.Joint.dynamics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.limit">
+    
+  </a>
+  <a name="limit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">limit</span> =
+    
+    <a class="headerLink" href="#limit" title="niryo_libraries.urdf_parser_py.urdf.Joint.limit">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.mimic">
+    
+  </a>
+  <a name="mimic">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">mimic</span> =
+    
+    <a class="headerLink" href="#mimic" title="niryo_libraries.urdf_parser_py.urdf.Joint.mimic">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">name</span> =
+    
+    <a class="headerLink" href="#name" title="niryo_libraries.urdf_parser_py.urdf.Joint.name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.origin">
+    
+  </a>
+  <a name="origin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">origin</span> =
+    
+    <a class="headerLink" href="#origin" title="niryo_libraries.urdf_parser_py.urdf.Joint.origin">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.parent">
+    
+  </a>
+  <a name="parent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">parent</span> =
+    
+    <a class="headerLink" href="#parent" title="niryo_libraries.urdf_parser_py.urdf.Joint.parent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.safety_controller">
+    
+  </a>
+  <a name="safety_controller">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">safety_controller</span> =
+    
+    <a class="headerLink" href="#safety_controller" title="niryo_libraries.urdf_parser_py.urdf.Joint.safety_controller">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.type">
+    
+  </a>
+  <a name="type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">type</span> =
+    
+    <a class="headerLink" href="#type" title="niryo_libraries.urdf_parser_py.urdf.Joint.type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseproperty">
+  
+  
+  <a name="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type">
+    
+  </a>
+  <a name="joint_type">
+    
+  </a>
+  <div class="functionHeader">
+    @property<br />
+    <span class="py-defname">joint_type</span> =
+    
+    <a class="headerLink" href="#joint_type" title="niryo_libraries.urdf_parser_py.urdf.Joint.joint_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

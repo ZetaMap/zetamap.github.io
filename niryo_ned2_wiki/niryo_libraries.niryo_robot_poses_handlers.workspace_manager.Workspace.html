@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.html" class="internal-link" title="This class"><wbr></wbr>Workspace</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#from_dict" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.from_dict">from<wbr></wbr>_dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_value" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.get_value">get<wbr></wbr>_value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#to_dict" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.to_dict">to<wbr></wbr>_dict</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#description" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.description">description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#name" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#points" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.points">points</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#position_matrix" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.position_matrix">position<wbr></wbr>_matrix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_poses" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.robot_poses">robot<wbr></wbr>_poses</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rotation_matrix" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.rotation_matrix">rotation<wbr></wbr>_matrix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#x_width" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.x_width">x<wbr></wbr>_width</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#y_width" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.y_width">y<wbr></wbr>_width</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#yaw_center" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.yaw_center">yaw<wbr></wbr>_center</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.html" class="internal-link" title="The parent of this class">workspace<wbr></wbr>_manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace"><wbr></wbr>Workspace</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.WorkspaceManager.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.WorkspaceManager"><wbr></wbr>Workspace<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers">niryo_robot_poses_handlers</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager">workspace_manager</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace">Workspace</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Workspace</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.__init__">Workspace(name, description)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Represents a workspace that is defined by 4 points that represent the
+visual markers.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name</span></td><td class="fieldArgDesc">unique (!) name that will be used to reference it</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">points</span></td><td class="fieldArgDesc">points defining the workspace, 0th element is the origin.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">x<wbr></wbr>_width</span></td><td class="fieldArgDesc">width of the workspace in m (between point_0 and point_1)</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">y<wbr></wbr>_width</span></td><td class="fieldArgDesc">width of the workspace in m (between point_0 and point_3)</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">transform</span></td><td class="fieldArgDesc">tf transform msg from base_link to workspace origin</td></tr></table></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1374">
+  
+  
+  <tr class="classmethod">
+    
+    <td>Class Method</td>
+    <td><code><a href="#from_dict" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.from_dict">from<wbr></wbr>_dict</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_value" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.get_value">get<wbr></wbr>_value</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#to_dict" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.to_dict">to<wbr></wbr>_dict</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#description" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.description">description</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#name" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#points" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.points">points</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#position_matrix" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.position_matrix">position<wbr></wbr>_matrix</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robot_poses" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.robot_poses">robot<wbr></wbr>_poses</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rotation_matrix" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.rotation_matrix">rotation<wbr></wbr>_matrix</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#x_width" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.x_width">x<wbr></wbr>_width</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#y_width" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.y_width">y<wbr></wbr>_width</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#yaw_center" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.yaw_center">yaw<wbr></wbr>_center</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="baseclassmethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.from_dict">
+    
+  </a>
+  <a name="from_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @classmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">from_dict</span><span class="function-signature">(cls, dict_)</span>:
+    
+    <a class="headerLink" href="#from_dict" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.from_dict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name, description)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.get_value">
+    
+  </a>
+  <a name="get_value">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_value</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_value" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.get_value">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.to_dict">
+    
+  </a>
+  <a name="to_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">to_dict</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#to_dict" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.to_dict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.description">
+    
+  </a>
+  <a name="description">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">description</span> =
+    
+    <a class="headerLink" href="#description" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.description">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">name</span>: str =
+    
+    <a class="headerLink" href="#name" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.points">
+    
+  </a>
+  <a name="points">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">points</span>: [float, float, float] =
+    
+    <a class="headerLink" href="#points" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.points">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.position_matrix">
+    
+  </a>
+  <a name="position_matrix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">position_matrix</span> =
+    
+    <a class="headerLink" href="#position_matrix" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.position_matrix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.robot_poses">
+    
+  </a>
+  <a name="robot_poses">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robot_poses</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#robot_poses" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.robot_poses">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.rotation_matrix">
+    
+  </a>
+  <a name="rotation_matrix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rotation_matrix</span> =
+    
+    <a class="headerLink" href="#rotation_matrix" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.rotation_matrix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.x_width">
+    
+  </a>
+  <a name="x_width">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">x_width</span>: float =
+    
+    <a class="headerLink" href="#x_width" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.x_width">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.y_width">
+    
+  </a>
+  <a name="y_width">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">y_width</span>: float =
+    
+    <a class="headerLink" href="#y_width" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.y_width">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.yaw_center">
+    
+  </a>
+  <a name="yaw_center">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">yaw_center</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#yaw_center" title="niryo_libraries.niryo_robot_poses_handlers.workspace_manager.Workspace.yaw_center">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

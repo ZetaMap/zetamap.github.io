@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosmake.engine.RosMakeAll</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosmake.engine.RosMakeAll.html" class="internal-link" title="This class"><wbr></wbr>Ros<wbr></wbr>Make<wbr></wbr>All</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#build" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build">build</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#build_or_recurse" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build_or_recurse">build<wbr></wbr>_or<wbr></wbr>_recurse</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#generate_summary_output" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.generate_summary_output">generate<wbr></wbr>_summary<wbr></wbr>_output</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_profile_string" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.get_profile_string">get<wbr></wbr>_profile<wbr></wbr>_string</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#main" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.main">main</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#num_packages_built" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.num_packages_built">num<wbr></wbr>_packages<wbr></wbr>_built</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#output_to_file" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.output_to_file">output<wbr></wbr>_to<wbr></wbr>_file</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#parallel_build_pkgs" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.parallel_build_pkgs">parallel<wbr></wbr>_build<wbr></wbr>_pkgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_status" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.update_status">update<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_build_package" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._build_package">_build<wbr></wbr>_package</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_subprocess_setup" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._subprocess_setup">_subprocess<wbr></wbr>_setup</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#best_effort" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.best_effort">best<wbr></wbr>_effort</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#build_list" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build_list">build<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dependency_tracker" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.dependency_tracker">dependency<wbr></wbr>_tracker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#finish_time" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.finish_time">finish<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#flag_tracker" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.flag_tracker">flag<wbr></wbr>_tracker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log_dir" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.log_dir">log<wbr></wbr>_dir</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logging_enabled" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.logging_enabled">logging<wbr></wbr>_enabled</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#output" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.output">output</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#paths" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.paths">paths</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#printer" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.printer">printer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#profile" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.profile">profile</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rejected_packages" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rejected_packages">rejected<wbr></wbr>_packages</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#result" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.result">result</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robust_build" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.robust_build">robust<wbr></wbr>_build</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ros_parallel_jobs" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.ros_parallel_jobs">ros<wbr></wbr>_parallel<wbr></wbr>_jobs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rospack" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rospack">rospack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rosstack" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rosstack">rosstack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#skip_blacklist" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.skip_blacklist">skip<wbr></wbr>_blacklist</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#specified_packages" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.specified_packages">specified<wbr></wbr>_packages</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start_time" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.start_time">start<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#threads" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.threads">threads</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_result_lock" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._result_lock">_result<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosmake.engine.html" class="internal-link" title="The parent of this class">engine</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.engine.Printer.html" class="internal-link" title="niryo_libraries.rosmake.engine.Printer"><wbr></wbr>Printer</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.engine.RosMakeAll.html" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll"><wbr></wbr>Ros<wbr></wbr>Make<wbr></wbr>All</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.engine.html#make_command" class="internal-link" title="niryo_libraries.rosmake.engine.make_command">make<wbr></wbr>_command</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.engine.html#makedirs_with_parent_perms" class="internal-link" title="niryo_libraries.rosmake.engine.makedirs_with_parent_perms">makedirs<wbr></wbr>_with<wbr></wbr>_parent<wbr></wbr>_perms</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.engine.html#_popen_lock" class="internal-link" title="niryo_libraries.rosmake.engine._popen_lock">_popen<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.html" class="internal-link" title="niryo_libraries.rosmake">rosmake</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.engine.html" class="internal-link" title="niryo_libraries.rosmake.engine">engine</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.engine.RosMakeAll.html" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll">RosMakeAll</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RosMakeAll</span>:</code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosmake.engine.RosMakeAll">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2428">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#build" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build">build</a></code></td>
+    <td>Build package @param p: package name @type  p: str</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#build_or_recurse" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build_or_recurse">build<wbr></wbr>_or<wbr></wbr>_recurse</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#generate_summary_output" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.generate_summary_output">generate<wbr></wbr>_summary<wbr></wbr>_output</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_profile_string" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.get_profile_string">get<wbr></wbr>_profile<wbr></wbr>_string</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#main" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.main">main</a></code></td>
+    <td>main command-line entrypoint</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#num_packages_built" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.num_packages_built">num<wbr></wbr>_packages<wbr></wbr>_built</a></code></td>
+    <td>@return: number of packages that were built @rtype: int</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#output_to_file" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.output_to_file">output<wbr></wbr>_to<wbr></wbr>_file</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#parallel_build_pkgs" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.parallel_build_pkgs">parallel<wbr></wbr>_build<wbr></wbr>_pkgs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#update_status" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.update_status">update<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#best_effort" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.best_effort">best<wbr></wbr>_effort</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#build_list" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.build_list">build<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dependency_tracker" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.dependency_tracker">dependency<wbr></wbr>_tracker</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#finish_time" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.finish_time">finish<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#flag_tracker" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.flag_tracker">flag<wbr></wbr>_tracker</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#log_dir" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.log_dir">log<wbr></wbr>_dir</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#logging_enabled" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.logging_enabled">logging<wbr></wbr>_enabled</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#output" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.output">output</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#paths" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.paths">paths</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#printer" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.printer">printer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#profile" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.profile">profile</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rejected_packages" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rejected_packages">rejected<wbr></wbr>_packages</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#result" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.result">result</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robust_build" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.robust_build">robust<wbr></wbr>_build</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#ros_parallel_jobs" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.ros_parallel_jobs">ros<wbr></wbr>_parallel<wbr></wbr>_jobs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rospack" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rospack">rospack</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rosstack" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.rosstack">rosstack</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#skip_blacklist" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.skip_blacklist">skip<wbr></wbr>_blacklist</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#specified_packages" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.specified_packages">specified<wbr></wbr>_packages</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#start_time" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.start_time">start<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#threads" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll.threads">threads</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_build_package" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._build_package">_build<wbr></wbr>_package</a></code></td>
+    <td>Lower-level routine for building a package. Handles execution of actual build command. @param package: package name @type  package: str</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_subprocess_setup" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._subprocess_setup">_subprocess<wbr></wbr>_setup</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_result_lock" class="internal-link" title="niryo_libraries.rosmake.engine.RosMakeAll._result_lock">_result<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosmake.engine.RosMakeAll.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.build">
+    
+  </a>
+  <a name="build">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">build</span><span class="function-signature">(self, p, argument=None, robust_build=False)</span>:
+    
+    <a class="headerLink" href="#build" title="niryo_libraries.rosmake.engine.RosMakeAll.build">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Build package
+@param p: package name
+@type  p: str</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.build_or_recurse">
+    
+  </a>
+  <a name="build_or_recurse">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">build_or_recurse</span><span class="function-signature">(self, p)</span>:
+    
+    <a class="headerLink" href="#build_or_recurse" title="niryo_libraries.rosmake.engine.RosMakeAll.build_or_recurse">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.generate_summary_output">
+    
+  </a>
+  <a name="generate_summary_output">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">generate_summary_output</span><span class="function-signature">(self, log_dir)</span>:
+    
+    <a class="headerLink" href="#generate_summary_output" title="niryo_libraries.rosmake.engine.RosMakeAll.generate_summary_output">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.get_profile_string">
+    
+  </a>
+  <a name="get_profile_string">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_profile_string</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_profile_string" title="niryo_libraries.rosmake.engine.RosMakeAll.get_profile_string">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.main">
+    
+  </a>
+  <a name="main">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">main</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#main" title="niryo_libraries.rosmake.engine.RosMakeAll.main">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>main command-line entrypoint</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.num_packages_built">
+    
+  </a>
+  <a name="num_packages_built">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">num_packages_built</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#num_packages_built" title="niryo_libraries.rosmake.engine.RosMakeAll.num_packages_built">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: number of packages that were built
+@rtype: int</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.output_to_file">
+    
+  </a>
+  <a name="output_to_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">output_to_file</span><span class="function-signature">(self, package, log_type, stdout, always_print=False)</span>:
+    
+    <a class="headerLink" href="#output_to_file" title="niryo_libraries.rosmake.engine.RosMakeAll.output_to_file">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.parallel_build_pkgs">
+    
+  </a>
+  <a name="parallel_build_pkgs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">parallel_build_pkgs</span><span class="function-signature">(self, build_queue, argument=None, threads=1)</span>:
+    
+    <a class="headerLink" href="#parallel_build_pkgs" title="niryo_libraries.rosmake.engine.RosMakeAll.parallel_build_pkgs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.update_status">
+    
+  </a>
+  <a name="update_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">update_status</span><span class="function-signature">(self, argument, start_times, right)</span>:
+    
+    <a class="headerLink" href="#update_status" title="niryo_libraries.rosmake.engine.RosMakeAll.update_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.best_effort">
+    
+  </a>
+  <a name="best_effort">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">best_effort</span> =
+    
+    <a class="headerLink" href="#best_effort" title="niryo_libraries.rosmake.engine.RosMakeAll.best_effort">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.build_list">
+    
+  </a>
+  <a name="build_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">build_list</span> =
+    
+    <a class="headerLink" href="#build_list" title="niryo_libraries.rosmake.engine.RosMakeAll.build_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.dependency_tracker">
+    
+  </a>
+  <a name="dependency_tracker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dependency_tracker</span> =
+    
+    <a class="headerLink" href="#dependency_tracker" title="niryo_libraries.rosmake.engine.RosMakeAll.dependency_tracker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.finish_time">
+    
+  </a>
+  <a name="finish_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">finish_time</span> =
+    
+    <a class="headerLink" href="#finish_time" title="niryo_libraries.rosmake.engine.RosMakeAll.finish_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.flag_tracker">
+    
+  </a>
+  <a name="flag_tracker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">flag_tracker</span> =
+    
+    <a class="headerLink" href="#flag_tracker" title="niryo_libraries.rosmake.engine.RosMakeAll.flag_tracker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.log_dir">
+    
+  </a>
+  <a name="log_dir">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">log_dir</span> =
+    
+    <a class="headerLink" href="#log_dir" title="niryo_libraries.rosmake.engine.RosMakeAll.log_dir">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.logging_enabled">
+    
+  </a>
+  <a name="logging_enabled">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logging_enabled</span> =
+    
+    <a class="headerLink" href="#logging_enabled" title="niryo_libraries.rosmake.engine.RosMakeAll.logging_enabled">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.output">
+    
+  </a>
+  <a name="output">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">output</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#output" title="niryo_libraries.rosmake.engine.RosMakeAll.output">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.paths">
+    
+  </a>
+  <a name="paths">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">paths</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#paths" title="niryo_libraries.rosmake.engine.RosMakeAll.paths">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.printer">
+    
+  </a>
+  <a name="printer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">printer</span> =
+    
+    <a class="headerLink" href="#printer" title="niryo_libraries.rosmake.engine.RosMakeAll.printer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.profile">
+    
+  </a>
+  <a name="profile">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">profile</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#profile" title="niryo_libraries.rosmake.engine.RosMakeAll.profile">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.rejected_packages">
+    
+  </a>
+  <a name="rejected_packages">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rejected_packages</span> =
+    
+    <a class="headerLink" href="#rejected_packages" title="niryo_libraries.rosmake.engine.RosMakeAll.rejected_packages">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.result">
+    
+  </a>
+  <a name="result">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">result</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#result" title="niryo_libraries.rosmake.engine.RosMakeAll.result">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.robust_build">
+    
+  </a>
+  <a name="robust_build">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robust_build</span> =
+    
+    <a class="headerLink" href="#robust_build" title="niryo_libraries.rosmake.engine.RosMakeAll.robust_build">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.ros_parallel_jobs">
+    
+  </a>
+  <a name="ros_parallel_jobs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ros_parallel_jobs</span> =
+    
+    <a class="headerLink" href="#ros_parallel_jobs" title="niryo_libraries.rosmake.engine.RosMakeAll.ros_parallel_jobs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.rospack">
+    
+  </a>
+  <a name="rospack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rospack</span> =
+    
+    <a class="headerLink" href="#rospack" title="niryo_libraries.rosmake.engine.RosMakeAll.rospack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.rosstack">
+    
+  </a>
+  <a name="rosstack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rosstack</span> =
+    
+    <a class="headerLink" href="#rosstack" title="niryo_libraries.rosmake.engine.RosMakeAll.rosstack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.skip_blacklist">
+    
+  </a>
+  <a name="skip_blacklist">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">skip_blacklist</span> =
+    
+    <a class="headerLink" href="#skip_blacklist" title="niryo_libraries.rosmake.engine.RosMakeAll.skip_blacklist">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.specified_packages">
+    
+  </a>
+  <a name="specified_packages">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">specified_packages</span> =
+    
+    <a class="headerLink" href="#specified_packages" title="niryo_libraries.rosmake.engine.RosMakeAll.specified_packages">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.start_time">
+    
+  </a>
+  <a name="start_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">start_time</span> =
+    
+    <a class="headerLink" href="#start_time" title="niryo_libraries.rosmake.engine.RosMakeAll.start_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll.threads">
+    
+  </a>
+  <a name="threads">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">threads</span> =
+    
+    <a class="headerLink" href="#threads" title="niryo_libraries.rosmake.engine.RosMakeAll.threads">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll._build_package">
+    
+  </a>
+  <a name="_build_package">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_build_package</span><span class="function-signature">(self, package, argument=None)</span>:
+    
+    <a class="headerLink" href="#_build_package" title="niryo_libraries.rosmake.engine.RosMakeAll._build_package">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Lower-level routine for building a package. Handles execution of actual build command.
+@param package: package name
+@type  package: str</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll._subprocess_setup">
+    
+  </a>
+  <a name="_subprocess_setup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_subprocess_setup</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_subprocess_setup" title="niryo_libraries.rosmake.engine.RosMakeAll._subprocess_setup">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosmake.engine.RosMakeAll._result_lock">
+    
+  </a>
+  <a name="_result_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_result_lock</span> =
+    
+    <a class="headerLink" href="#_result_lock" title="niryo_libraries.rosmake.engine.RosMakeAll._result_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

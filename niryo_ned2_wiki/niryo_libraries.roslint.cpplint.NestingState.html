@@ -1,0 +1,2636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.roslint.cpplint.NestingState</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.roslint.cpplint.NestingState.html" class="internal-link" title="This class"><wbr></wbr>Nesting<wbr></wbr>State</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#CheckCompletedBlocks" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.CheckCompletedBlocks"><wbr></wbr>Check<wbr></wbr>Completed<wbr></wbr>Blocks</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InAsmBlock" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InAsmBlock"><wbr></wbr>In<wbr></wbr>Asm<wbr></wbr>Block</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InClassDeclaration" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InClassDeclaration"><wbr></wbr>In<wbr></wbr>Class<wbr></wbr>Declaration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InExternC" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InExternC"><wbr></wbr>In<wbr></wbr>Extern<wbr></wbr>C</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InNamespaceBody" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InNamespaceBody"><wbr></wbr>In<wbr></wbr>Namespace<wbr></wbr>Body</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InnermostClass" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InnermostClass"><wbr></wbr>Innermost<wbr></wbr>Class</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#InTemplateArgumentList" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InTemplateArgumentList"><wbr></wbr>In<wbr></wbr>Template<wbr></wbr>Argument<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#SeenOpenBrace" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.SeenOpenBrace"><wbr></wbr>Seen<wbr></wbr>Open<wbr></wbr>Brace</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#Update" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.Update"><wbr></wbr>Update</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#UpdatePreprocessor" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.UpdatePreprocessor"><wbr></wbr>Update<wbr></wbr>Preprocessor</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pp_stack" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.pp_stack">pp<wbr></wbr>_stack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#previous_stack_top" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.previous_stack_top">previous<wbr></wbr>_stack<wbr></wbr>_top</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stack" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.stack">stack</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.roslint.cpplint.html" class="internal-link" title="The parent of this class">cpplint</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.CleansedLines.html" class="internal-link" title="niryo_libraries.roslint.cpplint.CleansedLines"><wbr></wbr>Cleansed<wbr></wbr>Lines</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.FileInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint.FileInfo"><wbr></wbr>File<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.NestingState.html" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState"><wbr></wbr>Nesting<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._BlockInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint._BlockInfo">_<wbr></wbr>Block<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._ClassInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint._ClassInfo">_<wbr></wbr>Class<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._CppLintState.html" class="internal-link" title="niryo_libraries.roslint.cpplint._CppLintState">_<wbr></wbr>Cpp<wbr></wbr>Lint<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._ExternCInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint._ExternCInfo">_<wbr></wbr>Extern<wbr></wbr>CInfo</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._FunctionState.html" class="internal-link" title="niryo_libraries.roslint.cpplint._FunctionState">_<wbr></wbr>Function<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._IncludeState.html" class="internal-link" title="niryo_libraries.roslint.cpplint._IncludeState">_<wbr></wbr>Include<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._NamespaceInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint._NamespaceInfo">_<wbr></wbr>Namespace<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._PreprocessorInfo.html" class="internal-link" title="niryo_libraries.roslint.cpplint._PreprocessorInfo">_<wbr></wbr>Preprocessor<wbr></wbr>Info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint._IncludeError.html" class="internal-link" title="niryo_libraries.roslint.cpplint._IncludeError">_<wbr></wbr>Include<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckAltTokens" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckAltTokens"><wbr></wbr>Check<wbr></wbr>Alt<wbr></wbr>Tokens</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckBraces" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckBraces"><wbr></wbr>Check<wbr></wbr>Braces</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckBracesSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckBracesSpacing"><wbr></wbr>Check<wbr></wbr>Braces<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckCasts" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckCasts"><wbr></wbr>Check<wbr></wbr>Casts</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckCheck" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckCheck"><wbr></wbr>Check<wbr></wbr>Check</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckCommaSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckCommaSpacing"><wbr></wbr>Check<wbr></wbr>Comma<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckComment" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckComment"><wbr></wbr>Check<wbr></wbr>Comment</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckCStyleCast" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckCStyleCast"><wbr></wbr>Check<wbr></wbr>CStyle<wbr></wbr>Cast</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckEmptyBlockBody" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckEmptyBlockBody"><wbr></wbr>Check<wbr></wbr>Empty<wbr></wbr>Block<wbr></wbr>Body</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForBadCharacters" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForBadCharacters"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Bad<wbr></wbr>Characters</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForCopyright" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForCopyright"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Copyright</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForFunctionLengths" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForFunctionLengths"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Function<wbr></wbr>Lengths</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForHeaderGuard" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForHeaderGuard"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Header<wbr></wbr>Guard</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForIncludeWhatYouUse" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForIncludeWhatYouUse"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Include<wbr></wbr>What<wbr></wbr>You<wbr></wbr>Use</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForMultilineCommentsAndStrings" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForMultilineCommentsAndStrings"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Multiline<wbr></wbr>Comments<wbr></wbr>And<wbr></wbr>Strings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForNamespaceIndentation" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForNamespaceIndentation"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Namespace<wbr></wbr>Indentation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForNewlineAtEOF" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForNewlineAtEOF"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Newline<wbr></wbr>At<wbr></wbr>EOF</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForNonConstReference" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForNonConstReference"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Non<wbr></wbr>Const<wbr></wbr>Reference</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckForNonStandardConstructs" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckForNonStandardConstructs"><wbr></wbr>Check<wbr></wbr>For<wbr></wbr>Non<wbr></wbr>Standard<wbr></wbr>Constructs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckGlobalStatic" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckGlobalStatic"><wbr></wbr>Check<wbr></wbr>Global<wbr></wbr>Static</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckHeaderFileIncluded" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckHeaderFileIncluded"><wbr></wbr>Check<wbr></wbr>Header<wbr></wbr>File<wbr></wbr>Included</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckIncludeLine" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckIncludeLine"><wbr></wbr>Check<wbr></wbr>Include<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckInvalidIncrement" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckInvalidIncrement"><wbr></wbr>Check<wbr></wbr>Invalid<wbr></wbr>Increment</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckItemIndentationInNamespace" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckItemIndentationInNamespace"><wbr></wbr>Check<wbr></wbr>Item<wbr></wbr>Indentation<wbr></wbr>In<wbr></wbr>Namespace</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckLanguage" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckLanguage"><wbr></wbr>Check<wbr></wbr>Language</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckMakePairUsesDeduction" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckMakePairUsesDeduction"><wbr></wbr>Check<wbr></wbr>Make<wbr></wbr>Pair<wbr></wbr>Uses<wbr></wbr>Deduction</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckOperatorSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckOperatorSpacing"><wbr></wbr>Check<wbr></wbr>Operator<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckParenthesisSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckParenthesisSpacing"><wbr></wbr>Check<wbr></wbr>Parenthesis<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckPosixThreading" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckPosixThreading"><wbr></wbr>Check<wbr></wbr>Posix<wbr></wbr>Threading</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckPrintf" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckPrintf"><wbr></wbr>Check<wbr></wbr>Printf</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckRedundantOverrideOrFinal" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckRedundantOverrideOrFinal"><wbr></wbr>Check<wbr></wbr>Redundant<wbr></wbr>Override<wbr></wbr>Or<wbr></wbr>Final</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckRedundantVirtual" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckRedundantVirtual"><wbr></wbr>Check<wbr></wbr>Redundant<wbr></wbr>Virtual</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckSectionSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckSectionSpacing"><wbr></wbr>Check<wbr></wbr>Section<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckSpacing" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckSpacing"><wbr></wbr>Check<wbr></wbr>Spacing</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckSpacingForFunctionCall" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckSpacingForFunctionCall"><wbr></wbr>Check<wbr></wbr>Spacing<wbr></wbr>For<wbr></wbr>Function<wbr></wbr>Call</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckStyle" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckStyle"><wbr></wbr>Check<wbr></wbr>Style</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckTrailingSemicolon" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckTrailingSemicolon"><wbr></wbr>Check<wbr></wbr>Trailing<wbr></wbr>Semicolon</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CheckVlogArguments" class="internal-link" title="niryo_libraries.roslint.cpplint.CheckVlogArguments"><wbr></wbr>Check<wbr></wbr>Vlog<wbr></wbr>Arguments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CleanseComments" class="internal-link" title="niryo_libraries.roslint.cpplint.CleanseComments"><wbr></wbr>Cleanse<wbr></wbr>Comments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CleanseRawStrings" class="internal-link" title="niryo_libraries.roslint.cpplint.CleanseRawStrings"><wbr></wbr>Cleanse<wbr></wbr>Raw<wbr></wbr>Strings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#CloseExpression" class="internal-link" title="niryo_libraries.roslint.cpplint.CloseExpression"><wbr></wbr>Close<wbr></wbr>Expression</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#Error" class="internal-link" title="niryo_libraries.roslint.cpplint.Error"><wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ExpectingFunctionArgs" class="internal-link" title="niryo_libraries.roslint.cpplint.ExpectingFunctionArgs"><wbr></wbr>Expecting<wbr></wbr>Function<wbr></wbr>Args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FilesBelongToSameModule" class="internal-link" title="niryo_libraries.roslint.cpplint.FilesBelongToSameModule"><wbr></wbr>Files<wbr></wbr>Belong<wbr></wbr>To<wbr></wbr>Same<wbr></wbr>Module</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FindCheckMacro" class="internal-link" title="niryo_libraries.roslint.cpplint.FindCheckMacro"><wbr></wbr>Find<wbr></wbr>Check<wbr></wbr>Macro</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FindEndOfExpressionInLine" class="internal-link" title="niryo_libraries.roslint.cpplint.FindEndOfExpressionInLine"><wbr></wbr>Find<wbr></wbr>End<wbr></wbr>Of<wbr></wbr>Expression<wbr></wbr>In<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FindNextMultiLineCommentEnd" class="internal-link" title="niryo_libraries.roslint.cpplint.FindNextMultiLineCommentEnd"><wbr></wbr>Find<wbr></wbr>Next<wbr></wbr>Multi<wbr></wbr>Line<wbr></wbr>Comment<wbr></wbr>End</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FindNextMultiLineCommentStart" class="internal-link" title="niryo_libraries.roslint.cpplint.FindNextMultiLineCommentStart"><wbr></wbr>Find<wbr></wbr>Next<wbr></wbr>Multi<wbr></wbr>Line<wbr></wbr>Comment<wbr></wbr>Start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FindStartOfExpressionInLine" class="internal-link" title="niryo_libraries.roslint.cpplint.FindStartOfExpressionInLine"><wbr></wbr>Find<wbr></wbr>Start<wbr></wbr>Of<wbr></wbr>Expression<wbr></wbr>In<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FlagCxx11Features" class="internal-link" title="niryo_libraries.roslint.cpplint.FlagCxx11Features"><wbr></wbr>Flag<wbr></wbr>Cxx11<wbr></wbr>Features</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#FlagCxx14Features" class="internal-link" title="niryo_libraries.roslint.cpplint.FlagCxx14Features"><wbr></wbr>Flag<wbr></wbr>Cxx14<wbr></wbr>Features</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#GetHeaderGuardCPPVariable" class="internal-link" title="niryo_libraries.roslint.cpplint.GetHeaderGuardCPPVariable"><wbr></wbr>Get<wbr></wbr>Header<wbr></wbr>Guard<wbr></wbr>CPPVariable</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#GetIndentLevel" class="internal-link" title="niryo_libraries.roslint.cpplint.GetIndentLevel"><wbr></wbr>Get<wbr></wbr>Indent<wbr></wbr>Level</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#GetLineWidth" class="internal-link" title="niryo_libraries.roslint.cpplint.GetLineWidth"><wbr></wbr>Get<wbr></wbr>Line<wbr></wbr>Width</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#GetPreviousNonBlankLine" class="internal-link" title="niryo_libraries.roslint.cpplint.GetPreviousNonBlankLine"><wbr></wbr>Get<wbr></wbr>Previous<wbr></wbr>Non<wbr></wbr>Blank<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsBlankLine" class="internal-link" title="niryo_libraries.roslint.cpplint.IsBlankLine"><wbr></wbr>Is<wbr></wbr>Blank<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsBlockInNameSpace" class="internal-link" title="niryo_libraries.roslint.cpplint.IsBlockInNameSpace"><wbr></wbr>Is<wbr></wbr>Block<wbr></wbr>In<wbr></wbr>Name<wbr></wbr>Space</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsCppString" class="internal-link" title="niryo_libraries.roslint.cpplint.IsCppString"><wbr></wbr>Is<wbr></wbr>Cpp<wbr></wbr>String</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsDecltype" class="internal-link" title="niryo_libraries.roslint.cpplint.IsDecltype"><wbr></wbr>Is<wbr></wbr>Decltype</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsDerivedFunction" class="internal-link" title="niryo_libraries.roslint.cpplint.IsDerivedFunction"><wbr></wbr>Is<wbr></wbr>Derived<wbr></wbr>Function</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsErrorSuppressedByNolint" class="internal-link" title="niryo_libraries.roslint.cpplint.IsErrorSuppressedByNolint"><wbr></wbr>Is<wbr></wbr>Error<wbr></wbr>Suppressed<wbr></wbr>By<wbr></wbr>Nolint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsForwardClassDeclaration" class="internal-link" title="niryo_libraries.roslint.cpplint.IsForwardClassDeclaration"><wbr></wbr>Is<wbr></wbr>Forward<wbr></wbr>Class<wbr></wbr>Declaration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsHeaderExtension" class="internal-link" title="niryo_libraries.roslint.cpplint.IsHeaderExtension"><wbr></wbr>Is<wbr></wbr>Header<wbr></wbr>Extension</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsInitializerList" class="internal-link" title="niryo_libraries.roslint.cpplint.IsInitializerList"><wbr></wbr>Is<wbr></wbr>Initializer<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsMacroDefinition" class="internal-link" title="niryo_libraries.roslint.cpplint.IsMacroDefinition"><wbr></wbr>Is<wbr></wbr>Macro<wbr></wbr>Definition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#IsOutOfLineMethodDefinition" class="internal-link" title="niryo_libraries.roslint.cpplint.IsOutOfLineMethodDefinition"><wbr></wbr>Is<wbr></wbr>Out<wbr></wbr>Of<wbr></wbr>Line<wbr></wbr>Method<wbr></wbr>Definition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#main" class="internal-link" title="niryo_libraries.roslint.cpplint.main">main</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#Match" class="internal-link" title="niryo_libraries.roslint.cpplint.Match"><wbr></wbr>Match</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ParseArguments" class="internal-link" title="niryo_libraries.roslint.cpplint.ParseArguments"><wbr></wbr>Parse<wbr></wbr>Arguments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ParseNolintSuppressions" class="internal-link" title="niryo_libraries.roslint.cpplint.ParseNolintSuppressions"><wbr></wbr>Parse<wbr></wbr>Nolint<wbr></wbr>Suppressions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#PathSplitToList" class="internal-link" title="niryo_libraries.roslint.cpplint.PathSplitToList"><wbr></wbr>Path<wbr></wbr>Split<wbr></wbr>To<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#PrintCategories" class="internal-link" title="niryo_libraries.roslint.cpplint.PrintCategories"><wbr></wbr>Print<wbr></wbr>Categories</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#PrintUsage" class="internal-link" title="niryo_libraries.roslint.cpplint.PrintUsage"><wbr></wbr>Print<wbr></wbr>Usage</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessConfigOverrides" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessConfigOverrides"><wbr></wbr>Process<wbr></wbr>Config<wbr></wbr>Overrides</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessFile" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessFile"><wbr></wbr>Process<wbr></wbr>File</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessFileData" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessFileData"><wbr></wbr>Process<wbr></wbr>File<wbr></wbr>Data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessGlobalSuppresions" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessGlobalSuppresions"><wbr></wbr>Process<wbr></wbr>Global<wbr></wbr>Suppresions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessHppHeadersOption" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessHppHeadersOption"><wbr></wbr>Process<wbr></wbr>Hpp<wbr></wbr>Headers<wbr></wbr>Option</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ProcessLine" class="internal-link" title="niryo_libraries.roslint.cpplint.ProcessLine"><wbr></wbr>Process<wbr></wbr>Line</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#RemoveMultiLineComments" class="internal-link" title="niryo_libraries.roslint.cpplint.RemoveMultiLineComments"><wbr></wbr>Remove<wbr></wbr>Multi<wbr></wbr>Line<wbr></wbr>Comments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#RemoveMultiLineCommentsFromRange" class="internal-link" title="niryo_libraries.roslint.cpplint.RemoveMultiLineCommentsFromRange"><wbr></wbr>Remove<wbr></wbr>Multi<wbr></wbr>Line<wbr></wbr>Comments<wbr></wbr>From<wbr></wbr>Range</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ReplaceAll" class="internal-link" title="niryo_libraries.roslint.cpplint.ReplaceAll"><wbr></wbr>Replace<wbr></wbr>All</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ResetNolintSuppressions" class="internal-link" title="niryo_libraries.roslint.cpplint.ResetNolintSuppressions"><wbr></wbr>Reset<wbr></wbr>Nolint<wbr></wbr>Suppressions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ReverseCloseExpression" class="internal-link" title="niryo_libraries.roslint.cpplint.ReverseCloseExpression"><wbr></wbr>Reverse<wbr></wbr>Close<wbr></wbr>Expression</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#Search" class="internal-link" title="niryo_libraries.roslint.cpplint.Search"><wbr></wbr>Search</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#ShouldCheckNamespaceIndentation" class="internal-link" title="niryo_libraries.roslint.cpplint.ShouldCheckNamespaceIndentation"><wbr></wbr>Should<wbr></wbr>Check<wbr></wbr>Namespace<wbr></wbr>Indentation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#UpdateIncludeState" class="internal-link" title="niryo_libraries.roslint.cpplint.UpdateIncludeState"><wbr></wbr>Update<wbr></wbr>Include<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_AddFilters" class="internal-link" title="niryo_libraries.roslint.cpplint._AddFilters">_<wbr></wbr>Add<wbr></wbr>Filters</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_BackupFilters" class="internal-link" title="niryo_libraries.roslint.cpplint._BackupFilters">_<wbr></wbr>Backup<wbr></wbr>Filters</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_ClassifyInclude" class="internal-link" title="niryo_libraries.roslint.cpplint._ClassifyInclude">_<wbr></wbr>Classify<wbr></wbr>Include</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_DropCommonSuffixes" class="internal-link" title="niryo_libraries.roslint.cpplint._DropCommonSuffixes">_<wbr></wbr>Drop<wbr></wbr>Common<wbr></wbr>Suffixes</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_Filters" class="internal-link" title="niryo_libraries.roslint.cpplint._Filters">_<wbr></wbr>Filters</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_GetTextInside" class="internal-link" title="niryo_libraries.roslint.cpplint._GetTextInside">_<wbr></wbr>Get<wbr></wbr>Text<wbr></wbr>Inside</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_IsSourceExtension" class="internal-link" title="niryo_libraries.roslint.cpplint._IsSourceExtension">_<wbr></wbr>Is<wbr></wbr>Source<wbr></wbr>Extension</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_IsType" class="internal-link" title="niryo_libraries.roslint.cpplint._IsType">_<wbr></wbr>Is<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_OutputFormat" class="internal-link" title="niryo_libraries.roslint.cpplint._OutputFormat">_<wbr></wbr>Output<wbr></wbr>Format</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_Quiet" class="internal-link" title="niryo_libraries.roslint.cpplint._Quiet">_<wbr></wbr>Quiet</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RestoreFilters" class="internal-link" title="niryo_libraries.roslint.cpplint._RestoreFilters">_<wbr></wbr>Restore<wbr></wbr>Filters</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SetCountingStyle" class="internal-link" title="niryo_libraries.roslint.cpplint._SetCountingStyle">_<wbr></wbr>Set<wbr></wbr>Counting<wbr></wbr>Style</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SetFilters" class="internal-link" title="niryo_libraries.roslint.cpplint._SetFilters">_<wbr></wbr>Set<wbr></wbr>Filters</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SetOutputFormat" class="internal-link" title="niryo_libraries.roslint.cpplint._SetOutputFormat">_<wbr></wbr>Set<wbr></wbr>Output<wbr></wbr>Format</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SetQuiet" class="internal-link" title="niryo_libraries.roslint.cpplint._SetQuiet">_<wbr></wbr>Set<wbr></wbr>Quiet</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SetVerboseLevel" class="internal-link" title="niryo_libraries.roslint.cpplint._SetVerboseLevel">_<wbr></wbr>Set<wbr></wbr>Verbose<wbr></wbr>Level</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_ShouldPrintError" class="internal-link" title="niryo_libraries.roslint.cpplint._ShouldPrintError">_<wbr></wbr>Should<wbr></wbr>Print<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_VerboseLevel" class="internal-link" title="niryo_libraries.roslint.cpplint._VerboseLevel">_<wbr></wbr>Verbose<wbr></wbr>Level</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_ALT_TOKEN_REPLACEMENT" class="internal-link" title="niryo_libraries.roslint.cpplint._ALT_TOKEN_REPLACEMENT">_ALT<wbr></wbr>_TOKEN<wbr></wbr>_REPLACEMENT</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_ALT_TOKEN_REPLACEMENT_PATTERN" class="internal-link" title="niryo_libraries.roslint.cpplint._ALT_TOKEN_REPLACEMENT_PATTERN">_ALT<wbr></wbr>_TOKEN<wbr></wbr>_REPLACEMENT<wbr></wbr>_PATTERN</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_BLOCK_ASM" class="internal-link" title="niryo_libraries.roslint.cpplint._BLOCK_ASM">_BLOCK<wbr></wbr>_ASM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_C_SYS_HEADER" class="internal-link" title="niryo_libraries.roslint.cpplint._C_SYS_HEADER">_C<wbr></wbr>_SYS<wbr></wbr>_HEADER</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_CHECK_MACROS" class="internal-link" title="niryo_libraries.roslint.cpplint._CHECK_MACROS">_CHECK<wbr></wbr>_MACROS</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_CHECK_REPLACEMENT" class="internal-link" title="niryo_libraries.roslint.cpplint._CHECK_REPLACEMENT">_CHECK<wbr></wbr>_REPLACEMENT</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_CPP_HEADERS" class="internal-link" title="niryo_libraries.roslint.cpplint._CPP_HEADERS">_CPP<wbr></wbr>_HEADERS</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_CPP_SYS_HEADER" class="internal-link" title="niryo_libraries.roslint.cpplint._CPP_SYS_HEADER">_CPP<wbr></wbr>_SYS<wbr></wbr>_HEADER</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_DEFAULT_C_SUPPRESSED_CATEGORIES" class="internal-link" title="niryo_libraries.roslint.cpplint._DEFAULT_C_SUPPRESSED_CATEGORIES">_DEFAULT<wbr></wbr>_C<wbr></wbr>_SUPPRESSED<wbr></wbr>_CATEGORIES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_DEFAULT_FILTERS" class="internal-link" title="niryo_libraries.roslint.cpplint._DEFAULT_FILTERS">_DEFAULT<wbr></wbr>_FILTERS</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_DEFAULT_KERNEL_SUPPRESSED_CATEGORIES" class="internal-link" title="niryo_libraries.roslint.cpplint._DEFAULT_KERNEL_SUPPRESSED_CATEGORIES">_DEFAULT<wbr></wbr>_KERNEL<wbr></wbr>_SUPPRESSED<wbr></wbr>_CATEGORIES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_EMPTY_CONDITIONAL_BODY_PATTERN" class="internal-link" title="niryo_libraries.roslint.cpplint._EMPTY_CONDITIONAL_BODY_PATTERN">_EMPTY<wbr></wbr>_CONDITIONAL<wbr></wbr>_BODY<wbr></wbr>_PATTERN</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_END_ASM" class="internal-link" title="niryo_libraries.roslint.cpplint._END_ASM">_END<wbr></wbr>_ASM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_ERROR_CATEGORIES" class="internal-link" title="niryo_libraries.roslint.cpplint._ERROR_CATEGORIES">_ERROR<wbr></wbr>_CATEGORIES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_HEADERS_CONTAINING_TEMPLATES" class="internal-link" title="niryo_libraries.roslint.cpplint._HEADERS_CONTAINING_TEMPLATES">_HEADERS<wbr></wbr>_CONTAINING<wbr></wbr>_TEMPLATES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_HEADERS_MAYBE_TEMPLATES" class="internal-link" title="niryo_libraries.roslint.cpplint._HEADERS_MAYBE_TEMPLATES">_HEADERS<wbr></wbr>_MAYBE<wbr></wbr>_TEMPLATES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_INSIDE_ASM" class="internal-link" title="niryo_libraries.roslint.cpplint._INSIDE_ASM">_INSIDE<wbr></wbr>_ASM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_LEGACY_ERROR_CATEGORIES" class="internal-link" title="niryo_libraries.roslint.cpplint._LEGACY_ERROR_CATEGORIES">_LEGACY<wbr></wbr>_ERROR<wbr></wbr>_CATEGORIES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_LIKELY_MY_HEADER" class="internal-link" title="niryo_libraries.roslint.cpplint._LIKELY_MY_HEADER">_LIKELY<wbr></wbr>_MY<wbr></wbr>_HEADER</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_MATCH_ASM" class="internal-link" title="niryo_libraries.roslint.cpplint._MATCH_ASM">_MATCH<wbr></wbr>_ASM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_NO_ASM" class="internal-link" title="niryo_libraries.roslint.cpplint._NO_ASM">_NO<wbr></wbr>_ASM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_OTHER_HEADER" class="internal-link" title="niryo_libraries.roslint.cpplint._OTHER_HEADER">_OTHER<wbr></wbr>_HEADER</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_POSSIBLE_MY_HEADER" class="internal-link" title="niryo_libraries.roslint.cpplint._POSSIBLE_MY_HEADER">_POSSIBLE<wbr></wbr>_MY<wbr></wbr>_HEADER</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_FIRST_COMPONENT" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_FIRST_COMPONENT">_RE<wbr></wbr>_FIRST<wbr></wbr>_COMPONENT</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_C_COMMENTS" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_C_COMMENTS">_RE<wbr></wbr>_PATTERN<wbr></wbr>_C<wbr></wbr>_COMMENTS</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_CLEANSE_LINE_C_COMMENTS" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_CLEANSE_LINE_C_COMMENTS">_RE<wbr></wbr>_PATTERN<wbr></wbr>_CLEANSE<wbr></wbr>_LINE<wbr></wbr>_C<wbr></wbr>_COMMENTS</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_CLEANSE_LINE_ESCAPES" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_CLEANSE_LINE_ESCAPES">_RE<wbr></wbr>_PATTERN<wbr></wbr>_CLEANSE<wbr></wbr>_LINE<wbr></wbr>_ESCAPES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_CONST_REF_PARAM" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_CONST_REF_PARAM">_RE<wbr></wbr>_PATTERN<wbr></wbr>_CONST<wbr></wbr>_REF<wbr></wbr>_PARAM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_EXPLICIT_MAKEPAIR" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_EXPLICIT_MAKEPAIR">_RE<wbr></wbr>_PATTERN<wbr></wbr>_EXPLICIT<wbr></wbr>_MAKEPAIR</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_IDENT" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_IDENT">_RE<wbr></wbr>_PATTERN<wbr></wbr>_IDENT</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_INCLUDE" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_INCLUDE">_RE<wbr></wbr>_PATTERN<wbr></wbr>_INCLUDE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_INVALID_INCREMENT" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_INVALID_INCREMENT">_RE<wbr></wbr>_PATTERN<wbr></wbr>_INVALID<wbr></wbr>_INCREMENT</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_REF_PARAM" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_REF_PARAM">_RE<wbr></wbr>_PATTERN<wbr></wbr>_REF<wbr></wbr>_PARAM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_REF_STREAM_PARAM" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_REF_STREAM_PARAM">_RE<wbr></wbr>_PATTERN<wbr></wbr>_REF<wbr></wbr>_STREAM<wbr></wbr>_PARAM</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_STRING" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_STRING">_RE<wbr></wbr>_PATTERN<wbr></wbr>_STRING</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_TODO" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_TODO">_RE<wbr></wbr>_PATTERN<wbr></wbr>_TODO</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_RE_PATTERN_TYPE" class="internal-link" title="niryo_libraries.roslint.cpplint._RE_PATTERN_TYPE">_RE<wbr></wbr>_PATTERN<wbr></wbr>_TYPE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SEARCH_C_FILE" class="internal-link" title="niryo_libraries.roslint.cpplint._SEARCH_C_FILE">_SEARCH<wbr></wbr>_C<wbr></wbr>_FILE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_SEARCH_KERNEL_FILE" class="internal-link" title="niryo_libraries.roslint.cpplint._SEARCH_KERNEL_FILE">_SEARCH<wbr></wbr>_KERNEL<wbr></wbr>_FILE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_TEST_FILE_SUFFIX" class="internal-link" title="niryo_libraries.roslint.cpplint._TEST_FILE_SUFFIX">_TEST<wbr></wbr>_FILE<wbr></wbr>_SUFFIX</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_THIRD_PARTY_HEADERS_PATTERN" class="internal-link" title="niryo_libraries.roslint.cpplint._THIRD_PARTY_HEADERS_PATTERN">_THIRD<wbr></wbr>_PARTY<wbr></wbr>_HEADERS<wbr></wbr>_PATTERN</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_THREADING_LIST" class="internal-link" title="niryo_libraries.roslint.cpplint._THREADING_LIST">_THREADING<wbr></wbr>_LIST</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_TYPES" class="internal-link" title="niryo_libraries.roslint.cpplint._TYPES">_TYPES</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_UNSAFE_FUNC_PREFIX" class="internal-link" title="niryo_libraries.roslint.cpplint._UNSAFE_FUNC_PREFIX">_UNSAFE<wbr></wbr>_FUNC<wbr></wbr>_PREFIX</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_USAGE" class="internal-link" title="niryo_libraries.roslint.cpplint._USAGE">_USAGE</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_cpplint_state" class="internal-link" title="niryo_libraries.roslint.cpplint._cpplint_state">_cpplint<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_error_suppressions" class="internal-link" title="niryo_libraries.roslint.cpplint._error_suppressions">_error<wbr></wbr>_suppressions</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_global_error_suppressions" class="internal-link" title="niryo_libraries.roslint.cpplint._global_error_suppressions">_global<wbr></wbr>_error<wbr></wbr>_suppressions</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_hpp_headers" class="internal-link" title="niryo_libraries.roslint.cpplint._hpp_headers">_hpp<wbr></wbr>_headers</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_line_length" class="internal-link" title="niryo_libraries.roslint.cpplint._line_length">_line<wbr></wbr>_length</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_re_pattern_headers_maybe_templates" class="internal-link" title="niryo_libraries.roslint.cpplint._re_pattern_headers_maybe_templates">_re<wbr></wbr>_pattern<wbr></wbr>_headers<wbr></wbr>_maybe<wbr></wbr>_templates</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_re_pattern_templates" class="internal-link" title="niryo_libraries.roslint.cpplint._re_pattern_templates">_re<wbr></wbr>_pattern<wbr></wbr>_templates</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_regexp_compile_cache" class="internal-link" title="niryo_libraries.roslint.cpplint._regexp_compile_cache">_regexp<wbr></wbr>_compile<wbr></wbr>_cache</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_root" class="internal-link" title="niryo_libraries.roslint.cpplint._root">_root</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_root_debug" class="internal-link" title="niryo_libraries.roslint.cpplint._root_debug">_root<wbr></wbr>_debug</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.cpplint.html#_valid_extensions" class="internal-link" title="niryo_libraries.roslint.cpplint._valid_extensions">_valid<wbr></wbr>_extensions</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslint.html" class="internal-link" title="niryo_libraries.roslint">roslint</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslint.cpplint.html" class="internal-link" title="niryo_libraries.roslint.cpplint">cpplint</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslint.cpplint.NestingState.html" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState">NestingState</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">NestingState</span>(object):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.roslint.cpplint.NestingState">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Holds states related to parsing braces.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2409">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#CheckCompletedBlocks" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.CheckCompletedBlocks"><wbr></wbr>Check<wbr></wbr>Completed<wbr></wbr>Blocks</a></code></td>
+    <td>Checks that all classes and namespaces have been completely parsed.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InAsmBlock" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InAsmBlock"><wbr></wbr>In<wbr></wbr>Asm<wbr></wbr>Block</a></code></td>
+    <td>Check if we are currently one level inside an inline ASM block.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InClassDeclaration" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InClassDeclaration"><wbr></wbr>In<wbr></wbr>Class<wbr></wbr>Declaration</a></code></td>
+    <td>Check if we are currently one level inside a class or struct declaration.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InExternC" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InExternC"><wbr></wbr>In<wbr></wbr>Extern<wbr></wbr>C</a></code></td>
+    <td>Check if we are currently one level inside an 'extern "C"' block.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InNamespaceBody" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InNamespaceBody"><wbr></wbr>In<wbr></wbr>Namespace<wbr></wbr>Body</a></code></td>
+    <td>Check if we are currently one level inside a namespace body.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InnermostClass" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InnermostClass"><wbr></wbr>Innermost<wbr></wbr>Class</a></code></td>
+    <td>Get class info on the top of the stack.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#InTemplateArgumentList" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.InTemplateArgumentList"><wbr></wbr>In<wbr></wbr>Template<wbr></wbr>Argument<wbr></wbr>List</a></code></td>
+    <td>Check if current position is inside template argument list.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#SeenOpenBrace" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.SeenOpenBrace"><wbr></wbr>Seen<wbr></wbr>Open<wbr></wbr>Brace</a></code></td>
+    <td>Check if we have seen the opening brace for the innermost block.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#Update" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.Update"><wbr></wbr>Update</a></code></td>
+    <td>Update nesting state with current line.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#UpdatePreprocessor" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.UpdatePreprocessor"><wbr></wbr>Update<wbr></wbr>Preprocessor</a></code></td>
+    <td>Update preprocessor stack.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pp_stack" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.pp_stack">pp<wbr></wbr>_stack</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#previous_stack_top" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.previous_stack_top">previous<wbr></wbr>_stack<wbr></wbr>_top</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#stack" class="internal-link" title="niryo_libraries.roslint.cpplint.NestingState.stack">stack</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.roslint.cpplint.NestingState.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.CheckCompletedBlocks">
+    
+  </a>
+  <a name="CheckCompletedBlocks">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">CheckCompletedBlocks</span><span class="function-signature">(self, filename, error)</span>:
+    
+    <a class="headerLink" href="#CheckCompletedBlocks" title="niryo_libraries.roslint.cpplint.NestingState.CheckCompletedBlocks">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Checks that all classes and namespaces have been completely parsed.</p>
+<p>Call this when all lines in a file have been processed.
+Args:</p>
+<blockquote>
+filename: The name of the current file.
+error: The function to call with any errors found.</blockquote>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InAsmBlock">
+    
+  </a>
+  <a name="InAsmBlock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InAsmBlock</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#InAsmBlock" title="niryo_libraries.roslint.cpplint.NestingState.InAsmBlock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if we are currently one level inside an inline ASM block.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>True if the top of the stack is a block containing inline ASM.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InClassDeclaration">
+    
+  </a>
+  <a name="InClassDeclaration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InClassDeclaration</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#InClassDeclaration" title="niryo_libraries.roslint.cpplint.NestingState.InClassDeclaration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if we are currently one level inside a class or struct declaration.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>True if top of the stack is a class/struct, False otherwise.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InExternC">
+    
+  </a>
+  <a name="InExternC">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InExternC</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#InExternC" title="niryo_libraries.roslint.cpplint.NestingState.InExternC">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if we are currently one level inside an 'extern "C"' block.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>True if top of the stack is an extern block, False otherwise.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InNamespaceBody">
+    
+  </a>
+  <a name="InNamespaceBody">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InNamespaceBody</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#InNamespaceBody" title="niryo_libraries.roslint.cpplint.NestingState.InNamespaceBody">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if we are currently one level inside a namespace body.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>True if top of the stack is a namespace block, False otherwise.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InnermostClass">
+    
+  </a>
+  <a name="InnermostClass">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InnermostClass</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#InnermostClass" title="niryo_libraries.roslint.cpplint.NestingState.InnermostClass">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get class info on the top of the stack.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>A _ClassInfo object if we are inside a class, or None otherwise.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.InTemplateArgumentList">
+    
+  </a>
+  <a name="InTemplateArgumentList">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">InTemplateArgumentList</span><span class="function-signature">(self, clean_lines, linenum, pos)</span>:
+    
+    <a class="headerLink" href="#InTemplateArgumentList" title="niryo_libraries.roslint.cpplint.NestingState.InTemplateArgumentList">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if current position is inside template argument list.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>clean_lines: A CleansedLines instance containing the file.
+linenum: The number of the line to check.
+pos: position just after the suspected template argument.</dd>
+<dt>Returns:</dt>
+<dd>True if (linenum, pos) is inside template arguments.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.SeenOpenBrace">
+    
+  </a>
+  <a name="SeenOpenBrace">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">SeenOpenBrace</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#SeenOpenBrace" title="niryo_libraries.roslint.cpplint.NestingState.SeenOpenBrace">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if we have seen the opening brace for the innermost block.</p>
+<dl class="rst-docutils">
+<dt>Returns:</dt>
+<dd>True if we have seen the opening brace, False if the innermost
+block is still expecting an opening brace.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.Update">
+    
+  </a>
+  <a name="Update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">Update</span><span class="function-signature">(self, filename, clean_lines, linenum, error)</span>:
+    
+    <a class="headerLink" href="#Update" title="niryo_libraries.roslint.cpplint.NestingState.Update">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update nesting state with current line.</p>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>filename: The name of the current file.
+clean_lines: A CleansedLines instance containing the file.
+linenum: The number of the line to check.
+error: The function to call with any errors found.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.UpdatePreprocessor">
+    
+  </a>
+  <a name="UpdatePreprocessor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">UpdatePreprocessor</span><span class="function-signature">(self, line)</span>:
+    
+    <a class="headerLink" href="#UpdatePreprocessor" title="niryo_libraries.roslint.cpplint.NestingState.UpdatePreprocessor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update preprocessor stack.</p>
+<dl class="rst-docutils">
+<dt>We need to handle preprocessors due to classes like this:</dt>
+<dd>#ifdef SWIG
+struct ResultDetailsPageElementExtensionPoint {
+#else
+struct ResultDetailsPageElementExtensionPoint : public Extension {
+#endif</dd>
+</dl>
+<p>We make the following assumptions (good enough for most files):
+- Preprocessor condition evaluates to true from #if up to first</p>
+<blockquote>
+#else/#elif/#endif.</blockquote>
+<ul class="rst-simple">
+<li>Preprocessor condition evaluates to false from #else/#elif up
+to #endif.  We still perform lint checks on these lines, but
+these do not affect nesting stack.</li>
+</ul>
+<dl class="rst-docutils">
+<dt>Args:</dt>
+<dd>line: current line to check.</dd>
+</dl>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.pp_stack">
+    
+  </a>
+  <a name="pp_stack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pp_stack</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#pp_stack" title="niryo_libraries.roslint.cpplint.NestingState.pp_stack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.previous_stack_top">
+    
+  </a>
+  <a name="previous_stack_top">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">previous_stack_top</span> =
+    
+    <a class="headerLink" href="#previous_stack_top" title="niryo_libraries.roslint.cpplint.NestingState.previous_stack_top">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslint.cpplint.NestingState.stack">
+    
+  </a>
+  <a name="stack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stack</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#stack" title="niryo_libraries.roslint.cpplint.NestingState.stack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosmaster.validators</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="niryo_libraries.rosmaster.validators.html" class="internal-link" title="This module">validators</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.validators.ParameterInvalid.html" class="internal-link" title="niryo_libraries.rosmaster.validators.ParameterInvalid"><wbr></wbr>Parameter<wbr></wbr>Invalid</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#empty_or_valid_name" class="internal-link" title="niryo_libraries.rosmaster.validators.empty_or_valid_name">empty<wbr></wbr>_or<wbr></wbr>_valid<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#global_name" class="internal-link" title="niryo_libraries.rosmaster.validators.global_name">global<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_api" class="internal-link" title="niryo_libraries.rosmaster.validators.is_api">is<wbr></wbr>_api</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_service" class="internal-link" title="niryo_libraries.rosmaster.validators.is_service">is<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_topic" class="internal-link" title="niryo_libraries.rosmaster.validators.is_topic">is<wbr></wbr>_topic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isstring" class="internal-link" title="niryo_libraries.rosmaster.validators.isstring">isstring</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#non_empty" class="internal-link" title="niryo_libraries.rosmaster.validators.non_empty">non<wbr></wbr>_empty</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#non_empty_str" class="internal-link" title="niryo_libraries.rosmaster.validators.non_empty_str">non<wbr></wbr>_empty<wbr></wbr>_str</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#not_none" class="internal-link" title="niryo_libraries.rosmaster.validators.not_none">not<wbr></wbr>_none</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#valid_name" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name">valid<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#valid_name_validator_resolved" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name_validator_resolved">valid<wbr></wbr>_name<wbr></wbr>_validator<wbr></wbr>_resolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#valid_name_validator_unresolved" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name_validator_unresolved">valid<wbr></wbr>_name<wbr></wbr>_validator<wbr></wbr>_unresolved</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#valid_type_name" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_type_name">valid<wbr></wbr>_type<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ROSRPC" class="internal-link" title="niryo_libraries.rosmaster.validators.ROSRPC">ROSRPC</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#TYPE_SEPARATOR" class="internal-link" title="niryo_libraries.rosmaster.validators.TYPE_SEPARATOR">TYPE<wbr></wbr>_SEPARATOR</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="niryo_libraries.rosmaster.html" class="internal-link" title="The parent of this module">rosmaster</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.exceptions.html" class="internal-link" title="niryo_libraries.rosmaster.exceptions">exceptions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.main.html" class="internal-link" title="niryo_libraries.rosmaster.main">main</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master.html" class="internal-link" title="niryo_libraries.rosmaster.master">master</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html" class="internal-link" title="niryo_libraries.rosmaster.master_api">master<wbr></wbr>_api</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.paramserver.html" class="internal-link" title="niryo_libraries.rosmaster.paramserver">paramserver</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.registrations.html" class="internal-link" title="niryo_libraries.rosmaster.registrations">registrations</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.threadpool.html" class="internal-link" title="niryo_libraries.rosmaster.threadpool">threadpool</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.util.html" class="internal-link" title="niryo_libraries.rosmaster.util">util</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.validators.html" class="internal-link" title="niryo_libraries.rosmaster.validators">validators</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmaster.html" class="internal-link" title="niryo_libraries.rosmaster">rosmaster</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmaster.validators.html" class="internal-link" title="niryo_libraries.rosmaster.validators">validators</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Internal-use Python decorators for parameter validation</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2454">
+  
+  
+  <tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="niryo_libraries.rosmaster.validators.ParameterInvalid.html" class="internal-link" title="niryo_libraries.rosmaster.validators.ParameterInvalid"><wbr></wbr>Parameter<wbr></wbr>Invalid</a></code></td>
+    <td>Exception that is raised when a parameter fails validation checks</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#empty_or_valid_name" class="internal-link" title="niryo_libraries.rosmaster.validators.empty_or_valid_name">empty<wbr></wbr>_or<wbr></wbr>_valid<wbr></wbr>_name</a></code></td>
+    <td>empty or valid graph resource name. Validator that resolves names unless they an empty string is supplied, in which case an empty string is returned.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#global_name" class="internal-link" title="niryo_libraries.rosmaster.validators.global_name">global<wbr></wbr>_name</a></code></td>
+    <td>Validator that checks for valid, global graph resource name. @return: parameter value @rtype: str</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#is_api" class="internal-link" title="niryo_libraries.rosmaster.validators.is_api">is<wbr></wbr>_api</a></code></td>
+    <td>Validator that checks that parameter is a valid API handle (i.e. URI). Both http and rosrpc are allowed schemes.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#is_service" class="internal-link" title="niryo_libraries.rosmaster.validators.is_service">is<wbr></wbr>_service</a></code></td>
+    <td>Validator that checks that parameter is a valid ROS service name</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#is_topic" class="internal-link" title="niryo_libraries.rosmaster.validators.is_topic">is<wbr></wbr>_topic</a></code></td>
+    <td>Validator that checks that parameter is a valid ROS topic name</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#isstring" class="internal-link" title="niryo_libraries.rosmaster.validators.isstring">isstring</a></code></td>
+    <td>Small helper version to check an object is a string in a way that works for both Python 2 and 3</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#non_empty" class="internal-link" title="niryo_libraries.rosmaster.validators.non_empty">non<wbr></wbr>_empty</a></code></td>
+    <td>Validator that checks that parameter is not empty</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#non_empty_str" class="internal-link" title="niryo_libraries.rosmaster.validators.non_empty_str">non<wbr></wbr>_empty<wbr></wbr>_str</a></code></td>
+    <td>Validator that checks that parameter is a string and non-empty</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#not_none" class="internal-link" title="niryo_libraries.rosmaster.validators.not_none">not<wbr></wbr>_none</a></code></td>
+    <td>Validator that checks that parameter is not None</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#valid_name" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name">valid<wbr></wbr>_name</a></code></td>
+    <td>Validator that resolves names and also ensures that they are not empty @param param_name: name @type  param_name: str @param resolve: if True/omitted, the name will be resolved to</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#valid_name_validator_resolved" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name_validator_resolved">valid<wbr></wbr>_name<wbr></wbr>_validator<wbr></wbr>_resolved</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#valid_name_validator_unresolved" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_name_validator_unresolved">valid<wbr></wbr>_name<wbr></wbr>_validator<wbr></wbr>_unresolved</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#valid_type_name" class="internal-link" title="niryo_libraries.rosmaster.validators.valid_type_name">valid<wbr></wbr>_type<wbr></wbr>_name</a></code></td>
+    <td>validator that checks the type name is specified correctly</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#ROSRPC" class="internal-link" title="niryo_libraries.rosmaster.validators.ROSRPC">ROSRPC</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#TYPE_SEPARATOR" class="internal-link" title="niryo_libraries.rosmaster.validators.TYPE_SEPARATOR">TYPE<wbr></wbr>_SEPARATOR</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.empty_or_valid_name">
+    
+  </a>
+  <a name="empty_or_valid_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">empty_or_valid_name</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#empty_or_valid_name" title="niryo_libraries.rosmaster.validators.empty_or_valid_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>empty or valid graph resource name.
+Validator that resolves names unless they an empty string is supplied, in which case
+an empty string is returned.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.global_name">
+    
+  </a>
+  <a name="global_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">global_name</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#global_name" title="niryo_libraries.rosmaster.validators.global_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks for valid, global graph resource name.
+@return: parameter value
+@rtype: str</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.is_api">
+    
+  </a>
+  <a name="is_api">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_api</span><span class="function-signature">(paramName)</span>:
+    
+    <a class="headerLink" href="#is_api" title="niryo_libraries.rosmaster.validators.is_api">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is a valid API handle
+(i.e. URI). Both http and rosrpc are allowed schemes.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.is_service">
+    
+  </a>
+  <a name="is_service">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_service</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#is_service" title="niryo_libraries.rosmaster.validators.is_service">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is a valid ROS service name</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.is_topic">
+    
+  </a>
+  <a name="is_topic">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_topic</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#is_topic" title="niryo_libraries.rosmaster.validators.is_topic">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is a valid ROS topic name</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.isstring">
+    
+  </a>
+  <a name="isstring">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isstring</span><span class="function-signature">(s)</span>:
+    
+    <a class="headerLink" href="#isstring" title="niryo_libraries.rosmaster.validators.isstring">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Small helper version to check an object is a string in a way that works
+for both Python 2 and 3</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.non_empty">
+    
+  </a>
+  <a name="non_empty">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">non_empty</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#non_empty" title="niryo_libraries.rosmaster.validators.non_empty">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is not empty</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.non_empty_str">
+    
+  </a>
+  <a name="non_empty_str">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">non_empty_str</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#non_empty_str" title="niryo_libraries.rosmaster.validators.non_empty_str">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is a string and non-empty</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.not_none">
+    
+  </a>
+  <a name="not_none">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">not_none</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#not_none" title="niryo_libraries.rosmaster.validators.not_none">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that checks that parameter is not None</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.valid_name">
+    
+  </a>
+  <a name="valid_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">valid_name</span><span class="function-signature">(param_name, resolve=True)</span>:
+    
+    <a class="headerLink" href="#valid_name" title="niryo_libraries.rosmaster.validators.valid_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Validator that resolves names and also ensures that they are not empty
+@param param_name: name
+@type  param_name: str
+@param resolve: if True/omitted, the name will be resolved to</p>
+<blockquote>
+a global form. Otherwise, no resolution occurs.</blockquote>
+<p>@type  resolve: bool
+@return: resolved parameter value
+@rtype: str</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.valid_name_validator_resolved">
+    
+  </a>
+  <a name="valid_name_validator_resolved">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">valid_name_validator_resolved</span><span class="function-signature">(param_name, param_value, caller_id)</span>:
+    
+    <a class="headerLink" href="#valid_name_validator_resolved" title="niryo_libraries.rosmaster.validators.valid_name_validator_resolved">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.valid_name_validator_unresolved">
+    
+  </a>
+  <a name="valid_name_validator_unresolved">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">valid_name_validator_unresolved</span><span class="function-signature">(param_name, param_value, caller_id)</span>:
+    
+    <a class="headerLink" href="#valid_name_validator_unresolved" title="niryo_libraries.rosmaster.validators.valid_name_validator_unresolved">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.valid_type_name">
+    
+  </a>
+  <a name="valid_type_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">valid_type_name</span><span class="function-signature">(param_name)</span>:
+    
+    <a class="headerLink" href="#valid_type_name" title="niryo_libraries.rosmaster.validators.valid_type_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>validator that checks the type name is specified correctly</p></div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.ROSRPC">
+    
+  </a>
+  <a name="ROSRPC">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ROSRPC</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#ROSRPC" title="niryo_libraries.rosmaster.validators.ROSRPC">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">rosrpc://</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="niryo_libraries.rosmaster.validators.TYPE_SEPARATOR">
+    
+  </a>
+  <a name="TYPE_SEPARATOR">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">TYPE_SEPARATOR</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#TYPE_SEPARATOR" title="niryo_libraries.rosmaster.validators.TYPE_SEPARATOR">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">/</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

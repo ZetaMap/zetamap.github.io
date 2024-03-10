@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.dynamic_reconfigure.client.Client</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.dynamic_reconfigure.client.Client.html" class="internal-link" title="This class"><wbr></wbr>Client</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#close" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.close">close</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_config_callback">get<wbr></wbr>_config<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_configuration" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_configuration">get<wbr></wbr>_configuration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_description_callback">get<wbr></wbr>_description<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_group_descriptions" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_group_descriptions">get<wbr></wbr>_group<wbr></wbr>_descriptions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_parameter_descriptions" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_parameter_descriptions">get<wbr></wbr>_parameter<wbr></wbr>_descriptions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.set_config_callback">set<wbr></wbr>_config<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.set_description_callback">set<wbr></wbr>_description<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_configuration" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.update_configuration">update<wbr></wbr>_configuration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update_groups" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.update_groups">update<wbr></wbr>_groups</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_descriptions_msg" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_msg">_descriptions<wbr></wbr>_msg</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_get_service_proxy" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._get_service_proxy">_get<wbr></wbr>_service<wbr></wbr>_proxy</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_get_subscriber" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._get_subscriber">_get<wbr></wbr>_subscriber</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_param_type_from_string" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._param_type_from_string">_param<wbr></wbr>_type<wbr></wbr>_from<wbr></wbr>_string</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_updates_msg" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_msg">_updates<wbr></wbr>_msg</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.config_callback">config<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.description_callback">description<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#config" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.config">config</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#group_description" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.group_description">group<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#name" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#param_description" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.param_description">param<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._config_callback">_config<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_cv" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._cv">_cv</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._description_callback">_description<wbr></wbr>_callback</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_descriptions_sub" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_sub">_descriptions<wbr></wbr>_sub</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_param_types" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._param_types">_param<wbr></wbr>_types</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_set_service" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._set_service">_set<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_updates_sub" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_sub">_updates<wbr></wbr>_sub</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.dynamic_reconfigure.client.html" class="internal-link" title="The parent of this class">client</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.dynamic_reconfigure.client.Client.html" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client"><wbr></wbr>Client</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.dynamic_reconfigure.html" class="internal-link" title="niryo_libraries.dynamic_reconfigure">dynamic_reconfigure</a></code><wbr></wbr>.<code><a href="niryo_libraries.dynamic_reconfigure.client.html" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client">client</a></code><wbr></wbr>.<code><a href="niryo_libraries.dynamic_reconfigure.client.Client.html" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client">Client</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Client</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.__init__">Client(name, timeout, config_callback, description_callback)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.dynamic_reconfigure.client.Client">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Python dynamic_reconfigure client API</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id341">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.__init__">__init__</a></code></td>
+    <td>Connect to dynamic_reconfigure server and return a client object</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#close" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.close">close</a></code></td>
+    <td>Close connections to the server</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_config_callback">get<wbr></wbr>_config<wbr></wbr>_callback</a></code></td>
+    <td>Retrieve the config_callback</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_configuration" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_configuration">get<wbr></wbr>_configuration</a></code></td>
+    <td>Return the latest received server configuration (wait to receive one if none have been received)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_description_callback">get<wbr></wbr>_description<wbr></wbr>_callback</a></code></td>
+    <td>Get the current description_callback</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_group_descriptions" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_group_descriptions">get<wbr></wbr>_group<wbr></wbr>_descriptions</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_parameter_descriptions" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.get_parameter_descriptions">get<wbr></wbr>_parameter<wbr></wbr>_descriptions</a></code></td>
+    <td>UNSTABLE. Return a description of the parameters for the server. Do not use this method as the type that is returned may change.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.set_config_callback">set<wbr></wbr>_config<wbr></wbr>_callback</a></code></td>
+    <td>Set the config_callback</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.set_description_callback">set<wbr></wbr>_description<wbr></wbr>_callback</a></code></td>
+    <td>UNSTABLE. Set the description callback. Do not use as the type of the description callback may change.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#update_configuration" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.update_configuration">update<wbr></wbr>_configuration</a></code></td>
+    <td>Change the server's configuration</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#update_groups" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.update_groups">update<wbr></wbr>_groups</a></code></td>
+    <td>Changes the servers group configuration</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.config_callback">config<wbr></wbr>_callback</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.description_callback">description<wbr></wbr>_callback</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#config" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.config">config</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#group_description" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.group_description">group<wbr></wbr>_description</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#name" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#param_description" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client.param_description">param<wbr></wbr>_description</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_descriptions_msg" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_msg">_descriptions<wbr></wbr>_msg</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_get_service_proxy" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._get_service_proxy">_get<wbr></wbr>_service<wbr></wbr>_proxy</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_get_subscriber" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._get_subscriber">_get<wbr></wbr>_subscriber</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_param_type_from_string" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._param_type_from_string">_param<wbr></wbr>_type<wbr></wbr>_from<wbr></wbr>_string</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_updates_msg" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_msg">_updates<wbr></wbr>_msg</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_config_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._config_callback">_config<wbr></wbr>_callback</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_cv" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._cv">_cv</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_description_callback" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._description_callback">_description<wbr></wbr>_callback</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_descriptions_sub" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_sub">_descriptions<wbr></wbr>_sub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_param_types" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._param_types">_param<wbr></wbr>_types</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_set_service" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._set_service">_set<wbr></wbr>_service</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_updates_sub" class="internal-link" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_sub">_updates<wbr></wbr>_sub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name, timeout=None, config_callback=None, description_callback=None)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.dynamic_reconfigure.client.Client.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Connect to dynamic_reconfigure server and return a client object</p>
+<p>@param name: name of the server to connect to (usually the node name)
+@type  name: str
+@param timeout: time to wait before giving up
+@type  timeout: float
+@param config_callback: callback for server parameter changes
+@param description_callback: internal use only as the API has not stabilized</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.close">
+    
+  </a>
+  <a name="close">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">close</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#close" title="niryo_libraries.dynamic_reconfigure.client.Client.close">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Close connections to the server</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.get_config_callback">
+    
+  </a>
+  <a name="get_config_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_config_callback</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_config_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.get_config_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve the config_callback</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.get_configuration">
+    
+  </a>
+  <a name="get_configuration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_configuration</span><span class="function-signature">(self, timeout=None)</span>:
+    
+    <a class="headerLink" href="#get_configuration" title="niryo_libraries.dynamic_reconfigure.client.Client.get_configuration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return the latest received server configuration (wait to receive
+one if none have been received)</p>
+<p>@param timeout: time to wait before giving up
+@type  timeout: float
+@return: dictionary mapping parameter names to values or None if unable to retrieve config.
+@rtype: {str: value}</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.get_description_callback">
+    
+  </a>
+  <a name="get_description_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_description_callback</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_description_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.get_description_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current description_callback</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.get_group_descriptions">
+    
+  </a>
+  <a name="get_group_descriptions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_group_descriptions</span><span class="function-signature">(self, timeout=None)</span>:
+    
+    <a class="headerLink" href="#get_group_descriptions" title="niryo_libraries.dynamic_reconfigure.client.Client.get_group_descriptions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.get_parameter_descriptions">
+    
+  </a>
+  <a name="get_parameter_descriptions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_parameter_descriptions</span><span class="function-signature">(self, timeout=None)</span>:
+    
+    <a class="headerLink" href="#get_parameter_descriptions" title="niryo_libraries.dynamic_reconfigure.client.Client.get_parameter_descriptions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>UNSTABLE. Return a description of the parameters for the server.
+Do not use this method as the type that is returned may change.</p>
+<p>@param timeout: time to wait before giving up
+@type  timeout: float</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.set_config_callback">
+    
+  </a>
+  <a name="set_config_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_config_callback</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_config_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.set_config_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the config_callback</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.set_description_callback">
+    
+  </a>
+  <a name="set_description_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_description_callback</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_description_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.set_description_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>UNSTABLE. Set the description callback. Do not use as the type of the
+description callback may change.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.update_configuration">
+    
+  </a>
+  <a name="update_configuration">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">update_configuration</span><span class="function-signature">(self, changes)</span>:
+    
+    <a class="headerLink" href="#update_configuration" title="niryo_libraries.dynamic_reconfigure.client.Client.update_configuration">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Change the server's configuration</p>
+<p>@param changes: dictionary of key value pairs for the parameters that are changing
+@type  changes: {str: value}</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.update_groups">
+    
+  </a>
+  <a name="update_groups">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">update_groups</span><span class="function-signature">(self, changes)</span>:
+    
+    <a class="headerLink" href="#update_groups" title="niryo_libraries.dynamic_reconfigure.client.Client.update_groups">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Changes the servers group configuration</p>
+<p>@param changes: dictionary of key value pairs for the parameters that are changing
+@type  changes: {str: value}</p>
+</div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.config_callback">
+    
+  </a>
+  <a name="config_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">config_callback</span> =
+    
+    <a class="headerLink" href="#config_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.config_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.description_callback">
+    
+  </a>
+  <a name="description_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">description_callback</span> =
+    
+    <a class="headerLink" href="#description_callback" title="niryo_libraries.dynamic_reconfigure.client.Client.description_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.config">
+    
+  </a>
+  <a name="config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">config</span> =
+    
+    <a class="headerLink" href="#config" title="niryo_libraries.dynamic_reconfigure.client.Client.config">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.group_description">
+    
+  </a>
+  <a name="group_description">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">group_description</span> =
+    
+    <a class="headerLink" href="#group_description" title="niryo_libraries.dynamic_reconfigure.client.Client.group_description">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">name</span> =
+    
+    <a class="headerLink" href="#name" title="niryo_libraries.dynamic_reconfigure.client.Client.name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client.param_description">
+    
+  </a>
+  <a name="param_description">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">param_description</span> =
+    
+    <a class="headerLink" href="#param_description" title="niryo_libraries.dynamic_reconfigure.client.Client.param_description">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_msg">
+    
+  </a>
+  <a name="_descriptions_msg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_descriptions_msg</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#_descriptions_msg" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_msg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._get_service_proxy">
+    
+  </a>
+  <a name="_get_service_proxy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_get_service_proxy</span><span class="function-signature">(self, suffix, timeout)</span>:
+    
+    <a class="headerLink" href="#_get_service_proxy" title="niryo_libraries.dynamic_reconfigure.client.Client._get_service_proxy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._get_subscriber">
+    
+  </a>
+  <a name="_get_subscriber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_get_subscriber</span><span class="function-signature">(self, suffix, type, callback)</span>:
+    
+    <a class="headerLink" href="#_get_subscriber" title="niryo_libraries.dynamic_reconfigure.client.Client._get_subscriber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._param_type_from_string">
+    
+  </a>
+  <a name="_param_type_from_string">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_param_type_from_string</span><span class="function-signature">(self, type_str)</span>:
+    
+    <a class="headerLink" href="#_param_type_from_string" title="niryo_libraries.dynamic_reconfigure.client.Client._param_type_from_string">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._updates_msg">
+    
+  </a>
+  <a name="_updates_msg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_updates_msg</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#_updates_msg" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_msg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._config_callback">
+    
+  </a>
+  <a name="_config_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_config_callback</span> =
+    
+    <a class="headerLink" href="#_config_callback" title="niryo_libraries.dynamic_reconfigure.client.Client._config_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._cv">
+    
+  </a>
+  <a name="_cv">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_cv</span> =
+    
+    <a class="headerLink" href="#_cv" title="niryo_libraries.dynamic_reconfigure.client.Client._cv">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._description_callback">
+    
+  </a>
+  <a name="_description_callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_description_callback</span> =
+    
+    <a class="headerLink" href="#_description_callback" title="niryo_libraries.dynamic_reconfigure.client.Client._description_callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_sub">
+    
+  </a>
+  <a name="_descriptions_sub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_descriptions_sub</span> =
+    
+    <a class="headerLink" href="#_descriptions_sub" title="niryo_libraries.dynamic_reconfigure.client.Client._descriptions_sub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._param_types">
+    
+  </a>
+  <a name="_param_types">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_param_types</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#_param_types" title="niryo_libraries.dynamic_reconfigure.client.Client._param_types">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._set_service">
+    
+  </a>
+  <a name="_set_service">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_set_service</span> =
+    
+    <a class="headerLink" href="#_set_service" title="niryo_libraries.dynamic_reconfigure.client.Client._set_service">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.dynamic_reconfigure.client.Client._updates_sub">
+    
+  </a>
+  <a name="_updates_sub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_updates_sub</span> =
+    
+    <a class="headerLink" href="#_updates_sub" title="niryo_libraries.dynamic_reconfigure.client.Client._updates_sub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.html" class="internal-link" title="This class"><wbr></wbr>Planning<wbr></wbr>Scene<wbr></wbr>Interface</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_box">add<wbr></wbr>_box</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_cone" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cone">add<wbr></wbr>_cone</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_cylinder" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cylinder">add<wbr></wbr>_cylinder</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_mesh">add<wbr></wbr>_mesh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_object">add<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_plane" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_plane">add<wbr></wbr>_plane</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_sphere" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_sphere">add<wbr></wbr>_sphere</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#apply_planning_scene" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.apply_planning_scene">apply<wbr></wbr>_planning<wbr></wbr>_scene</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#attach_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_box">attach<wbr></wbr>_box</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#attach_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_mesh">attach<wbr></wbr>_mesh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#attach_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_object">attach<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.clear">clear</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_attached_objects" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_attached_objects">get<wbr></wbr>_attached<wbr></wbr>_objects</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_known_object_names" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names">get<wbr></wbr>_known<wbr></wbr>_object<wbr></wbr>_names</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_known_object_names_in_roi" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names_in_roi">get<wbr></wbr>_known<wbr></wbr>_object<wbr></wbr>_names<wbr></wbr>_in<wbr></wbr>_roi</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_object_poses" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_object_poses">get<wbr></wbr>_object<wbr></wbr>_poses</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_objects" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_objects">get<wbr></wbr>_objects</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remove_attached_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_attached_object">remove<wbr></wbr>_attached<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remove_world_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_world_object">remove<wbr></wbr>_world<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_box">__make<wbr></wbr>_box</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_cone" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cone">__make<wbr></wbr>_cone</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_cylinder" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cylinder">__make<wbr></wbr>_cylinder</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_existing" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_existing">__make<wbr></wbr>_existing</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_mesh">__make<wbr></wbr>_mesh</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_planning_scene_diff_req" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_planning_scene_diff_req">__make<wbr></wbr>_planning<wbr></wbr>_scene<wbr></wbr>_diff<wbr></wbr>_req</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_primitive" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_primitive">__make<wbr></wbr>_primitive</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__make_sphere" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_sphere">__make<wbr></wbr>_sphere</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__submit" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__submit">__submit</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__synchronous" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__synchronous">__synchronous</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_apply_planning_scene_diff" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._apply_planning_scene_diff">_apply<wbr></wbr>_planning<wbr></wbr>_scene<wbr></wbr>_diff</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_psi" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._psi">_psi</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.moveit_commander.planning_scene_interface.html" class="internal-link" title="The parent of this class">planning<wbr></wbr>_scene<wbr></wbr>_interface</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.html" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface"><wbr></wbr>Planning<wbr></wbr>Scene<wbr></wbr>Interface</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.html" class="internal-link" title="niryo_libraries.moveit_commander">moveit_commander</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.planning_scene_interface.html" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface">planning_scene_interface</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.html" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface">PlanningSceneInterface</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PlanningSceneInterface</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__init__">PlanningSceneInterface(ns, synchronous, service_timeout)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Python interface for a C++ PlanningSceneInterface.
+Uses both C++ wrapped methods and scene manipulation topics
+to manipulate the PlanningScene managed by the PlanningSceneMonitor.
+See wrap_python_planning_scene_interface.cpp for the wrapped methods.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id700">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_box">add<wbr></wbr>_box</a></code></td>
+    <td>Add a box to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_cone" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cone">add<wbr></wbr>_cone</a></code></td>
+    <td>Add a cylinder to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_cylinder" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cylinder">add<wbr></wbr>_cylinder</a></code></td>
+    <td>Add a cylinder to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_mesh">add<wbr></wbr>_mesh</a></code></td>
+    <td>Add a mesh to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_object">add<wbr></wbr>_object</a></code></td>
+    <td>Add an object to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_plane" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_plane">add<wbr></wbr>_plane</a></code></td>
+    <td>Add a plane to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_sphere" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_sphere">add<wbr></wbr>_sphere</a></code></td>
+    <td>Add a sphere to the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#apply_planning_scene" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.apply_planning_scene">apply<wbr></wbr>_planning<wbr></wbr>_scene</a></code></td>
+    <td>Applies the planning scene message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#attach_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_box">attach<wbr></wbr>_box</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#attach_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_mesh">attach<wbr></wbr>_mesh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#attach_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_object">attach<wbr></wbr>_object</a></code></td>
+    <td>Attach an object in the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.clear">clear</a></code></td>
+    <td>Remove all objects from the planning scene</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_attached_objects" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_attached_objects">get<wbr></wbr>_attached<wbr></wbr>_objects</a></code></td>
+    <td>Get the attached objects identified by the given object ids list. If no ids are provided, return all the attached objects.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_known_object_names" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names">get<wbr></wbr>_known<wbr></wbr>_object<wbr></wbr>_names</a></code></td>
+    <td>Get the names of all known objects in the world. If with_type is set to true, only return objects that have a known type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_known_object_names_in_roi" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names_in_roi">get<wbr></wbr>_known<wbr></wbr>_object<wbr></wbr>_names<wbr></wbr>_in<wbr></wbr>_roi</a></code></td>
+    <td>Get the names of known objects in the world that are located within a bounding region (specified in the frame reported by get_planning_frame()). If with_type is set to true, only return objects that have a known type.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_object_poses" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_object_poses">get<wbr></wbr>_object<wbr></wbr>_poses</a></code></td>
+    <td>Get the poses from the objects identified by the given object ids list.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_objects" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_objects">get<wbr></wbr>_objects</a></code></td>
+    <td>Get the objects identified by the given object ids list. If no ids are provided, return all the known objects.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#remove_attached_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_attached_object">remove<wbr></wbr>_attached<wbr></wbr>_object</a></code></td>
+    <td>Remove an attached object from the robot, or all objects attached to the link if no name is provided, or all attached objects in the scene if neither link nor name are provided.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#remove_world_object" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_world_object">remove<wbr></wbr>_world<wbr></wbr>_object</a></code></td>
+    <td>Remove an object from planning scene, or all if no name is provided</td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_box" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_box">__make<wbr></wbr>_box</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_cone" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cone">__make<wbr></wbr>_cone</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_cylinder" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cylinder">__make<wbr></wbr>_cylinder</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_existing" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_existing">__make<wbr></wbr>_existing</a></code></td>
+    <td>Create an empty Collision Object. Used when the object already exists</td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_mesh" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_mesh">__make<wbr></wbr>_mesh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_planning_scene_diff_req" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_planning_scene_diff_req">__make<wbr></wbr>_planning<wbr></wbr>_scene<wbr></wbr>_diff<wbr></wbr>_req</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_primitive" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_primitive">__make<wbr></wbr>_primitive</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="staticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="#__make_sphere" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_sphere">__make<wbr></wbr>_sphere</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__submit" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__submit">__submit</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__synchronous" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__synchronous">__synchronous</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_apply_planning_scene_diff" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._apply_planning_scene_diff">_apply<wbr></wbr>_planning<wbr></wbr>_scene<wbr></wbr>_diff</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_psi" class="internal-link" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._psi">_psi</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, ns=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, synchronous=True, service_timeout=5.0)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_box">
+    
+  </a>
+  <a name="add_box">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_box</span><span class="function-signature">(self, name, pose, size=(<wbr></wbr>1, <wbr></wbr>1, <wbr></wbr>1))</span>:
+    
+    <a class="headerLink" href="#add_box" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_box">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a box to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cone">
+    
+  </a>
+  <a name="add_cone">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_cone</span><span class="function-signature">(self, name, pose, height, radius)</span>:
+    
+    <a class="headerLink" href="#add_cone" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cone">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a cylinder to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cylinder">
+    
+  </a>
+  <a name="add_cylinder">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_cylinder</span><span class="function-signature">(self, name, pose, height, radius)</span>:
+    
+    <a class="headerLink" href="#add_cylinder" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_cylinder">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a cylinder to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_mesh">
+    
+  </a>
+  <a name="add_mesh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_mesh</span><span class="function-signature">(self, name, pose, filename, size=(<wbr></wbr>1, <wbr></wbr>1, <wbr></wbr>1))</span>:
+    
+    <a class="headerLink" href="#add_mesh" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_mesh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a mesh to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_object">
+    
+  </a>
+  <a name="add_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_object</span><span class="function-signature">(self, collision_object)</span>:
+    
+    <a class="headerLink" href="#add_object" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add an object to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_plane">
+    
+  </a>
+  <a name="add_plane">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_plane</span><span class="function-signature">(self, name, pose, normal=(<wbr></wbr>0, <wbr></wbr>0, <wbr></wbr>1), offset=0)</span>:
+    
+    <a class="headerLink" href="#add_plane" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_plane">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a plane to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_sphere">
+    
+  </a>
+  <a name="add_sphere">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_sphere</span><span class="function-signature">(self, name, pose, radius=1)</span>:
+    
+    <a class="headerLink" href="#add_sphere" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.add_sphere">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a sphere to the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.apply_planning_scene">
+    
+  </a>
+  <a name="apply_planning_scene">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">apply_planning_scene</span><span class="function-signature">(self, planning_scene_message)</span>:
+    
+    <a class="headerLink" href="#apply_planning_scene" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.apply_planning_scene">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Applies the planning scene message.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_box">
+    
+  </a>
+  <a name="attach_box">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">attach_box</span><span class="function-signature">(self, link, name, pose=None, size=(<wbr></wbr>1, <wbr></wbr>1, <wbr></wbr>1), touch_links=[])</span>:
+    
+    <a class="headerLink" href="#attach_box" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_box">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_mesh">
+    
+  </a>
+  <a name="attach_mesh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">attach_mesh</span><span class="function-signature">(self, link, name, pose=None, filename=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, size=(<wbr></wbr>1, <wbr></wbr>1, <wbr></wbr>1), touch_links=[])</span>:
+    
+    <a class="headerLink" href="#attach_mesh" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_mesh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_object">
+    
+  </a>
+  <a name="attach_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">attach_object</span><span class="function-signature">(self, attached_collision_object)</span>:
+    
+    <a class="headerLink" href="#attach_object" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.attach_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Attach an object in the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.clear">
+    
+  </a>
+  <a name="clear">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clear" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.clear">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove all objects from the planning scene</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_attached_objects">
+    
+  </a>
+  <a name="get_attached_objects">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_attached_objects</span><span class="function-signature">(self, object_ids=[])</span>:
+    
+    <a class="headerLink" href="#get_attached_objects" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_attached_objects">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the attached objects identified by the given object ids list. If no ids are provided, return all the attached objects.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names">
+    
+  </a>
+  <a name="get_known_object_names">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_known_object_names</span><span class="function-signature">(self, with_type=False)</span>:
+    
+    <a class="headerLink" href="#get_known_object_names" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the names of all known objects in the world. If with_type is set to true, only return objects that have a known type.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names_in_roi">
+    
+  </a>
+  <a name="get_known_object_names_in_roi">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_known_object_names_in_roi</span><span class="function-signature">(self, minx, miny, minz, maxx, maxy, maxz, with_type=False)</span>:
+    
+    <a class="headerLink" href="#get_known_object_names_in_roi" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_known_object_names_in_roi">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the names of known objects in the world that are located within a bounding region (specified in the frame reported by
+get_planning_frame()). If with_type is set to true, only return objects that have a known type.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_object_poses">
+    
+  </a>
+  <a name="get_object_poses">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_object_poses</span><span class="function-signature">(self, object_ids)</span>:
+    
+    <a class="headerLink" href="#get_object_poses" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_object_poses">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the poses from the objects identified by the given object ids list.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_objects">
+    
+  </a>
+  <a name="get_objects">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_objects</span><span class="function-signature">(self, object_ids=[])</span>:
+    
+    <a class="headerLink" href="#get_objects" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.get_objects">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the objects identified by the given object ids list. If no ids are provided, return all the known objects.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_attached_object">
+    
+  </a>
+  <a name="remove_attached_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">remove_attached_object</span><span class="function-signature">(self, link=None, name=None)</span>:
+    
+    <a class="headerLink" href="#remove_attached_object" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_attached_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove an attached object from the robot, or all objects attached to the link if no name is provided,
+or all attached objects in the scene if neither link nor name are provided.</p>
+<p>Removed attached objects remain in the scene as world objects.
+Call remove_world_object afterwards to remove them from the scene.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_world_object">
+    
+  </a>
+  <a name="remove_world_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">remove_world_object</span><span class="function-signature">(self, name=None)</span>:
+    
+    <a class="headerLink" href="#remove_world_object" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.remove_world_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove an object from planning scene, or all if no name is provided</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_box">
+    
+  </a>
+  <a name="__make_box">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_box</span><span class="function-signature">(name, pose, size)</span>:
+    
+    <a class="headerLink" href="#__make_box" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_box">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cone">
+    
+  </a>
+  <a name="__make_cone">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_cone</span><span class="function-signature">(name, pose, height, radius)</span>:
+    
+    <a class="headerLink" href="#__make_cone" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cone">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cylinder">
+    
+  </a>
+  <a name="__make_cylinder">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_cylinder</span><span class="function-signature">(name, pose, height, radius)</span>:
+    
+    <a class="headerLink" href="#__make_cylinder" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_cylinder">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_existing">
+    
+  </a>
+  <a name="__make_existing">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_existing</span><span class="function-signature">(name)</span>:
+    
+    <a class="headerLink" href="#__make_existing" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_existing">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create an empty Collision Object. Used when the object already exists</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_mesh">
+    
+  </a>
+  <a name="__make_mesh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_mesh</span><span class="function-signature">(name, pose, filename, scale=(<wbr></wbr>1, <wbr></wbr>1, <wbr></wbr>1))</span>:
+    
+    <a class="headerLink" href="#__make_mesh" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_mesh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_planning_scene_diff_req">
+    
+  </a>
+  <a name="__make_planning_scene_diff_req">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_planning_scene_diff_req</span><span class="function-signature">(collision_object, attach=False)</span>:
+    
+    <a class="headerLink" href="#__make_planning_scene_diff_req" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_planning_scene_diff_req">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_primitive">
+    
+  </a>
+  <a name="__make_primitive">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_primitive</span><span class="function-signature">(name, pose, type, shape_args)</span>:
+    
+    <a class="headerLink" href="#__make_primitive" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_primitive">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basestaticmethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_sphere">
+    
+  </a>
+  <a name="__make_sphere">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">__make_sphere</span><span class="function-signature">(name, pose, radius)</span>:
+    
+    <a class="headerLink" href="#__make_sphere" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__make_sphere">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__submit">
+    
+  </a>
+  <a name="__submit">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__submit</span><span class="function-signature">(self, collision_object, attach=False)</span>:
+    
+    <a class="headerLink" href="#__submit" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__submit">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__synchronous">
+    
+  </a>
+  <a name="__synchronous">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__synchronous</span> =
+    
+    <a class="headerLink" href="#__synchronous" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface.__synchronous">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._apply_planning_scene_diff">
+    
+  </a>
+  <a name="_apply_planning_scene_diff">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_apply_planning_scene_diff</span> =
+    
+    <a class="headerLink" href="#_apply_planning_scene_diff" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._apply_planning_scene_diff">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._psi">
+    
+  </a>
+  <a name="_psi">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_psi</span> =
+    
+    <a class="headerLink" href="#_psi" title="niryo_libraries.moveit_commander.planning_scene_interface.PlanningSceneInterface._psi">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

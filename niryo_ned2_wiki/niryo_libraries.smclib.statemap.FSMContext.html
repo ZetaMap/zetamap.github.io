@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.smclib.statemap.FSMContext</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.smclib.statemap.FSMContext.html" class="internal-link" title="This class"><wbr></wbr>FSMContext</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clearState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.clearState">clear<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#emptyStateStack" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.emptyStateStack">empty<wbr></wbr>State<wbr></wbr>Stack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getDebugFlag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getDebugFlag">get<wbr></wbr>Debug<wbr></wbr>Flag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getDebugStream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getDebugStream">get<wbr></wbr>Debug<wbr></wbr>Stream</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getPreviousState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getPreviousState">get<wbr></wbr>Previous<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getState">get<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getStateStackDepth" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getStateStackDepth">get<wbr></wbr>State<wbr></wbr>Stack<wbr></wbr>Depth</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getTransition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getTransition">get<wbr></wbr>Transition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isInTransition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.isInTransition">is<wbr></wbr>In<wbr></wbr>Transition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isStateStackEmpty" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.isStateStackEmpty">is<wbr></wbr>State<wbr></wbr>Stack<wbr></wbr>Empty</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#popState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.popState">pop<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pushState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.pushState">push<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setDebugFlag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setDebugFlag">set<wbr></wbr>Debug<wbr></wbr>Flag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setDebugStream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setDebugStream">set<wbr></wbr>Debug<wbr></wbr>Stream</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setState">set<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_debug_flag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._debug_flag">_debug<wbr></wbr>_flag</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_debug_stream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._debug_stream">_debug<wbr></wbr>_stream</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_previous_state" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._previous_state">_previous<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_state" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._state">_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_state_stack" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._state_stack">_state<wbr></wbr>_stack</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_transition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._transition">_transition</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.smclib.statemap.html" class="internal-link" title="The parent of this class">statemap</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.smclib.statemap.FSMContext.html" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext"><wbr></wbr>FSMContext</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.smclib.statemap.State.html" class="internal-link" title="niryo_libraries.smclib.statemap.State"><wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.smclib.statemap.StateUndefinedException.html" class="internal-link" title="niryo_libraries.smclib.statemap.StateUndefinedException"><wbr></wbr>State<wbr></wbr>Undefined<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.smclib.statemap.TransitionUndefinedException.html" class="internal-link" title="niryo_libraries.smclib.statemap.TransitionUndefinedException"><wbr></wbr>Transition<wbr></wbr>Undefined<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.smclib.html" class="internal-link" title="niryo_libraries.smclib">smclib</a></code><wbr></wbr>.<code><a href="niryo_libraries.smclib.statemap.html" class="internal-link" title="niryo_libraries.smclib.statemap">statemap</a></code><wbr></wbr>.<code><a href="niryo_libraries.smclib.statemap.FSMContext.html" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext">FSMContext</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">FSMContext</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.__init__">FSMContext(state)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.smclib.statemap.FSMContext">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>The user can derive FSM contexts from this class and interface
+to them with the methods of this class.</p>
+<p>The finite state machine needs to be initialized to the starting
+state of the FSM.  This must be done manually in the constructor
+of the derived class.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2692">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clearState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.clearState">clear<wbr></wbr>State</a></code></td>
+    <td>Clears the current state.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#emptyStateStack" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.emptyStateStack">empty<wbr></wbr>State<wbr></wbr>Stack</a></code></td>
+    <td>Remove all states from the state stack.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getDebugFlag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getDebugFlag">get<wbr></wbr>Debug<wbr></wbr>Flag</a></code></td>
+    <td>Returns the debug flag's current setting.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getDebugStream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getDebugStream">get<wbr></wbr>Debug<wbr></wbr>Stream</a></code></td>
+    <td>Returns the stream to which debug output is written.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getPreviousState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getPreviousState">get<wbr></wbr>Previous<wbr></wbr>State</a></code></td>
+    <td>Returns the state which a transition left. May be None</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getState">get<wbr></wbr>State</a></code></td>
+    <td>Returns the current state.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getStateStackDepth" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getStateStackDepth">get<wbr></wbr>State<wbr></wbr>Stack<wbr></wbr>Depth</a></code></td>
+    <td>Returns the state stack's depth.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getTransition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.getTransition">get<wbr></wbr>Transition</a></code></td>
+    <td>Returns the current transition's name. Used only for debugging purposes.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isInTransition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.isInTransition">is<wbr></wbr>In<wbr></wbr>Transition</a></code></td>
+    <td>Is this state machine already inside a transition? True if state is undefined.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isStateStackEmpty" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.isStateStackEmpty">is<wbr></wbr>State<wbr></wbr>Stack<wbr></wbr>Empty</a></code></td>
+    <td>Returns True if the state stack is empty and False otherwise.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#popState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.popState">pop<wbr></wbr>State</a></code></td>
+    <td>Make the state on top of the state stack the current state.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pushState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.pushState">push<wbr></wbr>State</a></code></td>
+    <td>Push the current state on top of the state stack and make the specified state the current state.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setDebugFlag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setDebugFlag">set<wbr></wbr>Debug<wbr></wbr>Flag</a></code></td>
+    <td>Sets the debug flag. A true value means debugging is on and false means off.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setDebugStream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setDebugStream">set<wbr></wbr>Debug<wbr></wbr>Stream</a></code></td>
+    <td>Sets the debug output stream.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setState" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext.setState">set<wbr></wbr>State</a></code></td>
+    <td>Sets the current state to the specified state.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_debug_flag" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._debug_flag">_debug<wbr></wbr>_flag</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_debug_stream" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._debug_stream">_debug<wbr></wbr>_stream</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_previous_state" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._previous_state">_previous<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_state" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._state">_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_state_stack" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._state_stack">_state<wbr></wbr>_stack</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_transition" class="internal-link" title="niryo_libraries.smclib.statemap.FSMContext._transition">_transition</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, state)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.smclib.statemap.FSMContext.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.clearState">
+    
+  </a>
+  <a name="clearState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clearState</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clearState" title="niryo_libraries.smclib.statemap.FSMContext.clearState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Clears the current state.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.emptyStateStack">
+    
+  </a>
+  <a name="emptyStateStack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">emptyStateStack</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#emptyStateStack" title="niryo_libraries.smclib.statemap.FSMContext.emptyStateStack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove all states from the state stack.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getDebugFlag">
+    
+  </a>
+  <a name="getDebugFlag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getDebugFlag</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getDebugFlag" title="niryo_libraries.smclib.statemap.FSMContext.getDebugFlag">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the debug flag's current setting.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getDebugStream">
+    
+  </a>
+  <a name="getDebugStream">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getDebugStream</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getDebugStream" title="niryo_libraries.smclib.statemap.FSMContext.getDebugStream">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the stream to which debug output is written.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getPreviousState">
+    
+  </a>
+  <a name="getPreviousState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getPreviousState</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getPreviousState" title="niryo_libraries.smclib.statemap.FSMContext.getPreviousState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the state which a transition left.
+May be None</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getState">
+    
+  </a>
+  <a name="getState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getState</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getState" title="niryo_libraries.smclib.statemap.FSMContext.getState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the current state.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getStateStackDepth">
+    
+  </a>
+  <a name="getStateStackDepth">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getStateStackDepth</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getStateStackDepth" title="niryo_libraries.smclib.statemap.FSMContext.getStateStackDepth">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the state stack's depth.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.getTransition">
+    
+  </a>
+  <a name="getTransition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getTransition</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#getTransition" title="niryo_libraries.smclib.statemap.FSMContext.getTransition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns the current transition's name.
+Used only for debugging purposes.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.isInTransition">
+    
+  </a>
+  <a name="isInTransition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isInTransition</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#isInTransition" title="niryo_libraries.smclib.statemap.FSMContext.isInTransition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Is this state machine already inside a transition?
+True if state is undefined.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.isStateStackEmpty">
+    
+  </a>
+  <a name="isStateStackEmpty">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isStateStackEmpty</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#isStateStackEmpty" title="niryo_libraries.smclib.statemap.FSMContext.isStateStackEmpty">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns True if the state stack is empty and False otherwise.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.popState">
+    
+  </a>
+  <a name="popState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">popState</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#popState" title="niryo_libraries.smclib.statemap.FSMContext.popState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Make the state on top of the state stack the current state.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.pushState">
+    
+  </a>
+  <a name="pushState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">pushState</span><span class="function-signature">(self, state)</span>:
+    
+    <a class="headerLink" href="#pushState" title="niryo_libraries.smclib.statemap.FSMContext.pushState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Push the current state on top of the state stack
+and make the specified state the current state.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.setDebugFlag">
+    
+  </a>
+  <a name="setDebugFlag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">setDebugFlag</span><span class="function-signature">(self, flag)</span>:
+    
+    <a class="headerLink" href="#setDebugFlag" title="niryo_libraries.smclib.statemap.FSMContext.setDebugFlag">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Sets the debug flag.
+A true value means debugging is on and false means off.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.setDebugStream">
+    
+  </a>
+  <a name="setDebugStream">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">setDebugStream</span><span class="function-signature">(self, stream)</span>:
+    
+    <a class="headerLink" href="#setDebugStream" title="niryo_libraries.smclib.statemap.FSMContext.setDebugStream">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Sets the debug output stream.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext.setState">
+    
+  </a>
+  <a name="setState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">setState</span><span class="function-signature">(self, state)</span>:
+    
+    <a class="headerLink" href="#setState" title="niryo_libraries.smclib.statemap.FSMContext.setState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Sets the current state to the specified state.</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._debug_flag">
+    
+  </a>
+  <a name="_debug_flag">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_debug_flag</span> =
+    
+    <a class="headerLink" href="#_debug_flag" title="niryo_libraries.smclib.statemap.FSMContext._debug_flag">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._debug_stream">
+    
+  </a>
+  <a name="_debug_stream">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_debug_stream</span> =
+    
+    <a class="headerLink" href="#_debug_stream" title="niryo_libraries.smclib.statemap.FSMContext._debug_stream">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._previous_state">
+    
+  </a>
+  <a name="_previous_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_previous_state</span> =
+    
+    <a class="headerLink" href="#_previous_state" title="niryo_libraries.smclib.statemap.FSMContext._previous_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._state">
+    
+  </a>
+  <a name="_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_state</span> =
+    
+    <a class="headerLink" href="#_state" title="niryo_libraries.smclib.statemap.FSMContext._state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._state_stack">
+    
+  </a>
+  <a name="_state_stack">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_state_stack</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#_state_stack" title="niryo_libraries.smclib.statemap.FSMContext._state_stack">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.smclib.statemap.FSMContext._transition">
+    
+  </a>
+  <a name="_transition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_transition</span> =
+    
+    <a class="headerLink" href="#_transition" title="niryo_libraries.smclib.statemap.FSMContext._transition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

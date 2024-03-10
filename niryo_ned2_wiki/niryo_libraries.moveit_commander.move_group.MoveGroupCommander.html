@@ -1,0 +1,3560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.moveit_commander.move_group.MoveGroupCommander</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.html" class="internal-link" title="This class"><wbr></wbr>Move<wbr></wbr>Group<wbr></wbr>Commander</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#allow_looking" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_looking">allow<wbr></wbr>_looking</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#allow_replanning" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_replanning">allow<wbr></wbr>_replanning</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#attach_object" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.attach_object">attach<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear_max_cartesian_link_speed" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_max_cartesian_link_speed">clear<wbr></wbr>_max<wbr></wbr>_cartesian<wbr></wbr>_link<wbr></wbr>_speed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_path_constraints">clear<wbr></wbr>_path<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_target">clear<wbr></wbr>_pose<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear_pose_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_targets">clear<wbr></wbr>_pose<wbr></wbr>_targets</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clear_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_trajectory_constraints">clear<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#compute_cartesian_path" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.compute_cartesian_path">compute<wbr></wbr>_cartesian<wbr></wbr>_path</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#construct_motion_plan_request" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.construct_motion_plan_request">construct<wbr></wbr>_motion<wbr></wbr>_plan<wbr></wbr>_request</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#detach_object" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.detach_object">detach<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#enforce_bounds" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.enforce_bounds">enforce<wbr></wbr>_bounds</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#execute" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.execute">execute</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#forget_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.forget_joint_values">forget<wbr></wbr>_joint<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_active_joints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_active_joints">get<wbr></wbr>_active<wbr></wbr>_joints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_current_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_joint_values">get<wbr></wbr>_current<wbr></wbr>_joint<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_current_pose" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_pose">get<wbr></wbr>_current<wbr></wbr>_pose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_current_rpy" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_rpy">get<wbr></wbr>_current<wbr></wbr>_rpy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_current_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state">get<wbr></wbr>_current<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_current_state_bounded" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state_bounded">get<wbr></wbr>_current<wbr></wbr>_state<wbr></wbr>_bounded</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_end_effector_link">get<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_goal_joint_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_joint_tolerance">get<wbr></wbr>_goal<wbr></wbr>_joint<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_goal_orientation_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_orientation_tolerance">get<wbr></wbr>_goal<wbr></wbr>_orientation<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_goal_position_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_position_tolerance">get<wbr></wbr>_goal<wbr></wbr>_position<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_goal_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_tolerance">get<wbr></wbr>_goal<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_interface_description" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_interface_description">get<wbr></wbr>_interface<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_jacobian_matrix" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_jacobian_matrix">get<wbr></wbr>_jacobian<wbr></wbr>_matrix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_joint_value_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joint_value_target">get<wbr></wbr>_joint<wbr></wbr>_value<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_joints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joints">get<wbr></wbr>_joints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_known_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_known_constraints">get<wbr></wbr>_known<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_name" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_name">get<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_named_target_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_target_values">get<wbr></wbr>_named<wbr></wbr>_target<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_named_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_targets">get<wbr></wbr>_named<wbr></wbr>_targets</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_path_constraints">get<wbr></wbr>_path<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_planner_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planner_id">get<wbr></wbr>_planner<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_planning_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_frame">get<wbr></wbr>_planning<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_planning_pipeline_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_pipeline_id">get<wbr></wbr>_planning<wbr></wbr>_pipeline<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_planning_time" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_time">get<wbr></wbr>_planning<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_pose_reference_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_pose_reference_frame">get<wbr></wbr>_pose<wbr></wbr>_reference<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_random_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_joint_values">get<wbr></wbr>_random<wbr></wbr>_joint<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_random_pose" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_pose">get<wbr></wbr>_random<wbr></wbr>_pose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_remembered_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_remembered_joint_values">get<wbr></wbr>_remembered<wbr></wbr>_joint<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_trajectory_constraints">get<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_variable_count" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_variable_count">get<wbr></wbr>_variable<wbr></wbr>_count</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#go" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.go">go</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.has_end_effector_link">has<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#limit_max_cartesian_link_speed" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.limit_max_cartesian_link_speed">limit<wbr></wbr>_max<wbr></wbr>_cartesian<wbr></wbr>_link<wbr></wbr>_speed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pick" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.pick">pick</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#place" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.place">place</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#plan" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.plan">plan</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remember_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.remember_joint_values">remember<wbr></wbr>_joint<wbr></wbr>_values</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#retime_trajectory" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.retime_trajectory">retime<wbr></wbr>_trajectory</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_constraints_database" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_constraints_database">set<wbr></wbr>_constraints<wbr></wbr>_database</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_end_effector_link">set<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_goal_joint_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_joint_tolerance">set<wbr></wbr>_goal<wbr></wbr>_joint<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_goal_orientation_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_orientation_tolerance">set<wbr></wbr>_goal<wbr></wbr>_orientation<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_goal_position_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_position_tolerance">set<wbr></wbr>_goal<wbr></wbr>_position<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_goal_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_tolerance">set<wbr></wbr>_goal<wbr></wbr>_tolerance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_joint_value_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_joint_value_target">set<wbr></wbr>_joint<wbr></wbr>_value<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_max_acceleration_scaling_factor" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_acceleration_scaling_factor">set<wbr></wbr>_max<wbr></wbr>_acceleration<wbr></wbr>_scaling<wbr></wbr>_factor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_max_velocity_scaling_factor" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_velocity_scaling_factor">set<wbr></wbr>_max<wbr></wbr>_velocity<wbr></wbr>_scaling<wbr></wbr>_factor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_named_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_named_target">set<wbr></wbr>_named<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_num_planning_attempts" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_num_planning_attempts">set<wbr></wbr>_num<wbr></wbr>_planning<wbr></wbr>_attempts</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_orientation_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_orientation_target">set<wbr></wbr>_orientation<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_path_constraints">set<wbr></wbr>_path<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_planner_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planner_id">set<wbr></wbr>_planner<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_planning_pipeline_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_pipeline_id">set<wbr></wbr>_planning<wbr></wbr>_pipeline<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_planning_time" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_time">set<wbr></wbr>_planning<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_pose_reference_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_reference_frame">set<wbr></wbr>_pose<wbr></wbr>_reference<wbr></wbr>_frame</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_target">set<wbr></wbr>_pose<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_pose_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_targets">set<wbr></wbr>_pose<wbr></wbr>_targets</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_position_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_position_target">set<wbr></wbr>_position<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_random_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_random_target">set<wbr></wbr>_random<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_rpy_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_rpy_target">set<wbr></wbr>_rpy<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_start_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state">set<wbr></wbr>_start<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_start_state_to_current_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state_to_current_state">set<wbr></wbr>_start<wbr></wbr>_state<wbr></wbr>_to<wbr></wbr>_current<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_support_surface_name" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_support_surface_name">set<wbr></wbr>_support<wbr></wbr>_surface<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_trajectory_constraints">set<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_workspace" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_workspace">set<wbr></wbr>_workspace</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shift_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.shift_pose_target">shift<wbr></wbr>_pose<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.stop">stop</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_g" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander._g">_g</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.moveit_commander.move_group.html" class="internal-link" title="The parent of this class">move<wbr></wbr>_group</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.html" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander"><wbr></wbr>Move<wbr></wbr>Group<wbr></wbr>Commander</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.html" class="internal-link" title="niryo_libraries.moveit_commander">moveit_commander</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.move_group.html" class="internal-link" title="niryo_libraries.moveit_commander.move_group">move_group</a></code><wbr></wbr>.<code><a href="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.html" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander">MoveGroupCommander</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">MoveGroupCommander</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.__init__">MoveGroupCommander(name, robot_description, ns, wait_for_servers)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.moveit_commander.move_group.MoveGroupCommander">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Execution of simple commands for a particular group</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id698">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.__init__">__init__</a></code></td>
+    <td>Specify the group name for which to construct this commander instance. Throws an exception if there is an initialization error.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#allow_looking" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_looking">allow<wbr></wbr>_looking</a></code></td>
+    <td>Enable/disable looking around for motion planning</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#allow_replanning" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_replanning">allow<wbr></wbr>_replanning</a></code></td>
+    <td>Enable/disable replanning</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#attach_object" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.attach_object">attach<wbr></wbr>_object</a></code></td>
+    <td>Given the name of an object existing in the planning scene, attach it to a link. The link used is specified by the second argument. If left unspecified, the end-effector link is used, if one is known. ...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear_max_cartesian_link_speed" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_max_cartesian_link_speed">clear<wbr></wbr>_max<wbr></wbr>_cartesian<wbr></wbr>_link<wbr></wbr>_speed</a></code></td>
+    <td>Clear the maximum cartesian link speed.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_path_constraints">clear<wbr></wbr>_path<wbr></wbr>_constraints</a></code></td>
+    <td>Specify that no path constraints are to be used during motion planning</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_target">clear<wbr></wbr>_pose<wbr></wbr>_target</a></code></td>
+    <td>Clear the pose target for a particular end-effector</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear_pose_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_targets">clear<wbr></wbr>_pose<wbr></wbr>_targets</a></code></td>
+    <td>Clear all known pose targets</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#clear_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_trajectory_constraints">clear<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code></td>
+    <td>Specify that no trajectory constraints are to be used during motion planning</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#compute_cartesian_path" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.compute_cartesian_path">compute<wbr></wbr>_cartesian<wbr></wbr>_path</a></code></td>
+    <td>Compute a sequence of waypoints that make the end-effector move in straight line segments that follow the poses specified as waypoints. Configurations are computed for every eef_step meters; The jump_threshold specifies the maximum distance in configuration space between consecutive points in the resultingpath; Kinematic constraints for the path given by path_constraints will be met for every point along the trajectory, if they are not met, a partial solution will be returned...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#construct_motion_plan_request" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.construct_motion_plan_request">construct<wbr></wbr>_motion<wbr></wbr>_plan<wbr></wbr>_request</a></code></td>
+    <td>Returns a MotionPlanRequest filled with the current goals of the move_group_interface</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#detach_object" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.detach_object">detach<wbr></wbr>_object</a></code></td>
+    <td>Given the name of a link, detach the object(s) from that link. If no such link exists, the name is interpreted as an object name. If there is no name specified, an attempt is made to detach all objects attached to any link in the group.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#enforce_bounds" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.enforce_bounds">enforce<wbr></wbr>_bounds</a></code></td>
+    <td>Takes a moveit_msgs RobotState and enforces the state bounds, based on the C++ RobotState enforceBounds()</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#execute" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.execute">execute</a></code></td>
+    <td>Execute a previously planned path</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#forget_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.forget_joint_values">forget<wbr></wbr>_joint<wbr></wbr>_values</a></code></td>
+    <td>Forget a stored joint configuration</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_active_joints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_active_joints">get<wbr></wbr>_active<wbr></wbr>_joints</a></code></td>
+    <td>Get the active joints of this group</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_current_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_joint_values">get<wbr></wbr>_current<wbr></wbr>_joint<wbr></wbr>_values</a></code></td>
+    <td>Get the current configuration of the group as a list (these are values published on /joint_states)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_current_pose" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_pose">get<wbr></wbr>_current<wbr></wbr>_pose</a></code></td>
+    <td>Get the current pose of the end-effector of the group. Throws an exception if there is not end-effector.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_current_rpy" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_rpy">get<wbr></wbr>_current<wbr></wbr>_rpy</a></code></td>
+    <td>Get a list of 3 elements defining the [roll, pitch, yaw] of the end-effector. Throws an exception if there is not end-effector.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_current_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state">get<wbr></wbr>_current<wbr></wbr>_state</a></code></td>
+    <td>Get the current state of the robot.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_current_state_bounded" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state_bounded">get<wbr></wbr>_current<wbr></wbr>_state<wbr></wbr>_bounded</a></code></td>
+    <td>Get the current state of the robot bounded.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_end_effector_link">get<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code></td>
+    <td>Get the name of the link that is considered to be an end-effector. Return an empty string if there is no end-effector.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_goal_joint_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_joint_tolerance">get<wbr></wbr>_goal<wbr></wbr>_joint<wbr></wbr>_tolerance</a></code></td>
+    <td>Get the tolerance for achieving a joint goal (distance for each joint variable)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_goal_orientation_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_orientation_tolerance">get<wbr></wbr>_goal<wbr></wbr>_orientation<wbr></wbr>_tolerance</a></code></td>
+    <td>When moving to an orientation goal or to a pose goal, the tolerance for the goal orientation is specified as the distance (roll, pitch, yaw) to the target origin of the end-effector</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_goal_position_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_position_tolerance">get<wbr></wbr>_goal<wbr></wbr>_position<wbr></wbr>_tolerance</a></code></td>
+    <td>When moving to a position goal or to a pose goal, the tolerance for the goal position is specified as the radius a sphere around the target origin of the end-effector</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_goal_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_tolerance">get<wbr></wbr>_goal<wbr></wbr>_tolerance</a></code></td>
+    <td>Return a tuple of goal tolerances: joint, position and orientation.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_interface_description" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_interface_description">get<wbr></wbr>_interface<wbr></wbr>_description</a></code></td>
+    <td>Get the description of the planner interface (list of planner ids)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_jacobian_matrix" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_jacobian_matrix">get<wbr></wbr>_jacobian<wbr></wbr>_matrix</a></code></td>
+    <td>Get the jacobian matrix of the group as a list</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_joint_value_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joint_value_target">get<wbr></wbr>_joint<wbr></wbr>_value<wbr></wbr>_target</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_joints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joints">get<wbr></wbr>_joints</a></code></td>
+    <td>Get the joints of this group</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_known_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_known_constraints">get<wbr></wbr>_known<wbr></wbr>_constraints</a></code></td>
+    <td>Get a list of names for the constraints specific for this group, as read from the warehouse</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_name" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_name">get<wbr></wbr>_name</a></code></td>
+    <td>Get the name of the group this instance was initialized for</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_named_target_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_target_values">get<wbr></wbr>_named<wbr></wbr>_target<wbr></wbr>_values</a></code></td>
+    <td>Get a dictionary of joint values of a named target</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_named_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_targets">get<wbr></wbr>_named<wbr></wbr>_targets</a></code></td>
+    <td>Get a list of all the names of joint configurations.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_path_constraints">get<wbr></wbr>_path<wbr></wbr>_constraints</a></code></td>
+    <td>Get the acutal path constraints in form of a moveit_msgs.msgs.Constraints</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_planner_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planner_id">get<wbr></wbr>_planner<wbr></wbr>_id</a></code></td>
+    <td>Get the current planner_id (e.g. RRTConnect, LIN) of the currently selected pipeline</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_planning_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_frame">get<wbr></wbr>_planning<wbr></wbr>_frame</a></code></td>
+    <td>Get the name of the frame where all planning is performed</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_planning_pipeline_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_pipeline_id">get<wbr></wbr>_planning<wbr></wbr>_pipeline<wbr></wbr>_id</a></code></td>
+    <td>Get the current planning_pipeline_id (e.g. ompl, pilz_industrial_motion_planner)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_planning_time" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_time">get<wbr></wbr>_planning<wbr></wbr>_time</a></code></td>
+    <td>Specify the amount of time to be used for motion planning.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_pose_reference_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_pose_reference_frame">get<wbr></wbr>_pose<wbr></wbr>_reference<wbr></wbr>_frame</a></code></td>
+    <td>Get the reference frame assumed for poses of end-effectors</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_random_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_joint_values">get<wbr></wbr>_random<wbr></wbr>_joint<wbr></wbr>_values</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_random_pose" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_pose">get<wbr></wbr>_random<wbr></wbr>_pose</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_remembered_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_remembered_joint_values">get<wbr></wbr>_remembered<wbr></wbr>_joint<wbr></wbr>_values</a></code></td>
+    <td>Get a dictionary that maps names to joint configurations for the group</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_trajectory_constraints">get<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code></td>
+    <td>Get the actual trajectory constraints in form of a moveit_msgs.msgs.TrajectoryConstraints</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_variable_count" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_variable_count">get<wbr></wbr>_variable<wbr></wbr>_count</a></code></td>
+    <td>Return the number of variables used to parameterize a state in this group (larger or equal to number of DOF)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#go" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.go">go</a></code></td>
+    <td>Set the target of the group and then move the group to the specified target</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#has_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.has_end_effector_link">has<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code></td>
+    <td>Check if this group has a link that is considered to be an end effector</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#limit_max_cartesian_link_speed" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.limit_max_cartesian_link_speed">limit<wbr></wbr>_max<wbr></wbr>_cartesian<wbr></wbr>_link<wbr></wbr>_speed</a></code></td>
+    <td>Set the maximum Cartesian link speed. Only positive real values are allowed. The unit is meter per second.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#pick" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.pick">pick</a></code></td>
+    <td>Pick the named object. A grasp message, or a list of Grasp messages can also be specified as argument.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#place" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.place">place</a></code></td>
+    <td>Place the named object at a particular location in the environment or somewhere safe in the world if location is not provided</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#plan" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.plan">plan</a></code></td>
+    <td>Return a tuple of the motion planning results such as (success flag : boolean, trajectory message : RobotTrajectory,</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#remember_joint_values" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.remember_joint_values">remember<wbr></wbr>_joint<wbr></wbr>_values</a></code></td>
+    <td>Record the specified joint configuration of the group under the specified name. If no values are specified, the current state of the group is recorded.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#retime_trajectory" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.retime_trajectory">retime<wbr></wbr>_trajectory</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_constraints_database" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_constraints_database">set<wbr></wbr>_constraints<wbr></wbr>_database</a></code></td>
+    <td>Specify which database to connect to for loading possible path constraints</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_end_effector_link" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_end_effector_link">set<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_link</a></code></td>
+    <td>Set the name of the link to be considered as an end effector</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_goal_joint_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_joint_tolerance">set<wbr></wbr>_goal<wbr></wbr>_joint<wbr></wbr>_tolerance</a></code></td>
+    <td>Set the tolerance for a target joint configuration</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_goal_orientation_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_orientation_tolerance">set<wbr></wbr>_goal<wbr></wbr>_orientation<wbr></wbr>_tolerance</a></code></td>
+    <td>Set the tolerance for a target end-effector orientation</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_goal_position_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_position_tolerance">set<wbr></wbr>_goal<wbr></wbr>_position<wbr></wbr>_tolerance</a></code></td>
+    <td>Set the tolerance for a target end-effector position</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_goal_tolerance" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_tolerance">set<wbr></wbr>_goal<wbr></wbr>_tolerance</a></code></td>
+    <td>Set the joint, position and orientation goal tolerances simultaneously</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_joint_value_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_joint_value_target">set<wbr></wbr>_joint<wbr></wbr>_value<wbr></wbr>_target</a></code></td>
+    <td>Specify a target joint configuration for the group. - if the type of arg1 is one of the following: dict, list, JointState message, then no other arguments should be provided. The dict should specify pairs of joint variable names and their target values, the list should specify all the variable values for the group...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_max_acceleration_scaling_factor" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_acceleration_scaling_factor">set<wbr></wbr>_max<wbr></wbr>_acceleration<wbr></wbr>_scaling<wbr></wbr>_factor</a></code></td>
+    <td>Set a scaling factor to reduce the maximum joint accelerations. Allowed values are in (0,1]. The default value is set in the joint_limits.yaml of the moveit_config package.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_max_velocity_scaling_factor" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_velocity_scaling_factor">set<wbr></wbr>_max<wbr></wbr>_velocity<wbr></wbr>_scaling<wbr></wbr>_factor</a></code></td>
+    <td>Set a scaling factor to reduce the maximum joint velocities. Allowed values are in (0,1]. The default value is set in the joint_limits.yaml of the moveit_config package.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_named_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_named_target">set<wbr></wbr>_named<wbr></wbr>_target</a></code></td>
+    <td>Set a joint configuration by name. The name can be a name previlusy remembered with remember_joint_values() or a configuration specified in the SRDF.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_num_planning_attempts" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_num_planning_attempts">set<wbr></wbr>_num<wbr></wbr>_planning<wbr></wbr>_attempts</a></code></td>
+    <td>Set the number of times the motion plan is to be computed from scratch before the shortest solution is returned. The default value is 1.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_orientation_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_orientation_target">set<wbr></wbr>_orientation<wbr></wbr>_target</a></code></td>
+    <td>Specify a target orientation for the end-effector. Any position of the end-effector is acceptable.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_path_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_path_constraints">set<wbr></wbr>_path<wbr></wbr>_constraints</a></code></td>
+    <td>Specify the path constraints to be used (as read from the database)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_planner_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planner_id">set<wbr></wbr>_planner<wbr></wbr>_id</a></code></td>
+    <td>Specify which planner of the currently selected pipeline to use when motion planning (e.g. RRTConnect, LIN)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_planning_pipeline_id" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_pipeline_id">set<wbr></wbr>_planning<wbr></wbr>_pipeline<wbr></wbr>_id</a></code></td>
+    <td>Specify which planning pipeline to use when motion planning (e.g. ompl, pilz_industrial_motion_planner)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_planning_time" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_time">set<wbr></wbr>_planning<wbr></wbr>_time</a></code></td>
+    <td>Specify the amount of time to be used for motion planning.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_pose_reference_frame" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_reference_frame">set<wbr></wbr>_pose<wbr></wbr>_reference<wbr></wbr>_frame</a></code></td>
+    <td>Set the reference frame to assume for poses of end-effectors</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_target">set<wbr></wbr>_pose<wbr></wbr>_target</a></code></td>
+    <td>Set the pose of the end-effector, if one is available. The expected input is a Pose message, a PoseStamped message or a list of 6 floats:</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_pose_targets" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_targets">set<wbr></wbr>_pose<wbr></wbr>_targets</a></code></td>
+    <td>Set the pose of the end-effector, if one is available. The expected input is a list of poses. Each pose can be a Pose message, a list of 6 floats: [x, y, z, rot_x, rot_y, rot_z] or a list of 7 floats [x, y, z, qx, qy, qz, qw]...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_position_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_position_target">set<wbr></wbr>_position<wbr></wbr>_target</a></code></td>
+    <td>Specify a target position for the end-effector. Any orientation of the end-effector is acceptable.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_random_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_random_target">set<wbr></wbr>_random<wbr></wbr>_target</a></code></td>
+    <td>Set a random joint configuration target</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_rpy_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_rpy_target">set<wbr></wbr>_rpy<wbr></wbr>_target</a></code></td>
+    <td>Specify a target orientation for the end-effector. Any position of the end-effector is acceptable.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_start_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state">set<wbr></wbr>_start<wbr></wbr>_state</a></code></td>
+    <td>Specify a start state for the group.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_start_state_to_current_state" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state_to_current_state">set<wbr></wbr>_start<wbr></wbr>_state<wbr></wbr>_to<wbr></wbr>_current<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_support_surface_name" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_support_surface_name">set<wbr></wbr>_support<wbr></wbr>_surface<wbr></wbr>_name</a></code></td>
+    <td>Set the support surface name for a place operation</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_trajectory_constraints" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_trajectory_constraints">set<wbr></wbr>_trajectory<wbr></wbr>_constraints</a></code></td>
+    <td>Specify the trajectory constraints to be used (setting from database is not implemented yet)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_workspace" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_workspace">set<wbr></wbr>_workspace</a></code></td>
+    <td>Set the workspace for the robot as either [], [minX, minY, maxX, maxY] or [minX, minY, minZ, maxX, maxY, maxZ]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shift_pose_target" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.shift_pose_target">shift<wbr></wbr>_pose<wbr></wbr>_target</a></code></td>
+    <td>Get the current pose of the end effector, add value to the corresponding axis (0..5: X, Y, Z, R, P, Y) and set the new pose as the pose target</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.stop">stop</a></code></td>
+    <td>Stop the current execution, if any</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_g" class="internal-link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander._g">_g</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name, robot_description=<span class="rst-variable-quote">'</span><span class="rst-variable-string">robot_description</span><span class="rst-variable-quote">'</span>, ns=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, wait_for_servers=5.0)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify the group name for which to construct this commander instance. Throws an exception if there is an initialization error.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_looking">
+    
+  </a>
+  <a name="allow_looking">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">allow_looking</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#allow_looking" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_looking">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Enable/disable looking around for motion planning</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_replanning">
+    
+  </a>
+  <a name="allow_replanning">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">allow_replanning</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#allow_replanning" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.allow_replanning">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Enable/disable replanning</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.attach_object">
+    
+  </a>
+  <a name="attach_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">attach_object</span><span class="function-signature">(self, object_name, link_name=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, touch_links=[])</span>:
+    
+    <a class="headerLink" href="#attach_object" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.attach_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Given the name of an object existing in the planning scene, attach it to a link. The link used is specified by the second argument. If left unspecified, the end-effector link is used, if one is known. If there is no end-effector link, the first link in the group is used. If no link is identified, failure is reported. True is returned if an attach request was succesfully sent to the move_group node. This does not verify that the attach request also was successfuly applied by move_group.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_max_cartesian_link_speed">
+    
+  </a>
+  <a name="clear_max_cartesian_link_speed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear_max_cartesian_link_speed</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clear_max_cartesian_link_speed" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_max_cartesian_link_speed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Clear the maximum cartesian link speed.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_path_constraints">
+    
+  </a>
+  <a name="clear_path_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear_path_constraints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clear_path_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_path_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify that no path constraints are to be used during motion planning</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_target">
+    
+  </a>
+  <a name="clear_pose_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear_pose_target</span><span class="function-signature">(self, end_effector_link)</span>:
+    
+    <a class="headerLink" href="#clear_pose_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Clear the pose target for a particular end-effector</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_targets">
+    
+  </a>
+  <a name="clear_pose_targets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear_pose_targets</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clear_pose_targets" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_pose_targets">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Clear all known pose targets</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_trajectory_constraints">
+    
+  </a>
+  <a name="clear_trajectory_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">clear_trajectory_constraints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#clear_trajectory_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.clear_trajectory_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify that no trajectory constraints are to be used during motion planning</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.compute_cartesian_path">
+    
+  </a>
+  <a name="compute_cartesian_path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">compute_cartesian_path</span><span class="function-signature">(self, waypoints, eef_step, jump_threshold, avoid_collisions=True, path_constraints=None)</span>:
+    
+    <a class="headerLink" href="#compute_cartesian_path" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.compute_cartesian_path">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Compute a sequence of waypoints that make the end-effector move in straight line segments that follow the poses specified as waypoints. Configurations are computed for every eef_step meters; The jump_threshold specifies the maximum distance in configuration space between consecutive points in the resultingpath; Kinematic constraints for the path given by path_constraints will be met for every point along the trajectory, if they are not met, a partial solution will be returned. The return value is a tuple: a fraction of how much of the path was followed, the actual RobotTrajectory.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.construct_motion_plan_request">
+    
+  </a>
+  <a name="construct_motion_plan_request">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">construct_motion_plan_request</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#construct_motion_plan_request" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.construct_motion_plan_request">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Returns a MotionPlanRequest filled with the current goals of the move_group_interface</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.detach_object">
+    
+  </a>
+  <a name="detach_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">detach_object</span><span class="function-signature">(self, name=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#detach_object" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.detach_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Given the name of a link, detach the object(s) from that link. If no such link exists, the name is interpreted as an object name. If there is no name specified, an attempt is made to detach all objects attached to any link in the group.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.enforce_bounds">
+    
+  </a>
+  <a name="enforce_bounds">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">enforce_bounds</span><span class="function-signature">(self, robot_state_msg)</span>:
+    
+    <a class="headerLink" href="#enforce_bounds" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.enforce_bounds">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Takes a moveit_msgs RobotState and enforces the state bounds, based on the C++ RobotState enforceBounds()</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.execute">
+    
+  </a>
+  <a name="execute">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">execute</span><span class="function-signature">(self, plan_msg, wait=True)</span>:
+    
+    <a class="headerLink" href="#execute" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.execute">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Execute a previously planned path</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.forget_joint_values">
+    
+  </a>
+  <a name="forget_joint_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">forget_joint_values</span><span class="function-signature">(self, name)</span>:
+    
+    <a class="headerLink" href="#forget_joint_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.forget_joint_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Forget a stored joint configuration</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_active_joints">
+    
+  </a>
+  <a name="get_active_joints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_active_joints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_active_joints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_active_joints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the active joints of this group</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_joint_values">
+    
+  </a>
+  <a name="get_current_joint_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_current_joint_values</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_current_joint_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_joint_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current configuration of the group as a list (these are values published on /joint_states)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_pose">
+    
+  </a>
+  <a name="get_current_pose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_current_pose</span><span class="function-signature">(self, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#get_current_pose" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_pose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current pose of the end-effector of the group. Throws an exception if there is not end-effector.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_rpy">
+    
+  </a>
+  <a name="get_current_rpy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_current_rpy</span><span class="function-signature">(self, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#get_current_rpy" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_rpy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get a list of 3 elements defining the [roll, pitch, yaw] of the end-effector. Throws an exception if there is not end-effector.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state">
+    
+  </a>
+  <a name="get_current_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_current_state</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_current_state" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current state of the robot.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state_bounded">
+    
+  </a>
+  <a name="get_current_state_bounded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_current_state_bounded</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_current_state_bounded" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_current_state_bounded">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current state of the robot bounded.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_end_effector_link">
+    
+  </a>
+  <a name="get_end_effector_link">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_end_effector_link</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_end_effector_link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_end_effector_link">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the name of the link that is considered to be an end-effector. Return an empty string if there is no end-effector.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_joint_tolerance">
+    
+  </a>
+  <a name="get_goal_joint_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_goal_joint_tolerance</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_goal_joint_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_joint_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the tolerance for achieving a joint goal (distance for each joint variable)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_orientation_tolerance">
+    
+  </a>
+  <a name="get_goal_orientation_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_goal_orientation_tolerance</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_goal_orientation_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_orientation_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>When moving to an orientation goal or to a pose goal, the tolerance for the goal orientation is specified as the distance (roll, pitch, yaw) to the target origin of the end-effector</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_position_tolerance">
+    
+  </a>
+  <a name="get_goal_position_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_goal_position_tolerance</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_goal_position_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_position_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>When moving to a position goal or to a pose goal, the tolerance for the goal position is specified as the radius a sphere around the target origin of the end-effector</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_tolerance">
+    
+  </a>
+  <a name="get_goal_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_goal_tolerance</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_goal_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_goal_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a tuple of goal tolerances: joint, position and orientation.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_interface_description">
+    
+  </a>
+  <a name="get_interface_description">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_interface_description</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_interface_description" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_interface_description">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the description of the planner interface (list of planner ids)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_jacobian_matrix">
+    
+  </a>
+  <a name="get_jacobian_matrix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_jacobian_matrix</span><span class="function-signature">(self, joint_values, reference_point=None)</span>:
+    
+    <a class="headerLink" href="#get_jacobian_matrix" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_jacobian_matrix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the jacobian matrix of the group as a list</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joint_value_target">
+    
+  </a>
+  <a name="get_joint_value_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_joint_value_target</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_joint_value_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joint_value_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joints">
+    
+  </a>
+  <a name="get_joints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_joints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_joints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_joints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the joints of this group</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_known_constraints">
+    
+  </a>
+  <a name="get_known_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_known_constraints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_known_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_known_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get a list of names for the constraints specific for this group, as read from the warehouse</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_name">
+    
+  </a>
+  <a name="get_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_name</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_name" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the name of the group this instance was initialized for</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_target_values">
+    
+  </a>
+  <a name="get_named_target_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_named_target_values</span><span class="function-signature">(self, target)</span>:
+    
+    <a class="headerLink" href="#get_named_target_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_target_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get a dictionary of joint values of a named target</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_targets">
+    
+  </a>
+  <a name="get_named_targets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_named_targets</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_named_targets" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_named_targets">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get a list of all the names of joint configurations.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_path_constraints">
+    
+  </a>
+  <a name="get_path_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_path_constraints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_path_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_path_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the acutal path constraints in form of a moveit_msgs.msgs.Constraints</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planner_id">
+    
+  </a>
+  <a name="get_planner_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_planner_id</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_planner_id" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planner_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current planner_id (e.g. RRTConnect, LIN) of the currently selected pipeline</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_frame">
+    
+  </a>
+  <a name="get_planning_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_planning_frame</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_planning_frame" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the name of the frame where all planning is performed</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_pipeline_id">
+    
+  </a>
+  <a name="get_planning_pipeline_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_planning_pipeline_id</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_planning_pipeline_id" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_pipeline_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current planning_pipeline_id (e.g. ompl, pilz_industrial_motion_planner)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_time">
+    
+  </a>
+  <a name="get_planning_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_planning_time</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_planning_time" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_planning_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify the amount of time to be used for motion planning.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_pose_reference_frame">
+    
+  </a>
+  <a name="get_pose_reference_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_pose_reference_frame</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_pose_reference_frame" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_pose_reference_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the reference frame assumed for poses of end-effectors</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_joint_values">
+    
+  </a>
+  <a name="get_random_joint_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_random_joint_values</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_random_joint_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_joint_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_pose">
+    
+  </a>
+  <a name="get_random_pose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_random_pose</span><span class="function-signature">(self, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#get_random_pose" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_random_pose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_remembered_joint_values">
+    
+  </a>
+  <a name="get_remembered_joint_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_remembered_joint_values</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_remembered_joint_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_remembered_joint_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get a dictionary that maps names to joint configurations for the group</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_trajectory_constraints">
+    
+  </a>
+  <a name="get_trajectory_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_trajectory_constraints</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_trajectory_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_trajectory_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the actual trajectory constraints in form of a moveit_msgs.msgs.TrajectoryConstraints</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_variable_count">
+    
+  </a>
+  <a name="get_variable_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_variable_count</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_variable_count" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.get_variable_count">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return the number of variables used to parameterize a state in this group (larger or equal to number of DOF)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.go">
+    
+  </a>
+  <a name="go">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">go</span><span class="function-signature">(self, joints=None, wait=True)</span>:
+    
+    <a class="headerLink" href="#go" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.go">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the target of the group and then move the group to the specified target</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.has_end_effector_link">
+    
+  </a>
+  <a name="has_end_effector_link">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">has_end_effector_link</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#has_end_effector_link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.has_end_effector_link">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if this group has a link that is considered to be an end effector</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.limit_max_cartesian_link_speed">
+    
+  </a>
+  <a name="limit_max_cartesian_link_speed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">limit_max_cartesian_link_speed</span><span class="function-signature">(self, speed, link_name=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#limit_max_cartesian_link_speed" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.limit_max_cartesian_link_speed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the maximum Cartesian link speed. Only positive real values are allowed.
+The unit is meter per second.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.pick">
+    
+  </a>
+  <a name="pick">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">pick</span><span class="function-signature">(self, object_name, grasp=[], plan_only=False)</span>:
+    
+    <a class="headerLink" href="#pick" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.pick">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Pick the named object. A grasp message, or a list of Grasp messages can also be specified as argument.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.place">
+    
+  </a>
+  <a name="place">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">place</span><span class="function-signature">(self, object_name, location=None, plan_only=False)</span>:
+    
+    <a class="headerLink" href="#place" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.place">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Place the named object at a particular location in the environment or somewhere safe in the world if location is not provided</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.plan">
+    
+  </a>
+  <a name="plan">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">plan</span><span class="function-signature">(self, joints=None)</span>:
+    
+    <a class="headerLink" href="#plan" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.plan">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return a tuple of the motion planning results such as
+(success flag : boolean, trajectory message : RobotTrajectory,</p>
+<blockquote>
+planning time : float, error code : MoveitErrorCodes)</blockquote>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.remember_joint_values">
+    
+  </a>
+  <a name="remember_joint_values">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">remember_joint_values</span><span class="function-signature">(self, name, values=None)</span>:
+    
+    <a class="headerLink" href="#remember_joint_values" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.remember_joint_values">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Record the specified joint configuration of the group under the specified name. If no values are specified, the current state of the group is recorded.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.retime_trajectory">
+    
+  </a>
+  <a name="retime_trajectory">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">retime_trajectory</span><span class="function-signature">(self, ref_state_in, traj_in, velocity_scaling_factor=1.0, acceleration_scaling_factor=1.0, algorithm=<span class="rst-variable-quote">'</span><span class="rst-variable-string">iterative_time_parameterization</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#retime_trajectory" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.retime_trajectory">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_constraints_database">
+    
+  </a>
+  <a name="set_constraints_database">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_constraints_database</span><span class="function-signature">(self, host, port)</span>:
+    
+    <a class="headerLink" href="#set_constraints_database" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_constraints_database">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify which database to connect to for loading possible path constraints</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_end_effector_link">
+    
+  </a>
+  <a name="set_end_effector_link">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_end_effector_link</span><span class="function-signature">(self, link_name)</span>:
+    
+    <a class="headerLink" href="#set_end_effector_link" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_end_effector_link">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the name of the link to be considered as an end effector</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_joint_tolerance">
+    
+  </a>
+  <a name="set_goal_joint_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_goal_joint_tolerance</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_goal_joint_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_joint_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the tolerance for a target joint configuration</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_orientation_tolerance">
+    
+  </a>
+  <a name="set_goal_orientation_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_goal_orientation_tolerance</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_goal_orientation_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_orientation_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the tolerance for a target end-effector orientation</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_position_tolerance">
+    
+  </a>
+  <a name="set_goal_position_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_goal_position_tolerance</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_goal_position_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_position_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the tolerance for a target end-effector position</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_tolerance">
+    
+  </a>
+  <a name="set_goal_tolerance">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_goal_tolerance</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_goal_tolerance" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_goal_tolerance">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the joint, position and orientation goal tolerances simultaneously</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_joint_value_target">
+    
+  </a>
+  <a name="set_joint_value_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_joint_value_target</span><span class="function-signature">(self, arg1, arg2=None, arg3=None)</span>:
+    
+    <a class="headerLink" href="#set_joint_value_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_joint_value_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify a target joint configuration for the group.
+- if the type of arg1 is one of the following: dict, list, JointState message, then no other arguments should be provided.
+The dict should specify pairs of joint variable names and their target values, the list should specify all the variable values
+for the group. The JointState message specifies the positions of some single-dof joints.
+- if the type of arg1 is string, then arg2 is expected to be defined and be either a real value or a list of real values. This is
+interpreted as setting a particular joint to a particular value.
+- if the type of arg1 is Pose or PoseStamped, both arg2 and arg3 could be defined. If arg2 or arg3 are defined, their types must
+be either string or bool. The string type argument is interpreted as the end-effector the pose is specified for (default is to use
+the default end-effector), and the bool is used to decide whether the pose specified is approximate (default is false). This situation
+allows setting the joint target of the group by calling IK. This does not send a pose to the planner and the planner will do no IK.
+Instead, one IK solution will be computed first, and that will be sent to the planner.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_acceleration_scaling_factor">
+    
+  </a>
+  <a name="set_max_acceleration_scaling_factor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_max_acceleration_scaling_factor</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_max_acceleration_scaling_factor" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_acceleration_scaling_factor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set a scaling factor to reduce the maximum joint accelerations. Allowed values are in (0,1].
+The default value is set in the joint_limits.yaml of the moveit_config package.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_velocity_scaling_factor">
+    
+  </a>
+  <a name="set_max_velocity_scaling_factor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_max_velocity_scaling_factor</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_max_velocity_scaling_factor" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_max_velocity_scaling_factor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set a scaling factor to reduce the maximum joint velocities. Allowed values are in (0,1].
+The default value is set in the joint_limits.yaml of the moveit_config package.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_named_target">
+    
+  </a>
+  <a name="set_named_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_named_target</span><span class="function-signature">(self, name)</span>:
+    
+    <a class="headerLink" href="#set_named_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_named_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set a joint configuration by name. The name can be a name previlusy remembered with remember_joint_values() or a configuration specified in the SRDF.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_num_planning_attempts">
+    
+  </a>
+  <a name="set_num_planning_attempts">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_num_planning_attempts</span><span class="function-signature">(self, num_planning_attempts)</span>:
+    
+    <a class="headerLink" href="#set_num_planning_attempts" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_num_planning_attempts">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the number of times the motion plan is to be computed from scratch before the shortest solution is returned. The default value is 1.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_orientation_target">
+    
+  </a>
+  <a name="set_orientation_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_orientation_target</span><span class="function-signature">(self, q, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#set_orientation_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_orientation_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify a target orientation for the end-effector. Any position of the end-effector is acceptable.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_path_constraints">
+    
+  </a>
+  <a name="set_path_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_path_constraints</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_path_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_path_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify the path constraints to be used (as read from the database)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planner_id">
+    
+  </a>
+  <a name="set_planner_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_planner_id</span><span class="function-signature">(self, planner_id)</span>:
+    
+    <a class="headerLink" href="#set_planner_id" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planner_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify which planner of the currently selected pipeline to use when motion planning (e.g. RRTConnect, LIN)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_pipeline_id">
+    
+  </a>
+  <a name="set_planning_pipeline_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_planning_pipeline_id</span><span class="function-signature">(self, planning_pipeline)</span>:
+    
+    <a class="headerLink" href="#set_planning_pipeline_id" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_pipeline_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify which planning pipeline to use when motion planning (e.g. ompl, pilz_industrial_motion_planner)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_time">
+    
+  </a>
+  <a name="set_planning_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_planning_time</span><span class="function-signature">(self, seconds)</span>:
+    
+    <a class="headerLink" href="#set_planning_time" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_planning_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify the amount of time to be used for motion planning.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_reference_frame">
+    
+  </a>
+  <a name="set_pose_reference_frame">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_pose_reference_frame</span><span class="function-signature">(self, reference_frame)</span>:
+    
+    <a class="headerLink" href="#set_pose_reference_frame" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_reference_frame">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the reference frame to assume for poses of end-effectors</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_target">
+    
+  </a>
+  <a name="set_pose_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_pose_target</span><span class="function-signature">(self, pose, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#set_pose_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the pose of the end-effector, if one is available. The expected input is a Pose message, a PoseStamped message or a list of 6 floats:</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_targets">
+    
+  </a>
+  <a name="set_pose_targets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_pose_targets</span><span class="function-signature">(self, poses, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#set_pose_targets" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_pose_targets">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the pose of the end-effector, if one is available. The expected input is a list of poses. Each pose can be a Pose message, a list of 6 floats: [x, y, z, rot_x, rot_y, rot_z] or a list of 7 floats [x, y, z, qx, qy, qz, qw]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_position_target">
+    
+  </a>
+  <a name="set_position_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_position_target</span><span class="function-signature">(self, xyz, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#set_position_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_position_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify a target position for the end-effector. Any orientation of the end-effector is acceptable.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_random_target">
+    
+  </a>
+  <a name="set_random_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_random_target</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#set_random_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_random_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set a random joint configuration target</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_rpy_target">
+    
+  </a>
+  <a name="set_rpy_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_rpy_target</span><span class="function-signature">(self, rpy, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#set_rpy_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_rpy_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify a target orientation for the end-effector. Any position of the end-effector is acceptable.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state">
+    
+  </a>
+  <a name="set_start_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_start_state</span><span class="function-signature">(self, msg)</span>:
+    
+    <a class="headerLink" href="#set_start_state" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify a start state for the group.</p>
+<div class="rst-section" id="rst-parameters">
+<h2 class="heading">Parameters</h2>
+<p>msg : moveit_msgs/RobotState</p>
+</div>
+<div class="rst-section" id="rst-examples">
+<h2 class="heading">Examples</h2>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">from</span> moveit_msgs.msg <span class="py-keyword">import</span> RobotState
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">from</span> sensor_msgs.msg <span class="py-keyword">import</span> JointState
+<span class="py-prompt">&gt;&gt;&gt; </span>joint_state = JointState()
+<span class="py-prompt">&gt;&gt;&gt; </span>joint_state.header = Header()
+<span class="py-prompt">&gt;&gt;&gt; </span>joint_state.header.stamp = rospy.Time.now()
+<span class="py-prompt">&gt;&gt;&gt; </span>joint_state.name = [<span class="py-string">'joint_a'</span>, <span class="py-string">'joint_b'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span>joint_state.position = [0.17, 0.34]
+<span class="py-prompt">&gt;&gt;&gt; </span>moveit_robot_state = RobotState()
+<span class="py-prompt">&gt;&gt;&gt; </span>moveit_robot_state.joint_state = joint_state
+<span class="py-prompt">&gt;&gt;&gt; </span>group.set_start_state(moveit_robot_state)</pre></div>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state_to_current_state">
+    
+  </a>
+  <a name="set_start_state_to_current_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_start_state_to_current_state</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#set_start_state_to_current_state" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_start_state_to_current_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_support_surface_name">
+    
+  </a>
+  <a name="set_support_surface_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_support_surface_name</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_support_surface_name" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_support_surface_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the support surface name for a place operation</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_trajectory_constraints">
+    
+  </a>
+  <a name="set_trajectory_constraints">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_trajectory_constraints</span><span class="function-signature">(self, value)</span>:
+    
+    <a class="headerLink" href="#set_trajectory_constraints" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_trajectory_constraints">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Specify the trajectory constraints to be used (setting from database is not implemented yet)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_workspace">
+    
+  </a>
+  <a name="set_workspace">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_workspace</span><span class="function-signature">(self, ws)</span>:
+    
+    <a class="headerLink" href="#set_workspace" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.set_workspace">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Set the workspace for the robot as either [], [minX, minY, maxX, maxY] or [minX, minY, minZ, maxX, maxY, maxZ]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.shift_pose_target">
+    
+  </a>
+  <a name="shift_pose_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shift_pose_target</span><span class="function-signature">(self, axis, value, end_effector_link=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#shift_pose_target" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.shift_pose_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the current pose of the end effector, add value to the corresponding axis (0..5: X, Y, Z, R, P, Y) and set the new pose as the pose target</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stop" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the current execution, if any</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.moveit_commander.move_group.MoveGroupCommander._g">
+    
+  </a>
+  <a name="_g">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_g</span> =
+    
+    <a class="headerLink" href="#_g" title="niryo_libraries.moveit_commander.move_group.MoveGroupCommander._g">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

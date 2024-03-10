@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rospy.topics._PublisherImpl</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rospy.topics._PublisherImpl.html" class="internal-link" title="This class">_<wbr></wbr>Publisher<wbr></wbr>Impl</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#acquire" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.acquire">acquire</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_connection" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_connection">add<wbr></wbr>_connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_headers" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_headers">add<wbr></wbr>_headers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_subscriber_listener" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_subscriber_listener">add<wbr></wbr>_subscriber<wbr></wbr>_listener</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#close" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.close">close</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#enable_latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.enable_latch">enable<wbr></wbr>_latch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_stats" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.get_stats">get<wbr></wbr>_stats</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#publish" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.publish">publish</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#release" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.release">release</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remove_connection" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.remove_connection">remove<wbr></wbr>_connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_queue_size" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.set_queue_size">set<wbr></wbr>_queue<wbr></wbr>_size</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#__del__" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.__del__">__del__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#check" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.check">check</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#get_num_connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.get_num_connections">get<wbr></wbr>_num<wbr></wbr>_connections</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#get_stats_info" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.get_stats_info">get<wbr></wbr>_stats<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#has_connection" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.has_connection">has<wbr></wbr>_connection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#has_connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.has_connections">has<wbr></wbr>_connections</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#_remove_connection" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl._remove_connection">_remove<wbr></wbr>_connection</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#buff" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.buff">buff</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#headers" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.headers">headers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.is_latch">is<wbr></wbr>_latch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.latch">latch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#message_data_sent" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.message_data_sent">message<wbr></wbr>_data<wbr></wbr>_sent</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#publock" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.publock">publock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#queue_size" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.queue_size">queue<wbr></wbr>_size</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#subscriber_listeners" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.subscriber_listeners">subscriber<wbr></wbr>_listeners</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#c_lock" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.c_lock">c<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#closed" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.closed">closed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#connection_poll" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.connection_poll">connection<wbr></wbr>_poll</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.connections">connections</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#data_class" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.data_class">data<wbr></wbr>_class</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#handler" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.handler">handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#name" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#ref_count" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.ref_count">ref<wbr></wbr>_count</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#resolved_name" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.resolved_name">resolved<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#seq" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.seq">seq</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#type" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.type">type</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rospy.topics.html" class="internal-link" title="The parent of this class">topics</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.Poller.html" class="internal-link" title="niryo_libraries.rospy.topics.Poller"><wbr></wbr>Poller</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.Topic.html" class="internal-link" title="niryo_libraries.rospy.topics.Topic"><wbr></wbr>Topic</a></code>
+            </div>
+        
+
+    </li><li class="private thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._PublisherImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl">_<wbr></wbr>Publisher<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._SubscriberImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._SubscriberImpl">_<wbr></wbr>Subscriber<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl">_<wbr></wbr>Topic<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicManager.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager">_<wbr></wbr>Topic<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#isstring" class="internal-link" title="niryo_libraries.rospy.topics.isstring">isstring</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#python3" class="internal-link" title="niryo_libraries.rospy.topics.python3">python3</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#_logger" class="internal-link" title="niryo_libraries.rospy.topics._logger">_logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class private"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.topics.html" class="internal-link" title="niryo_libraries.rospy.topics">topics</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.topics._PublisherImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl">_PublisherImpl</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">_PublisherImpl</span>(<a href="niryo_libraries.rospy.topics._TopicImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl">_TopicImpl</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.__init__">_PublisherImpl(name, data_class)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rospy.topics._PublisherImpl">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Underlying L{_TopicImpl} implementation for publishers.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2535">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.__init__">__init__</a></code></td>
+    <td>@param name: name of topic, e.g. 'laser'. @type  name: str @param data_class: Message data class @type  data_class: L{Message} class</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#acquire" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.acquire">acquire</a></code></td>
+    <td>lock for thread-safe publishing to this transport</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_connection" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_connection">add<wbr></wbr>_connection</a></code></td>
+    <td>Add a connection to this topic. This must be a PubTransport. If the latch is enabled, c will be sent a the value of the latch. @param c: connection instance @type  c: L{Transport} @return: True if connection was added @rtype: bool...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_headers" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_headers">add<wbr></wbr>_headers</a></code></td>
+    <td>Add connection headers to this Topic for future connections. @param headers: key/values will be added to current connection header set, overriding any existing keys if they conflict. @type  headers: dict...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_subscriber_listener" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.add_subscriber_listener">add<wbr></wbr>_subscriber<wbr></wbr>_listener</a></code></td>
+    <td>Add a L{SubscribeListener} for subscribe events. @param l: listener instance @type  l: L{SubscribeListener}</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#close" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.close">close</a></code></td>
+    <td>close I/O and release resources</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#enable_latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.enable_latch">enable<wbr></wbr>_latch</a></code></td>
+    <td>Enable publish() latch. The latch contains the last published message and is sent to any new subscribers.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_stats" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.get_stats">get<wbr></wbr>_stats</a></code></td>
+    <td>Get the stats for this topic publisher @return: stats for topic in getBusStats() publisher format:</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#publish" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.publish">publish</a></code></td>
+    <td>Publish the data to the topic. If the topic has no subscribers, the method will return without any affect. Access to publish() should be locked using acquire() and release() in order to ensure proper message publish ordering.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#release" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.release">release</a></code></td>
+    <td>lock for thread-safe publishing to this transport</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#remove_connection" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.remove_connection">remove<wbr></wbr>_connection</a></code></td>
+    <td>Remove existing connection from this topic. @param c: connection instance to remove @type  c: L{Transport}</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_queue_size" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.set_queue_size">set<wbr></wbr>_queue<wbr></wbr>_size</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#buff" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.buff">buff</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#headers" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.headers">headers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.is_latch">is<wbr></wbr>_latch</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#latch" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.latch">latch</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#message_data_sent" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.message_data_sent">message<wbr></wbr>_data<wbr></wbr>_sent</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#publock" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.publock">publock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#queue_size" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.queue_size">queue<wbr></wbr>_size</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#subscriber_listeners" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl.subscriber_listeners">subscriber<wbr></wbr>_listeners</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.rospy.topics._TopicImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl">_TopicImpl</a></code>:
+            </p>
+            <table class="children sortable" id="id2536">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#__del__" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.__del__">__del__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#check" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.check">check</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#get_num_connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.get_num_connections">get<wbr></wbr>_num<wbr></wbr>_connections</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#get_stats_info" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.get_stats_info">get<wbr></wbr>_stats<wbr></wbr>_info</a></code></td>
+    <td>Get the stats for this topic @return: stats for topic in getBusInfo() format:</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#has_connection" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.has_connection">has<wbr></wbr>_connection</a></code></td>
+    <td>Query whether or not a connection with the associated \x07 endpoint has been added to this object. @param endpoint_id: endpoint ID associated with connection. @type  endpoint_id: str</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#has_connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.has_connections">has<wbr></wbr>_connections</a></code></td>
+    <td>Check to see if this topic is connected to other publishers/subscribers @return: True if topic is connected @rtype: bool</td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#c_lock" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.c_lock">c<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#closed" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.closed">closed</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#connection_poll" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.connection_poll">connection<wbr></wbr>_poll</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#connections" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.connections">connections</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#data_class" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.data_class">data<wbr></wbr>_class</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#handler" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.handler">handler</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#name" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#ref_count" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.ref_count">ref<wbr></wbr>_count</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#resolved_name" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.resolved_name">resolved<wbr></wbr>_name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#seq" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.seq">seq</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#type" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl.type">type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rospy.topics._TopicImpl.html#_remove_connection" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl._remove_connection">_remove<wbr></wbr>_connection</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name, data_class)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rospy.topics._PublisherImpl.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rospy.topics._TopicImpl.html#__init__" class="internal-link">niryo_libraries.rospy.topics._TopicImpl.__init__</a></code></div>
+    <div><p>@param name: name of topic, e.g. 'laser'.
+@type  name: str
+@param data_class: Message data class
+@type  data_class: L{Message} class</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.acquire">
+    
+  </a>
+  <a name="acquire">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">acquire</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#acquire" title="niryo_libraries.rospy.topics._PublisherImpl.acquire">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>lock for thread-safe publishing to this transport</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.add_connection">
+    
+  </a>
+  <a name="add_connection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_connection</span><span class="function-signature">(self, c)</span>:
+    
+    <a class="headerLink" href="#add_connection" title="niryo_libraries.rospy.topics._PublisherImpl.add_connection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rospy.topics._TopicImpl.html#add_connection" class="internal-link">niryo_libraries.rospy.topics._TopicImpl.add_connection</a></code></div>
+    <div><p>Add a connection to this topic. This must be a PubTransport. If
+the latch is enabled, c will be sent a the value of the
+latch.
+@param c: connection instance
+@type  c: L{Transport}
+@return: True if connection was added
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.add_headers">
+    
+  </a>
+  <a name="add_headers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_headers</span><span class="function-signature">(self, headers)</span>:
+    
+    <a class="headerLink" href="#add_headers" title="niryo_libraries.rospy.topics._PublisherImpl.add_headers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add connection headers to this Topic for future connections.
+@param headers: key/values will be added to current connection
+header set, overriding any existing keys if they conflict.
+@type  headers: dict</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.add_subscriber_listener">
+    
+  </a>
+  <a name="add_subscriber_listener">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_subscriber_listener</span><span class="function-signature">(self, l)</span>:
+    
+    <a class="headerLink" href="#add_subscriber_listener" title="niryo_libraries.rospy.topics._PublisherImpl.add_subscriber_listener">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add a L{SubscribeListener} for subscribe events.
+@param l: listener instance
+@type  l: L{SubscribeListener}</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.close">
+    
+  </a>
+  <a name="close">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">close</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#close" title="niryo_libraries.rospy.topics._PublisherImpl.close">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rospy.topics._TopicImpl.html#close" class="internal-link">niryo_libraries.rospy.topics._TopicImpl.close</a></code></div>
+    <div><p>close I/O and release resources</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.enable_latch">
+    
+  </a>
+  <a name="enable_latch">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">enable_latch</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#enable_latch" title="niryo_libraries.rospy.topics._PublisherImpl.enable_latch">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Enable publish() latch. The latch contains the last published
+message and is sent to any new subscribers.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.get_stats">
+    
+  </a>
+  <a name="get_stats">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_stats</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_stats" title="niryo_libraries.rospy.topics._PublisherImpl.get_stats">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rospy.topics._TopicImpl.html#get_stats" class="internal-link">niryo_libraries.rospy.topics._TopicImpl.get_stats</a></code></div>
+    <div><p>Get the stats for this topic publisher
+@return: stats for topic in getBusStats() publisher format:</p>
+<pre class="rst-literal-block">
+[topicName, messageDataBytes, connStats],
+</pre>
+<dl class="rst-docutils">
+<dt>where connStats is::</dt>
+<dd>[id, bytes, numMessages, connected]*</dd>
+</dl>
+<p>@rtype: list</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.publish">
+    
+  </a>
+  <a name="publish">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">publish</span><span class="function-signature">(self, message, connection_override=None)</span>:
+    
+    <a class="headerLink" href="#publish" title="niryo_libraries.rospy.topics._PublisherImpl.publish">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Publish the data to the topic. If the topic has no subscribers,
+the method will return without any affect. Access to publish()
+should be locked using acquire() and release() in order to
+ensure proper message publish ordering.</p>
+<p>@param message: message data instance to publish
+@type  message: L{Message}
+@param connection_override: publish to this connection instead of all
+@type  connection_override: L{Transport}
+@return: True if the data was published, False otherwise.
+@rtype: bool
+@raise genpy.SerializationError: if L{Message} instance is unable to serialize itself
+@raise rospy.ROSException: if topic has been closed or was closed during publish()</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.release">
+    
+  </a>
+  <a name="release">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">release</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#release" title="niryo_libraries.rospy.topics._PublisherImpl.release">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>lock for thread-safe publishing to this transport</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.remove_connection">
+    
+  </a>
+  <a name="remove_connection">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">remove_connection</span><span class="function-signature">(self, c)</span>:
+    
+    <a class="headerLink" href="#remove_connection" title="niryo_libraries.rospy.topics._PublisherImpl.remove_connection">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rospy.topics._TopicImpl.html#remove_connection" class="internal-link">niryo_libraries.rospy.topics._TopicImpl.remove_connection</a></code></div>
+    <div><p>Remove existing connection from this topic.
+@param c: connection instance to remove
+@type  c: L{Transport}</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.set_queue_size">
+    
+  </a>
+  <a name="set_queue_size">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_queue_size</span><span class="function-signature">(self, queue_size)</span>:
+    
+    <a class="headerLink" href="#set_queue_size" title="niryo_libraries.rospy.topics._PublisherImpl.set_queue_size">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.buff">
+    
+  </a>
+  <a name="buff">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">buff</span> =
+    
+    <a class="headerLink" href="#buff" title="niryo_libraries.rospy.topics._PublisherImpl.buff">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.headers">
+    
+  </a>
+  <a name="headers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">headers</span> =
+    
+    <a class="headerLink" href="#headers" title="niryo_libraries.rospy.topics._PublisherImpl.headers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.is_latch">
+    
+  </a>
+  <a name="is_latch">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_latch</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#is_latch" title="niryo_libraries.rospy.topics._PublisherImpl.is_latch">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.latch">
+    
+  </a>
+  <a name="latch">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">latch</span> =
+    
+    <a class="headerLink" href="#latch" title="niryo_libraries.rospy.topics._PublisherImpl.latch">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.message_data_sent">
+    
+  </a>
+  <a name="message_data_sent">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">message_data_sent</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#message_data_sent" title="niryo_libraries.rospy.topics._PublisherImpl.message_data_sent">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.publock">
+    
+  </a>
+  <a name="publock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">publock</span> =
+    
+    <a class="headerLink" href="#publock" title="niryo_libraries.rospy.topics._PublisherImpl.publock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.queue_size">
+    
+  </a>
+  <a name="queue_size">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">queue_size</span> =
+    
+    <a class="headerLink" href="#queue_size" title="niryo_libraries.rospy.topics._PublisherImpl.queue_size">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._PublisherImpl.subscriber_listeners">
+    
+  </a>
+  <a name="subscriber_listeners">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">subscriber_listeners</span> =
+    
+    <a class="headerLink" href="#subscriber_listeners" title="niryo_libraries.rospy.topics._PublisherImpl.subscriber_listeners">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

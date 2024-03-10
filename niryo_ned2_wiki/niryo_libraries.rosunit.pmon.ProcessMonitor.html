@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosunit.pmon.ProcessMonitor</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosunit.pmon.ProcessMonitor.html" class="internal-link" title="This class"><wbr></wbr>Process<wbr></wbr>Monitor</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_process_listener" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.add_process_listener">add<wbr></wbr>_process<wbr></wbr>_listener</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_active_names" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_active_names">get<wbr></wbr>_active<wbr></wbr>_names</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process">get<wbr></wbr>_process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_process_names_with_spawn_count" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process_names_with_spawn_count">get<wbr></wbr>_process<wbr></wbr>_names<wbr></wbr>_with<wbr></wbr>_spawn<wbr></wbr>_count</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.has_process">has<wbr></wbr>_process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#kill_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.kill_process">kill<wbr></wbr>_process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#register" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register">register</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#register_core_proc" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register_core_proc">register<wbr></wbr>_core<wbr></wbr>_proc</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registrations_complete" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.registrations_complete">registrations<wbr></wbr>_complete</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.run">run</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unregister" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.unregister">unregister</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_post_run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._post_run">_post<wbr></wbr>_run</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._run">_run</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#core_procs" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.core_procs">core<wbr></wbr>_procs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dead_list" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.dead_list">dead<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#done" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.done">done</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_shutdown" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.is_shutdown">is<wbr></wbr>_shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#listeners" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.listeners">listeners</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#plock" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.plock">plock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#procs" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.procs">procs</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_registrations_complete" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._registrations_complete">_registrations<wbr></wbr>_complete</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosunit.pmon.html" class="internal-link" title="The parent of this class">pmon</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.DeadProcess.html" class="internal-link" title="niryo_libraries.rosunit.pmon.DeadProcess"><wbr></wbr>Dead<wbr></wbr>Process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html" class="internal-link" title="niryo_libraries.rosunit.pmon.Process"><wbr></wbr>Process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.ProcessListener.html" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessListener"><wbr></wbr>Process<wbr></wbr>Listener</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.ProcessMonitor.html" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor"><wbr></wbr>Process<wbr></wbr>Monitor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.FatalProcessLaunch.html" class="internal-link" title="niryo_libraries.rosunit.pmon.FatalProcessLaunch"><wbr></wbr>Fatal<wbr></wbr>Process<wbr></wbr>Launch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.PmonException.html" class="internal-link" title="niryo_libraries.rosunit.pmon.PmonException"><wbr></wbr>Pmon<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon._ProcessKiller.html" class="internal-link" title="niryo_libraries.rosunit.pmon._ProcessKiller">_<wbr></wbr>Process<wbr></wbr>Killer</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#pmon_shutdown" class="internal-link" title="niryo_libraries.rosunit.pmon.pmon_shutdown">pmon<wbr></wbr>_shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#shutdown_process_monitor" class="internal-link" title="niryo_libraries.rosunit.pmon.shutdown_process_monitor">shutdown<wbr></wbr>_process<wbr></wbr>_monitor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#start_process_monitor" class="internal-link" title="niryo_libraries.rosunit.pmon.start_process_monitor">start<wbr></wbr>_process<wbr></wbr>_monitor</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#_kill_process" class="internal-link" title="niryo_libraries.rosunit.pmon._kill_process">_kill<wbr></wbr>_process</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#_pmon_counter" class="internal-link" title="niryo_libraries.rosunit.pmon._pmon_counter">_pmon<wbr></wbr>_counter</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#_pmons" class="internal-link" title="niryo_libraries.rosunit.pmon._pmons">_pmons</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#_shutdown_lock" class="internal-link" title="niryo_libraries.rosunit.pmon._shutdown_lock">_shutdown<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.html#_shutting_down" class="internal-link" title="niryo_libraries.rosunit.pmon._shutting_down">_shutting<wbr></wbr>_down</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.html" class="internal-link" title="niryo_libraries.rosunit">rosunit</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.pmon.html" class="internal-link" title="niryo_libraries.rosunit.pmon">pmon</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.pmon.ProcessMonitor.html" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor">ProcessMonitor</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ProcessMonitor</span>(Thread):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.__init__">ProcessMonitor(name)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosunit.pmon.ProcessMonitor">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2585">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_process_listener" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.add_process_listener">add<wbr></wbr>_process<wbr></wbr>_listener</a></code></td>
+    <td>Listener for process events. MUST be called before ProcessMonitor is running.See ProcessListener class. @param l: listener instance @type  l: L{ProcessListener}</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_active_names" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_active_names">get<wbr></wbr>_active<wbr></wbr>_names</a></code></td>
+    <td>@return [str]: list of active process names</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process">get<wbr></wbr>_process</a></code></td>
+    <td>@return: process registered under \x07 name, or None @rtype: L{Process}</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_process_names_with_spawn_count" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process_names_with_spawn_count">get<wbr></wbr>_process<wbr></wbr>_names<wbr></wbr>_with<wbr></wbr>_spawn<wbr></wbr>_count</a></code></td>
+    <td>@return: Two lists, where first list of active process names along with the number of times that process has been spawned. Second list contains dead process names and their spawn count. @rtype: [[(str, int),], [(str,int),]]...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#has_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.has_process">has<wbr></wbr>_process</a></code></td>
+    <td>@return: True if process is still be monitored. If False, process has died or was never registered with process @rtype: bool</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#kill_process" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.kill_process">kill<wbr></wbr>_process</a></code></td>
+    <td>Kill process that matches name. NOTE: a killed process will continue to show up as active until the process monitor thread has caught that it has died. @param name: Process name @type  name: str @return: True if a process named name was removed from process monitor...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#register" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register">register</a></code></td>
+    <td>Register process with L{ProcessMonitor} @param p: Process @type  p: L{Process} @raise PmonException: if process with same name is already registered</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#register_core_proc" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register_core_proc">register<wbr></wbr>_core<wbr></wbr>_proc</a></code></td>
+    <td>Register core process with ProcessMonitor. Coreprocesses have special shutdown semantics. They are killed after all other processes, in reverse order in which they are added. @param p Process @type  p: L{Process} @raise PmonException: if process with same name is already registered...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#registrations_complete" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.registrations_complete">registrations<wbr></wbr>_complete</a></code></td>
+    <td>Inform the process monitor that registrations are complete. After the registrations_complete flag is set, process monitor will exit if there are no processes left to monitor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.run">run</a></code></td>
+    <td>thread routine of the process monitor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.shutdown">shutdown</a></code></td>
+    <td>Shutdown the process monitor thread</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unregister" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.unregister">unregister</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#core_procs" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.core_procs">core<wbr></wbr>_procs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dead_list" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.dead_list">dead<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#done" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.done">done</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_shutdown" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.is_shutdown">is<wbr></wbr>_shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#listeners" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.listeners">listeners</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#plock" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.plock">plock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#procs" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor.procs">procs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_post_run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._post_run">_post<wbr></wbr>_run</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_run" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._run">_run</a></code></td>
+    <td>Internal run loop of ProcessMonitor</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_registrations_complete" class="internal-link" title="niryo_libraries.rosunit.pmon.ProcessMonitor._registrations_complete">_registrations<wbr></wbr>_complete</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name=<span class="rst-variable-quote">'</span><span class="rst-variable-string">ProcessMonitor</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosunit.pmon.ProcessMonitor.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.add_process_listener">
+    
+  </a>
+  <a name="add_process_listener">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_process_listener</span><span class="function-signature">(self, l)</span>:
+    
+    <a class="headerLink" href="#add_process_listener" title="niryo_libraries.rosunit.pmon.ProcessMonitor.add_process_listener">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Listener for process events. MUST be called before
+ProcessMonitor is running.See ProcessListener class.
+@param l: listener instance
+@type  l: L{ProcessListener}</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.get_active_names">
+    
+  </a>
+  <a name="get_active_names">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_active_names</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_active_names" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_active_names">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return [str]: list of active process names</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process">
+    
+  </a>
+  <a name="get_process">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_process</span><span class="function-signature">(self, name)</span>:
+    
+    <a class="headerLink" href="#get_process" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: process registered under \x07 name, or None
+@rtype: L{Process}</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process_names_with_spawn_count">
+    
+  </a>
+  <a name="get_process_names_with_spawn_count">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_process_names_with_spawn_count</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_process_names_with_spawn_count" title="niryo_libraries.rosunit.pmon.ProcessMonitor.get_process_names_with_spawn_count">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: Two lists, where first
+list of active process names along with the number of times
+that process has been spawned. Second list contains dead process names
+and their spawn count.
+@rtype: [[(str, int),], [(str,int),]]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.has_process">
+    
+  </a>
+  <a name="has_process">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">has_process</span><span class="function-signature">(self, name)</span>:
+    
+    <a class="headerLink" href="#has_process" title="niryo_libraries.rosunit.pmon.ProcessMonitor.has_process">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: True if process is still be monitored. If False, process
+has died or was never registered with process
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.kill_process">
+    
+  </a>
+  <a name="kill_process">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">kill_process</span><span class="function-signature">(self, name)</span>:
+    
+    <a class="headerLink" href="#kill_process" title="niryo_libraries.rosunit.pmon.ProcessMonitor.kill_process">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Kill process that matches name. NOTE: a killed process will
+continue to show up as active until the process monitor thread
+has caught that it has died.
+@param name: Process name
+@type  name: str
+@return: True if a process named name was removed from
+process monitor. A process is considered killed if its stop()
+method was called.
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.register">
+    
+  </a>
+  <a name="register">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">register</span><span class="function-signature">(self, p)</span>:
+    
+    <a class="headerLink" href="#register" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Register process with L{ProcessMonitor}
+@param p: Process
+@type  p: L{Process}
+@raise PmonException: if process with same name is already registered</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.register_core_proc">
+    
+  </a>
+  <a name="register_core_proc">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">register_core_proc</span><span class="function-signature">(self, p)</span>:
+    
+    <a class="headerLink" href="#register_core_proc" title="niryo_libraries.rosunit.pmon.ProcessMonitor.register_core_proc">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Register core process with ProcessMonitor. Coreprocesses
+have special shutdown semantics. They are killed after all
+other processes, in reverse order in which they are added.
+@param p Process
+@type  p: L{Process}
+@raise PmonException: if process with same name is already registered</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.registrations_complete">
+    
+  </a>
+  <a name="registrations_complete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">registrations_complete</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#registrations_complete" title="niryo_libraries.rosunit.pmon.ProcessMonitor.registrations_complete">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Inform the process monitor that registrations are complete.
+After the registrations_complete flag is set, process monitor
+will exit if there are no processes left to monitor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.run">
+    
+  </a>
+  <a name="run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">run</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#run" title="niryo_libraries.rosunit.pmon.ProcessMonitor.run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>thread routine of the process monitor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#shutdown" title="niryo_libraries.rosunit.pmon.ProcessMonitor.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Shutdown the process monitor thread</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.unregister">
+    
+  </a>
+  <a name="unregister">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">unregister</span><span class="function-signature">(self, p)</span>:
+    
+    <a class="headerLink" href="#unregister" title="niryo_libraries.rosunit.pmon.ProcessMonitor.unregister">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.core_procs">
+    
+  </a>
+  <a name="core_procs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">core_procs</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#core_procs" title="niryo_libraries.rosunit.pmon.ProcessMonitor.core_procs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.dead_list">
+    
+  </a>
+  <a name="dead_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dead_list</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#dead_list" title="niryo_libraries.rosunit.pmon.ProcessMonitor.dead_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.done">
+    
+  </a>
+  <a name="done">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">done</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#done" title="niryo_libraries.rosunit.pmon.ProcessMonitor.done">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.is_shutdown">
+    
+  </a>
+  <a name="is_shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_shutdown</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#is_shutdown" title="niryo_libraries.rosunit.pmon.ProcessMonitor.is_shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.listeners">
+    
+  </a>
+  <a name="listeners">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">listeners</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#listeners" title="niryo_libraries.rosunit.pmon.ProcessMonitor.listeners">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.plock">
+    
+  </a>
+  <a name="plock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">plock</span> =
+    
+    <a class="headerLink" href="#plock" title="niryo_libraries.rosunit.pmon.ProcessMonitor.plock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor.procs">
+    
+  </a>
+  <a name="procs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">procs</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#procs" title="niryo_libraries.rosunit.pmon.ProcessMonitor.procs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor._post_run">
+    
+  </a>
+  <a name="_post_run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_post_run</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_post_run" title="niryo_libraries.rosunit.pmon.ProcessMonitor._post_run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor._run">
+    
+  </a>
+  <a name="_run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_run</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_run" title="niryo_libraries.rosunit.pmon.ProcessMonitor._run">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Internal run loop of ProcessMonitor</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosunit.pmon.ProcessMonitor._registrations_complete">
+    
+  </a>
+  <a name="_registrations_complete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_registrations_complete</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#_registrations_complete" title="niryo_libraries.rosunit.pmon.ProcessMonitor._registrations_complete">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rospy.impl.tcpros_service</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="niryo_libraries.rospy.impl.tcpros_service.html" class="internal-link" title="This module">tcpros<wbr></wbr>_service</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_service.ServiceImpl.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.ServiceImpl"><wbr></wbr>Service<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_service.TCPROSServiceClient.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.TCPROSServiceClient"><wbr></wbr>TCPROSService<wbr></wbr>Client</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_service.TCPService.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.TCPService"><wbr></wbr>TCPService</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#convert_return_to_response" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.convert_return_to_response">convert<wbr></wbr>_return<wbr></wbr>_to<wbr></wbr>_response</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isstring" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.isstring">isstring</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#service_connection_handler" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.service_connection_handler">service<wbr></wbr>_connection<wbr></wbr>_handler</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logger" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.logger">logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="niryo_libraries.rospy.impl.html" class="internal-link" title="The parent of this module">impl</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.init.html" class="internal-link" title="niryo_libraries.rospy.impl.init">init</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.masterslave.html" class="internal-link" title="niryo_libraries.rospy.impl.masterslave">masterslave</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.paramserver.html" class="internal-link" title="niryo_libraries.rospy.impl.paramserver">paramserver</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.registration.html" class="internal-link" title="niryo_libraries.rospy.impl.registration">registration</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.rosout.html" class="internal-link" title="niryo_libraries.rospy.impl.rosout">rosout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.simtime.html" class="internal-link" title="niryo_libraries.rospy.impl.simtime">simtime</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.statistics.html" class="internal-link" title="niryo_libraries.rospy.impl.statistics">statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros">tcpros</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_base.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_base">tcpros<wbr></wbr>_base</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_pubsub.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_pubsub">tcpros<wbr></wbr>_pubsub</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.tcpros_service.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service">tcpros<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.transport.html" class="internal-link" title="niryo_libraries.rospy.impl.transport">transport</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.udpros.html" class="internal-link" title="niryo_libraries.rospy.impl.udpros">udpros</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.validators.html" class="internal-link" title="niryo_libraries.rospy.impl.validators">validators</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.html" class="internal-link" title="niryo_libraries.rospy.impl">impl</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.tcpros_service.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service">tcpros_service</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Internal use: Service-specific extensions for TCPROS support</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2500">
+  
+  
+  <tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="niryo_libraries.rospy.impl.tcpros_service.ServiceImpl.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.ServiceImpl"><wbr></wbr>Service<wbr></wbr>Impl</a></code></td>
+    <td>Implementation of ROS Service. This intermediary class allows for more configuration of behavior than the Service class.</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="niryo_libraries.rospy.impl.tcpros_service.TCPROSServiceClient.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.TCPROSServiceClient"><wbr></wbr>TCPROSService<wbr></wbr>Client</a></code></td>
+    <td>Protocol Implementation for Service clients over TCPROS</td>
+  </tr><tr class="class">
+    
+    <td>Class</td>
+    <td><code><a href="niryo_libraries.rospy.impl.tcpros_service.TCPService.html" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.TCPService"><wbr></wbr>TCPService</a></code></td>
+    <td>Protocol implementation for Services over TCPROS</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#convert_return_to_response" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.convert_return_to_response">convert<wbr></wbr>_return<wbr></wbr>_to<wbr></wbr>_response</a></code></td>
+    <td>Convert return value of function to response instance. The rules/precedence for this are:</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#isstring" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.isstring">isstring</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#service_connection_handler" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.service_connection_handler">service<wbr></wbr>_connection<wbr></wbr>_handler</a></code></td>
+    <td>Process incoming service connection. For use with TCPROSServer. Reads in service name from handshake and creates the appropriate service handler for the connection. @param sock: socket connection @type  sock: socket @param client_addr: client address @type  client_addr: (str, int) @param header: key/value pairs from handshake header @type  header: dict @return: error string or None @rtype: str...</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#logger" class="internal-link" title="niryo_libraries.rospy.impl.tcpros_service.logger">logger</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_service.convert_return_to_response">
+    
+  </a>
+  <a name="convert_return_to_response">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">convert_return_to_response</span><span class="function-signature">(response, response_class)</span>:
+    
+    <a class="headerLink" href="#convert_return_to_response" title="niryo_libraries.rospy.impl.tcpros_service.convert_return_to_response">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert return value of function to response instance. The
+rules/precedence for this are:</p>
+<p>1. If the return type is the same as the response type, no conversion
+is done.</p>
+<p>2. If the return type is a dictionary, it is used as a keyword-style
+initialization for a new response instance.</p>
+<p>3. If the return type is <em>not</em> a list type, it is passed in as a single arg
+to a new response instance.</p>
+<p>4. If the return type is a list/tuple type, it is used as a args-style
+initialization for a new response instance.</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_service.isstring">
+    
+  </a>
+  <a name="isstring">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isstring</span><span class="function-signature">(s)</span>:
+    
+    <a class="headerLink" href="#isstring" title="niryo_libraries.rospy.impl.tcpros_service.isstring">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_service.service_connection_handler">
+    
+  </a>
+  <a name="service_connection_handler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">service_connection_handler</span><span class="function-signature">(sock, client_addr, header)</span>:
+    
+    <a class="headerLink" href="#service_connection_handler" title="niryo_libraries.rospy.impl.tcpros_service.service_connection_handler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Process incoming service connection. For use with
+TCPROSServer. Reads in service name from handshake and creates the
+appropriate service handler for the connection.
+@param sock: socket connection
+@type  sock: socket
+@param client_addr: client address
+@type  client_addr: (str, int)
+@param header: key/value pairs from handshake header
+@type  header: dict
+@return: error string or None
+@rtype: str</p></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.tcpros_service.logger">
+    
+  </a>
+  <a name="logger">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logger</span> =
+    
+    <a class="headerLink" href="#logger" title="niryo_libraries.rospy.impl.tcpros_service.logger">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

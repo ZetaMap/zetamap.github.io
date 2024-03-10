@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.html" class="internal-link" title="This class"><wbr></wbr>Topic<wbr></wbr>Diagnostic</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#tick" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.tick">tick</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#addTask" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.addTask">add<wbr></wbr>Task</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#run" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.run">run</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.html#getName" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.getName">get<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#clear_window" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.clear_window">clear<wbr></wbr>_window</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stamp" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.stamp">stamp</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#tasks" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.tasks">tasks</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.html#name" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#diag" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.diag">diag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#freq" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.freq">freq</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.diagnostic_updater._publisher.html" class="internal-link" title="The parent of this class">_publisher</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher"><wbr></wbr>Diagnosed<wbr></wbr>Publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic"><wbr></wbr>Headerless<wbr></wbr>Topic<wbr></wbr>Diagnostic</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic"><wbr></wbr>Topic<wbr></wbr>Diagnostic</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.diagnostic_updater.html" class="internal-link" title="niryo_libraries.diagnostic_updater">diagnostic_updater</a></code><wbr></wbr>.<code><a href="niryo_libraries.diagnostic_updater._publisher.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher">_publisher</a></code><wbr></wbr>.<code><a href="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic">TopicDiagnostic</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TopicDiagnostic</span>(<a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic">HeaderlessTopicDiagnostic</a>):</code></p><p>Known subclasses: <code><a href="niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher.html" class="internal-link">niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.__init__">TopicDiagnostic(name, diag, freq, stamp)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>A class to facilitate making diagnostics for a topic using a
+FrequencyStatus and TimeStampStatus.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id315">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.__init__">__init__</a></code></td>
+    <td>Constructs a TopicDiagnostic.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#tick" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.tick">tick</a></code></td>
+    <td>Collects statistics and publishes the message.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#stamp" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.stamp">stamp</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic">HeaderlessTopicDiagnostic</a></code>:
+            </p>
+            <table class="children sortable" id="id316">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#clear_window" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.clear_window">clear<wbr></wbr>_window</a></code></td>
+    <td>Clears the frequency statistics.</td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#diag" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.diag">diag</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#freq" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.freq">freq</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask">CompositeDiagnosticTask</a></code> (via <code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic">HeaderlessTopicDiagnostic</a></code>):
+            </p>
+            <table class="children sortable" id="id317">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#addTask" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.addTask">add<wbr></wbr>Task</a></code></td>
+    <td>Adds a child CompositeDiagnosticTask.</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#run" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.run">run</a></code></td>
+    <td>Runs each child and merges their outputs.</td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html#tasks" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.tasks">tasks</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.html" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask">DiagnosticTask</a></code> (via <code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html" class="internal-link" title="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic">HeaderlessTopicDiagnostic</a></code>, <code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask.html" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.CompositeDiagnosticTask">CompositeDiagnosticTask</a></code>):
+            </p>
+            <table class="children sortable" id="id318">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.html#getName" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.getName">get<wbr></wbr>Name</a></code></td>
+    <td>Returns the name of the DiagnosticTask.</td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.html#name" class="internal-link" title="niryo_libraries.diagnostic_updater._diagnostic_updater.DiagnosticTask.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, name, diag, freq, stamp)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#__init__" class="internal-link">niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.__init__</a></code></div><div class="interfaceinfo">overridden in <code><a href="niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher.html" class="internal-link">niryo_libraries.diagnostic_updater._publisher.DiagnosedPublisher</a></code></div>
+    <div><p>Constructs a TopicDiagnostic.</p>
+<p>@param name The name of the topic that is being diagnosed.</p>
+<p>@param diag The diagnostic_updater that the CompositeDiagnosticTask
+should add itself to.</p>
+<p>@param freq The parameters for the FrequencyStatus class that will be
+computing statistics.</p>
+<p>@param stamp The parameters for the TimeStampStatus class that will be
+computing statistics.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.tick">
+    
+  </a>
+  <a name="tick">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">tick</span><span class="function-signature">(self, stamp)</span>:
+    
+    <a class="headerLink" href="#tick" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.tick">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.html#tick" class="internal-link">niryo_libraries.diagnostic_updater._publisher.HeaderlessTopicDiagnostic.tick</a></code></div>
+    <div><p>Collects statistics and publishes the message.</p>
+<p>@param stamp Timestamp to use for interval computation by the
+TimeStampStatus class.</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.stamp">
+    
+  </a>
+  <a name="stamp">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stamp</span> =
+    
+    <a class="headerLink" href="#stamp" title="niryo_libraries.diagnostic_updater._publisher.TopicDiagnostic.stamp">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.html" class="internal-link" title="This class"><wbr></wbr>Robot<wbr></wbr>Status<wbr></wbr>Handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#advertise_new_logs" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_logs">advertise<wbr></wbr>_new<wbr></wbr>_logs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#advertise_new_state" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_state">advertise<wbr></wbr>_new<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#advertise_warning" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_warning">advertise<wbr></wbr>_warning</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_autonomous_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.get_autonomous_status">get<wbr></wbr>_autonomous<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__build_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__build_robot_status">__build<wbr></wbr>_robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__callback_advertise_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__callback_advertise_shutdown">__callback<wbr></wbr>_advertise<wbr></wbr>_shutdown</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__check_hardware_error" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_hardware_error">__check<wbr></wbr>_hardware<wbr></wbr>_error</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__check_motion_errors" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_motion_errors">__check<wbr></wbr>_motion<wbr></wbr>_errors</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__check_regular_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_regular_robot_status">__check<wbr></wbr>_regular<wbr></wbr>_robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__check_ros_state" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_ros_state">__check<wbr></wbr>_ros<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__publish" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__publish">__publish</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__shutdown_advertise" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__shutdown_advertise">__shutdown<wbr></wbr>_advertise</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__waiting_for_booting" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__waiting_for_booting">__waiting<wbr></wbr>_for<wbr></wbr>_booting</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.robot_status">robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__advertise_shutdown_service" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__advertise_shutdown_service">__advertise<wbr></wbr>_shutdown<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__autonomous_mode" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__autonomous_mode">__autonomous<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__booting" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__booting">__booting</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__log_msg" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_msg">__log<wbr></wbr>_msg</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__log_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_status">__log<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_logs_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_logs_observer">__robot<wbr></wbr>_logs<wbr></wbr>_observer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_message" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_message">__robot<wbr></wbr>_message</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_nodes_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_nodes_observer">__robot<wbr></wbr>_nodes<wbr></wbr>_observer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status">__robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_status_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_observer">__robot<wbr></wbr>_status<wbr></wbr>_observer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__robot_status_pub" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_pub">__robot<wbr></wbr>_status<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.niryo_robot_status.robot_status_handler.html" class="internal-link" title="The parent of this class">robot<wbr></wbr>_status<wbr></wbr>_handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.html" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler"><wbr></wbr>Robot<wbr></wbr>Status<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_status.robot_status_handler.NoChangesException.html" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.NoChangesException"><wbr></wbr>No<wbr></wbr>Changes<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_status.html" class="internal-link" title="niryo_libraries.niryo_robot_status">niryo_robot_status</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_status.robot_status_handler.html" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler">robot_status_handler</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.html" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler">RobotStatusHandler</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RobotStatusHandler</span>(object):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1742">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#advertise_new_logs" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_logs">advertise<wbr></wbr>_new<wbr></wbr>_logs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#advertise_new_state" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_state">advertise<wbr></wbr>_new<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#advertise_warning" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_warning">advertise<wbr></wbr>_warning</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_autonomous_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.get_autonomous_status">get<wbr></wbr>_autonomous<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="property">
+    
+    <td>Property</td>
+    <td><code><a href="#robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.robot_status">robot<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__build_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__build_robot_status">__build<wbr></wbr>_robot<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__callback_advertise_shutdown" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__callback_advertise_shutdown">__callback<wbr></wbr>_advertise<wbr></wbr>_shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__check_hardware_error" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_hardware_error">__check<wbr></wbr>_hardware<wbr></wbr>_error</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__check_motion_errors" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_motion_errors">__check<wbr></wbr>_motion<wbr></wbr>_errors</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__check_regular_robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_regular_robot_status">__check<wbr></wbr>_regular<wbr></wbr>_robot<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__check_ros_state" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_ros_state">__check<wbr></wbr>_ros<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__publish" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__publish">__publish</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__shutdown_advertise" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__shutdown_advertise">__shutdown<wbr></wbr>_advertise</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__waiting_for_booting" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__waiting_for_booting">__waiting<wbr></wbr>_for<wbr></wbr>_booting</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__advertise_shutdown_service" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__advertise_shutdown_service">__advertise<wbr></wbr>_shutdown<wbr></wbr>_service</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__autonomous_mode" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__autonomous_mode">__autonomous<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__booting" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__booting">__booting</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__log_msg" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_msg">__log<wbr></wbr>_msg</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__log_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_status">__log<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_logs_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_logs_observer">__robot<wbr></wbr>_logs<wbr></wbr>_observer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_message" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_message">__robot<wbr></wbr>_message</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_nodes_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_nodes_observer">__robot<wbr></wbr>_nodes<wbr></wbr>_observer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_status" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status">__robot<wbr></wbr>_status</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_status_observer" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_observer">__robot<wbr></wbr>_status<wbr></wbr>_observer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__robot_status_pub" class="internal-link" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_pub">__robot<wbr></wbr>_status<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_logs">
+    
+  </a>
+  <a name="advertise_new_logs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">advertise_new_logs</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#advertise_new_logs" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_logs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_state">
+    
+  </a>
+  <a name="advertise_new_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">advertise_new_state</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#advertise_new_state" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_new_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_warning">
+    
+  </a>
+  <a name="advertise_warning">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">advertise_warning</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#advertise_warning" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.advertise_warning">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.get_autonomous_status">
+    
+  </a>
+  <a name="get_autonomous_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_autonomous_status</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_autonomous_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.get_autonomous_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseproperty">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.robot_status">
+    
+  </a>
+  <a name="robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    @property<br />
+    <span class="py-defname">robot_status</span> =
+    
+    <a class="headerLink" href="#robot_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__build_robot_status">
+    
+  </a>
+  <a name="__build_robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__build_robot_status</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__build_robot_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__build_robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__callback_advertise_shutdown">
+    
+  </a>
+  <a name="__callback_advertise_shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__callback_advertise_shutdown</span><span class="function-signature">(self, req)</span>:
+    
+    <a class="headerLink" href="#__callback_advertise_shutdown" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__callback_advertise_shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_hardware_error">
+    
+  </a>
+  <a name="__check_hardware_error">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__check_hardware_error</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__check_hardware_error" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_hardware_error">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_motion_errors">
+    
+  </a>
+  <a name="__check_motion_errors">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__check_motion_errors</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__check_motion_errors" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_motion_errors">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_regular_robot_status">
+    
+  </a>
+  <a name="__check_regular_robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__check_regular_robot_status</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__check_regular_robot_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_regular_robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_ros_state">
+    
+  </a>
+  <a name="__check_ros_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__check_ros_state</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__check_ros_state" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__check_ros_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__publish">
+    
+  </a>
+  <a name="__publish">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__publish</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__publish" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__publish">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__shutdown_advertise">
+    
+  </a>
+  <a name="__shutdown_advertise">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__shutdown_advertise</span><span class="function-signature">(self, status=RobotStatus.SHUTDOWN)</span>:
+    
+    <a class="headerLink" href="#__shutdown_advertise" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__shutdown_advertise">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__waiting_for_booting">
+    
+  </a>
+  <a name="__waiting_for_booting">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__waiting_for_booting</span><span class="function-signature">(self, timeout=120)</span>:
+    
+    <a class="headerLink" href="#__waiting_for_booting" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__waiting_for_booting">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__advertise_shutdown_service">
+    
+  </a>
+  <a name="__advertise_shutdown_service">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__advertise_shutdown_service</span> =
+    
+    <a class="headerLink" href="#__advertise_shutdown_service" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__advertise_shutdown_service">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__autonomous_mode">
+    
+  </a>
+  <a name="__autonomous_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__autonomous_mode</span> =
+    
+    <a class="headerLink" href="#__autonomous_mode" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__autonomous_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__booting">
+    
+  </a>
+  <a name="__booting">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__booting</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#__booting" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__booting">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_msg">
+    
+  </a>
+  <a name="__log_msg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__log_msg</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#__log_msg" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_msg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_status">
+    
+  </a>
+  <a name="__log_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__log_status</span> =
+    
+    <a class="headerLink" href="#__log_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__log_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_logs_observer">
+    
+  </a>
+  <a name="__robot_logs_observer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_logs_observer</span> =
+    
+    <a class="headerLink" href="#__robot_logs_observer" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_logs_observer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_message">
+    
+  </a>
+  <a name="__robot_message">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_message</span> =
+    
+    <a class="headerLink" href="#__robot_message" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_message">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_nodes_observer">
+    
+  </a>
+  <a name="__robot_nodes_observer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_nodes_observer</span> =
+    
+    <a class="headerLink" href="#__robot_nodes_observer" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_nodes_observer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status">
+    
+  </a>
+  <a name="__robot_status">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_status</span> =
+    
+    <a class="headerLink" href="#__robot_status" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_observer">
+    
+  </a>
+  <a name="__robot_status_observer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_status_observer</span> =
+    
+    <a class="headerLink" href="#__robot_status_observer" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_observer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_pub">
+    
+  </a>
+  <a name="__robot_status_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__robot_status_pub</span> =
+    
+    <a class="headerLink" href="#__robot_status_pub" title="niryo_libraries.niryo_robot_status.robot_status_handler.RobotStatusHandler.__robot_status_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

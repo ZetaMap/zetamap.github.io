@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.html" class="internal-link" title="This class"><wbr></wbr>Connection<wbr></wbr>Statistics<wbr></wbr>Logger</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#callback" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.callback">callback</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sendStatistics" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.sendStatistics">send<wbr></wbr>Statistics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#age_list_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.age_list_">age<wbr></wbr>_list_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#arrival_time_list_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.arrival_time_list_">arrival<wbr></wbr>_time<wbr></wbr>_list_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dropped_msgs_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.dropped_msgs_">dropped<wbr></wbr>_msgs_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#last_pub_time" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_pub_time">last<wbr></wbr>_pub<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#last_seq_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_seq_">last<wbr></wbr>_seq_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pub" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub">pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pub_frequency" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub_frequency">pub<wbr></wbr>_frequency</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#publisher" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.publisher">publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stat_bytes_last_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_last_">stat<wbr></wbr>_bytes<wbr></wbr>_last_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stat_bytes_window_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_window_">stat<wbr></wbr>_bytes<wbr></wbr>_window_</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#subscriber" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.subscriber">subscriber</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#topic" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.topic">topic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#window_start" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.window_start">window<wbr></wbr>_start</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rospy.impl.statistics.html" class="internal-link" title="The parent of this class">statistics</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.html" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger"><wbr></wbr>Connection<wbr></wbr>Statistics<wbr></wbr>Logger</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.statistics.SubscriberStatisticsLogger.html" class="internal-link" title="niryo_libraries.rospy.impl.statistics.SubscriberStatisticsLogger"><wbr></wbr>Subscriber<wbr></wbr>Statistics<wbr></wbr>Logger</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.impl.statistics.html#_logger" class="internal-link" title="niryo_libraries.rospy.impl.statistics._logger">_logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.html" class="internal-link" title="niryo_libraries.rospy.impl">impl</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.statistics.html" class="internal-link" title="niryo_libraries.rospy.impl.statistics">statistics</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.html" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger">ConnectionStatisticsLogger</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ConnectionStatisticsLogger</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.__init__">ConnectionStatisticsLogger(topic, subscriber, publisher)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Class that monitors lots of stuff for each connection.</p>
+<p>is created whenever a subscriber is created.
+is destroyed whenever its parent subscriber is destroyed.
+its lifecycle is therefore bound to its parent subscriber.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2488">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.__init__">__init__</a></code></td>
+    <td>Constructor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#callback" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.callback">callback</a></code></td>
+    <td>This method is called for every message, that is received on this subscriber.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#sendStatistics" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.sendStatistics">send<wbr></wbr>Statistics</a></code></td>
+    <td>Send out statistics. Aggregate collected stats information.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.shutdown">shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#age_list_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.age_list_">age<wbr></wbr>_list_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#arrival_time_list_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.arrival_time_list_">arrival<wbr></wbr>_time<wbr></wbr>_list_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dropped_msgs_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.dropped_msgs_">dropped<wbr></wbr>_msgs_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#last_pub_time" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_pub_time">last<wbr></wbr>_pub<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#last_seq_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_seq_">last<wbr></wbr>_seq_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pub" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub">pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pub_frequency" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub_frequency">pub<wbr></wbr>_frequency</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#publisher" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.publisher">publisher</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#stat_bytes_last_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_last_">stat<wbr></wbr>_bytes<wbr></wbr>_last_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#stat_bytes_window_" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_window_">stat<wbr></wbr>_bytes<wbr></wbr>_window_</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#subscriber" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.subscriber">subscriber</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#topic" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.topic">topic</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#window_start" class="internal-link" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.window_start">window<wbr></wbr>_start</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, topic, subscriber, publisher)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Constructor.</p>
+<p>@param topic: Name of the topic
+@param subscriber: Name of the subscriber
+@param publisher: Name of the publisher</p>
+<p>These three should uniquely identify the connection.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.callback">
+    
+  </a>
+  <a name="callback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">callback</span><span class="function-signature">(self, subscriber_statistics_logger, msg, stat_bytes)</span>:
+    
+    <a class="headerLink" href="#callback" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.callback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>This method is called for every message, that is received on this
+subscriber.</p>
+<p>this callback will keep some statistics and publish the results
+periodically on a topic. the publishing should probably be done
+asynchronically in another thread.</p>
+<p>@param msg: The message, that has been received. The message has usually
+been already deserialized. However this is not always the case. (AnyMsg)
+@param stat_bytes: A counter, how many bytes have been moved across
+this connection since it exists.</p>
+<p>Any computing-heavy stuff should be done somewhere else, as this
+callback has to return before the message is delivered to the user.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.sendStatistics">
+    
+  </a>
+  <a name="sendStatistics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">sendStatistics</span><span class="function-signature">(self, subscriber_statistics_logger)</span>:
+    
+    <a class="headerLink" href="#sendStatistics" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.sendStatistics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Send out statistics. Aggregate collected stats information.</p>
+<p>Currently done blocking. Might be moved to own thread later. But at the moment
+any computation done here should be rather quick.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#shutdown" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.age_list_">
+    
+  </a>
+  <a name="age_list_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">age_list_</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#age_list_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.age_list_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.arrival_time_list_">
+    
+  </a>
+  <a name="arrival_time_list_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">arrival_time_list_</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#arrival_time_list_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.arrival_time_list_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.dropped_msgs_">
+    
+  </a>
+  <a name="dropped_msgs_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dropped_msgs_</span> =
+    
+    <a class="headerLink" href="#dropped_msgs_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.dropped_msgs_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_pub_time">
+    
+  </a>
+  <a name="last_pub_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">last_pub_time</span> =
+    
+    <a class="headerLink" href="#last_pub_time" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_pub_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_seq_">
+    
+  </a>
+  <a name="last_seq_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">last_seq_</span> =
+    
+    <a class="headerLink" href="#last_seq_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.last_seq_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub">
+    
+  </a>
+  <a name="pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pub</span> =
+    
+    <a class="headerLink" href="#pub" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub_frequency">
+    
+  </a>
+  <a name="pub_frequency">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pub_frequency</span> =
+    
+    <a class="headerLink" href="#pub_frequency" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.pub_frequency">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.publisher">
+    
+  </a>
+  <a name="publisher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">publisher</span> =
+    
+    <a class="headerLink" href="#publisher" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.publisher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_last_">
+    
+  </a>
+  <a name="stat_bytes_last_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stat_bytes_last_</span> =
+    
+    <a class="headerLink" href="#stat_bytes_last_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_last_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_window_">
+    
+  </a>
+  <a name="stat_bytes_window_">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stat_bytes_window_</span> =
+    
+    <a class="headerLink" href="#stat_bytes_window_" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.stat_bytes_window_">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.subscriber">
+    
+  </a>
+  <a name="subscriber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">subscriber</span> =
+    
+    <a class="headerLink" href="#subscriber" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.subscriber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.topic">
+    
+  </a>
+  <a name="topic">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">topic</span> =
+    
+    <a class="headerLink" href="#topic" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.topic">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.window_start">
+    
+  </a>
+  <a name="window_start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">window_start</span> =
+    
+    <a class="headerLink" href="#window_start" title="niryo_libraries.rospy.impl.statistics.ConnectionStatisticsLogger.window_start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

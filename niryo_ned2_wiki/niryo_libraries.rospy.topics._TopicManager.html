@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rospy.topics._TopicManager</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rospy.topics._TopicManager.html" class="internal-link" title="This class">_<wbr></wbr>Topic<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#acquire_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.acquire_impl">acquire<wbr></wbr>_impl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#check_all" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.check_all">check<wbr></wbr>_all</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#close_all" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.close_all">close<wbr></wbr>_all</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_impl">get<wbr></wbr>_impl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_pub_sub_info" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_info">get<wbr></wbr>_pub<wbr></wbr>_sub<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_pub_sub_stats" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_stats">get<wbr></wbr>_pub<wbr></wbr>_sub<wbr></wbr>_stats</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_publications" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_publications">get<wbr></wbr>_publications</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_publisher_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_publisher_impl">get<wbr></wbr>_publisher<wbr></wbr>_impl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_subscriber_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_subscriber_impl">get<wbr></wbr>_subscriber<wbr></wbr>_impl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_subscriptions" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_subscriptions">get<wbr></wbr>_subscriptions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_topics">get<wbr></wbr>_topics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has_publication" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.has_publication">has<wbr></wbr>_publication</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has_subscription" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.has_subscription">has<wbr></wbr>_subscription</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#release_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.release_impl">release<wbr></wbr>_impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_add" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._add">_add</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_get_list" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._get_list">_get<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_recalculate_topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._recalculate_topics">_recalculate<wbr></wbr>_topics</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_remove" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._remove">_remove</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#closed" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.closed">closed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#lock" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.lock">lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pubs" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.pubs">pubs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#subs" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.subs">subs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.topics">topics</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rospy.topics.html" class="internal-link" title="The parent of this class">topics</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.Poller.html" class="internal-link" title="niryo_libraries.rospy.topics.Poller"><wbr></wbr>Poller</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.Topic.html" class="internal-link" title="niryo_libraries.rospy.topics.Topic"><wbr></wbr>Topic</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._PublisherImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._PublisherImpl">_<wbr></wbr>Publisher<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._SubscriberImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._SubscriberImpl">_<wbr></wbr>Subscriber<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicImpl.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicImpl">_<wbr></wbr>Topic<wbr></wbr>Impl</a></code>
+            </div>
+        
+
+    </li><li class="private thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics._TopicManager.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager">_<wbr></wbr>Topic<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#isstring" class="internal-link" title="niryo_libraries.rospy.topics.isstring">isstring</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#python3" class="internal-link" title="niryo_libraries.rospy.topics.python3">python3</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.topics.html#_logger" class="internal-link" title="niryo_libraries.rospy.topics._logger">_logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class private"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.topics.html" class="internal-link" title="niryo_libraries.rospy.topics">topics</a></code><wbr></wbr>.<code><a href="niryo_libraries.rospy.topics._TopicManager.html" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager">_TopicManager</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">_TopicManager</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.__init__">_TopicManager()</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rospy.topics._TopicManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Tracks Topic objects
+See L{get_topic_manager()} for singleton access</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2537">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.__init__">__init__</a></code></td>
+    <td>ctor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#acquire_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.acquire_impl">acquire<wbr></wbr>_impl</a></code></td>
+    <td>Acquire a L{_TopicImpl} for the specified topic (create one if it doesn't exist).  Every L{Topic} instance has a _TopicImpl that actually controls the topic resources so that multiple Topic instances use the same underlying connections...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#check_all" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.check_all">check<wbr></wbr>_all</a></code></td>
+    <td>Check all registered publication and subscriptions.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#close_all" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.close_all">close<wbr></wbr>_all</a></code></td>
+    <td>Close all registered publication and subscriptions. Manager is no longer usable after close.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_impl">get<wbr></wbr>_impl</a></code></td>
+    <td>Get the L{_TopicImpl} for the specified topic. This is mainly for testing purposes. Unlike acquire_impl, it does not alter the ref count. @param resolved_name: resolved topic name @type  resolved_name: str @param reg_type: L{rospy...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_pub_sub_info" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_info">get<wbr></wbr>_pub<wbr></wbr>_sub<wbr></wbr>_info</a></code></td>
+    <td>get topic publisher and subscriber connection info for getBusInfo() api @return: [bus info stats]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_pub_sub_stats" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_stats">get<wbr></wbr>_pub<wbr></wbr>_sub<wbr></wbr>_stats</a></code></td>
+    <td>get topic publisher and subscriber stats for getBusStats() api @return: [publisherStats, subscriberStats].</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_publications" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_publications">get<wbr></wbr>_publications</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_publisher_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_publisher_impl">get<wbr></wbr>_publisher<wbr></wbr>_impl</a></code></td>
+    <td>@param resolved_name: resolved topic name @type  resolved_name: str @return: list of L{_PublisherImpl}s @rtype: [L{_PublisherImpl}]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_subscriber_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_subscriber_impl">get<wbr></wbr>_subscriber<wbr></wbr>_impl</a></code></td>
+    <td>@param resolved_name: topic name @type  resolved_name: str @return: subscriber for the specified topic. @rtype: L{_SubscriberImpl}</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_subscriptions" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_subscriptions">get<wbr></wbr>_subscriptions</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.get_topics">get<wbr></wbr>_topics</a></code></td>
+    <td>@return: list of topic names this node subscribes to/publishes @rtype: [str]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#has_publication" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.has_publication">has<wbr></wbr>_publication</a></code></td>
+    <td>@param resolved_name: resolved topic name @type  resolved_name: str @return: True if manager has publication for specified topic @rtype:  bool</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#has_subscription" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.has_subscription">has<wbr></wbr>_subscription</a></code></td>
+    <td>@param resolved_name: resolved topic name @type  resolved_name: str @return: True if manager has subscription for specified topic @rtype: bool</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#release_impl" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.release_impl">release<wbr></wbr>_impl</a></code></td>
+    <td>Release a L_{TopicImpl} for the specified topic.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#closed" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.closed">closed</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#lock" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.lock">lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pubs" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.pubs">pubs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#subs" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.subs">subs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager.topics">topics</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_add" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._add">_add</a></code></td>
+    <td>Add L{_TopicImpl} instance to rmap @param ps: a pub/sub impl instance @type  ps: L{_TopicImpl} @param rmap: { topic: _TopicImpl} rmap to record instance in @type  rmap: dict @param reg_type: L{rospy.registration...</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_get_list" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._get_list">_get<wbr></wbr>_list</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_recalculate_topics" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._recalculate_topics">_recalculate<wbr></wbr>_topics</a></code></td>
+    <td>recalculate self.topics. expensive</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_remove" class="internal-link" title="niryo_libraries.rospy.topics._TopicManager._remove">_remove</a></code></td>
+    <td>Remove L{_TopicImpl} instance from rmap @param ps: a pub/sub impl instance @type  ps: L{_TopicImpl} @param rmap: topic-&gt;_TopicImpl rmap to remove instance in @type  rmap: dict @param reg_type: L{rospy.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rospy.topics._TopicManager.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>ctor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.acquire_impl">
+    
+  </a>
+  <a name="acquire_impl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">acquire_impl</span><span class="function-signature">(self, reg_type, resolved_name, data_class)</span>:
+    
+    <a class="headerLink" href="#acquire_impl" title="niryo_libraries.rospy.topics._TopicManager.acquire_impl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Acquire a L{_TopicImpl} for the specified topic (create one if it
+doesn't exist).  Every L{Topic} instance has a _TopicImpl that
+actually controls the topic resources so that multiple Topic
+instances use the same underlying connections. 'Acquiring' a
+topic implementation marks that another Topic instance is
+using the TopicImpl.</p>
+<p>@param resolved_name: resolved topic name
+@type  resolved_name: str</p>
+<p>@param reg_type: L{rospy.registration.Registration.PUB} or L{rospy.registration.Registration.SUB}
+@type  reg_type: str</p>
+<p>@param data_class: message class for topic
+@type  data_class: L{Message} class</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.check_all">
+    
+  </a>
+  <a name="check_all">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">check_all</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#check_all" title="niryo_libraries.rospy.topics._TopicManager.check_all">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check all registered publication and subscriptions.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.close_all">
+    
+  </a>
+  <a name="close_all">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">close_all</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#close_all" title="niryo_libraries.rospy.topics._TopicManager.close_all">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Close all registered publication and subscriptions. Manager is
+no longer usable after close.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_impl">
+    
+  </a>
+  <a name="get_impl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_impl</span><span class="function-signature">(self, reg_type, resolved_name)</span>:
+    
+    <a class="headerLink" href="#get_impl" title="niryo_libraries.rospy.topics._TopicManager.get_impl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the L{_TopicImpl} for the specified topic. This is mainly for
+testing purposes. Unlike acquire_impl, it does not alter the
+ref count.
+@param resolved_name: resolved topic name
+@type  resolved_name: str
+@param reg_type: L{rospy.registration.Registration.PUB} or L{rospy.registration.Registration.SUB}
+@type  reg_type: str</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_info">
+    
+  </a>
+  <a name="get_pub_sub_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_pub_sub_info</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_pub_sub_info" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>get topic publisher and subscriber connection info for getBusInfo() api
+@return: [bus info stats]</p>
+<blockquote>
+See getBusInfo() API for more data structure details.</blockquote>
+<p>@rtype: list</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_stats">
+    
+  </a>
+  <a name="get_pub_sub_stats">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_pub_sub_stats</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_pub_sub_stats" title="niryo_libraries.rospy.topics._TopicManager.get_pub_sub_stats">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>get topic publisher and subscriber stats for getBusStats() api
+@return: [publisherStats, subscriberStats].</p>
+<blockquote>
+See getBusStats() API for more data structure details.</blockquote>
+<p>@rtype: list</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_publications">
+    
+  </a>
+  <a name="get_publications">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_publications</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_publications" title="niryo_libraries.rospy.topics._TopicManager.get_publications">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_publisher_impl">
+    
+  </a>
+  <a name="get_publisher_impl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_publisher_impl</span><span class="function-signature">(self, resolved_name)</span>:
+    
+    <a class="headerLink" href="#get_publisher_impl" title="niryo_libraries.rospy.topics._TopicManager.get_publisher_impl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param resolved_name: resolved topic name
+@type  resolved_name: str
+@return: list of L{_PublisherImpl}s
+@rtype: [L{_PublisherImpl}]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_subscriber_impl">
+    
+  </a>
+  <a name="get_subscriber_impl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_subscriber_impl</span><span class="function-signature">(self, resolved_name)</span>:
+    
+    <a class="headerLink" href="#get_subscriber_impl" title="niryo_libraries.rospy.topics._TopicManager.get_subscriber_impl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param resolved_name: topic name
+@type  resolved_name: str
+@return: subscriber for the specified topic.
+@rtype: L{_SubscriberImpl}</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_subscriptions">
+    
+  </a>
+  <a name="get_subscriptions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_subscriptions</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_subscriptions" title="niryo_libraries.rospy.topics._TopicManager.get_subscriptions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.get_topics">
+    
+  </a>
+  <a name="get_topics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_topics</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_topics" title="niryo_libraries.rospy.topics._TopicManager.get_topics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: list of topic names this node subscribes to/publishes
+@rtype: [str]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.has_publication">
+    
+  </a>
+  <a name="has_publication">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">has_publication</span><span class="function-signature">(self, resolved_name)</span>:
+    
+    <a class="headerLink" href="#has_publication" title="niryo_libraries.rospy.topics._TopicManager.has_publication">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param resolved_name: resolved topic name
+@type  resolved_name: str
+@return: True if manager has publication for specified topic
+@rtype:  bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.has_subscription">
+    
+  </a>
+  <a name="has_subscription">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">has_subscription</span><span class="function-signature">(self, resolved_name)</span>:
+    
+    <a class="headerLink" href="#has_subscription" title="niryo_libraries.rospy.topics._TopicManager.has_subscription">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param resolved_name: resolved topic name
+@type  resolved_name: str
+@return: True if manager has subscription for specified topic
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.release_impl">
+    
+  </a>
+  <a name="release_impl">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">release_impl</span><span class="function-signature">(self, reg_type, resolved_name)</span>:
+    
+    <a class="headerLink" href="#release_impl" title="niryo_libraries.rospy.topics._TopicManager.release_impl">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Release a L_{TopicImpl} for the specified topic.</p>
+<p>Every L{Topic} instance has a _TopicImpl that actually
+controls the topic resources so that multiple Topic instances
+use the same underlying connections. 'Acquiring' a topic
+implementation marks that another Topic instance is using the
+TopicImpl.</p>
+<p>@param resolved_name: resolved topic name
+@type  resolved_name: str
+@param reg_type: L{rospy.registration.Registration.PUB} or L{rospy.registration.Registration.SUB}
+@type  reg_type: str</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.closed">
+    
+  </a>
+  <a name="closed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">closed</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#closed" title="niryo_libraries.rospy.topics._TopicManager.closed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.lock">
+    
+  </a>
+  <a name="lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">lock</span> =
+    
+    <a class="headerLink" href="#lock" title="niryo_libraries.rospy.topics._TopicManager.lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.pubs">
+    
+  </a>
+  <a name="pubs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pubs</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#pubs" title="niryo_libraries.rospy.topics._TopicManager.pubs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.subs">
+    
+  </a>
+  <a name="subs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">subs</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#subs" title="niryo_libraries.rospy.topics._TopicManager.subs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager.topics">
+    
+  </a>
+  <a name="topics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">topics</span> =
+    
+    <a class="headerLink" href="#topics" title="niryo_libraries.rospy.topics._TopicManager.topics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager._add">
+    
+  </a>
+  <a name="_add">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_add</span><span class="function-signature">(self, ps, rmap, reg_type)</span>:
+    
+    <a class="headerLink" href="#_add" title="niryo_libraries.rospy.topics._TopicManager._add">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add L{_TopicImpl} instance to rmap
+@param ps: a pub/sub impl instance
+@type  ps: L{_TopicImpl}
+@param rmap: { topic: _TopicImpl} rmap to record instance in
+@type  rmap: dict
+@param reg_type: L{rospy.registration.Registration.PUB} or L{rospy.registration.Registration.SUB}
+@type  reg_type: str</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager._get_list">
+    
+  </a>
+  <a name="_get_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_get_list</span><span class="function-signature">(self, rmap)</span>:
+    
+    <a class="headerLink" href="#_get_list" title="niryo_libraries.rospy.topics._TopicManager._get_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager._recalculate_topics">
+    
+  </a>
+  <a name="_recalculate_topics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_recalculate_topics</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_recalculate_topics" title="niryo_libraries.rospy.topics._TopicManager._recalculate_topics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>recalculate self.topics. expensive</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rospy.topics._TopicManager._remove">
+    
+  </a>
+  <a name="_remove">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_remove</span><span class="function-signature">(self, ps, rmap, reg_type)</span>:
+    
+    <a class="headerLink" href="#_remove" title="niryo_libraries.rospy.topics._TopicManager._remove">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Remove L{_TopicImpl} instance from rmap
+@param ps: a pub/sub impl instance
+@type  ps: L{_TopicImpl}
+@param rmap: topic-&gt;_TopicImpl rmap to remove instance in
+@type  rmap: dict
+@param reg_type: L{rospy.registration.Registration.PUB} or L{rospy.registration.Registration.SUB}
+@type  reg_type: str</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

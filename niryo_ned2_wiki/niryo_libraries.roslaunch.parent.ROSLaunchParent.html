@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.roslaunch.parent.ROSLaunchParent</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.roslaunch.parent.ROSLaunchParent.html" class="internal-link" title="This class"><wbr></wbr>ROSLaunch<wbr></wbr>Parent</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#spin" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin">spin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#spin_once" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin_once">spin<wbr></wbr>_once</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.start">start</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_init_remote" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_remote">_init<wbr></wbr>_remote</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_init_runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_runner">_init<wbr></wbr>_runner</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_load_config" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._load_config">_load<wbr></wbr>_config</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_start_infrastructure" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_infrastructure">_start<wbr></wbr>_infrastructure</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_start_pm" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_pm">_start<wbr></wbr>_pm</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_start_remote" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_remote">_start<wbr></wbr>_remote</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_start_server" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_server">_start<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stop_infrastructure" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._stop_infrastructure">_stop<wbr></wbr>_infrastructure</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#config" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.config">config</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#force_log" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_log">force<wbr></wbr>_log</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#force_required" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_required">force<wbr></wbr>_required</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#force_screen" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_screen">force<wbr></wbr>_screen</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_core" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_core">is<wbr></wbr>_core</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_rostest" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_rostest">is<wbr></wbr>_rostest</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#local_only" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.local_only">local<wbr></wbr>_only</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#logger" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.logger">logger</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#master_logger_level" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.master_logger_level">master<wbr></wbr>_logger<wbr></wbr>_level</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#num_workers" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.num_workers">num<wbr></wbr>_workers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pm" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.pm">pm</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#port" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.port">port</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#process_listeners" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.process_listeners">process<wbr></wbr>_listeners</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#remote_runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.remote_runner">remote<wbr></wbr>_runner</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#roslaunch_files" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_files">roslaunch<wbr></wbr>_files</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#roslaunch_strs" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_strs">roslaunch<wbr></wbr>_strs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run_id" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.run_id">run<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.runner">runner</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#server" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.server">server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#show_summary" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.show_summary">show<wbr></wbr>_summary</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sigint_timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigint_timeout">sigint<wbr></wbr>_timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sigterm_timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigterm_timeout">sigterm<wbr></wbr>_timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.timeout">timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#verbose" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.verbose">verbose</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_shutting_down" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._shutting_down">_shutting<wbr></wbr>_down</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.roslaunch.parent.html" class="internal-link" title="The parent of this class">parent</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslaunch.parent.ROSLaunchParent.html" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent"><wbr></wbr>ROSLaunch<wbr></wbr>Parent</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslaunch.html" class="internal-link" title="niryo_libraries.roslaunch">roslaunch</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslaunch.parent.html" class="internal-link" title="niryo_libraries.roslaunch.parent">parent</a></code><wbr></wbr>.<code><a href="niryo_libraries.roslaunch.parent.ROSLaunchParent.html" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent">ROSLaunchParent</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ROSLaunchParent</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.__init__">ROSLaunchParent(run_id, roslaunch_files, is_core, port, ...)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.roslaunch.parent.ROSLaunchParent">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>ROSLaunchParent represents the main 'parent' roslaunch process. It
+is responsible for loading the launch files, assigning machines,
+and then starting up any remote processes. The __main__ method
+delegates most of runtime to ROSLaunchParent.</p>
+<p>This must be called from the Python Main thread due to signal registration.</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2328">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.__init__">__init__</a></code></td>
+    <td>@param run_id: UUID of roslaunch session @type  run_id: str @param roslaunch_files: list of launch configuration</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.shutdown">shutdown</a></code></td>
+    <td>Stop the parent roslaunch.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#spin" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin">spin</a></code></td>
+    <td>Run the parent roslaunch until exit</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#spin_once" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin_once">spin<wbr></wbr>_once</a></code></td>
+    <td>Run the parent roslaunch event loop once</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.start">start</a></code></td>
+    <td>Run the parent roslaunch.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#config" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.config">config</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#force_log" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_log">force<wbr></wbr>_log</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#force_required" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_required">force<wbr></wbr>_required</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#force_screen" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_screen">force<wbr></wbr>_screen</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_core" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_core">is<wbr></wbr>_core</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_rostest" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_rostest">is<wbr></wbr>_rostest</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#local_only" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.local_only">local<wbr></wbr>_only</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#logger" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.logger">logger</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#master_logger_level" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.master_logger_level">master<wbr></wbr>_logger<wbr></wbr>_level</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#num_workers" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.num_workers">num<wbr></wbr>_workers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pm" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.pm">pm</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#port" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.port">port</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#process_listeners" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.process_listeners">process<wbr></wbr>_listeners</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#remote_runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.remote_runner">remote<wbr></wbr>_runner</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#roslaunch_files" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_files">roslaunch<wbr></wbr>_files</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#roslaunch_strs" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_strs">roslaunch<wbr></wbr>_strs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#run_id" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.run_id">run<wbr></wbr>_id</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.runner">runner</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#server" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.server">server</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#show_summary" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.show_summary">show<wbr></wbr>_summary</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sigint_timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigint_timeout">sigint<wbr></wbr>_timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sigterm_timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigterm_timeout">sigterm<wbr></wbr>_timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#timeout" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.timeout">timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#verbose" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.verbose">verbose</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_init_remote" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_remote">_init<wbr></wbr>_remote</a></code></td>
+    <td>Initialize the remote process runner, if required. Subroutine of _start_remote, separated out for easier testing</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_init_runner" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_runner">_init<wbr></wbr>_runner</a></code></td>
+    <td>Initialize the roslaunch runner</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_load_config" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._load_config">_load<wbr></wbr>_config</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_start_infrastructure" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_infrastructure">_start<wbr></wbr>_infrastructure</a></code></td>
+    <td>load config, start XMLRPC servers and process monitor</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_start_pm" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_pm">_start<wbr></wbr>_pm</a></code></td>
+    <td>Start the process monitor</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_start_remote" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_remote">_start<wbr></wbr>_remote</a></code></td>
+    <td>Initializes and runs the remote process runner, if required</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_start_server" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_server">_start<wbr></wbr>_server</a></code></td>
+    <td>Initialize the roslaunch parent XML-RPC server</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_stop_infrastructure" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._stop_infrastructure">_stop<wbr></wbr>_infrastructure</a></code></td>
+    <td>Tear down server and process monitor. Not multithread safe.</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_shutting_down" class="internal-link" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._shutting_down">_shutting<wbr></wbr>_down</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, run_id, roslaunch_files, is_core=False, port=None, local_only=False, process_listeners=None, verbose=False, force_screen=False, force_log=False, is_rostest=False, roslaunch_strs=None, num_workers=NUM_WORKERS, timeout=None, master_logger_level=False, show_summary=True, force_required=False, sigint_timeout=DEFAULT_TIMEOUT_SIGINT, sigterm_timeout=DEFAULT_TIMEOUT_SIGTERM)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param run_id: UUID of roslaunch session
+@type  run_id: str
+@param roslaunch_files: list of launch configuration</p>
+<blockquote>
+files to load</blockquote>
+<p>@type  roslaunch_files: [str]
+@param is_core bool: if True, this launch is a roscore</p>
+<blockquote>
+instance. This affects the error behavior if a master is
+already running (i.e. it fails).</blockquote>
+<p>@type  is_core: bool
+@param process_listeners: (optional) list of process listeners</p>
+<blockquote>
+to register with process monitor once launch is running</blockquote>
+<p>@type  process_listeners: [L{roslaunch.pmon.ProcessListener}]
+@param port: (optional) override master port number from what is specified in the master URI.
+@type  port: int
+@param verbose: (optional) print verbose output
+@type  verbose: boolean
+@param show_summary: (optional) whether to show a summary or not
+@type  show_summary: boolean
+@param force_screen: (optional) force output of all nodes to screen
+@type  force_screen: boolean
+@param force_log: (optional) force output of all nodes to log
+@type  force_log: boolean
+@param is_rostest bool: if True, this launch is a rostest</p>
+<blockquote>
+instance. This affects validation checks.</blockquote>
+<p>@type  is_rostest: bool
+@param num_workers: If this is the core, the number of worker-threads to use.
+@type num_workers: int
+@param timeout: If this is the core, the socket-timeout to use.
+@type timeout: Float or None
+@throws RLException
+@param master_logger_level: Specify roscore's rosmaster.master logger level, use default if it is False.
+@type master_logger_level: str or False
+@param force_required: (optional) whether to make all nodes required
+@type force_required: boolean
+@param sigint_timeout: The SIGINT timeout used when killing nodes (in seconds).
+@type sigint_timeout: float
+@param sigterm_timeout: The SIGTERM timeout used when killing nodes if SIGINT does not stop the node (in seconds).
+@type sigterm_timeout: float
+@raise RLException: If sigint_timeout or sigterm_timeout are nonpositive.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#shutdown" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the parent roslaunch.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin">
+    
+  </a>
+  <a name="spin">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">spin</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#spin" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Run the parent roslaunch until exit</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin_once">
+    
+  </a>
+  <a name="spin_once">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">spin_once</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#spin_once" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.spin_once">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Run the parent roslaunch event loop once</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start</span><span class="function-signature">(self, auto_terminate=True)</span>:
+    
+    <a class="headerLink" href="#start" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Run the parent roslaunch.</p>
+<p>@param auto_terminate: stop process monitor once there are no
+more processes to monitor (default True). This defaults to
+True, which is the command-line behavior of roslaunch. Scripts
+may wish to set this to False if they wish to keep the
+roslauch infrastructure up regardless of processes being
+monitored.</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.config">
+    
+  </a>
+  <a name="config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">config</span> =
+    
+    <a class="headerLink" href="#config" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.config">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_log">
+    
+  </a>
+  <a name="force_log">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">force_log</span> =
+    
+    <a class="headerLink" href="#force_log" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_log">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_required">
+    
+  </a>
+  <a name="force_required">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">force_required</span> =
+    
+    <a class="headerLink" href="#force_required" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_required">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_screen">
+    
+  </a>
+  <a name="force_screen">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">force_screen</span> =
+    
+    <a class="headerLink" href="#force_screen" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.force_screen">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_core">
+    
+  </a>
+  <a name="is_core">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_core</span> =
+    
+    <a class="headerLink" href="#is_core" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_core">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_rostest">
+    
+  </a>
+  <a name="is_rostest">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_rostest</span> =
+    
+    <a class="headerLink" href="#is_rostest" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.is_rostest">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.local_only">
+    
+  </a>
+  <a name="local_only">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">local_only</span> =
+    
+    <a class="headerLink" href="#local_only" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.local_only">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.logger">
+    
+  </a>
+  <a name="logger">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">logger</span> =
+    
+    <a class="headerLink" href="#logger" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.logger">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.master_logger_level">
+    
+  </a>
+  <a name="master_logger_level">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">master_logger_level</span> =
+    
+    <a class="headerLink" href="#master_logger_level" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.master_logger_level">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.num_workers">
+    
+  </a>
+  <a name="num_workers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">num_workers</span> =
+    
+    <a class="headerLink" href="#num_workers" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.num_workers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.pm">
+    
+  </a>
+  <a name="pm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pm</span> =
+    
+    <a class="headerLink" href="#pm" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.pm">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.port">
+    
+  </a>
+  <a name="port">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">port</span> =
+    
+    <a class="headerLink" href="#port" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.port">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.process_listeners">
+    
+  </a>
+  <a name="process_listeners">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">process_listeners</span> =
+    
+    <a class="headerLink" href="#process_listeners" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.process_listeners">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.remote_runner">
+    
+  </a>
+  <a name="remote_runner">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">remote_runner</span> =
+    
+    <a class="headerLink" href="#remote_runner" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.remote_runner">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_files">
+    
+  </a>
+  <a name="roslaunch_files">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">roslaunch_files</span> =
+    
+    <a class="headerLink" href="#roslaunch_files" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_files">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_strs">
+    
+  </a>
+  <a name="roslaunch_strs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">roslaunch_strs</span> =
+    
+    <a class="headerLink" href="#roslaunch_strs" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.roslaunch_strs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.run_id">
+    
+  </a>
+  <a name="run_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">run_id</span> =
+    
+    <a class="headerLink" href="#run_id" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.run_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.runner">
+    
+  </a>
+  <a name="runner">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">runner</span> =
+    
+    <a class="headerLink" href="#runner" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.runner">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.server">
+    
+  </a>
+  <a name="server">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">server</span> =
+    
+    <a class="headerLink" href="#server" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.server">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.show_summary">
+    
+  </a>
+  <a name="show_summary">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">show_summary</span> =
+    
+    <a class="headerLink" href="#show_summary" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.show_summary">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigint_timeout">
+    
+  </a>
+  <a name="sigint_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sigint_timeout</span> =
+    
+    <a class="headerLink" href="#sigint_timeout" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigint_timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigterm_timeout">
+    
+  </a>
+  <a name="sigterm_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sigterm_timeout</span> =
+    
+    <a class="headerLink" href="#sigterm_timeout" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.sigterm_timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.timeout">
+    
+  </a>
+  <a name="timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">timeout</span> =
+    
+    <a class="headerLink" href="#timeout" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent.verbose">
+    
+  </a>
+  <a name="verbose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">verbose</span> =
+    
+    <a class="headerLink" href="#verbose" title="niryo_libraries.roslaunch.parent.ROSLaunchParent.verbose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_remote">
+    
+  </a>
+  <a name="_init_remote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_init_remote</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_init_remote" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_remote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the remote process runner, if required. Subroutine
+of _start_remote, separated out for easier testing</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_runner">
+    
+  </a>
+  <a name="_init_runner">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_init_runner</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_init_runner" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._init_runner">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the roslaunch runner</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._load_config">
+    
+  </a>
+  <a name="_load_config">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_load_config</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_load_config" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._load_config">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_infrastructure">
+    
+  </a>
+  <a name="_start_infrastructure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_start_infrastructure</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_start_infrastructure" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_infrastructure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>load config, start XMLRPC servers and process monitor</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_pm">
+    
+  </a>
+  <a name="_start_pm">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_start_pm</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_start_pm" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_pm">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start the process monitor</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_remote">
+    
+  </a>
+  <a name="_start_remote">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_start_remote</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_start_remote" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_remote">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initializes and runs the remote process runner, if required</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_server">
+    
+  </a>
+  <a name="_start_server">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_start_server</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_start_server" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._start_server">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the roslaunch parent XML-RPC server</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._stop_infrastructure">
+    
+  </a>
+  <a name="_stop_infrastructure">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_stop_infrastructure</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_stop_infrastructure" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._stop_infrastructure">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Tear down server and process monitor. Not multithread safe.</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.roslaunch.parent.ROSLaunchParent._shutting_down">
+    
+  </a>
+  <a name="_shutting_down">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_shutting_down</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#_shutting_down" title="niryo_libraries.roslaunch.parent.ROSLaunchParent._shutting_down">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

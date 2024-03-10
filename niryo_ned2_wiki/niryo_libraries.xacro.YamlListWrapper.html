@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.xacro.YamlListWrapper</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.xacro.YamlListWrapper.html" class="internal-link" title="This class"><wbr></wbr>Yaml<wbr></wbr>List<wbr></wbr>Wrapper</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wrap" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.wrap">wrap</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__getitem__" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.__getitem__">__getitem__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__iter__" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.__iter__">__iter__</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="niryo_libraries.xacro.html" class="internal-link" title="The parent of this class">xacro</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.cli.html" class="internal-link" title="niryo_libraries.xacro.cli">cli</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.color.html" class="internal-link" title="niryo_libraries.xacro.color">color</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.xmlutils.html" class="internal-link" title="niryo_libraries.xacro.xmlutils">xmlutils</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.Macro.html" class="internal-link" title="niryo_libraries.xacro.Macro"><wbr></wbr>Macro</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.NameSpace.html" class="internal-link" title="niryo_libraries.xacro.NameSpace"><wbr></wbr>Name<wbr></wbr>Space</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.QuickLexer.html" class="internal-link" title="niryo_libraries.xacro.QuickLexer"><wbr></wbr>Quick<wbr></wbr>Lexer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.Table.html" class="internal-link" title="niryo_libraries.xacro.Table"><wbr></wbr>Table</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.YamlDictWrapper.html" class="internal-link" title="niryo_libraries.xacro.YamlDictWrapper"><wbr></wbr>Yaml<wbr></wbr>Dict<wbr></wbr>Wrapper</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.YamlListWrapper.html" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper"><wbr></wbr>Yaml<wbr></wbr>List<wbr></wbr>Wrapper</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.XacroException.html" class="internal-link" title="niryo_libraries.xacro.XacroException"><wbr></wbr>Xacro<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#abs_filename_spec" class="internal-link" title="niryo_libraries.xacro.abs_filename_spec">abs<wbr></wbr>_filename<wbr></wbr>_spec</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#check_attrs" class="internal-link" title="niryo_libraries.xacro.check_attrs">check<wbr></wbr>_attrs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#construct_angle_degrees" class="internal-link" title="niryo_libraries.xacro.construct_angle_degrees">construct<wbr></wbr>_angle<wbr></wbr>_degrees</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#construct_angle_radians" class="internal-link" title="niryo_libraries.xacro.construct_angle_radians">construct<wbr></wbr>_angle<wbr></wbr>_radians</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#create_global_symbols" class="internal-link" title="niryo_libraries.xacro.create_global_symbols">create<wbr></wbr>_global<wbr></wbr>_symbols</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#eval_all" class="internal-link" title="niryo_libraries.xacro.eval_all">eval<wbr></wbr>_all</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#eval_default_arg" class="internal-link" title="niryo_libraries.xacro.eval_default_arg">eval<wbr></wbr>_default<wbr></wbr>_arg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#eval_extension" class="internal-link" title="niryo_libraries.xacro.eval_extension">eval<wbr></wbr>_extension</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#eval_text" class="internal-link" title="niryo_libraries.xacro.eval_text">eval<wbr></wbr>_text</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#get_boolean_value" class="internal-link" title="niryo_libraries.xacro.get_boolean_value">get<wbr></wbr>_boolean<wbr></wbr>_value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#get_include_files" class="internal-link" title="niryo_libraries.xacro.get_include_files">get<wbr></wbr>_include<wbr></wbr>_files</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#grab_macro" class="internal-link" title="niryo_libraries.xacro.grab_macro">grab<wbr></wbr>_macro</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#grab_property" class="internal-link" title="niryo_libraries.xacro.grab_property">grab<wbr></wbr>_property</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#handle_dynamic_macro_call" class="internal-link" title="niryo_libraries.xacro.handle_dynamic_macro_call">handle<wbr></wbr>_dynamic<wbr></wbr>_macro<wbr></wbr>_call</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#handle_macro_call" class="internal-link" title="niryo_libraries.xacro.handle_macro_call">handle<wbr></wbr>_macro<wbr></wbr>_call</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#import_xml_namespaces" class="internal-link" title="niryo_libraries.xacro.import_xml_namespaces">import<wbr></wbr>_xml<wbr></wbr>_namespaces</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#init_stacks" class="internal-link" title="niryo_libraries.xacro.init_stacks">init<wbr></wbr>_stacks</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#is_valid_name" class="internal-link" title="niryo_libraries.xacro.is_valid_name">is<wbr></wbr>_valid<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#load_yaml" class="internal-link" title="niryo_libraries.xacro.load_yaml">load<wbr></wbr>_yaml</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#main" class="internal-link" title="niryo_libraries.xacro.main">main</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#open_output" class="internal-link" title="niryo_libraries.xacro.open_output">open<wbr></wbr>_output</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#parse" class="internal-link" title="niryo_libraries.xacro.parse">parse</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#parse_macro_arg" class="internal-link" title="niryo_libraries.xacro.parse_macro_arg">parse<wbr></wbr>_macro<wbr></wbr>_arg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#print_location" class="internal-link" title="niryo_libraries.xacro.print_location">print<wbr></wbr>_location</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#process_doc" class="internal-link" title="niryo_libraries.xacro.process_doc">process<wbr></wbr>_doc</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#process_file" class="internal-link" title="niryo_libraries.xacro.process_file">process<wbr></wbr>_file</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#process_include" class="internal-link" title="niryo_libraries.xacro.process_include">process<wbr></wbr>_include</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#remove_previous_comments" class="internal-link" title="niryo_libraries.xacro.remove_previous_comments">remove<wbr></wbr>_previous<wbr></wbr>_comments</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#resolve_macro" class="internal-link" title="niryo_libraries.xacro.resolve_macro">resolve<wbr></wbr>_macro</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#safe_eval" class="internal-link" title="niryo_libraries.xacro.safe_eval">safe<wbr></wbr>_eval</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#tokenize" class="internal-link" title="niryo_libraries.xacro.tokenize">tokenize</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#LEXER" class="internal-link" title="niryo_libraries.xacro.LEXER">LEXER</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#all_includes" class="internal-link" title="niryo_libraries.xacro.all_includes">all<wbr></wbr>_includes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#default_value" class="internal-link" title="niryo_libraries.xacro.default_value">default<wbr></wbr>_value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#encoding" class="internal-link" title="niryo_libraries.xacro.encoding">encoding</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#filestack" class="internal-link" title="niryo_libraries.xacro.filestack">filestack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#include_no_matches_msg" class="internal-link" title="niryo_libraries.xacro.include_no_matches_msg">include<wbr></wbr>_no<wbr></wbr>_matches<wbr></wbr>_msg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#macrostack" class="internal-link" title="niryo_libraries.xacro.macrostack">macrostack</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#re_macro_arg" class="internal-link" title="niryo_libraries.xacro.re_macro_arg">re<wbr></wbr>_macro<wbr></wbr>_arg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#substitution_args_context" class="internal-link" title="niryo_libraries.xacro.substitution_args_context">substitution<wbr></wbr>_args<wbr></wbr>_context</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#verbosity" class="internal-link" title="niryo_libraries.xacro.verbosity">verbosity</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#_empty_text_node" class="internal-link" title="niryo_libraries.xacro._empty_text_node">_empty<wbr></wbr>_text<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html#_global_symbols" class="internal-link" title="niryo_libraries.xacro._global_symbols">_global<wbr></wbr>_symbols</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.xacro.html" class="internal-link" title="niryo_libraries.xacro">xacro</a></code><wbr></wbr>.<code><a href="niryo_libraries.xacro.YamlListWrapper.html" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper">YamlListWrapper</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">YamlListWrapper</span>(list):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.xacro.YamlListWrapper">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Wrapper class for yaml lists to allow recursive inheritance of wrapper property</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id3079">
+  
+  
+  <tr class="staticmethod">
+    
+    <td>Static Method</td>
+    <td><code><a href="#wrap" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.wrap">wrap</a></code></td>
+    <td>This static method, used by both YamlListWrapper and YamlDictWrapper, dispatches to the correct wrapper class depending on the type of yaml item</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__getitem__" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.__getitem__">__getitem__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__iter__" class="internal-link" title="niryo_libraries.xacro.YamlListWrapper.__iter__">__iter__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basestaticmethod">
+  
+  
+  <a name="niryo_libraries.xacro.YamlListWrapper.wrap">
+    
+  </a>
+  <a name="wrap">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">wrap</span><span class="function-signature">(item)</span>:
+    
+    <a class="headerLink" href="#wrap" title="niryo_libraries.xacro.YamlListWrapper.wrap">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>This static method, used by both YamlListWrapper and YamlDictWrapper,
+dispatches to the correct wrapper class depending on the type of yaml item</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.xacro.YamlListWrapper.__getitem__">
+    
+  </a>
+  <a name="__getitem__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__getitem__</span><span class="function-signature">(self, idx)</span>:
+    
+    <a class="headerLink" href="#__getitem__" title="niryo_libraries.xacro.YamlListWrapper.__getitem__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.xacro.YamlListWrapper.__iter__">
+    
+  </a>
+  <a name="__iter__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__iter__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__iter__" title="niryo_libraries.xacro.YamlListWrapper.__iter__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.html" class="internal-link" title="This class"><wbr></wbr>Abstract<wbr></wbr>Digital<wbr></wbr>IOPanel</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_callback_set_io_mode" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._callback_set_io_mode">_callback<wbr></wbr>_set<wbr></wbr>_io<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_publish_digital_io_state_cb" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_cb">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_cb</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#shutdown" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_create_response" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._create_response">_create<wbr></wbr>_response</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_get_analog_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_get_analog_io">_callback<wbr></wbr>_get<wbr></wbr>_analog<wbr></wbr>_io</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_get_digital_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_get_digital_io">_callback<wbr></wbr>_get<wbr></wbr>_digital<wbr></wbr>_io</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_set_analog_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_set_analog_io">_callback<wbr></wbr>_set<wbr></wbr>_analog<wbr></wbr>_io</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_set_digital_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_set_digital_io">_callback<wbr></wbr>_set<wbr></wbr>_digital<wbr></wbr>_io</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state_cb" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state_cb">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_cb</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_digital_io_state" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_digital_io_state">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__lock" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__lock">__lock</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_publish_digital_io_state_timer" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_timer">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_timer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_switches_name" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._switches_name">_switches<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#analog_io_publisher" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.analog_io_publisher">analog<wbr></wbr>_io<wbr></wbr>_publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#digital_io_publisher" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.digital_io_publisher">digital<wbr></wbr>_io<wbr></wbr>_publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#set_io_mode_server" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.set_io_mode_server">set<wbr></wbr>_io<wbr></wbr>_mode<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#set_io_state_server" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.set_io_state_server">set<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_analog_inputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._analog_inputs">_analog<wbr></wbr>_inputs</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_analog_outputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._analog_outputs">_analog<wbr></wbr>_outputs</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_digital_inputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._digital_inputs">_digital<wbr></wbr>_inputs</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_digital_outputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._digital_outputs">_digital<wbr></wbr>_outputs</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state_timer" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state_timer">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_timer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_io_state_frequency" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_io_state_frequency">_publish<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_frequency</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.html" class="internal-link" title="The parent of this class">abstract<wbr></wbr>_io<wbr></wbr>_panel</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel"><wbr></wbr>Abstract<wbr></wbr>Digital<wbr></wbr>IOPanel</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel"><wbr></wbr>Abstract<wbr></wbr>IOPanel</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_rpi.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi">niryo_robot_rpi</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_rpi.common.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common">common</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel">abstract_io_panel</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel">AbstractDigitalIOPanel</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">AbstractDigitalIOPanel</span>(<a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel">AbstractIOPanel</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__init__">AbstractDigitalIOPanel(lock)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1556">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_callback_set_io_mode" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._callback_set_io_mode">_callback<wbr></wbr>_set<wbr></wbr>_io<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_publish_digital_io_state_cb" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_cb">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_cb</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__lock" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__lock">__lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_publish_digital_io_state_timer" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_timer">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_timer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_switches_name" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._switches_name">_switches<wbr></wbr>_name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel">AbstractIOPanel</a></code>:
+            </p>
+            <table class="children sortable" id="id1557">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#shutdown" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.shutdown">shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#analog_io_publisher" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.analog_io_publisher">analog<wbr></wbr>_io<wbr></wbr>_publisher</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#digital_io_publisher" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.digital_io_publisher">digital<wbr></wbr>_io<wbr></wbr>_publisher</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#set_io_mode_server" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.set_io_mode_server">set<wbr></wbr>_io<wbr></wbr>_mode<wbr></wbr>_server</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#set_io_state_server" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.set_io_state_server">set<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_server</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basestaticmethod private">
+    
+    <td>Static Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_create_response" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._create_response">_create<wbr></wbr>_response</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_get_analog_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_get_analog_io">_callback<wbr></wbr>_get<wbr></wbr>_analog<wbr></wbr>_io</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_get_digital_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_get_digital_io">_callback<wbr></wbr>_get<wbr></wbr>_digital<wbr></wbr>_io</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_set_analog_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_set_analog_io">_callback<wbr></wbr>_set<wbr></wbr>_analog<wbr></wbr>_io</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_set_digital_io" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_set_digital_io">_callback<wbr></wbr>_set<wbr></wbr>_digital<wbr></wbr>_io</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state_cb" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state_cb">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_cb</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod private">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_digital_io_state" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_digital_io_state">_publish<wbr></wbr>_digital<wbr></wbr>_io<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_analog_inputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._analog_inputs">_analog<wbr></wbr>_inputs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_analog_outputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._analog_outputs">_analog<wbr></wbr>_outputs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_digital_inputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._digital_inputs">_digital<wbr></wbr>_inputs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_digital_outputs" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._digital_outputs">_digital<wbr></wbr>_outputs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_analog_io_state_timer" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_analog_io_state_timer">_publish<wbr></wbr>_analog<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_timer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_publish_io_state_frequency" class="internal-link" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._publish_io_state_frequency">_publish<wbr></wbr>_io<wbr></wbr>_state<wbr></wbr>_frequency</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, lock=None)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#__init__" class="internal-link">niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.__init__</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._callback_set_io_mode">
+    
+  </a>
+  <a name="_callback_set_io_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_callback_set_io_mode</span><span class="function-signature">(self, req)</span>:
+    
+    <a class="headerLink" href="#_callback_set_io_mode" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._callback_set_io_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel.html#_callback_set_io_mode" class="internal-link">niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractIOPanel._callback_set_io_mode</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_cb">
+    
+  </a>
+  <a name="_publish_digital_io_state_cb">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_publish_digital_io_state_cb</span><span class="function-signature">(self, _event=None)</span>:
+    
+    <a class="headerLink" href="#_publish_digital_io_state_cb" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_cb">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__lock">
+    
+  </a>
+  <a name="__lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__lock</span> =
+    
+    <a class="headerLink" href="#__lock" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel.__lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_timer">
+    
+  </a>
+  <a name="_publish_digital_io_state_timer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_publish_digital_io_state_timer</span> =
+    
+    <a class="headerLink" href="#_publish_digital_io_state_timer" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._publish_digital_io_state_timer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._switches_name">
+    
+  </a>
+  <a name="_switches_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_switches_name</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#_switches_name" title="niryo_libraries.niryo_robot_rpi.common.abstract_io_panel.AbstractDigitalIOPanel._switches_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

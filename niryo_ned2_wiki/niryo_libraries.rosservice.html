@@ -1,0 +1,2919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosservice</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code class="thisobject"><a href="niryo_libraries.rosservice.html" class="internal-link" title="This package">rosservice</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosservice.ROSServiceException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceException"><wbr></wbr>ROSService<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosservice.ROSServiceIOException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceIOException"><wbr></wbr>ROSService<wbr></wbr>IOException</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#call_service" class="internal-link" title="niryo_libraries.rosservice.call_service">call<wbr></wbr>_service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_args" class="internal-link" title="niryo_libraries.rosservice.get_service_args">get<wbr></wbr>_service<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_class_by_name" class="internal-link" title="niryo_libraries.rosservice.get_service_class_by_name">get<wbr></wbr>_service<wbr></wbr>_class<wbr></wbr>_by<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_headers" class="internal-link" title="niryo_libraries.rosservice.get_service_headers">get<wbr></wbr>_service<wbr></wbr>_headers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_list" class="internal-link" title="niryo_libraries.rosservice.get_service_list">get<wbr></wbr>_service<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_node" class="internal-link" title="niryo_libraries.rosservice.get_service_node">get<wbr></wbr>_service<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_type" class="internal-link" title="niryo_libraries.rosservice.get_service_type">get<wbr></wbr>_service<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_service_uri" class="internal-link" title="niryo_libraries.rosservice.get_service_uri">get<wbr></wbr>_service<wbr></wbr>_uri</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#has_service_args" class="internal-link" title="niryo_libraries.rosservice.has_service_args">has<wbr></wbr>_service<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rosservice_find" class="internal-link" title="niryo_libraries.rosservice.rosservice_find">rosservice<wbr></wbr>_find</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rosservicemain" class="internal-link" title="niryo_libraries.rosservice.rosservicemain">rosservicemain</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_fullusage" class="internal-link" title="niryo_libraries.rosservice._fullusage">_fullusage</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_get_master" class="internal-link" title="niryo_libraries.rosservice._get_master">_get<wbr></wbr>_master</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_optparse_service_only" class="internal-link" title="niryo_libraries.rosservice._optparse_service_only">_optparse<wbr></wbr>_service<wbr></wbr>_only</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_resource_name_package" class="internal-link" title="niryo_libraries.rosservice._resource_name_package">_resource<wbr></wbr>_name<wbr></wbr>_package</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_args" class="internal-link" title="niryo_libraries.rosservice._rosservice_args">_rosservice<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_call" class="internal-link" title="niryo_libraries.rosservice._rosservice_call">_rosservice<wbr></wbr>_call</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_args" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_args">_rosservice<wbr></wbr>_cmd<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_call" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_call">_rosservice<wbr></wbr>_cmd<wbr></wbr>_call</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_find" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_find">_rosservice<wbr></wbr>_cmd<wbr></wbr>_find</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_info" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_info">_rosservice<wbr></wbr>_cmd<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_list" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_list">_rosservice<wbr></wbr>_cmd<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_node" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_node">_rosservice<wbr></wbr>_cmd<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_type" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_type">_rosservice<wbr></wbr>_cmd<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_cmd_uri" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_uri">_rosservice<wbr></wbr>_cmd<wbr></wbr>_uri</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_info" class="internal-link" title="niryo_libraries.rosservice._rosservice_info">_rosservice<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_list" class="internal-link" title="niryo_libraries.rosservice._rosservice_list">_rosservice<wbr></wbr>_list</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_node" class="internal-link" title="niryo_libraries.rosservice._rosservice_node">_rosservice<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_type" class="internal-link" title="niryo_libraries.rosservice._rosservice_type">_rosservice<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_rosservice_uri" class="internal-link" title="niryo_libraries.rosservice._rosservice_uri">_rosservice<wbr></wbr>_uri</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stdin_yaml_arg" class="internal-link" title="niryo_libraries.rosservice._stdin_yaml_arg">_stdin<wbr></wbr>_yaml<wbr></wbr>_arg</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_succeed" class="internal-link" title="niryo_libraries.rosservice._succeed">_succeed</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#NAME" class="internal-link" title="niryo_libraries.rosservice.NAME">NAME</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="index.html" class="internal-link" title="The parent of this package">niryo<wbr></wbr>_libraries</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.actionlib.html" class="internal-link" title="niryo_libraries.actionlib">actionlib</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.actionlib_msgs.html" class="internal-link" title="niryo_libraries.actionlib_msgs">actionlib<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.angles.html" class="internal-link" title="niryo_libraries.angles">angles</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.bond.html" class="internal-link" title="niryo_libraries.bond">bond</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.bondpy.html" class="internal-link" title="niryo_libraries.bondpy">bondpy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.can_driver.html" class="internal-link" title="niryo_libraries.can_driver">can<wbr></wbr>_driver</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.catkin.html" class="internal-link" title="niryo_libraries.catkin">catkin</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.control_msgs.html" class="internal-link" title="niryo_libraries.control_msgs">control<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.control_toolbox.html" class="internal-link" title="niryo_libraries.control_toolbox">control<wbr></wbr>_toolbox</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.controller_manager.html" class="internal-link" title="niryo_libraries.controller_manager">controller<wbr></wbr>_manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.controller_manager_msgs.html" class="internal-link" title="niryo_libraries.controller_manager_msgs">controller<wbr></wbr>_manager<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.conveyor_interface.html" class="internal-link" title="niryo_libraries.conveyor_interface">conveyor<wbr></wbr>_interface</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.cv_bridge.html" class="internal-link" title="niryo_libraries.cv_bridge">cv<wbr></wbr>_bridge</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_msgs.html" class="internal-link" title="niryo_libraries.diagnostic_msgs">diagnostic<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diagnostic_updater.html" class="internal-link" title="niryo_libraries.diagnostic_updater">diagnostic<wbr></wbr>_updater</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.diff_drive_controller.html" class="internal-link" title="niryo_libraries.diff_drive_controller">diff<wbr></wbr>_drive<wbr></wbr>_controller</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.dynamic_reconfigure.html" class="internal-link" title="niryo_libraries.dynamic_reconfigure">dynamic<wbr></wbr>_reconfigure</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.eigenpy.html" class="internal-link" title="niryo_libraries.eigenpy">eigenpy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.end_effector_interface.html" class="internal-link" title="niryo_libraries.end_effector_interface">end<wbr></wbr>_effector<wbr></wbr>_interface</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.gazebo_msgs.html" class="internal-link" title="niryo_libraries.gazebo_msgs">gazebo<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.gazebo_ros.html" class="internal-link" title="niryo_libraries.gazebo_ros">gazebo<wbr></wbr>_ros</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.gencpp.html" class="internal-link" title="niryo_libraries.gencpp">gencpp</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.geneus.html" class="internal-link" title="niryo_libraries.geneus">geneus</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.genlisp.html" class="internal-link" title="niryo_libraries.genlisp">genlisp</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.genmsg.html" class="internal-link" title="niryo_libraries.genmsg">genmsg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.gennodejs.html" class="internal-link" title="niryo_libraries.gennodejs">gennodejs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.genpy.html" class="internal-link" title="niryo_libraries.genpy">genpy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.geometry_msgs.html" class="internal-link" title="niryo_libraries.geometry_msgs">geometry<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.interactive_markers.html" class="internal-link" title="niryo_libraries.interactive_markers">interactive<wbr></wbr>_markers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.joint_state_publisher.html" class="internal-link" title="niryo_libraries.joint_state_publisher">joint<wbr></wbr>_state<wbr></wbr>_publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.joint_state_publisher_gui.html" class="internal-link" title="niryo_libraries.joint_state_publisher_gui">joint<wbr></wbr>_state<wbr></wbr>_publisher<wbr></wbr>_gui</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.laser_geometry.html" class="internal-link" title="niryo_libraries.laser_geometry">laser<wbr></wbr>_geometry</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.map_msgs.html" class="internal-link" title="niryo_libraries.map_msgs">map<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.message_filters.html" class="internal-link" title="niryo_libraries.message_filters">message<wbr></wbr>_filters</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit.html" class="internal-link" title="niryo_libraries.moveit">moveit</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_commander.html" class="internal-link" title="niryo_libraries.moveit_commander">moveit<wbr></wbr>_commander</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_msgs.html" class="internal-link" title="niryo_libraries.moveit_msgs">moveit<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_planners_ompl.html" class="internal-link" title="niryo_libraries.moveit_planners_ompl">moveit<wbr></wbr>_planners<wbr></wbr>_ompl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_manipulation.html" class="internal-link" title="niryo_libraries.moveit_ros_manipulation">moveit<wbr></wbr>_ros<wbr></wbr>_manipulation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_planning.html" class="internal-link" title="niryo_libraries.moveit_ros_planning">moveit<wbr></wbr>_ros<wbr></wbr>_planning</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_planning_interface.html" class="internal-link" title="niryo_libraries.moveit_ros_planning_interface">moveit<wbr></wbr>_ros<wbr></wbr>_planning<wbr></wbr>_interface</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.moveit_ros_visualization.html" class="internal-link" title="niryo_libraries.moveit_ros_visualization">moveit<wbr></wbr>_ros<wbr></wbr>_visualization</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.nav_msgs.html" class="internal-link" title="niryo_libraries.nav_msgs">nav<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_end_effector_publisher_gui.html" class="internal-link" title="niryo_libraries.niryo_end_effector_publisher_gui">niryo<wbr></wbr>_end<wbr></wbr>_effector<wbr></wbr>_publisher<wbr></wbr>_gui</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_arm_commander.html" class="internal-link" title="niryo_libraries.niryo_robot_arm_commander">niryo<wbr></wbr>_robot<wbr></wbr>_arm<wbr></wbr>_commander</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_database.html" class="internal-link" title="niryo_libraries.niryo_robot_database">niryo<wbr></wbr>_robot<wbr></wbr>_database</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_led_ring.html" class="internal-link" title="niryo_libraries.niryo_robot_led_ring">niryo<wbr></wbr>_robot<wbr></wbr>_led<wbr></wbr>_ring</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_metrics.html" class="internal-link" title="niryo_libraries.niryo_robot_metrics">niryo<wbr></wbr>_robot<wbr></wbr>_metrics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_modbus.html" class="internal-link" title="niryo_libraries.niryo_robot_modbus">niryo<wbr></wbr>_robot<wbr></wbr>_modbus</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_msgs.html" class="internal-link" title="niryo_libraries.niryo_robot_msgs">niryo<wbr></wbr>_robot<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_poses_handlers.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers">niryo<wbr></wbr>_robot<wbr></wbr>_poses<wbr></wbr>_handlers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_programs_manager.html" class="internal-link" title="niryo_libraries.niryo_robot_programs_manager">niryo<wbr></wbr>_robot<wbr></wbr>_programs<wbr></wbr>_manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_programs_manager_v2.html" class="internal-link" title="niryo_libraries.niryo_robot_programs_manager_v2">niryo<wbr></wbr>_robot<wbr></wbr>_programs<wbr></wbr>_manager<wbr></wbr>_v2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_python_ros_wrapper.html" class="internal-link" title="niryo_libraries.niryo_robot_python_ros_wrapper">niryo<wbr></wbr>_robot<wbr></wbr>_python<wbr></wbr>_ros<wbr></wbr>_wrapper</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_reports.html" class="internal-link" title="niryo_libraries.niryo_robot_reports">niryo<wbr></wbr>_robot<wbr></wbr>_reports</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_rpi.html" class="internal-link" title="niryo_libraries.niryo_robot_rpi">niryo<wbr></wbr>_robot<wbr></wbr>_rpi</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_sound.html" class="internal-link" title="niryo_libraries.niryo_robot_sound">niryo<wbr></wbr>_robot<wbr></wbr>_sound</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_status.html" class="internal-link" title="niryo_libraries.niryo_robot_status">niryo<wbr></wbr>_robot<wbr></wbr>_status</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_system_api_client.html" class="internal-link" title="niryo_libraries.niryo_robot_system_api_client">niryo<wbr></wbr>_robot<wbr></wbr>_system<wbr></wbr>_api<wbr></wbr>_client</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_tools_commander.html" class="internal-link" title="niryo_libraries.niryo_robot_tools_commander">niryo<wbr></wbr>_robot<wbr></wbr>_tools<wbr></wbr>_commander</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_user_interface.html" class="internal-link" title="niryo_libraries.niryo_robot_user_interface">niryo<wbr></wbr>_robot<wbr></wbr>_user<wbr></wbr>_interface</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_utils.html" class="internal-link" title="niryo_libraries.niryo_robot_utils">niryo<wbr></wbr>_robot<wbr></wbr>_utils</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.html" class="internal-link" title="niryo_libraries.niryo_robot_vision">niryo<wbr></wbr>_robot<wbr></wbr>_vision</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.nodelet.html" class="internal-link" title="niryo_libraries.nodelet">nodelet</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.nodelet_topic_tools.html" class="internal-link" title="niryo_libraries.nodelet_topic_tools">nodelet<wbr></wbr>_topic<wbr></wbr>_tools</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.object_recognition_msgs.html" class="internal-link" title="niryo_libraries.object_recognition_msgs">object<wbr></wbr>_recognition<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.octomap_msgs.html" class="internal-link" title="niryo_libraries.octomap_msgs">octomap<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.python_qt_binding.html" class="internal-link" title="niryo_libraries.python_qt_binding">python<wbr></wbr>_qt<wbr></wbr>_binding</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.resource_retriever.html" class="internal-link" title="niryo_libraries.resource_retriever">resource<wbr></wbr>_retriever</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.ros.html" class="internal-link" title="niryo_libraries.ros">ros</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosapi.html" class="internal-link" title="niryo_libraries.rosapi">rosapi</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosauth.html" class="internal-link" title="niryo_libraries.rosauth">rosauth</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.html" class="internal-link" title="niryo_libraries.rosbag">rosbag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosboost_cfg.html" class="internal-link" title="niryo_libraries.rosboost_cfg">rosboost<wbr></wbr>_cfg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbridge_library.html" class="internal-link" title="niryo_libraries.rosbridge_library">rosbridge<wbr></wbr>_library</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbridge_msgs.html" class="internal-link" title="niryo_libraries.rosbridge_msgs">rosbridge<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbridge_server.html" class="internal-link" title="niryo_libraries.rosbridge_server">rosbridge<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosclean.html" class="internal-link" title="niryo_libraries.rosclean">rosclean</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roscpp.html" class="internal-link" title="niryo_libraries.roscpp">roscpp</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roscreate.html" class="internal-link" title="niryo_libraries.roscreate">roscreate</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.html" class="internal-link" title="niryo_libraries.rosgraph">rosgraph</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph_msgs.html" class="internal-link" title="niryo_libraries.rosgraph_msgs">rosgraph<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslaunch.html" class="internal-link" title="niryo_libraries.roslaunch">roslaunch</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslib.html" class="internal-link" title="niryo_libraries.roslib">roslib</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslint.html" class="internal-link" title="niryo_libraries.roslint">roslint</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roslz4.html" class="internal-link" title="niryo_libraries.roslz4">roslz4</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.html" class="internal-link" title="niryo_libraries.rosmake">rosmake</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.html" class="internal-link" title="niryo_libraries.rosmaster">rosmaster</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmsg.html" class="internal-link" title="niryo_libraries.rosmsg">rosmsg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosnode.html" class="internal-link" title="niryo_libraries.rosnode">rosnode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosparam.html" class="internal-link" title="niryo_libraries.rosparam">rosparam</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rospy.html" class="internal-link" title="niryo_libraries.rospy">rospy</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosservice.html" class="internal-link" title="niryo_libraries.rosservice">rosservice</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rostest.html" class="internal-link" title="niryo_libraries.rostest">rostest</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rostopic.html" class="internal-link" title="niryo_libraries.rostopic">rostopic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.html" class="internal-link" title="niryo_libraries.rosunit">rosunit</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.roswtf.html" class="internal-link" title="niryo_libraries.roswtf">roswtf</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rviz.html" class="internal-link" title="niryo_libraries.rviz">rviz</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.sensor_msgs.html" class="internal-link" title="niryo_libraries.sensor_msgs">sensor<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.shape_msgs.html" class="internal-link" title="niryo_libraries.shape_msgs">shape<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.smclib.html" class="internal-link" title="niryo_libraries.smclib">smclib</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.srdfdom.html" class="internal-link" title="niryo_libraries.srdfdom">srdfdom</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.std_msgs.html" class="internal-link" title="niryo_libraries.std_msgs">std<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.std_srvs.html" class="internal-link" title="niryo_libraries.std_srvs">std<wbr></wbr>_srvs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.stereo_msgs.html" class="internal-link" title="niryo_libraries.stereo_msgs">stereo<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.html" class="internal-link" title="niryo_libraries.tf">tf</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_geometry_msgs.html" class="internal-link" title="niryo_libraries.tf2_geometry_msgs">tf2<wbr></wbr>_geometry<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_kdl.html" class="internal-link" title="niryo_libraries.tf2_kdl">tf2<wbr></wbr>_kdl</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_msgs.html" class="internal-link" title="niryo_libraries.tf2_msgs">tf2<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_py.html" class="internal-link" title="niryo_libraries.tf2_py">tf2<wbr></wbr>_py</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_ros.html" class="internal-link" title="niryo_libraries.tf2_ros">tf2<wbr></wbr>_ros</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf2_web_republisher.html" class="internal-link" title="niryo_libraries.tf2_web_republisher">tf2<wbr></wbr>_web<wbr></wbr>_republisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tools_interface.html" class="internal-link" title="niryo_libraries.tools_interface">tools<wbr></wbr>_interface</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.topic_tools.html" class="internal-link" title="niryo_libraries.topic_tools">topic<wbr></wbr>_tools</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.trajectory_msgs.html" class="internal-link" title="niryo_libraries.trajectory_msgs">trajectory<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.ttl_driver.html" class="internal-link" title="niryo_libraries.ttl_driver">ttl<wbr></wbr>_driver</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.urdf_parser_py.html" class="internal-link" title="niryo_libraries.urdf_parser_py">urdf<wbr></wbr>_parser<wbr></wbr>_py</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.visualization_msgs.html" class="internal-link" title="niryo_libraries.visualization_msgs">visualization<wbr></wbr>_msgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.xacro.html" class="internal-link" title="niryo_libraries.xacro">xacro</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="package"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosservice.html" class="internal-link" title="niryo_libraries.rosservice">rosservice</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          package documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Command-line utility for querying ROS services, along with library
+calls for similar functionality. The main benefit of the rosservice
+Python library over the rospy ServiceProxy library is that rosservice
+supports type-introspection on ROS Services. This allows for both
+introspecting information about services, as well as using this
+introspection to dynamically call services.</p></div>
+        </div>
+
+        <div id="splitTables">
+          
+          
+
+            <p class="fromInitPy">From <code>__init__.py</code>:</p><table class="children sortable" id="id2551">
+  
+  
+  <tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="niryo_libraries.rosservice.ROSServiceException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceException"><wbr></wbr>ROSService<wbr></wbr>Exception</a></code></td>
+    <td>Base class for rosservice-related exceptions</td>
+  </tr><tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="niryo_libraries.rosservice.ROSServiceIOException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceIOException"><wbr></wbr>ROSService<wbr></wbr>IOException</a></code></td>
+    <td>rosservice related to network I/O failure</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#call_service" class="internal-link" title="niryo_libraries.rosservice.call_service">call<wbr></wbr>_service</a></code></td>
+    <td>Call the specified service_name @param service_name: fully-resolved name of service to call @type  service_name: str @param service_args: args to pass to service @type  service_args: [any] @param service_class: (optional) service type class...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_args" class="internal-link" title="niryo_libraries.rosservice.get_service_args">get<wbr></wbr>_service<wbr></wbr>_args</a></code></td>
+    <td>Implements 'get service args' @param service_name: name of service to get arguments for @type  service_name: str @raise ROSServiceException: if call command cannot be executed</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_class_by_name" class="internal-link" title="niryo_libraries.rosservice.get_service_class_by_name">get<wbr></wbr>_service<wbr></wbr>_class<wbr></wbr>_by<wbr></wbr>_name</a></code></td>
+    <td>Get the service class using the name of the service. NOTE: this call results in a probe call to the service. @param service_name: fully-resolved name of service to call @type  service_name: str @return: service class @rtype: ServiceDefinition: service class @raise ROSServiceException: if service class cannot be retrieved...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_headers" class="internal-link" title="niryo_libraries.rosservice.get_service_headers">get<wbr></wbr>_service<wbr></wbr>_headers</a></code></td>
+    <td>Utility for connecting to a service and retrieving the TCPROS headers. Services currently do not declare their type with the master, so instead we probe the service for its headers. @param service_name: name of service @type  service_name: str @param service_uri: ROSRPC URI of service @type  service_uri: str @return: map of header fields @rtype: dict @raise ROSServiceException: if service has invalid information @raise ROSServiceIOException: if unable to communicate with service...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_list" class="internal-link" title="niryo_libraries.rosservice.get_service_list">get<wbr></wbr>_service<wbr></wbr>_list</a></code></td>
+    <td>Get the list of services @param node: Name of node to get services for or None to return all services @type  node: str @param namespace: Namespace to scope services to or None @type  namespace: str @param include_nodes: If True, return list will be [service_name, [node]] @type  include_nodes: bool @return: if include_nodes, services is service_name, [node]...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_node" class="internal-link" title="niryo_libraries.rosservice.get_service_node">get<wbr></wbr>_service<wbr></wbr>_node</a></code></td>
+    <td>@return: name of node that implements service, or None @rtype: str</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_type" class="internal-link" title="niryo_libraries.rosservice.get_service_type">get<wbr></wbr>_service<wbr></wbr>_type</a></code></td>
+    <td>Get the type of the specified service_name. May print errors to stderr.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_service_uri" class="internal-link" title="niryo_libraries.rosservice.get_service_uri">get<wbr></wbr>_service<wbr></wbr>_uri</a></code></td>
+    <td>Retrieve ROSRPC URI of service.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#has_service_args" class="internal-link" title="niryo_libraries.rosservice.has_service_args">has<wbr></wbr>_service<wbr></wbr>_args</a></code></td>
+    <td>Check if service requires arguments @param service_name: name of service being called @type  service_name: str @param service_class: (optional) service type class. If this argument is provided, it saves a probe call against the service @type service_class: Message class @return: True if service_name has request arguments @rtype: bool...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#rosservice_find" class="internal-link" title="niryo_libraries.rosservice.rosservice_find">rosservice<wbr></wbr>_find</a></code></td>
+    <td>Lookup services by service_type @param service_type: type of service to find @type  service_type: str @return: list of service names that use service_type @rtype: [str]</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#rosservicemain" class="internal-link" title="niryo_libraries.rosservice.rosservicemain">rosservicemain</a></code></td>
+    <td>main entry point for rosservice command-line tool</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#NAME" class="internal-link" title="niryo_libraries.rosservice.NAME">NAME</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_fullusage" class="internal-link" title="niryo_libraries.rosservice._fullusage">_fullusage</a></code></td>
+    <td>Print generic usage for rosservice</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_get_master" class="internal-link" title="niryo_libraries.rosservice._get_master">_get<wbr></wbr>_master</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_optparse_service_only" class="internal-link" title="niryo_libraries.rosservice._optparse_service_only">_optparse<wbr></wbr>_service<wbr></wbr>_only</a></code></td>
+    <td>Parse command-line arguments for commands that take a service name only.  Will cause a system exit if command-line argument parsing fails. @param cmd: command name, e.g. 'type' @type  cmd: str @param argv: command-line arguments @type  argv: [str]...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_resource_name_package" class="internal-link" title="niryo_libraries.rosservice._resource_name_package">_resource<wbr></wbr>_name<wbr></wbr>_package</a></code></td>
+    <td>pkg/typeName -&gt; pkg, typeName -&gt; None</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_args" class="internal-link" title="niryo_libraries.rosservice._rosservice_args">_rosservice<wbr></wbr>_args</a></code></td>
+    <td>Implements 'rosservice args' @param service_name: name of service to get arguments for @type  service_name: str @raise ROSServiceException: if call command cannot be executed</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_call" class="internal-link" title="niryo_libraries.rosservice._rosservice_call">_rosservice<wbr></wbr>_call</a></code></td>
+    <td>Implements 'rosservice call' @param service_name: name of service to call @type  service_name: str @param service_args: arguments to call service with @type  service_args: [args] @param verbose: if True, print extra output @type  verbose: bool @param service_class Message class: (optional) service type class...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_args" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_args">_rosservice<wbr></wbr>_cmd<wbr></wbr>_args</a></code></td>
+    <td>Parse 'args' command arguments and run command.  Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if args command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_call" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_call">_rosservice<wbr></wbr>_cmd<wbr></wbr>_call</a></code></td>
+    <td>Parse 'call' command arguments and run command.  Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if call command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_find" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_find">_rosservice<wbr></wbr>_cmd<wbr></wbr>_find</a></code></td>
+    <td>Implements 'rosservice type'</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_info" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_info">_rosservice<wbr></wbr>_cmd<wbr></wbr>_info</a></code></td>
+    <td>Parse 'info' command arguments and run command Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if list command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_list" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_list">_rosservice<wbr></wbr>_cmd<wbr></wbr>_list</a></code></td>
+    <td>Parse 'list' command arguments and run command Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if list command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_node" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_node">_rosservice<wbr></wbr>_cmd<wbr></wbr>_node</a></code></td>
+    <td>Parse 'node' command arguments and run command. Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if node command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_type" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_type">_rosservice<wbr></wbr>_cmd<wbr></wbr>_type</a></code></td>
+    <td>Parse 'type' command arguments and run command Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if type command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_cmd_uri" class="internal-link" title="niryo_libraries.rosservice._rosservice_cmd_uri">_rosservice<wbr></wbr>_cmd<wbr></wbr>_uri</a></code></td>
+    <td>Parse 'uri' command arguments and run command.  Will cause a system exit if command-line argument parsing fails. @param argv: command-line arguments @type  argv: [str] @raise ROSServiceException: if uri command cannot be executed...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_info" class="internal-link" title="niryo_libraries.rosservice._rosservice_info">_rosservice<wbr></wbr>_info</a></code></td>
+    <td>Implements 'rosservice info'. Prints information about a service.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_list" class="internal-link" title="niryo_libraries.rosservice._rosservice_list">_rosservice<wbr></wbr>_list</a></code></td>
+    <td>Implements 'rosservice list' @param namespace: Namespace to limit listing to or None @type  namespace: str @param print_nodes: If True, also print nodes providing service @type  print_nodes: bool @raise ROSServiceIOException: if the I/O issues prevent retrieving service information...</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_node" class="internal-link" title="niryo_libraries.rosservice._rosservice_node">_rosservice<wbr></wbr>_node</a></code></td>
+    <td>Implements rosservice node command. Will cause system exit with error if service is unknown.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_type" class="internal-link" title="niryo_libraries.rosservice._rosservice_type">_rosservice<wbr></wbr>_type</a></code></td>
+    <td>Implements 'type' command. Prints service type to stdout. Will system exit with error if service_name is unknown.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_rosservice_uri" class="internal-link" title="niryo_libraries.rosservice._rosservice_uri">_rosservice<wbr></wbr>_uri</a></code></td>
+    <td>Implements rosservice uri command. Will cause system exit with error if service_name is unknown.</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_stdin_yaml_arg" class="internal-link" title="niryo_libraries.rosservice._stdin_yaml_arg">_stdin<wbr></wbr>_yaml<wbr></wbr>_arg</a></code></td>
+    <td>@return: iterator for next set of service args on stdin. Iterator returns a list of args for each call. @rtype: iterator</td>
+  </tr><tr class="function private">
+    
+    <td>Function</td>
+    <td><code><a href="#_succeed" class="internal-link" title="niryo_libraries.rosservice._succeed">_succeed</a></code></td>
+    <td>Utility that raises a ROSServiceException if ROS XMLRPC command fails @param args: (code, msg, val) ROS XMLRPC call return args @type  args: (int, str, XmlRpcValue) @return: value argument from ROS XMLRPC call (third arg of tuple) @rtype: XmlRpcLegal value @raise ROSServiceException: if XMLRPC command does not return a SUCCESS code...</td>
+  </tr>
+</table>
+        </div>
+
+        <div id="childList">
+          <div class="baseconstant">
+  
+  
+  <a name="niryo_libraries.rosservice.NAME">
+    
+  </a>
+  <a name="NAME">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">NAME</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#NAME" title="niryo_libraries.rosservice.NAME">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code><span class="rst-variable-quote">'</span><span class="rst-variable-string">rosservice</span><span class="rst-variable-quote">'</span></code></pre></td></tr></table>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._get_master">
+    
+  </a>
+  <a name="_get_master">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_get_master</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#_get_master" title="niryo_libraries.rosservice._get_master">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._succeed">
+    
+  </a>
+  <a name="_succeed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_succeed</span><span class="function-signature">(args)</span>:
+    
+    <a class="headerLink" href="#_succeed" title="niryo_libraries.rosservice._succeed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Utility that raises a ROSServiceException if ROS XMLRPC command fails
+@param args: (code, msg, val) ROS XMLRPC call return args
+@type  args: (int, str, XmlRpcValue)
+@return: value argument from ROS XMLRPC call (third arg of tuple)
+@rtype: XmlRpcLegal value
+@raise ROSServiceException: if XMLRPC command does not return a SUCCESS code</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_headers">
+    
+  </a>
+  <a name="get_service_headers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_headers</span><span class="function-signature">(service_name, service_uri)</span>:
+    
+    <a class="headerLink" href="#get_service_headers" title="niryo_libraries.rosservice.get_service_headers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Utility for connecting to a service and retrieving the TCPROS
+headers. Services currently do not declare their type with the
+master, so instead we probe the service for its headers.
+@param service_name: name of service
+@type  service_name: str
+@param service_uri: ROSRPC URI of service
+@type  service_uri: str
+@return: map of header fields
+@rtype: dict
+@raise ROSServiceException: if service has invalid information
+@raise ROSServiceIOException: if unable to communicate with service</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_type">
+    
+  </a>
+  <a name="get_service_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_type</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#get_service_type" title="niryo_libraries.rosservice.get_service_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the type of the specified service_name. May print errors to stderr.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">service<wbr></wbr>_name</span></td><td class="fieldArgDesc">name of service, <tt class="rst-docutils literal">str</tt></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">type of service or <tt class="rst-docutils literal">None</tt>, <tt class="rst-docutils literal">str</tt></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td><code><a href="niryo_libraries.rosservice.ROSServiceIOException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceIOException">ROSServiceIOException</a></code> If unable to communicate with service</td></tr></table></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_type">
+    
+  </a>
+  <a name="_rosservice_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_type</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#_rosservice_type" title="niryo_libraries.rosservice._rosservice_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'type' command. Prints service type to stdout. Will
+system exit with error if service_name is unknown.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">service<wbr></wbr>_name</span></td><td class="fieldArgDesc">name of service, <tt class="rst-docutils literal">str</tt></td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_uri">
+    
+  </a>
+  <a name="get_service_uri">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_uri</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#get_service_uri" title="niryo_libraries.rosservice.get_service_uri">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve ROSRPC URI of service.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">service<wbr></wbr>_name</span></td><td class="fieldArgDesc">name of service to lookup, <tt class="rst-docutils literal">str</tt></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">ROSRPC URI for service_name, <tt class="rst-docutils literal">str</tt></td></tr></table></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_uri">
+    
+  </a>
+  <a name="_rosservice_uri">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_uri</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#_rosservice_uri" title="niryo_libraries.rosservice._rosservice_uri">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements rosservice uri command. Will cause system exit with
+error if service_name is unknown.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">service<wbr></wbr>_name</span></td><td class="fieldArgDesc">name of service to lookup, <tt class="rst-docutils literal">str</tt></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td><code><a href="niryo_libraries.rosservice.ROSServiceIOException.html" class="internal-link" title="niryo_libraries.rosservice.ROSServiceIOException">ROSServiceIOException</a></code> If the I/O issues prevent retrieving service information</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_node">
+    
+  </a>
+  <a name="get_service_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_node</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#get_service_node" title="niryo_libraries.rosservice.get_service_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: name of node that implements service, or None
+@rtype: str</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_node">
+    
+  </a>
+  <a name="_rosservice_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_node</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#_rosservice_node" title="niryo_libraries.rosservice._rosservice_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements rosservice node command. Will cause system exit with error if service is unknown.</p>
+<p>@param service_name: name of service to lookup
+@type  service_name: str
+@raise ROSServiceIOException: if the I/O issues prevent retrieving service information</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_list">
+    
+  </a>
+  <a name="get_service_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_list</span><span class="function-signature">(node=None, namespace=None, include_nodes=False)</span>:
+    
+    <a class="headerLink" href="#get_service_list" title="niryo_libraries.rosservice.get_service_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the list of services
+@param node: Name of node to get services for or None to return all services
+@type  node: str
+@param namespace: Namespace to scope services to or None
+@type  namespace: str
+@param include_nodes: If True, return list will be [service_name, [node]]
+@type  include_nodes: bool
+@return: if include_nodes, services is service_name,
+[node]. Otherwise, it is just the service_name
+@rtype: [services]
+@raise ROSServiceIOException: if the I/O issues prevent retrieving service information</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_list">
+    
+  </a>
+  <a name="_rosservice_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_list</span><span class="function-signature">(namespace=None, print_nodes=False)</span>:
+    
+    <a class="headerLink" href="#_rosservice_list" title="niryo_libraries.rosservice._rosservice_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'rosservice list'
+@param namespace: Namespace to limit listing to or None
+@type  namespace: str
+@param print_nodes: If True, also print nodes providing service
+@type  print_nodes: bool
+@raise ROSServiceIOException: if the I/O issues prevent retrieving service information</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_info">
+    
+  </a>
+  <a name="_rosservice_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_info</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#_rosservice_info" title="niryo_libraries.rosservice._rosservice_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'rosservice info'. Prints information about a service.</p>
+<p>@param service_name: name of service to get info for
+@type  service_name: str
+@raise ROSServiceIOException: if the I/O issues prevent retrieving service information</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.rosservice_find">
+    
+  </a>
+  <a name="rosservice_find">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">rosservice_find</span><span class="function-signature">(service_type)</span>:
+    
+    <a class="headerLink" href="#rosservice_find" title="niryo_libraries.rosservice.rosservice_find">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Lookup services by service_type
+@param service_type: type of service to find
+@type  service_type: str
+@return: list of service names that use service_type
+@rtype: [str]</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_find">
+    
+  </a>
+  <a name="_rosservice_cmd_find">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_find</span><span class="function-signature">(argv=sys.argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_find" title="niryo_libraries.rosservice._rosservice_cmd_find">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'rosservice type'</p>
+<p>@param argv: command-line args
+@type  argv: [str]</p>
+</div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._resource_name_package">
+    
+  </a>
+  <a name="_resource_name_package">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_resource_name_package</span><span class="function-signature">(name)</span>:
+    
+    <a class="headerLink" href="#_resource_name_package" title="niryo_libraries.rosservice._resource_name_package">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>pkg/typeName -&gt; pkg, typeName -&gt; None</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">name</span></td><td class="fieldArgDesc">package resource name, e.g. 'std_msgs/String', <tt class="rst-docutils literal">str</tt></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">package name of resource, <tt class="rst-docutils literal">str</tt></td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_class_by_name">
+    
+  </a>
+  <a name="get_service_class_by_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_class_by_name</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#get_service_class_by_name" title="niryo_libraries.rosservice.get_service_class_by_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the service class using the name of the service. NOTE: this
+call results in a probe call to the service.
+@param service_name: fully-resolved name of service to call
+@type  service_name: str
+@return: service class
+@rtype: ServiceDefinition: service class
+@raise ROSServiceException: if service class cannot be retrieved</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.call_service">
+    
+  </a>
+  <a name="call_service">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">call_service</span><span class="function-signature">(service_name, service_args, service_class=None)</span>:
+    
+    <a class="headerLink" href="#call_service" title="niryo_libraries.rosservice.call_service">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Call the specified service_name
+@param service_name: fully-resolved name of service to call
+@type  service_name: str
+@param service_args: args to pass to service
+@type  service_args: [any]
+@param service_class: (optional) service type class. If this
+argument is provided, it saves a probe call against the service
+@type  service_class: Message class
+@return: service request, service response
+@rtype: Message, Message
+@raise ROSServiceException: if call command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_call">
+    
+  </a>
+  <a name="_rosservice_call">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_call</span><span class="function-signature">(service_name, service_args, verbose=False, service_class=None)</span>:
+    
+    <a class="headerLink" href="#_rosservice_call" title="niryo_libraries.rosservice._rosservice_call">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'rosservice call'
+@param service_name: name of service to call
+@type  service_name: str
+@param service_args: arguments to call service with
+@type  service_args: [args]
+@param verbose: if True, print extra output
+@type  verbose: bool
+@param service_class Message class: (optional) service type
+class. If this argument is provided, it saves a probe call against
+the service
+@type  service_class: Message class
+@raise ROSServiceException: if call command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.has_service_args">
+    
+  </a>
+  <a name="has_service_args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">has_service_args</span><span class="function-signature">(service_name, service_class=None)</span>:
+    
+    <a class="headerLink" href="#has_service_args" title="niryo_libraries.rosservice.has_service_args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if service requires arguments
+@param service_name: name of service being called
+@type  service_name: str
+@param service_class: (optional) service type class. If this
+argument is provided, it saves a probe call against the service
+@type service_class: Message class
+@return: True if service_name has request arguments
+@rtype: bool</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_args">
+    
+  </a>
+  <a name="_rosservice_args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_args</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#_rosservice_args" title="niryo_libraries.rosservice._rosservice_args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'rosservice args'
+@param service_name: name of service to get arguments for
+@type  service_name: str
+@raise ROSServiceException: if call command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.get_service_args">
+    
+  </a>
+  <a name="get_service_args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_service_args</span><span class="function-signature">(service_name)</span>:
+    
+    <a class="headerLink" href="#get_service_args" title="niryo_libraries.rosservice.get_service_args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Implements 'get service args'
+@param service_name: name of service to get arguments for
+@type  service_name: str
+@raise ROSServiceException: if call command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._optparse_service_only">
+    
+  </a>
+  <a name="_optparse_service_only">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_optparse_service_only</span><span class="function-signature">(cmd, argv=sys.argv)</span>:
+    
+    <a class="headerLink" href="#_optparse_service_only" title="niryo_libraries.rosservice._optparse_service_only">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse command-line arguments for commands that take a service name
+only.  Will cause a system exit if command-line argument parsing
+fails.
+@param cmd: command name, e.g. 'type'
+@type  cmd: str
+@param argv: command-line arguments
+@type  argv: [str]</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_type">
+    
+  </a>
+  <a name="_rosservice_cmd_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_type</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_type" title="niryo_libraries.rosservice._rosservice_cmd_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'type' command arguments and run command Will cause a system
+exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if type command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_uri">
+    
+  </a>
+  <a name="_rosservice_cmd_uri">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_uri</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_uri" title="niryo_libraries.rosservice._rosservice_cmd_uri">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'uri' command arguments and run command.  Will cause a system
+exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if uri command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_node">
+    
+  </a>
+  <a name="_rosservice_cmd_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_node</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_node" title="niryo_libraries.rosservice._rosservice_cmd_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'node' command arguments and run command. Will cause a system
+exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if node command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_args">
+    
+  </a>
+  <a name="_rosservice_cmd_args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_args</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_args" title="niryo_libraries.rosservice._rosservice_cmd_args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'args' command arguments and run command.  Will cause a system
+exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if args command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_call">
+    
+  </a>
+  <a name="_rosservice_cmd_call">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_call</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_call" title="niryo_libraries.rosservice._rosservice_cmd_call">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'call' command arguments and run command.  Will cause a system
+exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if call command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._stdin_yaml_arg">
+    
+  </a>
+  <a name="_stdin_yaml_arg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_stdin_yaml_arg</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#_stdin_yaml_arg" title="niryo_libraries.rosservice._stdin_yaml_arg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: iterator for next set of service args on stdin. Iterator returns a list of args for each call.
+@rtype: iterator</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_list">
+    
+  </a>
+  <a name="_rosservice_cmd_list">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_list</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_list" title="niryo_libraries.rosservice._rosservice_cmd_list">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'list' command arguments and run command
+Will cause a system exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if list command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._rosservice_cmd_info">
+    
+  </a>
+  <a name="_rosservice_cmd_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_rosservice_cmd_info</span><span class="function-signature">(argv)</span>:
+    
+    <a class="headerLink" href="#_rosservice_cmd_info" title="niryo_libraries.rosservice._rosservice_cmd_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parse 'info' command arguments and run command
+Will cause a system exit if command-line argument parsing fails.
+@param argv: command-line arguments
+@type  argv: [str]
+@raise ROSServiceException: if list command cannot be executed</p></div>
+  </div>
+</div><div class="basefunction private">
+  
+  
+  <a name="niryo_libraries.rosservice._fullusage">
+    
+  </a>
+  <a name="_fullusage">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_fullusage</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#_fullusage" title="niryo_libraries.rosservice._fullusage">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Print generic usage for rosservice</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.rosservice.rosservicemain">
+    
+  </a>
+  <a name="rosservicemain">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">rosservicemain</span><span class="function-signature">(argv=sys.argv)</span>:
+    
+    <a class="headerLink" href="#rosservicemain" title="niryo_libraries.rosservice.rosservicemain">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>main entry point for rosservice command-line tool</p>
+<p>@param argv: command-line args
+@type  argv: [str]</p>
+</div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.cv_bridge.core.CvBridge</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.cv_bridge.core.CvBridge.html" class="internal-link" title="This class"><wbr></wbr>Cv<wbr></wbr>Bridge</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#compressed_imgmsg_to_cv2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.compressed_imgmsg_to_cv2">compressed<wbr></wbr>_imgmsg<wbr></wbr>_to<wbr></wbr>_cv2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cv2_to_compressed_imgmsg" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_compressed_imgmsg">cv2<wbr></wbr>_to<wbr></wbr>_compressed<wbr></wbr>_imgmsg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cv2_to_imgmsg" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_imgmsg">cv2<wbr></wbr>_to<wbr></wbr>_imgmsg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cvtype2_to_dtype_with_channels" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype2_to_dtype_with_channels">cvtype2<wbr></wbr>_to<wbr></wbr>_dtype<wbr></wbr>_with<wbr></wbr>_channels</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dtype_with_channels_to_cvtype2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.dtype_with_channels_to_cvtype2">dtype<wbr></wbr>_with<wbr></wbr>_channels<wbr></wbr>_to<wbr></wbr>_cvtype2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#encoding_to_cvtype2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_cvtype2">encoding<wbr></wbr>_to<wbr></wbr>_cvtype2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#encoding_to_dtype_with_channels" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_dtype_with_channels">encoding<wbr></wbr>_to<wbr></wbr>_dtype<wbr></wbr>_with<wbr></wbr>_channels</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#imgmsg_to_cv2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.imgmsg_to_cv2">imgmsg<wbr></wbr>_to<wbr></wbr>_cv2</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cvdepth_to_numpy_depth" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvdepth_to_numpy_depth">cvdepth<wbr></wbr>_to<wbr></wbr>_numpy<wbr></wbr>_depth</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cvtype_to_name" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype_to_name">cvtype<wbr></wbr>_to<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#numpy_type_to_cvtype" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.numpy_type_to_cvtype">numpy<wbr></wbr>_type<wbr></wbr>_to<wbr></wbr>_cvtype</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.cv_bridge.core.html" class="internal-link" title="The parent of this class">core</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.cv_bridge.core.CvBridge.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge"><wbr></wbr>Cv<wbr></wbr>Bridge</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError"><wbr></wbr>Cv<wbr></wbr>Bridge<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.cv_bridge.html" class="internal-link" title="niryo_libraries.cv_bridge">cv_bridge</a></code><wbr></wbr>.<code><a href="niryo_libraries.cv_bridge.core.html" class="internal-link" title="niryo_libraries.cv_bridge.core">core</a></code><wbr></wbr>.<code><a href="niryo_libraries.cv_bridge.core.CvBridge.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge">CvBridge</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">CvBridge</span>(object):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.cv_bridge.core.CvBridge">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>The CvBridge is an object that converts between OpenCV Images and ROS Image messages.</p>
+<blockquote>
+</blockquote>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id280">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#compressed_imgmsg_to_cv2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.compressed_imgmsg_to_cv2">compressed<wbr></wbr>_imgmsg<wbr></wbr>_to<wbr></wbr>_cv2</a></code></td>
+    <td>Convert a sensor_msgs::CompressedImage message to an OpenCV :cpp:type:`cv::Mat`.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cv2_to_compressed_imgmsg" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_compressed_imgmsg">cv2<wbr></wbr>_to<wbr></wbr>_compressed<wbr></wbr>_imgmsg</a></code></td>
+    <td>Convert an OpenCV :cpp:type:`cv::Mat` type to a ROS sensor_msgs::CompressedImage message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cv2_to_imgmsg" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_imgmsg">cv2<wbr></wbr>_to<wbr></wbr>_imgmsg</a></code></td>
+    <td>Convert an OpenCV :cpp:type:`cv::Mat` type to a ROS sensor_msgs::Image message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cvtype2_to_dtype_with_channels" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype2_to_dtype_with_channels">cvtype2<wbr></wbr>_to<wbr></wbr>_dtype<wbr></wbr>_with<wbr></wbr>_channels</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#dtype_with_channels_to_cvtype2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.dtype_with_channels_to_cvtype2">dtype<wbr></wbr>_with<wbr></wbr>_channels<wbr></wbr>_to<wbr></wbr>_cvtype2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#encoding_to_cvtype2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_cvtype2">encoding<wbr></wbr>_to<wbr></wbr>_cvtype2</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#encoding_to_dtype_with_channels" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_dtype_with_channels">encoding<wbr></wbr>_to<wbr></wbr>_dtype<wbr></wbr>_with<wbr></wbr>_channels</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#imgmsg_to_cv2" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.imgmsg_to_cv2">imgmsg<wbr></wbr>_to<wbr></wbr>_cv2</a></code></td>
+    <td>Convert a sensor_msgs::Image message to an OpenCV :cpp:type:`cv::Mat`.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#cvdepth_to_numpy_depth" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvdepth_to_numpy_depth">cvdepth<wbr></wbr>_to<wbr></wbr>_numpy<wbr></wbr>_depth</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#cvtype_to_name" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype_to_name">cvtype<wbr></wbr>_to<wbr></wbr>_name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#numpy_type_to_cvtype" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridge.numpy_type_to_cvtype">numpy<wbr></wbr>_type<wbr></wbr>_to<wbr></wbr>_cvtype</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.cv_bridge.core.CvBridge.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.compressed_imgmsg_to_cv2">
+    
+  </a>
+  <a name="compressed_imgmsg_to_cv2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">compressed_imgmsg_to_cv2</span><span class="function-signature">(self, cmprs_img_msg, desired_encoding=<span class="rst-variable-quote">'</span><span class="rst-variable-string">passthrough</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#compressed_imgmsg_to_cv2" title="niryo_libraries.cv_bridge.core.CvBridge.compressed_imgmsg_to_cv2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert a sensor_msgs::CompressedImage message to an OpenCV :cpp:type:`cv::Mat`.</p>
+<p>If desired_encoding is <tt class="rst-docutils literal">"passthrough"</tt>, then the returned image has the same format as img_msg.
+Otherwise desired_encoding must be one of the standard image encodings</p>
+<p>This function returns an OpenCV :cpp:type:`cv::Mat` message on success, or raises <code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">cv_bridge.CvBridgeError</a></code> on failure.</p>
+<p>If the image only has one channel, the shape has size 2 (width and height)</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cmprs<wbr></wbr>_img<wbr></wbr>_msg</span></td><td class="fieldArgDesc">A :cpp:type:`sensor_msgs::CompressedImage` message</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">desired<wbr></wbr>_encoding</span></td><td class="fieldArgDesc"><p>The encoding of the image data, one of the following strings:</p>
+<ul class="rst-simple">
+<li><tt class="rst-docutils literal">"passthrough"</tt></li>
+<li>one of the standard strings in sensor_msgs/image_encodings.h</li>
+</ul>
+</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">:cpp:type:`cv::Mat`</td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">CvBridgeError</a></code></td><td>when conversion is not possible.</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_compressed_imgmsg">
+    
+  </a>
+  <a name="cv2_to_compressed_imgmsg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cv2_to_compressed_imgmsg</span><span class="function-signature">(self, cvim, dst_format=<span class="rst-variable-quote">'</span><span class="rst-variable-string">jpg</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#cv2_to_compressed_imgmsg" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_compressed_imgmsg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert an OpenCV :cpp:type:`cv::Mat` type to a ROS sensor_msgs::CompressedImage message.</p>
+<p>This function returns a sensor_msgs::Image message on success, or raises <code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">cv_bridge.CvBridgeError</a></code> on failure.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cvim</span></td><td class="fieldArgDesc">An OpenCV :cpp:type:`cv::Mat`</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dst<wbr></wbr>_format</span></td><td class="fieldArgDesc"><p>The format of the image data, one of the following strings:</p>
+<ul class="rst-simple">
+<li>from <a class="rst-reference external" href="http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html" target="_top">http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html</a></li>
+<li>from <a class="rst-reference external" href="http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html#Mat" target="_top">http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html#Mat</a> imread(const string&amp; filename, int flags)</li>
+<li>bmp, dib</li>
+<li>jpeg, jpg, jpe</li>
+<li>jp2</li>
+<li>png</li>
+<li>pbm, pgm, ppm</li>
+<li>sr, ras</li>
+<li>tiff, tif</li>
+</ul>
+</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">A sensor_msgs.msg.CompressedImage message</td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">CvBridgeError</a></code></td><td>when the <tt class="rst-docutils literal">cvim</tt> has a type that is incompatible with <tt class="rst-docutils literal">format</tt></td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_imgmsg">
+    
+  </a>
+  <a name="cv2_to_imgmsg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cv2_to_imgmsg</span><span class="function-signature">(self, cvim, encoding=<span class="rst-variable-quote">'</span><span class="rst-variable-string">passthrough</span><span class="rst-variable-quote">'</span>, header=None)</span>:
+    
+    <a class="headerLink" href="#cv2_to_imgmsg" title="niryo_libraries.cv_bridge.core.CvBridge.cv2_to_imgmsg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert an OpenCV :cpp:type:`cv::Mat` type to a ROS sensor_msgs::Image message.</p>
+<p>If encoding is <tt class="rst-docutils literal">"passthrough"</tt>, then the message has the same encoding as the image's OpenCV type.
+Otherwise desired_encoding must be one of the standard image encodings</p>
+<p>This function returns a sensor_msgs::Image message on success, or raises <code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">cv_bridge.CvBridgeError</a></code> on failure.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">cvim</span></td><td class="fieldArgDesc">An OpenCV :cpp:type:`cv::Mat`</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">encoding</span></td><td class="fieldArgDesc"><p>The encoding of the image data, one of the following strings:</p>
+<ul class="rst-simple">
+<li><tt class="rst-docutils literal">"passthrough"</tt></li>
+<li>one of the standard strings in sensor_msgs/image_encodings.h</li>
+</ul>
+</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">header</span></td><td class="fieldArgDesc">A std_msgs.msg.Header message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">A sensor_msgs.msg.Image message</td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">CvBridgeError</a></code></td><td>when the <tt class="rst-docutils literal">cvim</tt> has a type that is incompatible with <tt class="rst-docutils literal">encoding</tt></td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.cvtype2_to_dtype_with_channels">
+    
+  </a>
+  <a name="cvtype2_to_dtype_with_channels">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cvtype2_to_dtype_with_channels</span><span class="function-signature">(self, cvtype)</span>:
+    
+    <a class="headerLink" href="#cvtype2_to_dtype_with_channels" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype2_to_dtype_with_channels">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.dtype_with_channels_to_cvtype2">
+    
+  </a>
+  <a name="dtype_with_channels_to_cvtype2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">dtype_with_channels_to_cvtype2</span><span class="function-signature">(self, dtype, n_channels)</span>:
+    
+    <a class="headerLink" href="#dtype_with_channels_to_cvtype2" title="niryo_libraries.cv_bridge.core.CvBridge.dtype_with_channels_to_cvtype2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_cvtype2">
+    
+  </a>
+  <a name="encoding_to_cvtype2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">encoding_to_cvtype2</span><span class="function-signature">(self, encoding)</span>:
+    
+    <a class="headerLink" href="#encoding_to_cvtype2" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_cvtype2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_dtype_with_channels">
+    
+  </a>
+  <a name="encoding_to_dtype_with_channels">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">encoding_to_dtype_with_channels</span><span class="function-signature">(self, encoding)</span>:
+    
+    <a class="headerLink" href="#encoding_to_dtype_with_channels" title="niryo_libraries.cv_bridge.core.CvBridge.encoding_to_dtype_with_channels">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.imgmsg_to_cv2">
+    
+  </a>
+  <a name="imgmsg_to_cv2">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">imgmsg_to_cv2</span><span class="function-signature">(self, img_msg, desired_encoding=<span class="rst-variable-quote">'</span><span class="rst-variable-string">passthrough</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#imgmsg_to_cv2" title="niryo_libraries.cv_bridge.core.CvBridge.imgmsg_to_cv2">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Convert a sensor_msgs::Image message to an OpenCV :cpp:type:`cv::Mat`.</p>
+<p>If desired_encoding is <tt class="rst-docutils literal">"passthrough"</tt>, then the returned image has the same format as img_msg.
+Otherwise desired_encoding must be one of the standard image encodings</p>
+<p>This function returns an OpenCV :cpp:type:`cv::Mat` message on success, or raises <code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">cv_bridge.CvBridgeError</a></code> on failure.</p>
+<p>If the image only has one channel, the shape has size 2 (width and height)</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img<wbr></wbr>_msg</span></td><td class="fieldArgDesc">A :cpp:type:`sensor_msgs::Image` message</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">desired<wbr></wbr>_encoding</span></td><td class="fieldArgDesc"><p>The encoding of the image data, one of the following strings:</p>
+<ul class="rst-simple">
+<li><tt class="rst-docutils literal">"passthrough"</tt></li>
+<li>one of the standard strings in sensor_msgs/image_encodings.h</li>
+</ul>
+</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">:cpp:type:`cv::Mat`</td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="niryo_libraries.cv_bridge.core.CvBridgeError.html" class="internal-link" title="niryo_libraries.cv_bridge.core.CvBridgeError">CvBridgeError</a></code></td><td>when conversion is not possible.</td></tr></table></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.cvdepth_to_numpy_depth">
+    
+  </a>
+  <a name="cvdepth_to_numpy_depth">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cvdepth_to_numpy_depth</span> =
+    
+    <a class="headerLink" href="#cvdepth_to_numpy_depth" title="niryo_libraries.cv_bridge.core.CvBridge.cvdepth_to_numpy_depth">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.cvtype_to_name">
+    
+  </a>
+  <a name="cvtype_to_name">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cvtype_to_name</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#cvtype_to_name" title="niryo_libraries.cv_bridge.core.CvBridge.cvtype_to_name">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.cv_bridge.core.CvBridge.numpy_type_to_cvtype">
+    
+  </a>
+  <a name="numpy_type_to_cvtype">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">numpy_type_to_cvtype</span>: <code>dict[<wbr></wbr>str, <wbr></wbr>str]</code> =
+    
+    <a class="headerLink" href="#numpy_type_to_cvtype" title="niryo_libraries.cv_bridge.core.CvBridge.numpy_type_to_cvtype">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

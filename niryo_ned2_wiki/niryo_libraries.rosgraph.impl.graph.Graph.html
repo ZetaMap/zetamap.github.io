@@ -1,0 +1,1527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosgraph.impl.graph.Graph</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosgraph.impl.graph.Graph.html" class="internal-link" title="This class"><wbr></wbr>Graph</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#bad_update" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_update">bad<wbr></wbr>_update</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_master_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.set_master_stale">set<wbr></wbr>_master<wbr></wbr>_stale</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_node_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.set_node_stale">set<wbr></wbr>_node<wbr></wbr>_stale</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#update" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.update">update</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_mark_bad_node" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._mark_bad_node">_mark<wbr></wbr>_bad<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_master_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._master_refresh">_master<wbr></wbr>_refresh</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_node_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh">_node<wbr></wbr>_refresh</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_node_refresh_businfo" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh_businfo">_node<wbr></wbr>_refresh<wbr></wbr>_businfo</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_node_uri_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh">_node<wbr></wbr>_uri<wbr></wbr>_refresh</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_node_uri_refresh_all" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh_all">_node<wbr></wbr>_uri<wbr></wbr>_refresh<wbr></wbr>_all</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_unmark_bad_node" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._unmark_bad_node">_unmark<wbr></wbr>_bad<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#bad_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes">bad<wbr></wbr>_nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#bad_nodes_lock" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes_lock">bad<wbr></wbr>_nodes<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#last_master_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.last_master_refresh">last<wbr></wbr>_master<wbr></wbr>_refresh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#last_node_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.last_node_refresh">last<wbr></wbr>_node<wbr></wbr>_refresh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#master" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.master">master</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#master_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.master_stale">master<wbr></wbr>_stale</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nn_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_edges">nn<wbr></wbr>_edges</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nn_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_nodes">nn<wbr></wbr>_nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#node_ns" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_ns">node<wbr></wbr>_ns</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#node_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_stale">node<wbr></wbr>_stale</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#node_uri_map" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_uri_map">node<wbr></wbr>_uri<wbr></wbr>_map</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nt_all_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_all_edges">nt<wbr></wbr>_all<wbr></wbr>_edges</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nt_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_edges">nt<wbr></wbr>_edges</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#nt_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_nodes">nt<wbr></wbr>_nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#srvs" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.srvs">srvs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#topic_ns" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.topic_ns">topic<wbr></wbr>_ns</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#uri_node_map" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.uri_node_map">uri<wbr></wbr>_node<wbr></wbr>_map</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosgraph.impl.graph.html" class="internal-link" title="The parent of this class">graph</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.BadNode.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.BadNode"><wbr></wbr>Bad<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.Edge.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Edge"><wbr></wbr>Edge</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.EdgeList.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.EdgeList"><wbr></wbr>Edge<wbr></wbr>List</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.Graph.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph"><wbr></wbr>Graph</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.html#edge_args" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.edge_args">edge<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.html#node_topic" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.node_topic">node<wbr></wbr>_topic</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.html#topic_node" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.topic_node">topic<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.html#logger" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.logger">logger</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosgraph.impl.graph.html#_ROS_NAME" class="internal-link" title="niryo_libraries.rosgraph.impl.graph._ROS_NAME">_ROS<wbr></wbr>_NAME</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosgraph.html" class="internal-link" title="niryo_libraries.rosgraph">rosgraph</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosgraph.impl.html" class="internal-link" title="niryo_libraries.rosgraph.impl">impl</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosgraph.impl.graph.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph">graph</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosgraph.impl.graph.Graph.html" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph">Graph</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Graph</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.__init__">Graph(node_ns, topic_ns)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosgraph.impl.graph.Graph">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Utility class for polling ROS statistics from running ROS graph.
+Not multi-thread-safe</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2271">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#bad_update" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_update">bad<wbr></wbr>_update</a></code></td>
+    <td>Update loop for nodes with bad connectivity. We box them separately so that we can maintain the good performance of the normal update loop. Once a node is on the bad list it stays there.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_master_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.set_master_stale">set<wbr></wbr>_master<wbr></wbr>_stale</a></code></td>
+    <td>@param stale_secs: seconds that data is considered fresh @type  stale_secs: double</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_node_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.set_node_stale">set<wbr></wbr>_node<wbr></wbr>_stale</a></code></td>
+    <td>@param stale_secs: seconds that data is considered fresh @type  stale_secs: double</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#update" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.update">update</a></code></td>
+    <td>Update all the stats. This method may take a while to complete as it will communicate with all nodes + master.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#bad_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes">bad<wbr></wbr>_nodes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#bad_nodes_lock" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes_lock">bad<wbr></wbr>_nodes<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#last_master_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.last_master_refresh">last<wbr></wbr>_master<wbr></wbr>_refresh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#last_node_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.last_node_refresh">last<wbr></wbr>_node<wbr></wbr>_refresh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#master" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.master">master</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#master_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.master_stale">master<wbr></wbr>_stale</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nn_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_edges">nn<wbr></wbr>_edges</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nn_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_nodes">nn<wbr></wbr>_nodes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#node_ns" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_ns">node<wbr></wbr>_ns</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#node_stale" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_stale">node<wbr></wbr>_stale</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#node_uri_map" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.node_uri_map">node<wbr></wbr>_uri<wbr></wbr>_map</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nt_all_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_all_edges">nt<wbr></wbr>_all<wbr></wbr>_edges</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nt_edges" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_edges">nt<wbr></wbr>_edges</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#nt_nodes" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_nodes">nt<wbr></wbr>_nodes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#srvs" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.srvs">srvs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#topic_ns" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.topic_ns">topic<wbr></wbr>_ns</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#uri_node_map" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph.uri_node_map">uri<wbr></wbr>_node<wbr></wbr>_map</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_mark_bad_node" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._mark_bad_node">_mark<wbr></wbr>_bad<wbr></wbr>_node</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_master_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._master_refresh">_master<wbr></wbr>_refresh</a></code></td>
+    <td>@return: True if nodes information was updated @rtype: bool</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_node_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh">_node<wbr></wbr>_refresh</a></code></td>
+    <td>Contact node for stats/connectivity information @param node: name of node to contact @type  node: str @param bad_node: if True, node has connectivity issues @type  bad_node: bool @return: True if node was successfully contacted @rtype  bool...</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_node_refresh_businfo" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh_businfo">_node<wbr></wbr>_refresh<wbr></wbr>_businfo</a></code></td>
+    <td>Retrieve bus info from the node and update nodes and edges as appropriate @param node: node name @type  node: str @param api: XML-RPC proxy @type  api: ServerProxy @param bad_node: If True, node has connectivity issues and should be treated differently @type  bad_node: bool...</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_node_uri_refresh" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh">_node<wbr></wbr>_uri<wbr></wbr>_refresh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_node_uri_refresh_all" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh_all">_node<wbr></wbr>_uri<wbr></wbr>_refresh<wbr></wbr>_all</a></code></td>
+    <td>Build self.node_uri_map and self.uri_node_map using master as a lookup service. This will make N requests to the master for N nodes, so this should only be used sparingly</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_unmark_bad_node" class="internal-link" title="niryo_libraries.rosgraph.impl.graph.Graph._unmark_bad_node">_unmark<wbr></wbr>_bad<wbr></wbr>_node</a></code></td>
+    <td>Promotes bad node to 'wonky' status.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, node_ns=<span class="rst-variable-quote">'</span><span class="rst-variable-string">/</span><span class="rst-variable-quote">'</span>, topic_ns=<span class="rst-variable-quote">'</span><span class="rst-variable-string">/</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosgraph.impl.graph.Graph.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.bad_update">
+    
+  </a>
+  <a name="bad_update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">bad_update</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#bad_update" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_update">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update loop for nodes with bad connectivity. We box them separately
+so that we can maintain the good performance of the normal update loop.
+Once a node is on the bad list it stays there.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.set_master_stale">
+    
+  </a>
+  <a name="set_master_stale">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_master_stale</span><span class="function-signature">(self, stale_secs)</span>:
+    
+    <a class="headerLink" href="#set_master_stale" title="niryo_libraries.rosgraph.impl.graph.Graph.set_master_stale">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param stale_secs: seconds that data is considered fresh
+@type  stale_secs: double</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.set_node_stale">
+    
+  </a>
+  <a name="set_node_stale">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_node_stale</span><span class="function-signature">(self, stale_secs)</span>:
+    
+    <a class="headerLink" href="#set_node_stale" title="niryo_libraries.rosgraph.impl.graph.Graph.set_node_stale">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@param stale_secs: seconds that data is considered fresh
+@type  stale_secs: double</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.update">
+    
+  </a>
+  <a name="update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">update</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#update" title="niryo_libraries.rosgraph.impl.graph.Graph.update">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Update all the stats. This method may take a while to complete as it will
+communicate with all nodes + master.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes">
+    
+  </a>
+  <a name="bad_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">bad_nodes</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#bad_nodes" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes_lock">
+    
+  </a>
+  <a name="bad_nodes_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">bad_nodes_lock</span> =
+    
+    <a class="headerLink" href="#bad_nodes_lock" title="niryo_libraries.rosgraph.impl.graph.Graph.bad_nodes_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.last_master_refresh">
+    
+  </a>
+  <a name="last_master_refresh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">last_master_refresh</span> =
+    
+    <a class="headerLink" href="#last_master_refresh" title="niryo_libraries.rosgraph.impl.graph.Graph.last_master_refresh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.last_node_refresh">
+    
+  </a>
+  <a name="last_node_refresh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">last_node_refresh</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#last_node_refresh" title="niryo_libraries.rosgraph.impl.graph.Graph.last_node_refresh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.master">
+    
+  </a>
+  <a name="master">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">master</span> =
+    
+    <a class="headerLink" href="#master" title="niryo_libraries.rosgraph.impl.graph.Graph.master">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.master_stale">
+    
+  </a>
+  <a name="master_stale">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">master_stale</span> =
+    
+    <a class="headerLink" href="#master_stale" title="niryo_libraries.rosgraph.impl.graph.Graph.master_stale">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.nn_edges">
+    
+  </a>
+  <a name="nn_edges">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nn_edges</span> =
+    
+    <a class="headerLink" href="#nn_edges" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_edges">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.nn_nodes">
+    
+  </a>
+  <a name="nn_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nn_nodes</span> =
+    
+    <a class="headerLink" href="#nn_nodes" title="niryo_libraries.rosgraph.impl.graph.Graph.nn_nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.node_ns">
+    
+  </a>
+  <a name="node_ns">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">node_ns</span> =
+    
+    <a class="headerLink" href="#node_ns" title="niryo_libraries.rosgraph.impl.graph.Graph.node_ns">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.node_stale">
+    
+  </a>
+  <a name="node_stale">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">node_stale</span> =
+    
+    <a class="headerLink" href="#node_stale" title="niryo_libraries.rosgraph.impl.graph.Graph.node_stale">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.node_uri_map">
+    
+  </a>
+  <a name="node_uri_map">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">node_uri_map</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#node_uri_map" title="niryo_libraries.rosgraph.impl.graph.Graph.node_uri_map">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.nt_all_edges">
+    
+  </a>
+  <a name="nt_all_edges">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nt_all_edges</span> =
+    
+    <a class="headerLink" href="#nt_all_edges" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_all_edges">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.nt_edges">
+    
+  </a>
+  <a name="nt_edges">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nt_edges</span> =
+    
+    <a class="headerLink" href="#nt_edges" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_edges">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.nt_nodes">
+    
+  </a>
+  <a name="nt_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">nt_nodes</span> =
+    
+    <a class="headerLink" href="#nt_nodes" title="niryo_libraries.rosgraph.impl.graph.Graph.nt_nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.srvs">
+    
+  </a>
+  <a name="srvs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">srvs</span> =
+    
+    <a class="headerLink" href="#srvs" title="niryo_libraries.rosgraph.impl.graph.Graph.srvs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.topic_ns">
+    
+  </a>
+  <a name="topic_ns">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">topic_ns</span> =
+    
+    <a class="headerLink" href="#topic_ns" title="niryo_libraries.rosgraph.impl.graph.Graph.topic_ns">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph.uri_node_map">
+    
+  </a>
+  <a name="uri_node_map">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">uri_node_map</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#uri_node_map" title="niryo_libraries.rosgraph.impl.graph.Graph.uri_node_map">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._mark_bad_node">
+    
+  </a>
+  <a name="_mark_bad_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_mark_bad_node</span><span class="function-signature">(self, node, reason)</span>:
+    
+    <a class="headerLink" href="#_mark_bad_node" title="niryo_libraries.rosgraph.impl.graph.Graph._mark_bad_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._master_refresh">
+    
+  </a>
+  <a name="_master_refresh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_master_refresh</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_master_refresh" title="niryo_libraries.rosgraph.impl.graph.Graph._master_refresh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>@return: True if nodes information was updated
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh">
+    
+  </a>
+  <a name="_node_refresh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_node_refresh</span><span class="function-signature">(self, node, bad_node=False)</span>:
+    
+    <a class="headerLink" href="#_node_refresh" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Contact node for stats/connectivity information
+@param node: name of node to contact
+@type  node: str
+@param bad_node: if True, node has connectivity issues
+@type  bad_node: bool
+@return: True if node was successfully contacted
+@rtype  bool</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh_businfo">
+    
+  </a>
+  <a name="_node_refresh_businfo">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_node_refresh_businfo</span><span class="function-signature">(self, node, api, bad_node=False)</span>:
+    
+    <a class="headerLink" href="#_node_refresh_businfo" title="niryo_libraries.rosgraph.impl.graph.Graph._node_refresh_businfo">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve bus info from the node and update nodes and edges as appropriate
+@param node: node name
+@type  node: str
+@param api: XML-RPC proxy
+@type  api: ServerProxy
+@param bad_node: If True, node has connectivity issues and
+should be treated differently
+@type  bad_node: bool</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh">
+    
+  </a>
+  <a name="_node_uri_refresh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_node_uri_refresh</span><span class="function-signature">(self, node)</span>:
+    
+    <a class="headerLink" href="#_node_uri_refresh" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh_all">
+    
+  </a>
+  <a name="_node_uri_refresh_all">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_node_uri_refresh_all</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_node_uri_refresh_all" title="niryo_libraries.rosgraph.impl.graph.Graph._node_uri_refresh_all">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Build self.node_uri_map and self.uri_node_map using master as a
+lookup service. This will make N requests to the master for N
+nodes, so this should only be used sparingly</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosgraph.impl.graph.Graph._unmark_bad_node">
+    
+  </a>
+  <a name="_unmark_bad_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_unmark_bad_node</span><span class="function-signature">(self, node, reason)</span>:
+    
+    <a class="headerLink" href="#_unmark_bad_node" title="niryo_libraries.rosgraph.impl.graph.Graph._unmark_bad_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Promotes bad node to 'wonky' status.</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

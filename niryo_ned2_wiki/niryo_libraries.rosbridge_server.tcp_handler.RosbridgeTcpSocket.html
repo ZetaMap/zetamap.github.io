@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.html" class="internal-link" title="This class"><wbr></wbr>Rosbridge<wbr></wbr>Tcp<wbr></wbr>Socket</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#finish" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.finish">finish</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handle" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.handle">handle</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#recv_bson" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recv_bson">recv<wbr></wbr>_bson</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#recvall" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recvall">recvall</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#send_message" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.send_message">send<wbr></wbr>_message</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setup" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.setup">setup</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#bson_only_mode" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.bson_only_mode">bson<wbr></wbr>_only<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#busy" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.busy">busy</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#client_count_pub" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_count_pub">client<wbr></wbr>_count<wbr></wbr>_pub</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#client_id_seed" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_id_seed">client<wbr></wbr>_id<wbr></wbr>_seed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clients_connected" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.clients_connected">clients<wbr></wbr>_connected</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#delay_between_messages" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.delay_between_messages">delay<wbr></wbr>_between<wbr></wbr>_messages</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fragment_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.fragment_timeout">fragment<wbr></wbr>_timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#incoming_buffer" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.incoming_buffer">incoming<wbr></wbr>_buffer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#max_message_size" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.max_message_size">max<wbr></wbr>_message<wbr></wbr>_size</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#queue" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.queue">queue</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#socket_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.socket_timeout">socket<wbr></wbr>_timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unregister_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.unregister_timeout">unregister<wbr></wbr>_timeout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#protocol" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.protocol">protocol</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosbridge_server.tcp_handler.html" class="internal-link" title="The parent of this class">tcp<wbr></wbr>_handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.html" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket"><wbr></wbr>Rosbridge<wbr></wbr>Tcp<wbr></wbr>Socket</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbridge_server.html" class="internal-link" title="niryo_libraries.rosbridge_server">rosbridge_server</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbridge_server.tcp_handler.html" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler">tcp_handler</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.html" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket">RosbridgeTcpSocket</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">RosbridgeTcpSocket</span>(SocketServer.BaseRequestHandler):</code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>TCP Socket server for rosbridge.
+An instance of this class is created for each request.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2236">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#finish" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.finish">finish</a></code></td>
+    <td>Called when TCP connection finishes. Called after the handle() method to perform any clean-up actions required. If setup() raises an exception, this function will not be called.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handle" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.handle">handle</a></code></td>
+    <td>Listen for TCP messages and do all the work to service a request.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#recv_bson" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recv_bson">recv<wbr></wbr>_bson</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#recvall" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recvall">recvall</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#send_message" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.send_message">send<wbr></wbr>_message</a></code></td>
+    <td>Callback from rosbridge</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setup" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.setup">setup</a></code></td>
+    <td>Called before the handle() method to perform any initialization actions required. The default implementation does nothing.</td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#bson_only_mode" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.bson_only_mode">bson<wbr></wbr>_only<wbr></wbr>_mode</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#busy" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.busy">busy</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#client_count_pub" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_count_pub">client<wbr></wbr>_count<wbr></wbr>_pub</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#client_id_seed" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_id_seed">client<wbr></wbr>_id<wbr></wbr>_seed</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#clients_connected" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.clients_connected">clients<wbr></wbr>_connected</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#delay_between_messages" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.delay_between_messages">delay<wbr></wbr>_between<wbr></wbr>_messages</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#fragment_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.fragment_timeout">fragment<wbr></wbr>_timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#incoming_buffer" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.incoming_buffer">incoming<wbr></wbr>_buffer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#max_message_size" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.max_message_size">max<wbr></wbr>_message<wbr></wbr>_size</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#queue" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.queue">queue</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#socket_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.socket_timeout">socket<wbr></wbr>_timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="classvariable">
+    
+    <td>Class Variable</td>
+    <td><code><a href="#unregister_timeout" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.unregister_timeout">unregister<wbr></wbr>_timeout</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#protocol" class="internal-link" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.protocol">protocol</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.finish">
+    
+  </a>
+  <a name="finish">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">finish</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#finish" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.finish">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Called when TCP connection finishes.
+Called after the handle() method to perform any clean-up actions required.
+If setup() raises an exception, this function will not be called.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.handle">
+    
+  </a>
+  <a name="handle">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">handle</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#handle" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.handle">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Listen for TCP messages and do all the work to service a request.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recv_bson">
+    
+  </a>
+  <a name="recv_bson">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">recv_bson</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#recv_bson" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recv_bson">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recvall">
+    
+  </a>
+  <a name="recvall">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">recvall</span><span class="function-signature">(self, n)</span>:
+    
+    <a class="headerLink" href="#recvall" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.recvall">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.send_message">
+    
+  </a>
+  <a name="send_message">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">send_message</span><span class="function-signature">(self, message=None, compression=<span class="rst-variable-quote">'</span><span class="rst-variable-string">none</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#send_message" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.send_message">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Callback from rosbridge</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.setup">
+    
+  </a>
+  <a name="setup">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">setup</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#setup" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.setup">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Called before the handle() method to perform any initialization
+actions required. The default implementation does nothing.</p></div>
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.bson_only_mode">
+    
+  </a>
+  <a name="bson_only_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">bson_only_mode</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#bson_only_mode" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.bson_only_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.busy">
+    
+  </a>
+  <a name="busy">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">busy</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#busy" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.busy">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_count_pub">
+    
+  </a>
+  <a name="client_count_pub">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">client_count_pub</span> =
+    
+    <a class="headerLink" href="#client_count_pub" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_count_pub">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_id_seed">
+    
+  </a>
+  <a name="client_id_seed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">client_id_seed</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#client_id_seed" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.client_id_seed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.clients_connected">
+    
+  </a>
+  <a name="clients_connected">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">clients_connected</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#clients_connected" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.clients_connected">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.delay_between_messages">
+    
+  </a>
+  <a name="delay_between_messages">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">delay_between_messages</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#delay_between_messages" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.delay_between_messages">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.fragment_timeout">
+    
+  </a>
+  <a name="fragment_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">fragment_timeout</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#fragment_timeout" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.fragment_timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.incoming_buffer">
+    
+  </a>
+  <a name="incoming_buffer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">incoming_buffer</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#incoming_buffer" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.incoming_buffer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.max_message_size">
+    
+  </a>
+  <a name="max_message_size">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">max_message_size</span> =
+    
+    <a class="headerLink" href="#max_message_size" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.max_message_size">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.queue">
+    
+  </a>
+  <a name="queue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">queue</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#queue" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.queue">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.socket_timeout">
+    
+  </a>
+  <a name="socket_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">socket_timeout</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#socket_timeout" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.socket_timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseclassvariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.unregister_timeout">
+    
+  </a>
+  <a name="unregister_timeout">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">unregister_timeout</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#unregister_timeout" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.unregister_timeout">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.protocol">
+    
+  </a>
+  <a name="protocol">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">protocol</span> =
+    
+    <a class="headerLink" href="#protocol" title="niryo_libraries.rosbridge_server.tcp_handler.RosbridgeTcpSocket.protocol">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

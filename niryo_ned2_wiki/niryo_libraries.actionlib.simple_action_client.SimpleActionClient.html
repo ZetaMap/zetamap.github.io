@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.actionlib.simple_action_client.SimpleActionClient</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.html" class="internal-link" title="This class"><wbr></wbr>Simple<wbr></wbr>Action<wbr></wbr>Client</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cancel_all_goals" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_all_goals">cancel<wbr></wbr>_all<wbr></wbr>_goals</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cancel_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goal">cancel<wbr></wbr>_goal</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cancel_goals_at_and_before_time" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goals_at_and_before_time">cancel<wbr></wbr>_goals<wbr></wbr>_at<wbr></wbr>_and<wbr></wbr>_before<wbr></wbr>_time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_goal_status_text" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_goal_status_text">get<wbr></wbr>_goal<wbr></wbr>_status<wbr></wbr>_text</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_result" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_result">get<wbr></wbr>_result</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_state">get<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#send_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal">send<wbr></wbr>_goal</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#send_goal_and_wait" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal_and_wait">send<wbr></wbr>_goal<wbr></wbr>_and<wbr></wbr>_wait</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop_tracking_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.stop_tracking_goal">stop<wbr></wbr>_tracking<wbr></wbr>_goal</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wait_for_result" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_result">wait<wbr></wbr>_for<wbr></wbr>_result</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#wait_for_server" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_server">wait<wbr></wbr>_for<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_handle_feedback" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_feedback">_handle<wbr></wbr>_feedback</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_handle_transition" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_transition">_handle<wbr></wbr>_transition</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_set_simple_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._set_simple_state">_set<wbr></wbr>_simple<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#action_client" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.action_client">action<wbr></wbr>_client</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#active_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.active_cb">active<wbr></wbr>_cb</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#done_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_cb">done<wbr></wbr>_cb</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#done_condition" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_condition">done<wbr></wbr>_condition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#feedback_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.feedback_cb">feedback<wbr></wbr>_cb</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#gh" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.gh">gh</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#simple_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.simple_state">simple<wbr></wbr>_state</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.actionlib.simple_action_client.html" class="internal-link" title="The parent of this class">simple<wbr></wbr>_action<wbr></wbr>_client</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.html" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient"><wbr></wbr>Simple<wbr></wbr>Action<wbr></wbr>Client</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.actionlib.simple_action_client.SimpleGoalState.html" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleGoalState"><wbr></wbr>Simple<wbr></wbr>Goal<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.actionlib.html" class="internal-link" title="niryo_libraries.actionlib">actionlib</a></code><wbr></wbr>.<code><a href="niryo_libraries.actionlib.simple_action_client.html" class="internal-link" title="niryo_libraries.actionlib.simple_action_client">simple_action_client</a></code><wbr></wbr>.<code><a href="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.html" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient">SimpleActionClient</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">SimpleActionClient</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.__init__">SimpleActionClient(ns, ActionSpec)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.actionlib.simple_action_client.SimpleActionClient">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id63">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cancel_all_goals" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_all_goals">cancel<wbr></wbr>_all<wbr></wbr>_goals</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cancel_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goal">cancel<wbr></wbr>_goal</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#cancel_goals_at_and_before_time" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goals_at_and_before_time">cancel<wbr></wbr>_goals<wbr></wbr>_at<wbr></wbr>_and<wbr></wbr>_before<wbr></wbr>_time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_goal_status_text" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_goal_status_text">get<wbr></wbr>_goal<wbr></wbr>_status<wbr></wbr>_text</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_result" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_result">get<wbr></wbr>_result</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_state">get<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#send_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal">send<wbr></wbr>_goal</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#send_goal_and_wait" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal_and_wait">send<wbr></wbr>_goal<wbr></wbr>_and<wbr></wbr>_wait</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop_tracking_goal" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.stop_tracking_goal">stop<wbr></wbr>_tracking<wbr></wbr>_goal</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#wait_for_result" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_result">wait<wbr></wbr>_for<wbr></wbr>_result</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#wait_for_server" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_server">wait<wbr></wbr>_for<wbr></wbr>_server</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#action_client" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.action_client">action<wbr></wbr>_client</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#active_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.active_cb">active<wbr></wbr>_cb</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#done_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_cb">done<wbr></wbr>_cb</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#done_condition" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_condition">done<wbr></wbr>_condition</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#feedback_cb" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.feedback_cb">feedback<wbr></wbr>_cb</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#gh" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.gh">gh</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#simple_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.simple_state">simple<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_handle_feedback" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_feedback">_handle<wbr></wbr>_feedback</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_handle_transition" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_transition">_handle<wbr></wbr>_transition</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_set_simple_state" class="internal-link" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._set_simple_state">_set<wbr></wbr>_simple<wbr></wbr>_state</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, ns, ActionSpec)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_all_goals">
+    
+  </a>
+  <a name="cancel_all_goals">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cancel_all_goals</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#cancel_all_goals" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_all_goals">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goal">
+    
+  </a>
+  <a name="cancel_goal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cancel_goal</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#cancel_goal" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goal">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goals_at_and_before_time">
+    
+  </a>
+  <a name="cancel_goals_at_and_before_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">cancel_goals_at_and_before_time</span><span class="function-signature">(self, time)</span>:
+    
+    <a class="headerLink" href="#cancel_goals_at_and_before_time" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.cancel_goals_at_and_before_time">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_goal_status_text">
+    
+  </a>
+  <a name="get_goal_status_text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_goal_status_text</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_goal_status_text" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_goal_status_text">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_result">
+    
+  </a>
+  <a name="get_result">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_result</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_result" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_result">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_state">
+    
+  </a>
+  <a name="get_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_state</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_state" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.get_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal">
+    
+  </a>
+  <a name="send_goal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">send_goal</span><span class="function-signature">(self, goal, done_cb=None, active_cb=None, feedback_cb=None)</span>:
+    
+    <a class="headerLink" href="#send_goal" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal_and_wait">
+    
+  </a>
+  <a name="send_goal_and_wait">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">send_goal_and_wait</span><span class="function-signature">(self, goal, execute_timeout=rospy.Duration(), preempt_timeout=rospy.Duration())</span>:
+    
+    <a class="headerLink" href="#send_goal_and_wait" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.send_goal_and_wait">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.stop_tracking_goal">
+    
+  </a>
+  <a name="stop_tracking_goal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop_tracking_goal</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stop_tracking_goal" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.stop_tracking_goal">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_result">
+    
+  </a>
+  <a name="wait_for_result">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">wait_for_result</span><span class="function-signature">(self, timeout=rospy.Duration())</span>:
+    
+    <a class="headerLink" href="#wait_for_result" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_result">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_server">
+    
+  </a>
+  <a name="wait_for_server">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">wait_for_server</span><span class="function-signature">(self, timeout=rospy.Duration())</span>:
+    
+    <a class="headerLink" href="#wait_for_server" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.wait_for_server">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.action_client">
+    
+  </a>
+  <a name="action_client">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">action_client</span> =
+    
+    <a class="headerLink" href="#action_client" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.action_client">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.active_cb">
+    
+  </a>
+  <a name="active_cb">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">active_cb</span> =
+    
+    <a class="headerLink" href="#active_cb" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.active_cb">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_cb">
+    
+  </a>
+  <a name="done_cb">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">done_cb</span> =
+    
+    <a class="headerLink" href="#done_cb" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_cb">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_condition">
+    
+  </a>
+  <a name="done_condition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">done_condition</span> =
+    
+    <a class="headerLink" href="#done_condition" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.done_condition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.feedback_cb">
+    
+  </a>
+  <a name="feedback_cb">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">feedback_cb</span> =
+    
+    <a class="headerLink" href="#feedback_cb" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.feedback_cb">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.gh">
+    
+  </a>
+  <a name="gh">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">gh</span> =
+    
+    <a class="headerLink" href="#gh" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.gh">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.simple_state">
+    
+  </a>
+  <a name="simple_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">simple_state</span> =
+    
+    <a class="headerLink" href="#simple_state" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient.simple_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_feedback">
+    
+  </a>
+  <a name="_handle_feedback">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_handle_feedback</span><span class="function-signature">(self, gh, feedback)</span>:
+    
+    <a class="headerLink" href="#_handle_feedback" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_feedback">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_transition">
+    
+  </a>
+  <a name="_handle_transition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_handle_transition</span><span class="function-signature">(self, gh)</span>:
+    
+    <a class="headerLink" href="#_handle_transition" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._handle_transition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._set_simple_state">
+    
+  </a>
+  <a name="_set_simple_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_set_simple_state</span><span class="function-signature">(self, state)</span>:
+    
+    <a class="headerLink" href="#_set_simple_state" title="niryo_libraries.actionlib.simple_action_client.SimpleActionClient._set_simple_state">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

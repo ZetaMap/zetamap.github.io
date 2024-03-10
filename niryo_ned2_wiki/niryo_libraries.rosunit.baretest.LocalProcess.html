@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosunit.baretest.LocalProcess</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosunit.baretest.LocalProcess.html" class="internal-link" title="This class"><wbr></wbr>Local<wbr></wbr>Process</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_exit_description" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.get_exit_description">get<wbr></wbr>_exit<wbr></wbr>_description</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_info" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.get_info">get<wbr></wbr>_info</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_alive" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.is_alive">is<wbr></wbr>_alive</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.start">start</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_configure_logging" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess._configure_logging">_configure<wbr></wbr>_logging</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_stop_unix" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess._stop_unix">_stop<wbr></wbr>_unix</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#__str__" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.__str__">__str__</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#args" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.args">args</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cwd" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.cwd">cwd</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#exit_code" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.exit_code">exit<wbr></wbr>_code</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_node" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.is_node">is<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log_dir" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.log_dir">log<wbr></wbr>_dir</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#log_output" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.log_output">log<wbr></wbr>_output</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#pid" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.pid">pid</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#popen" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.popen">popen</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#run_id" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.run_id">run<wbr></wbr>_id</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#started" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.started">started</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stopped" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.stopped">stopped</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#env" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.env">env</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#lock" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.lock">lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#name" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.name">name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#package" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.package">package</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#required" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.required">required</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#respawn" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.respawn">respawn</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.pmon.Process.html#spawn_count" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.spawn_count">spawn<wbr></wbr>_count</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosunit.baretest.html" class="internal-link" title="The parent of this class">baretest</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.BareTestCase.html" class="internal-link" title="niryo_libraries.rosunit.baretest.BareTestCase"><wbr></wbr>Bare<wbr></wbr>Test<wbr></wbr>Case</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.LocalProcess.html" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess"><wbr></wbr>Local<wbr></wbr>Process</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.TestTimeoutException.html" class="internal-link" title="niryo_libraries.rosunit.baretest.TestTimeoutException"><wbr></wbr>Test<wbr></wbr>Timeout<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#print_runner_summary" class="internal-link" title="niryo_libraries.rosunit.baretest.print_runner_summary">print<wbr></wbr>_runner<wbr></wbr>_summary</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#print_unittest_summary" class="internal-link" title="niryo_libraries.rosunit.baretest.print_unittest_summary">print<wbr></wbr>_unittest<wbr></wbr>_summary</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#_format_errors" class="internal-link" title="niryo_libraries.rosunit.baretest._format_errors">_format<wbr></wbr>_errors</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#BARE_TIME_LIMIT" class="internal-link" title="niryo_libraries.rosunit.baretest.BARE_TIME_LIMIT">BARE<wbr></wbr>_TIME<wbr></wbr>_LIMIT</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#TIMEOUT_SIGINT" class="internal-link" title="niryo_libraries.rosunit.baretest.TIMEOUT_SIGINT">TIMEOUT<wbr></wbr>_SIGINT</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosunit.baretest.html#TIMEOUT_SIGTERM" class="internal-link" title="niryo_libraries.rosunit.baretest.TIMEOUT_SIGTERM">TIMEOUT<wbr></wbr>_SIGTERM</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.html" class="internal-link" title="niryo_libraries.rosunit">rosunit</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.baretest.html" class="internal-link" title="niryo_libraries.rosunit.baretest">baretest</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosunit.baretest.LocalProcess.html" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess">LocalProcess</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">LocalProcess</span>(<a href="niryo_libraries.rosunit.pmon.Process.html" class="internal-link" title="niryo_libraries.rosunit.pmon.Process">pmon.Process</a>):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.__init__">LocalProcess(run_id, package, name, args, ...)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosunit.baretest.LocalProcess">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Process launched on local machine</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2569">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.__init__">__init__</a></code></td>
+    <td>generate log directory location. run_id may be None if this feature is not being used.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_exit_description" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.get_exit_description">get<wbr></wbr>_exit<wbr></wbr>_description</a></code></td>
+    <td>@return: human-readable description of exit state @rtype: str</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_info" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.get_info">get<wbr></wbr>_info</a></code></td>
+    <td>Get all data about this process in dictionary form</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#is_alive" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.is_alive">is<wbr></wbr>_alive</a></code></td>
+    <td>@return: True if process is still running @rtype: bool</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.start">start</a></code></td>
+    <td>Start the process.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.stop">stop</a></code></td>
+    <td>Stop the process. Record any significant error messages in the errors parameter</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#args" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.args">args</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#cwd" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.cwd">cwd</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#exit_code" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.exit_code">exit<wbr></wbr>_code</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_node" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.is_node">is<wbr></wbr>_node</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#log_dir" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.log_dir">log<wbr></wbr>_dir</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#log_output" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.log_output">log<wbr></wbr>_output</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#pid" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.pid">pid</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#popen" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.popen">popen</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#run_id" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.run_id">run<wbr></wbr>_id</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#started" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.started">started</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#stopped" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess.stopped">stopped</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_configure_logging" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess._configure_logging">_configure<wbr></wbr>_logging</a></code></td>
+    <td>Configure logging of node's log file and stdout/stderr @return: stdout log file name, stderr log file name. Values are None if stdout/stderr are not logged. @rtype: str, str</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_stop_unix" class="internal-link" title="niryo_libraries.rosunit.baretest.LocalProcess._stop_unix">_stop<wbr></wbr>_unix</a></code></td>
+    <td>UNIX implementation of process killing</td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.rosunit.pmon.Process.html" class="internal-link" title="niryo_libraries.rosunit.pmon.Process">Process</a></code>:
+            </p>
+            <table class="children sortable" id="id2570">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#__str__" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.__str__">__str__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#env" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.env">env</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#lock" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.lock">lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#name" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.name">name</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#package" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.package">package</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#required" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.required">required</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#respawn" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.respawn">respawn</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.rosunit.pmon.Process.html#spawn_count" class="internal-link" title="niryo_libraries.rosunit.pmon.Process.spawn_count">spawn<wbr></wbr>_count</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, run_id, package, name, args, env, log_output, respawn=False, required=False, cwd=None, is_node=True)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosunit.baretest.LocalProcess.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#__init__" class="internal-link">niryo_libraries.rosunit.pmon.Process.__init__</a></code></div>
+    <div><p><dl class="rst-docutils">
+<dt>@param run_id: unique run ID for this roslaunch. Used to</dt>
+<dd>generate log directory location. run_id may be None if this
+feature is not being used.</dd>
+</dl>
+<p>@type  run_id: str
+@param package: name of package process is part of
+@type  package: str
+@param name: name of process
+@type  name: str
+@param args: list of arguments to process
+@type  args: [str]
+@param env: environment dictionary for process
+@type  env: {str : str}
+@param log_output: if True, log output streams of process
+@type  log_output: bool
+@param respawn: respawn process if it dies (default is False)
+@type  respawn: bool
+@param cwd: working directory of process, or None
+@type  cwd: str
+@param is_node: (optional) if True, process is ROS node and accepts ROS node command-line arguments. Default: True
+@type  is_node: False</p>
+</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.get_exit_description">
+    
+  </a>
+  <a name="get_exit_description">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_exit_description</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_exit_description" title="niryo_libraries.rosunit.baretest.LocalProcess.get_exit_description">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#get_exit_description" class="internal-link">niryo_libraries.rosunit.pmon.Process.get_exit_description</a></code></div>
+    <div><p>@return: human-readable description of exit state
+@rtype: str</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.get_info">
+    
+  </a>
+  <a name="get_info">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_info</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_info" title="niryo_libraries.rosunit.baretest.LocalProcess.get_info">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#get_info" class="internal-link">niryo_libraries.rosunit.pmon.Process.get_info</a></code></div>
+    <div><p>Get all data about this process in dictionary form</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.is_alive">
+    
+  </a>
+  <a name="is_alive">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_alive</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#is_alive" title="niryo_libraries.rosunit.baretest.LocalProcess.is_alive">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#is_alive" class="internal-link">niryo_libraries.rosunit.pmon.Process.is_alive</a></code></div>
+    <div><p>@return: True if process is still running
+@rtype: bool</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#start" title="niryo_libraries.rosunit.baretest.LocalProcess.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#start" class="internal-link">niryo_libraries.rosunit.pmon.Process.start</a></code></div>
+    <div><p>Start the process.</p>
+<p>@raise pmon.FatalProcessLaunch: if process cannot be started and it
+is not likely to ever succeed</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop</span><span class="function-signature">(self, errors=[])</span>:
+    
+    <a class="headerLink" href="#stop" title="niryo_libraries.rosunit.baretest.LocalProcess.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#stop" class="internal-link">niryo_libraries.rosunit.pmon.Process.stop</a></code></div>
+    <div><p>Stop the process. Record any significant error messages in the errors parameter</p>
+<p>@param errors: error messages. stop() will record messages into this list.
+@type  errors: [str]</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.args">
+    
+  </a>
+  <a name="args">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">args</span> =
+    
+    <a class="headerLink" href="#args" title="niryo_libraries.rosunit.baretest.LocalProcess.args">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#args" class="internal-link">niryo_libraries.rosunit.pmon.Process.args</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.cwd">
+    
+  </a>
+  <a name="cwd">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cwd</span> =
+    
+    <a class="headerLink" href="#cwd" title="niryo_libraries.rosunit.baretest.LocalProcess.cwd">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.exit_code">
+    
+  </a>
+  <a name="exit_code">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">exit_code</span> =
+    
+    <a class="headerLink" href="#exit_code" title="niryo_libraries.rosunit.baretest.LocalProcess.exit_code">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    <div class="interfaceinfo">overrides <code><a href="niryo_libraries.rosunit.pmon.Process.html#exit_code" class="internal-link">niryo_libraries.rosunit.pmon.Process.exit_code</a></code></div>
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.is_node">
+    
+  </a>
+  <a name="is_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_node</span> =
+    
+    <a class="headerLink" href="#is_node" title="niryo_libraries.rosunit.baretest.LocalProcess.is_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.log_dir">
+    
+  </a>
+  <a name="log_dir">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">log_dir</span> =
+    
+    <a class="headerLink" href="#log_dir" title="niryo_libraries.rosunit.baretest.LocalProcess.log_dir">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.log_output">
+    
+  </a>
+  <a name="log_output">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">log_output</span> =
+    
+    <a class="headerLink" href="#log_output" title="niryo_libraries.rosunit.baretest.LocalProcess.log_output">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.pid">
+    
+  </a>
+  <a name="pid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">pid</span> =
+    
+    <a class="headerLink" href="#pid" title="niryo_libraries.rosunit.baretest.LocalProcess.pid">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.popen">
+    
+  </a>
+  <a name="popen">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">popen</span> =
+    
+    <a class="headerLink" href="#popen" title="niryo_libraries.rosunit.baretest.LocalProcess.popen">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.run_id">
+    
+  </a>
+  <a name="run_id">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">run_id</span> =
+    
+    <a class="headerLink" href="#run_id" title="niryo_libraries.rosunit.baretest.LocalProcess.run_id">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.started">
+    
+  </a>
+  <a name="started">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">started</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#started" title="niryo_libraries.rosunit.baretest.LocalProcess.started">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess.stopped">
+    
+  </a>
+  <a name="stopped">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">stopped</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#stopped" title="niryo_libraries.rosunit.baretest.LocalProcess.stopped">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess._configure_logging">
+    
+  </a>
+  <a name="_configure_logging">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_configure_logging</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_configure_logging" title="niryo_libraries.rosunit.baretest.LocalProcess._configure_logging">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Configure logging of node's log file and stdout/stderr
+@return: stdout log file name, stderr log file
+name. Values are None if stdout/stderr are not logged.
+@rtype: str, str</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosunit.baretest.LocalProcess._stop_unix">
+    
+  </a>
+  <a name="_stop_unix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_stop_unix</span><span class="function-signature">(self, errors)</span>:
+    
+    <a class="headerLink" href="#_stop_unix" title="niryo_libraries.rosunit.baretest.LocalProcess._stop_unix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>UNIX implementation of process killing</p>
+<p>@param errors: error messages. stop() will record messages into this list.
+@type  errors: [str]</p>
+</div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

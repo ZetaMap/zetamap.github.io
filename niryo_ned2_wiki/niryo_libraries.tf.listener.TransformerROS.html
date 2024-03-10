@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.tf.listener.TransformerROS</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.tf.listener.TransformerROS.html" class="internal-link" title="This class"><wbr></wbr>Transformer<wbr></wbr>ROS</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#asMatrix" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.asMatrix">as<wbr></wbr>Matrix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fromTranslationRotation" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.fromTranslationRotation">from<wbr></wbr>Translation<wbr></wbr>Rotation</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transformPoint" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPoint">transform<wbr></wbr>Point</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transformPointCloud" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPointCloud">transform<wbr></wbr>Point<wbr></wbr>Cloud</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transformPose" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPose">transform<wbr></wbr>Pose</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transformQuaternion" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformQuaternion">transform<wbr></wbr>Quaternion</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transformVector3" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformVector3">transform<wbr></wbr>Vector3</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        <div class="childrenKindTitle">Inherited Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#__init__" class="internal-link" title="niryo_libraries.tf.listener.Transformer.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#allFramesAsDot" class="internal-link" title="niryo_libraries.tf.listener.Transformer.allFramesAsDot">all<wbr></wbr>Frames<wbr></wbr>As<wbr></wbr>Dot</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#allFramesAsString" class="internal-link" title="niryo_libraries.tf.listener.Transformer.allFramesAsString">all<wbr></wbr>Frames<wbr></wbr>As<wbr></wbr>String</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#canTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.canTransform">can<wbr></wbr>Transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#canTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.canTransformFull">can<wbr></wbr>Transform<wbr></wbr>Full</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#chain" class="internal-link" title="niryo_libraries.tf.listener.Transformer.chain">chain</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#clear" class="internal-link" title="niryo_libraries.tf.listener.Transformer.clear">clear</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#frameExists" class="internal-link" title="niryo_libraries.tf.listener.Transformer.frameExists">frame<wbr></wbr>Exists</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#getFrameStrings" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getFrameStrings">get<wbr></wbr>Frame<wbr></wbr>Strings</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#getLatestCommonTime" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getLatestCommonTime">get<wbr></wbr>Latest<wbr></wbr>Common<wbr></wbr>Time</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#getTFPrefix" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getTFPrefix">get<wbr></wbr>TFPrefix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransform">lookup<wbr></wbr>Transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransformFull">lookup<wbr></wbr>Transform<wbr></wbr>Full</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTwist" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTwist">lookup<wbr></wbr>Twist</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTwistFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTwistFull">lookup<wbr></wbr>Twist<wbr></wbr>Full</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#setTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.setTransform">set<wbr></wbr>Transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#setUsingDedicatedThread" class="internal-link" title="niryo_libraries.tf.listener.Transformer.setUsingDedicatedThread">set<wbr></wbr>Using<wbr></wbr>Dedicated<wbr></wbr>Thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#waitForTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.waitForTransform">wait<wbr></wbr>For<wbr></wbr>Transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#waitForTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.waitForTransformFull">wait<wbr></wbr>For<wbr></wbr>Transform<wbr></wbr>Full</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Inherited Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#_buffer" class="internal-link" title="niryo_libraries.tf.listener.Transformer._buffer">_buffer</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html#_using_dedicated_thread" class="internal-link" title="niryo_libraries.tf.listener.Transformer._using_dedicated_thread">_using<wbr></wbr>_dedicated<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.tf.listener.html" class="internal-link" title="The parent of this class">listener</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer"><wbr></wbr>Transformer</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.TransformerROS.html" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS"><wbr></wbr>Transformer<wbr></wbr>ROS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.TransformListener.html" class="internal-link" title="niryo_libraries.tf.listener.TransformListener"><wbr></wbr>Transform<wbr></wbr>Listener</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.html#strip_leading_slash" class="internal-link" title="niryo_libraries.tf.listener.strip_leading_slash">strip<wbr></wbr>_leading<wbr></wbr>_slash</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.html#xyz_to_mat44" class="internal-link" title="niryo_libraries.tf.listener.xyz_to_mat44">xyz<wbr></wbr>_to<wbr></wbr>_mat44</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.tf.listener.html#xyzw_to_mat44" class="internal-link" title="niryo_libraries.tf.listener.xyzw_to_mat44">xyzw<wbr></wbr>_to<wbr></wbr>_mat44</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.tf.html" class="internal-link" title="niryo_libraries.tf">tf</a></code><wbr></wbr>.<code><a href="niryo_libraries.tf.listener.html" class="internal-link" title="niryo_libraries.tf.listener">listener</a></code><wbr></wbr>.<code><a href="niryo_libraries.tf.listener.TransformerROS.html" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS">TransformerROS</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TransformerROS</span>(<a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer">Transformer</a>):</code></p><p>Known subclasses: <code><a href="niryo_libraries.tf.listener.TransformListener.html" class="internal-link">niryo_libraries.tf.listener.TransformListener</a></code></p><p>Constructor: <code><a href="niryo_libraries.tf.listener.Transformer.html#__init__" class="internal-link" title="niryo_libraries.tf.listener.Transformer.__init__">TransformerROS(interpolate, cache_time)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.tf.listener.TransformerROS">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>TransformerROS extends the base class <code><a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer">tf.Transformer</a></code>,
+adding methods for handling ROS messages.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2797">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#asMatrix" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.asMatrix">as<wbr></wbr>Matrix</a></code></td>
+    <td>Uses <code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransform">lookupTransform</a></code> to look up the transform for ROS message header hdr to frame target_frame, and returns the transform as a <code>numpy.matrix</code> 4x4.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#fromTranslationRotation" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.fromTranslationRotation">from<wbr></wbr>Translation<wbr></wbr>Rotation</a></code></td>
+    <td>Converts a transformation from <code><a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer">tf.Transformer</a></code> into a representation as a 4x4 matrix.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#transformPoint" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPoint">transform<wbr></wbr>Point</a></code></td>
+    <td>Transforms a geometry_msgs PointStamped message to frame target_frame, returns a new PointStamped message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#transformPointCloud" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPointCloud">transform<wbr></wbr>Point<wbr></wbr>Cloud</a></code></td>
+    <td>Transforms a geometry_msgs PoseStamped message to frame target_frame, returns a new PoseStamped message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#transformPose" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformPose">transform<wbr></wbr>Pose</a></code></td>
+    <td>Transforms a geometry_msgs PoseStamped message to frame target_frame, returns a new PoseStamped message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#transformQuaternion" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformQuaternion">transform<wbr></wbr>Quaternion</a></code></td>
+    <td>Transforms a geometry_msgs QuaternionStamped message to frame target_frame, returns a new QuaternionStamped message.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#transformVector3" class="internal-link" title="niryo_libraries.tf.listener.TransformerROS.transformVector3">transform<wbr></wbr>Vector3</a></code></td>
+    <td>Transforms a geometry_msgs Vector3Stamped message to frame target_frame, returns a new Vector3Stamped message.</td>
+  </tr>
+</table>
+          
+            <p class="inheritedFrom">
+              Inherited from <code><a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer">Transformer</a></code>:
+            </p>
+            <table class="children sortable" id="id2798">
+  
+  
+  <tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#__init__" class="internal-link" title="niryo_libraries.tf.listener.Transformer.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#allFramesAsDot" class="internal-link" title="niryo_libraries.tf.listener.Transformer.allFramesAsDot">all<wbr></wbr>Frames<wbr></wbr>As<wbr></wbr>Dot</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#allFramesAsString" class="internal-link" title="niryo_libraries.tf.listener.Transformer.allFramesAsString">all<wbr></wbr>Frames<wbr></wbr>As<wbr></wbr>String</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#canTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.canTransform">can<wbr></wbr>Transform</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#canTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.canTransformFull">can<wbr></wbr>Transform<wbr></wbr>Full</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#chain" class="internal-link" title="niryo_libraries.tf.listener.Transformer.chain">chain</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#clear" class="internal-link" title="niryo_libraries.tf.listener.Transformer.clear">clear</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#frameExists" class="internal-link" title="niryo_libraries.tf.listener.Transformer.frameExists">frame<wbr></wbr>Exists</a></code></td>
+    <td>Not a recommended API, only here for backwards compatibility</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#getFrameStrings" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getFrameStrings">get<wbr></wbr>Frame<wbr></wbr>Strings</a></code></td>
+    <td>Not a recommended API, only here for backwards compatibility</td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#getLatestCommonTime" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getLatestCommonTime">get<wbr></wbr>Latest<wbr></wbr>Common<wbr></wbr>Time</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#getTFPrefix" class="internal-link" title="niryo_libraries.tf.listener.Transformer.getTFPrefix">get<wbr></wbr>TFPrefix</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransform">lookup<wbr></wbr>Transform</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransformFull">lookup<wbr></wbr>Transform<wbr></wbr>Full</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTwist" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTwist">lookup<wbr></wbr>Twist</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTwistFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTwistFull">lookup<wbr></wbr>Twist<wbr></wbr>Full</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#setTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.setTransform">set<wbr></wbr>Transform</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#setUsingDedicatedThread" class="internal-link" title="niryo_libraries.tf.listener.Transformer.setUsingDedicatedThread">set<wbr></wbr>Using<wbr></wbr>Dedicated<wbr></wbr>Thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#waitForTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.waitForTransform">wait<wbr></wbr>For<wbr></wbr>Transform</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="basemethod">
+    
+    <td>Method</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#waitForTransformFull" class="internal-link" title="niryo_libraries.tf.listener.Transformer.waitForTransformFull">wait<wbr></wbr>For<wbr></wbr>Transform<wbr></wbr>Full</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#_buffer" class="internal-link" title="niryo_libraries.tf.listener.Transformer._buffer">_buffer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="baseinstancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="niryo_libraries.tf.listener.Transformer.html#_using_dedicated_thread" class="internal-link" title="niryo_libraries.tf.listener.Transformer._using_dedicated_thread">_using<wbr></wbr>_dedicated<wbr></wbr>_thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.asMatrix">
+    
+  </a>
+  <a name="asMatrix">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">asMatrix</span><span class="function-signature">(self, target_frame, hdr)</span>:
+    
+    <a class="headerLink" href="#asMatrix" title="niryo_libraries.tf.listener.TransformerROS.asMatrix">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Uses <code><a href="niryo_libraries.tf.listener.Transformer.html#lookupTransform" class="internal-link" title="niryo_libraries.tf.listener.Transformer.lookupTransform">lookupTransform</a></code> to look up the transform for ROS message header hdr to frame
+target_frame, and returns the transform as a <code>numpy.matrix</code>
+4x4.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">hdr</span></td><td class="fieldArgDesc">a message header</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">a <code>numpy.matrix</code> 4x4 representation of the transform</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.fromTranslationRotation">
+    
+  </a>
+  <a name="fromTranslationRotation">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">fromTranslationRotation</span><span class="function-signature">(self, translation, rotation)</span>:
+    
+    <a class="headerLink" href="#fromTranslationRotation" title="niryo_libraries.tf.listener.TransformerROS.fromTranslationRotation">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Converts a transformation from <code><a href="niryo_libraries.tf.listener.Transformer.html" class="internal-link" title="niryo_libraries.tf.listener.Transformer">tf.Transformer</a></code> into a representation as a 4x4 matrix.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">translation</span></td><td class="fieldArgDesc">translation expressed as a tuple (x,y,z)</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">rotation</span></td><td class="fieldArgDesc">rotation quaternion expressed as a tuple (x,y,z,w)</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">a <code>numpy.matrix</code> 4x4 representation of the transform</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.transformPoint">
+    
+  </a>
+  <a name="transformPoint">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">transformPoint</span><span class="function-signature">(self, target_frame, ps)</span>:
+    
+    <a class="headerLink" href="#transformPoint" title="niryo_libraries.tf.listener.TransformerROS.transformPoint">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transforms a geometry_msgs PointStamped message to frame target_frame, returns a new PointStamped message.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ps</span></td><td class="fieldArgDesc">the geometry_msgs.msg.PointStamped message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">new geometry_msgs.msg.PointStamped message, in frame target_frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.transformPointCloud">
+    
+  </a>
+  <a name="transformPointCloud">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">transformPointCloud</span><span class="function-signature">(self, target_frame, point_cloud)</span>:
+    
+    <a class="headerLink" href="#transformPointCloud" title="niryo_libraries.tf.listener.TransformerROS.transformPointCloud">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transforms a geometry_msgs PoseStamped message to frame target_frame, returns a new PoseStamped message.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">point<wbr></wbr>_cloud</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ps</span></td><td class="fieldArgDesc">the sensor_msgs.msg.PointCloud message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">new sensor_msgs.msg.PointCloud message, in frame target_frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.transformPose">
+    
+  </a>
+  <a name="transformPose">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">transformPose</span><span class="function-signature">(self, target_frame, ps)</span>:
+    
+    <a class="headerLink" href="#transformPose" title="niryo_libraries.tf.listener.TransformerROS.transformPose">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transforms a geometry_msgs PoseStamped message to frame target_frame, returns a new PoseStamped message.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ps</span></td><td class="fieldArgDesc">the geometry_msgs.msg.PoseStamped message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">new geometry_msgs.msg.PoseStamped message, in frame target_frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.transformQuaternion">
+    
+  </a>
+  <a name="transformQuaternion">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">transformQuaternion</span><span class="function-signature">(self, target_frame, ps)</span>:
+    
+    <a class="headerLink" href="#transformQuaternion" title="niryo_libraries.tf.listener.TransformerROS.transformQuaternion">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transforms a geometry_msgs QuaternionStamped message to frame target_frame, returns a new QuaternionStamped message.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ps</span></td><td class="fieldArgDesc">the geometry_msgs.msg.QuaternionStamped message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">new geometry_msgs.msg.QuaternionStamped message, in frame target_frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.tf.listener.TransformerROS.transformVector3">
+    
+  </a>
+  <a name="transformVector3">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">transformVector3</span><span class="function-signature">(self, target_frame, v3s)</span>:
+    
+    <a class="headerLink" href="#transformVector3" title="niryo_libraries.tf.listener.TransformerROS.transformVector3">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transforms a geometry_msgs Vector3Stamped message to frame target_frame, returns a new Vector3Stamped message.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">target<wbr></wbr>_frame</span></td><td class="fieldArgDesc">the tf target frame, a string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">v3s</span></td><td class="fieldArgDesc">the geometry_msgs.msg.Vector3Stamped message</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">new geometry_msgs.msg.Vector3Stamped message, in frame target_frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><span class="undocumented">Unknown exception</span></code></td><td>any of the exceptions that <code>~tf.Transformer.lookupTransform</code> can raise</td></tr></table></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

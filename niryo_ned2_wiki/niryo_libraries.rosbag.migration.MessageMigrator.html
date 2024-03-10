@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosbag.migration.MessageMigrator</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosbag.migration.MessageMigrator.html" class="internal-link" title="This class"><wbr></wbr>Message<wbr></wbr>Migrator</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_update_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.add_update_rule">add<wbr></wbr>_update<wbr></wbr>_rule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#all_rules_valid" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.all_rules_valid">all<wbr></wbr>_rules<wbr></wbr>_valid</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#expand_rules" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.expand_rules">expand<wbr></wbr>_rules</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#filter_rules_unique" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.filter_rules_unique">filter<wbr></wbr>_rules<wbr></wbr>_unique</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#find_path" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.find_path">find<wbr></wbr>_path</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#find_target" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.find_target">find<wbr></wbr>_target</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_invalid_rules" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.get_invalid_rules">get<wbr></wbr>_invalid<wbr></wbr>_rules</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#lookup_type" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.lookup_type">lookup<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#make_new_half_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_new_half_rule">make<wbr></wbr>_new<wbr></wbr>_half<wbr></wbr>_rule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#make_old_half_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_old_half_rule">make<wbr></wbr>_old<wbr></wbr>_half<wbr></wbr>_rule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#make_update_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_update_rule">make<wbr></wbr>_update<wbr></wbr>_rule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#migrate" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate">migrate</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#migrate_array" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_array">migrate<wbr></wbr>_array</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#migrate_raw" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_raw">migrate<wbr></wbr>_raw</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#scaffold_range" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.scaffold_range">scaffold<wbr></wbr>_range</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#base_nodes" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.base_nodes">base<wbr></wbr>_nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#class_dict" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.class_dict">class<wbr></wbr>_dict</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#extra_nodes" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.extra_nodes">extra<wbr></wbr>_nodes</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#false_rule_loaded" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.false_rule_loaded">false<wbr></wbr>_rule<wbr></wbr>_loaded</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#first_type" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.first_type">first<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#found_paths" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.found_paths">found<wbr></wbr>_paths</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#found_targets" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.found_targets">found<wbr></wbr>_targets</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rename_map" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.rename_map">rename<wbr></wbr>_map</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rulechains" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.rulechains">rulechains</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosbag.migration.html" class="internal-link" title="The parent of this class">migration</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.MessageMigrator.html" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator"><wbr></wbr>Message<wbr></wbr>Migrator</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.MessageUpdateRule.html" class="internal-link" title="niryo_libraries.rosbag.migration.MessageUpdateRule"><wbr></wbr>Message<wbr></wbr>Update<wbr></wbr>Rule</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.RuleChain.html" class="internal-link" title="niryo_libraries.rosbag.migration.RuleChain"><wbr></wbr>Rule<wbr></wbr>Chain</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.ScaffoldNode.html" class="internal-link" title="niryo_libraries.rosbag.migration.ScaffoldNode"><wbr></wbr>Scaffold<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.BagMigrationException.html" class="internal-link" title="niryo_libraries.rosbag.migration.BagMigrationException"><wbr></wbr>Bag<wbr></wbr>Migration<wbr></wbr>Exception</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#checkbag" class="internal-link" title="niryo_libraries.rosbag.migration.checkbag">checkbag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#checkmessages" class="internal-link" title="niryo_libraries.rosbag.migration.checkmessages">checkmessages</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#clean_name" class="internal-link" title="niryo_libraries.rosbag.migration.clean_name">clean<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#constants_from_def" class="internal-link" title="niryo_libraries.rosbag.migration.constants_from_def">constants<wbr></wbr>_from<wbr></wbr>_def</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#fixbag" class="internal-link" title="niryo_libraries.rosbag.migration.fixbag">fixbag</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#fixbag2" class="internal-link" title="niryo_libraries.rosbag.migration.fixbag2">fixbag2</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#get_message_key" class="internal-link" title="niryo_libraries.rosbag.migration.get_message_key">get<wbr></wbr>_message<wbr></wbr>_key</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#get_path_key" class="internal-link" title="niryo_libraries.rosbag.migration.get_path_key">get<wbr></wbr>_path<wbr></wbr>_key</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#migration_default_value" class="internal-link" title="niryo_libraries.rosbag.migration.migration_default_value">migration<wbr></wbr>_default<wbr></wbr>_value</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#qualified_name" class="internal-link" title="niryo_libraries.rosbag.migration.qualified_name">qualified<wbr></wbr>_name</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosbag.migration.html#_migrate_connection_header" class="internal-link" title="niryo_libraries.rosbag.migration._migrate_connection_header">_migrate<wbr></wbr>_connection<wbr></wbr>_header</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbag.html" class="internal-link" title="niryo_libraries.rosbag">rosbag</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbag.migration.html" class="internal-link" title="niryo_libraries.rosbag.migration">migration</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosbag.migration.MessageMigrator.html" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator">MessageMigrator</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">MessageMigrator</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.__init__">MessageMigrator(input_rule_files, plugins)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosbag.migration.MessageMigrator">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2085">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#add_update_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.add_update_rule">add<wbr></wbr>_update<wbr></wbr>_rule</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#all_rules_valid" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.all_rules_valid">all<wbr></wbr>_rules<wbr></wbr>_valid</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#expand_rules" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.expand_rules">expand<wbr></wbr>_rules</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#filter_rules_unique" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.filter_rules_unique">filter<wbr></wbr>_rules<wbr></wbr>_unique</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#find_path" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.find_path">find<wbr></wbr>_path</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#find_target" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.find_target">find<wbr></wbr>_target</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_invalid_rules" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.get_invalid_rules">get<wbr></wbr>_invalid<wbr></wbr>_rules</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#lookup_type" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.lookup_type">lookup<wbr></wbr>_type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#make_new_half_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_new_half_rule">make<wbr></wbr>_new<wbr></wbr>_half<wbr></wbr>_rule</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#make_old_half_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_old_half_rule">make<wbr></wbr>_old<wbr></wbr>_half<wbr></wbr>_rule</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#make_update_rule" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.make_update_rule">make<wbr></wbr>_update<wbr></wbr>_rule</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#migrate" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate">migrate</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#migrate_array" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_array">migrate<wbr></wbr>_array</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#migrate_raw" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_raw">migrate<wbr></wbr>_raw</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#scaffold_range" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.scaffold_range">scaffold<wbr></wbr>_range</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#base_nodes" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.base_nodes">base<wbr></wbr>_nodes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#class_dict" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.class_dict">class<wbr></wbr>_dict</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#extra_nodes" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.extra_nodes">extra<wbr></wbr>_nodes</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#false_rule_loaded" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.false_rule_loaded">false<wbr></wbr>_rule<wbr></wbr>_loaded</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#first_type" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.first_type">first<wbr></wbr>_type</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#found_paths" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.found_paths">found<wbr></wbr>_paths</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#found_targets" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.found_targets">found<wbr></wbr>_targets</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rename_map" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.rename_map">rename<wbr></wbr>_map</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rulechains" class="internal-link" title="niryo_libraries.rosbag.migration.MessageMigrator.rulechains">rulechains</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, input_rule_files=[], plugins=True)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosbag.migration.MessageMigrator.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.add_update_rule">
+    
+  </a>
+  <a name="add_update_rule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_update_rule</span><span class="function-signature">(self, r)</span>:
+    
+    <a class="headerLink" href="#add_update_rule" title="niryo_libraries.rosbag.migration.MessageMigrator.add_update_rule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.all_rules_valid">
+    
+  </a>
+  <a name="all_rules_valid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">all_rules_valid</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#all_rules_valid" title="niryo_libraries.rosbag.migration.MessageMigrator.all_rules_valid">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.expand_rules">
+    
+  </a>
+  <a name="expand_rules">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">expand_rules</span><span class="function-signature">(self, rules)</span>:
+    
+    <a class="headerLink" href="#expand_rules" title="niryo_libraries.rosbag.migration.MessageMigrator.expand_rules">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.filter_rules_unique">
+    
+  </a>
+  <a name="filter_rules_unique">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">filter_rules_unique</span><span class="function-signature">(self, rules)</span>:
+    
+    <a class="headerLink" href="#filter_rules_unique" title="niryo_libraries.rosbag.migration.MessageMigrator.filter_rules_unique">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.find_path">
+    
+  </a>
+  <a name="find_path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">find_path</span><span class="function-signature">(self, old_class, new_class)</span>:
+    
+    <a class="headerLink" href="#find_path" title="niryo_libraries.rosbag.migration.MessageMigrator.find_path">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.find_target">
+    
+  </a>
+  <a name="find_target">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">find_target</span><span class="function-signature">(self, old_class)</span>:
+    
+    <a class="headerLink" href="#find_target" title="niryo_libraries.rosbag.migration.MessageMigrator.find_target">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.get_invalid_rules">
+    
+  </a>
+  <a name="get_invalid_rules">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_invalid_rules</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_invalid_rules" title="niryo_libraries.rosbag.migration.MessageMigrator.get_invalid_rules">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.lookup_type">
+    
+  </a>
+  <a name="lookup_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">lookup_type</span><span class="function-signature">(self, key)</span>:
+    
+    <a class="headerLink" href="#lookup_type" title="niryo_libraries.rosbag.migration.MessageMigrator.lookup_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.make_new_half_rule">
+    
+  </a>
+  <a name="make_new_half_rule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">make_new_half_rule</span><span class="function-signature">(self, new_class)</span>:
+    
+    <a class="headerLink" href="#make_new_half_rule" title="niryo_libraries.rosbag.migration.MessageMigrator.make_new_half_rule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.make_old_half_rule">
+    
+  </a>
+  <a name="make_old_half_rule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">make_old_half_rule</span><span class="function-signature">(self, old_class)</span>:
+    
+    <a class="headerLink" href="#make_old_half_rule" title="niryo_libraries.rosbag.migration.MessageMigrator.make_old_half_rule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.make_update_rule">
+    
+  </a>
+  <a name="make_update_rule">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">make_update_rule</span><span class="function-signature">(self, old_class, new_class)</span>:
+    
+    <a class="headerLink" href="#make_update_rule" title="niryo_libraries.rosbag.migration.MessageMigrator.make_update_rule">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.migrate">
+    
+  </a>
+  <a name="migrate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">migrate</span><span class="function-signature">(self, msg_from, msg_to)</span>:
+    
+    <a class="headerLink" href="#migrate" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.migrate_array">
+    
+  </a>
+  <a name="migrate_array">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">migrate_array</span><span class="function-signature">(self, msg_from_array, msg_to_array)</span>:
+    
+    <a class="headerLink" href="#migrate_array" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_array">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.migrate_raw">
+    
+  </a>
+  <a name="migrate_raw">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">migrate_raw</span><span class="function-signature">(self, msg_from, msg_to)</span>:
+    
+    <a class="headerLink" href="#migrate_raw" title="niryo_libraries.rosbag.migration.MessageMigrator.migrate_raw">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.scaffold_range">
+    
+  </a>
+  <a name="scaffold_range">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">scaffold_range</span><span class="function-signature">(self, old_type, new_type)</span>:
+    
+    <a class="headerLink" href="#scaffold_range" title="niryo_libraries.rosbag.migration.MessageMigrator.scaffold_range">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.base_nodes">
+    
+  </a>
+  <a name="base_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">base_nodes</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#base_nodes" title="niryo_libraries.rosbag.migration.MessageMigrator.base_nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.class_dict">
+    
+  </a>
+  <a name="class_dict">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">class_dict</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#class_dict" title="niryo_libraries.rosbag.migration.MessageMigrator.class_dict">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.extra_nodes">
+    
+  </a>
+  <a name="extra_nodes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">extra_nodes</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#extra_nodes" title="niryo_libraries.rosbag.migration.MessageMigrator.extra_nodes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.false_rule_loaded">
+    
+  </a>
+  <a name="false_rule_loaded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">false_rule_loaded</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#false_rule_loaded" title="niryo_libraries.rosbag.migration.MessageMigrator.false_rule_loaded">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.first_type">
+    
+  </a>
+  <a name="first_type">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">first_type</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#first_type" title="niryo_libraries.rosbag.migration.MessageMigrator.first_type">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.found_paths">
+    
+  </a>
+  <a name="found_paths">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">found_paths</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#found_paths" title="niryo_libraries.rosbag.migration.MessageMigrator.found_paths">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.found_targets">
+    
+  </a>
+  <a name="found_targets">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">found_targets</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#found_targets" title="niryo_libraries.rosbag.migration.MessageMigrator.found_targets">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.rename_map">
+    
+  </a>
+  <a name="rename_map">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rename_map</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#rename_map" title="niryo_libraries.rosbag.migration.MessageMigrator.rename_map">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosbag.migration.MessageMigrator.rulechains">
+    
+  </a>
+  <a name="rulechains">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rulechains</span> =
+    
+    <a class="headerLink" href="#rulechains" title="niryo_libraries.rosbag.migration.MessageMigrator.rulechains">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

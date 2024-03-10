@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosmake.parallel_build.BuildQueue</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosmake.parallel_build.BuildQueue.html" class="internal-link" title="This class"><wbr></wbr>Build<wbr></wbr>Queue</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_started_threads" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_started_threads">get<wbr></wbr>_started<wbr></wbr>_threads</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_valid_package" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_valid_package">get<wbr></wbr>_valid<wbr></wbr>_package</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_completed" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_completed">is<wbr></wbr>_completed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_done" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_done">is<wbr></wbr>_done</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#progress_str" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.progress_str">progress<wbr></wbr>_str</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#return_built" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.return_built">return<wbr></wbr>_built</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.stop">stop</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#succeeded" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.succeeded">succeeded</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#built" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.built">built</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#condition" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.condition">condition</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#dependency_tracker" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.dependency_tracker">dependency<wbr></wbr>_tracker</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#failed" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.failed">failed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#robust_build" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.robust_build">robust<wbr></wbr>_build</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#to_build" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.to_build">to<wbr></wbr>_build</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_done" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._done">_done</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_hack_end_counter" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._hack_end_counter">_hack<wbr></wbr>_end<wbr></wbr>_counter</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_started" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._started">_started</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_total_pkgs" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._total_pkgs">_total<wbr></wbr>_pkgs</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosmake.parallel_build.html" class="internal-link" title="The parent of this class">parallel<wbr></wbr>_build</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.BuildQueue.html" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue"><wbr></wbr>Build<wbr></wbr>Queue</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.CompileThread.html" class="internal-link" title="niryo_libraries.rosmake.parallel_build.CompileThread"><wbr></wbr>Compile<wbr></wbr>Thread</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.DependencyTracker.html" class="internal-link" title="niryo_libraries.rosmake.parallel_build.DependencyTracker"><wbr></wbr>Dependency<wbr></wbr>Tracker</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.html#num_cpus" class="internal-link" title="niryo_libraries.rosmake.parallel_build.num_cpus">num<wbr></wbr>_cpus</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.html#_read_stdout" class="internal-link" title="niryo_libraries.rosmake.parallel_build._read_stdout">_read<wbr></wbr>_stdout</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmake.parallel_build.html#python3" class="internal-link" title="niryo_libraries.rosmake.parallel_build.python3">python3</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.html" class="internal-link" title="niryo_libraries.rosmake">rosmake</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.parallel_build.html" class="internal-link" title="niryo_libraries.rosmake.parallel_build">parallel_build</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmake.parallel_build.BuildQueue.html" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue">BuildQueue</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">BuildQueue</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.__init__">BuildQueue(package_list, dependency_tracker, robust_build)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosmake.parallel_build.BuildQueue">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This class provides a thread safe build queue.  Which will do
+the sequencing for many CompileThreads.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2436">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_started_threads" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_started_threads">get<wbr></wbr>_started<wbr></wbr>_threads</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_valid_package" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_valid_package">get<wbr></wbr>_valid<wbr></wbr>_package</a></code></td>
+    <td>This is a blocking call which will return a package which has all dependencies met.  If interrupted or done it will return None</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#is_completed" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_completed">is<wbr></wbr>_completed</a></code></td>
+    <td>Return if the build queue has been completed.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#is_done" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_done">is<wbr></wbr>_done</a></code></td>
+    <td>Return if the build queue has been completed.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#progress_str" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.progress_str">progress<wbr></wbr>_str</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#return_built" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.return_built">return<wbr></wbr>_built</a></code></td>
+    <td>The thread which completes a package marks it as done with this method.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#stop" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.stop">stop</a></code></td>
+    <td>Stop the build queue, including waking all blocking threads. It will not stop in flight builds.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#succeeded" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.succeeded">succeeded</a></code></td>
+    <td>Return whether the build queue has completed all packages successfully.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#built" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.built">built</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#condition" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.condition">condition</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#dependency_tracker" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.dependency_tracker">dependency<wbr></wbr>_tracker</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#failed" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.failed">failed</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#robust_build" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.robust_build">robust<wbr></wbr>_build</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#to_build" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue.to_build">to<wbr></wbr>_build</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_done" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._done">_done</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_hack_end_counter" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._hack_end_counter">_hack<wbr></wbr>_end<wbr></wbr>_counter</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_started" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._started">_started</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_total_pkgs" class="internal-link" title="niryo_libraries.rosmake.parallel_build.BuildQueue._total_pkgs">_total<wbr></wbr>_pkgs</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, package_list, dependency_tracker, robust_build=False)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosmake.parallel_build.BuildQueue.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.get_started_threads">
+    
+  </a>
+  <a name="get_started_threads">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_started_threads</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_started_threads" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_started_threads">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.get_valid_package">
+    
+  </a>
+  <a name="get_valid_package">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_valid_package</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_valid_package" title="niryo_libraries.rosmake.parallel_build.BuildQueue.get_valid_package">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>This is a blocking call which will return a package which has
+all dependencies met.  If interrupted or done it will return
+None</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.is_completed">
+    
+  </a>
+  <a name="is_completed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_completed</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#is_completed" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_completed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return if the build queue has been completed.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.is_done">
+    
+  </a>
+  <a name="is_done">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">is_done</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#is_done" title="niryo_libraries.rosmake.parallel_build.BuildQueue.is_done">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return if the build queue has been completed.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.progress_str">
+    
+  </a>
+  <a name="progress_str">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">progress_str</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#progress_str" title="niryo_libraries.rosmake.parallel_build.BuildQueue.progress_str">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.return_built">
+    
+  </a>
+  <a name="return_built">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">return_built</span><span class="function-signature">(self, package, successful=True)</span>:
+    
+    <a class="headerLink" href="#return_built" title="niryo_libraries.rosmake.parallel_build.BuildQueue.return_built">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>The thread which completes a package marks it as done with
+this method.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.stop">
+    
+  </a>
+  <a name="stop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stop" title="niryo_libraries.rosmake.parallel_build.BuildQueue.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop the build queue, including waking all blocking
+threads. It will not stop in flight builds.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.succeeded">
+    
+  </a>
+  <a name="succeeded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">succeeded</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#succeeded" title="niryo_libraries.rosmake.parallel_build.BuildQueue.succeeded">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return whether the build queue has completed all packages successfully.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.built">
+    
+  </a>
+  <a name="built">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">built</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#built" title="niryo_libraries.rosmake.parallel_build.BuildQueue.built">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.condition">
+    
+  </a>
+  <a name="condition">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">condition</span> =
+    
+    <a class="headerLink" href="#condition" title="niryo_libraries.rosmake.parallel_build.BuildQueue.condition">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.dependency_tracker">
+    
+  </a>
+  <a name="dependency_tracker">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">dependency_tracker</span> =
+    
+    <a class="headerLink" href="#dependency_tracker" title="niryo_libraries.rosmake.parallel_build.BuildQueue.dependency_tracker">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.failed">
+    
+  </a>
+  <a name="failed">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">failed</span>: <code>list</code> =
+    
+    <a class="headerLink" href="#failed" title="niryo_libraries.rosmake.parallel_build.BuildQueue.failed">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.robust_build">
+    
+  </a>
+  <a name="robust_build">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">robust_build</span> =
+    
+    <a class="headerLink" href="#robust_build" title="niryo_libraries.rosmake.parallel_build.BuildQueue.robust_build">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue.to_build">
+    
+  </a>
+  <a name="to_build">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">to_build</span> =
+    
+    <a class="headerLink" href="#to_build" title="niryo_libraries.rosmake.parallel_build.BuildQueue.to_build">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue._done">
+    
+  </a>
+  <a name="_done">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_done</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#_done" title="niryo_libraries.rosmake.parallel_build.BuildQueue._done">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue._hack_end_counter">
+    
+  </a>
+  <a name="_hack_end_counter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_hack_end_counter</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#_hack_end_counter" title="niryo_libraries.rosmake.parallel_build.BuildQueue._hack_end_counter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue._started">
+    
+  </a>
+  <a name="_started">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_started</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#_started" title="niryo_libraries.rosmake.parallel_build.BuildQueue._started">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.rosmake.parallel_build.BuildQueue._total_pkgs">
+    
+  </a>
+  <a name="_total_pkgs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_total_pkgs</span> =
+    
+    <a class="headerLink" href="#_total_pkgs" title="niryo_libraries.rosmake.parallel_build.BuildQueue._total_pkgs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

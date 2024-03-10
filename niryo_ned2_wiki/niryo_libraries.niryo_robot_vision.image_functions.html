@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_vision.image_functions</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_vision.image_functions.html" class="internal-link" title="This module">image<wbr></wbr>_functions</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_annotation_to_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.add_annotation_to_image">add<wbr></wbr>_annotation<wbr></wbr>_to<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#biggest_contour_finder" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contour_finder">biggest<wbr></wbr>_contour<wbr></wbr>_finder</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#biggest_contours_finder" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contours_finder">biggest<wbr></wbr>_contours<wbr></wbr>_finder</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#compress_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.compress_image">compress<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#concat_imgs" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.concat_imgs">concat<wbr></wbr>_imgs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#debug_markers" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.debug_markers">debug<wbr></wbr>_markers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#debug_threshold_color" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.debug_threshold_color">debug<wbr></wbr>_threshold<wbr></wbr>_color</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#draw_contours" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.draw_contours">draw<wbr></wbr>_contours</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#extract_img_from_ros_msg" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_from_ros_msg">extract<wbr></wbr>_img<wbr></wbr>_from<wbr></wbr>_ros<wbr></wbr>_msg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#extract_img_workspace" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_workspace">extract<wbr></wbr>_img<wbr></wbr>_workspace</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_contour_angle" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_angle">get<wbr></wbr>_contour<wbr></wbr>_angle</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_contour_barycenter" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_barycenter">get<wbr></wbr>_contour<wbr></wbr>_barycenter</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#improve_mask" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.improve_mask">improve<wbr></wbr>_mask</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#morphological_transformations" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.morphological_transformations">morphological<wbr></wbr>_transformations</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#relative_pos_from_pixels" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.relative_pos_from_pixels">relative<wbr></wbr>_pos<wbr></wbr>_from<wbr></wbr>_pixels</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#resize_img" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.resize_img">resize<wbr></wbr>_img</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#show_and_check_close" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_check_close">show<wbr></wbr>_and<wbr></wbr>_check<wbr></wbr>_close</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#show_and_wait_close" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_wait_close">show<wbr></wbr>_and<wbr></wbr>_wait<wbr></wbr>_close</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#show_img" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_img">show<wbr></wbr>_img</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#threshold_blue" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_blue">threshold<wbr></wbr>_blue</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#threshold_green" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_green">threshold<wbr></wbr>_green</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#threshold_hsv" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_hsv">threshold<wbr></wbr>_hsv</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#threshold_red" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_red">threshold<wbr></wbr>_red</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#uncompress_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.uncompress_image">uncompress<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#undistort_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.undistort_image">undistort<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#keys_leave" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.keys_leave">keys<wbr></wbr>_leave</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="niryo_libraries.niryo_robot_vision.html" class="internal-link" title="The parent of this module">niryo<wbr></wbr>_robot<wbr></wbr>_vision</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.msg.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.msg">msg</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.srv.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.srv">srv</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.CalibrationObject.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.CalibrationObject"><wbr></wbr>Calibration<wbr></wbr>Object</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.enums.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.enums">enums</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.image_functions.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions">image<wbr></wbr>_functions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.markers_detection.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.markers_detection">markers<wbr></wbr>_detection</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.math_functions.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.math_functions">math<wbr></wbr>_functions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_vision.visualization_functions.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.visualization_functions">visualization<wbr></wbr>_functions</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_vision.html" class="internal-link" title="niryo_libraries.niryo_robot_vision">niryo_robot_vision</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_vision.image_functions.html" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions">image_functions</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1823">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#add_annotation_to_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.add_annotation_to_image">add<wbr></wbr>_annotation<wbr></wbr>_to<wbr></wbr>_image</a></code></td>
+    <td>Add Annotation to an image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#biggest_contour_finder" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contour_finder">biggest<wbr></wbr>_contour<wbr></wbr>_finder</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#biggest_contours_finder" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contours_finder">biggest<wbr></wbr>_contours<wbr></wbr>_finder</a></code></td>
+    <td>Function to find the biggest contour in an binary image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#compress_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.compress_image">compress<wbr></wbr>_image</a></code></td>
+    <td>Compress OpenCV image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#concat_imgs" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.concat_imgs">concat<wbr></wbr>_imgs</a></code></td>
+    <td>Concat multiple images along 1 axis</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#debug_markers" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.debug_markers">debug<wbr></wbr>_markers</a></code></td>
+    <td>Display detected markers on an image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#debug_threshold_color" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.debug_threshold_color">debug<wbr></wbr>_threshold<wbr></wbr>_color</a></code></td>
+    <td>Return masked image to see the effect of color threshold</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#draw_contours" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.draw_contours">draw<wbr></wbr>_contours</a></code></td>
+    <td>Draw a list of contour on an image and return the drawing image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#extract_img_from_ros_msg" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_from_ros_msg">extract<wbr></wbr>_img<wbr></wbr>_from<wbr></wbr>_ros<wbr></wbr>_msg</a></code></td>
+    <td>Take a ROS CompressedImage message and return the image uncompressed</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#extract_img_workspace" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_workspace">extract<wbr></wbr>_img<wbr></wbr>_workspace</a></code></td>
+    <td>Extract working area from an image thanks to 4 Niryo's markers</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_contour_angle" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_angle">get<wbr></wbr>_contour<wbr></wbr>_angle</a></code></td>
+    <td>Return orientation of a contour according to the smallest side in order to be well oriented for gripper</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#get_contour_barycenter" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_barycenter">get<wbr></wbr>_contour<wbr></wbr>_barycenter</a></code></td>
+    <td>Return barycenter of an OpenCV Contour</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#improve_mask" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.improve_mask">improve<wbr></wbr>_mask</a></code></td>
+    <td>Improve binary mask with morphological operation</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#morphological_transformations" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.morphological_transformations">morphological<wbr></wbr>_transformations</a></code></td>
+    <td>Take black &amp; white image and apply morphological transformation</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#relative_pos_from_pixels" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.relative_pos_from_pixels">relative<wbr></wbr>_pos<wbr></wbr>_from<wbr></wbr>_pixels</a></code></td>
+    <td>Transform a pixels position to a relative position</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#resize_img" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.resize_img">resize<wbr></wbr>_img</a></code></td>
+    <td>Resize an image. The user should precise only width or height if he wants to keep image's ratio</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#show_and_check_close" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_check_close">show<wbr></wbr>_and<wbr></wbr>_check<wbr></wbr>_close</a></code></td>
+    <td>Display an image and check whether the user want to close</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#show_and_wait_close" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_wait_close">show<wbr></wbr>_and<wbr></wbr>_wait<wbr></wbr>_close</a></code></td>
+    <td>Display an image and wait that the user close it</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#show_img" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.show_img">show<wbr></wbr>_img</a></code></td>
+    <td>Display an image during a certain time</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#threshold_blue" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_blue">threshold<wbr></wbr>_blue</a></code></td>
+    <td>Threshold hsv image of blue component :param img_hsv: hsv image to be threshold :type img_hsv: numpy.array :param blue_img: threshold img :rtype: numpy.array</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#threshold_green" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_green">threshold<wbr></wbr>_green</a></code></td>
+    <td>Threshold hsv image of green component :param img_hsv: hsv image to be threshold :type img_hsv: numpy.array :param green_img: threshold img :rtype: numpy.array</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#threshold_hsv" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_hsv">threshold<wbr></wbr>_hsv</a></code></td>
+    <td>Take BGR image (OpenCV imread result) and return thresholded image according to values on HSV (Hue, Saturation, Value) Pixel will worth 1 if a pixel has a value between min_v and max_v for all channels...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#threshold_red" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_red">threshold<wbr></wbr>_red</a></code></td>
+    <td>Threshold hsv image of red component :param img_hsv: hsv image to be threshold :type img_hsv: numpy.array :param red_img: threshold img :rtype: numpy.array</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#uncompress_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.uncompress_image">uncompress<wbr></wbr>_image</a></code></td>
+    <td>Take a compressed img and return an OpenCV image</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#undistort_image" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.undistort_image">undistort<wbr></wbr>_image</a></code></td>
+    <td>Use camera intrinsics to undistort raw image</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#keys_leave" class="internal-link" title="niryo_libraries.niryo_robot_vision.image_functions.keys_leave">keys<wbr></wbr>_leave</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.add_annotation_to_image">
+    
+  </a>
+  <a name="add_annotation_to_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_annotation_to_image</span><span class="function-signature">(img, text, write_on_top=True)</span>:
+    
+    <a class="headerLink" href="#add_annotation_to_image" title="niryo_libraries.niryo_robot_vision.image_functions.add_annotation_to_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Add Annotation to an image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">text:</span>str</td><td class="fieldArgDesc">text string</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">write<wbr></wbr>_on<wbr></wbr>_top:</span>bool</td><td class="fieldArgDesc">if you write the text on top</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">img with text written on it</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.biggest_contour_finder">
+    
+  </a>
+  <a name="biggest_contour_finder">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">biggest_contour_finder</span><span class="function-signature">(img)</span>:
+    
+    <a class="headerLink" href="#biggest_contour_finder" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contour_finder">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.biggest_contours_finder">
+    
+  </a>
+  <a name="biggest_contours_finder">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">biggest_contours_finder</span><span class="function-signature">(img, nb_contours_max=3)</span>:
+    
+    <a class="headerLink" href="#biggest_contours_finder" title="niryo_libraries.niryo_robot_vision.image_functions.biggest_contours_finder">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Function to find the biggest contour in an binary image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Binary Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">nb<wbr></wbr>_contours<wbr></wbr>_max:</span>int</td><td class="fieldArgDesc">maximal number of contours which will be returned</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">list[OpenCV Contour]</td><td class="fieldArgDesc">biggest contours found</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.compress_image">
+    
+  </a>
+  <a name="compress_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">compress_image</span><span class="function-signature">(img, quality=90)</span>:
+    
+    <a class="headerLink" href="#compress_image" title="niryo_libraries.niryo_robot_vision.image_functions.compress_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Compress OpenCV image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">OpenCV Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">quality:</span>int</td><td class="fieldArgDesc">integer between 1 - 100. The higher it is, the less information will be lost,
+but the heavier the compressed image will be</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">bool, str</td><td class="fieldArgDesc">status &amp; string representing compressed image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.concat_imgs">
+    
+  </a>
+  <a name="concat_imgs">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">concat_imgs</span><span class="function-signature">(tuple_imgs, axis=1)</span>:
+    
+    <a class="headerLink" href="#concat_imgs" title="niryo_libraries.niryo_robot_vision.image_functions.concat_imgs">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Concat multiple images along 1 axis</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">tuple<wbr></wbr>_imgs:</span>tuple[numpy.array]</td><td class="fieldArgDesc">tuple of images</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">axis:</span>int</td><td class="fieldArgDesc">0 means vertically and 1 means horizontally</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">Concat image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.debug_markers">
+    
+  </a>
+  <a name="debug_markers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">debug_markers</span><span class="function-signature">(img, workspace_ratio=1.0)</span>:
+    
+    <a class="headerLink" href="#debug_markers" title="niryo_libraries.niryo_robot_vision.image_functions.debug_markers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Display detected markers on an image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">OpenCV image which contain Niryo's markers</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">workspace<wbr></wbr>_ratio:</span>float</td><td class="fieldArgDesc">Ratio between the width and the height of the area represented by the markers</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">(status, annotated image)</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.debug_threshold_color">
+    
+  </a>
+  <a name="debug_threshold_color">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">debug_threshold_color</span><span class="function-signature">(img, color_hsv)</span>:
+    
+    <a class="headerLink" href="#debug_threshold_color" title="niryo_libraries.niryo_robot_vision.image_functions.debug_threshold_color">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return masked image to see the effect of color threshold</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">OpenCV image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">color<wbr></wbr>_hsv:</span>ColorHSV</td><td class="fieldArgDesc">Color used for debug</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">Masked image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.draw_contours">
+    
+  </a>
+  <a name="draw_contours">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">draw_contours</span><span class="function-signature">(img, contours)</span>:
+    
+    <a class="headerLink" href="#draw_contours" title="niryo_libraries.niryo_robot_vision.image_functions.draw_contours">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Draw a list of contour on an image and return the drawing image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">contours:</span>list[OpenCV Contour]</td><td class="fieldArgDesc">contours list</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">Image with drawing</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.extract_img_from_ros_msg">
+    
+  </a>
+  <a name="extract_img_from_ros_msg">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">extract_img_from_ros_msg</span><span class="function-signature">(ros_msg)</span>:
+    
+    <a class="headerLink" href="#extract_img_from_ros_msg" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_from_ros_msg">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Take a ROS CompressedImage message and return the image uncompressed</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">ros<wbr></wbr>_msg:</span>:sensor_msgs:`CompressedImage`</td><td class="fieldArgDesc">a ROS CompressedImage</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">image uncompressed</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.extract_img_workspace">
+    
+  </a>
+  <a name="extract_img_workspace">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">extract_img_workspace</span><span class="function-signature">(img, workspace_ratio=1.0)</span>:
+    
+    <a class="headerLink" href="#extract_img_workspace" title="niryo_libraries.niryo_robot_vision.image_functions.extract_img_workspace">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Extract working area from an image thanks to 4 Niryo's markers</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">OpenCV image which contain 4 Niryo's markers</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">workspace<wbr></wbr>_ratio:</span>float</td><td class="fieldArgDesc">Ratio between the width and the height of the area represented by the markers</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">extracted and warped working area image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.get_contour_angle">
+    
+  </a>
+  <a name="get_contour_angle">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_contour_angle</span><span class="function-signature">(contour)</span>:
+    
+    <a class="headerLink" href="#get_contour_angle" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_angle">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return orientation of a contour according to the smallest side
+in order to be well oriented for gripper</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">contour:</span>OpenCV Contour</td><td class="fieldArgDesc">contour</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">float</td><td class="fieldArgDesc">Angle in radians</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.get_contour_barycenter">
+    
+  </a>
+  <a name="get_contour_barycenter">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_contour_barycenter</span><span class="function-signature">(contour)</span>:
+    
+    <a class="headerLink" href="#get_contour_barycenter" title="niryo_libraries.niryo_robot_vision.image_functions.get_contour_barycenter">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Return barycenter of an OpenCV Contour</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">contour:</span>OpenCV Contour</td><td class="fieldArgDesc"></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">int, int</td><td class="fieldArgDesc">Barycenter X, Barycenter Y</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.improve_mask">
+    
+  </a>
+  <a name="improve_mask">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">improve_mask</span><span class="function-signature">(mask)</span>:
+    
+    <a class="headerLink" href="#improve_mask" title="niryo_libraries.niryo_robot_vision.image_functions.improve_mask">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Improve binary mask with morphological operation</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">mask:</span>numpy.array</td><td class="fieldArgDesc">input mask to improve</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">mask improved</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.morphological_transformations">
+    
+  </a>
+  <a name="morphological_transformations">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">morphological_transformations</span><span class="function-signature">(im_thresh, morpho_type=MorphoType.CLOSE, kernel_shape=(<wbr></wbr>5, <wbr></wbr>5), kernel_type=KernelType.ELLIPSE)</span>:
+    
+    <a class="headerLink" href="#morphological_transformations" title="niryo_libraries.niryo_robot_vision.image_functions.morphological_transformations">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Take black &amp; white image and apply morphological transformation</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">im<wbr></wbr>_thresh:</span>numpy.array</td><td class="fieldArgDesc">Black &amp; White Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">morpho<wbr></wbr>_type:</span>MorphoType</td><td class="fieldArgDesc">CLOSE/OPEN/ERODE/DILATE =&gt; See on OpenCV/Google if you do not know these words</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">kernel<wbr></wbr>_shape:</span>tuple[float]</td><td class="fieldArgDesc">tuple corresponding to the size of the kernel</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">kernel<wbr></wbr>_type:</span>KernelType</td><td class="fieldArgDesc">RECT/ELLIPSE/CROSS =&gt; see on OpenCV</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">image after processing</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.relative_pos_from_pixels">
+    
+  </a>
+  <a name="relative_pos_from_pixels">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">relative_pos_from_pixels</span><span class="function-signature">(img, x_pixels, y_pixels)</span>:
+    
+    <a class="headerLink" href="#relative_pos_from_pixels" title="niryo_libraries.niryo_robot_vision.image_functions.relative_pos_from_pixels">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Transform a pixels position to a relative position</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image where the object is detected</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">x<wbr></wbr>_pixels:</span>int</td><td class="fieldArgDesc">coordinate X</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">y<wbr></wbr>_pixels:</span>int</td><td class="fieldArgDesc">coordinate Y</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">float, float</td><td class="fieldArgDesc">X relative, Y relative</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.resize_img">
+    
+  </a>
+  <a name="resize_img">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">resize_img</span><span class="function-signature">(img, width=None, height=None, inter=cv2.INTER_AREA)</span>:
+    
+    <a class="headerLink" href="#resize_img" title="niryo_libraries.niryo_robot_vision.image_functions.resize_img">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Resize an image. The user should precise only width or height if he wants to keep image's ratio</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">OpenCV Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">width:</span>int</td><td class="fieldArgDesc">Target Width</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">height:</span>int</td><td class="fieldArgDesc">Target Height</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">inter:</span>long</td><td class="fieldArgDesc">OpenCV interpolation flag</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">resized image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.show_and_check_close">
+    
+  </a>
+  <a name="show_and_check_close">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">show_and_check_close</span><span class="function-signature">(window_name, img)</span>:
+    
+    <a class="headerLink" href="#show_and_check_close" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_check_close">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Display an image and check whether the user want to close</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">window<wbr></wbr>_name:</span>str</td><td class="fieldArgDesc">window's name</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">bool</td><td class="fieldArgDesc">boolean indicating if the user wanted to leave</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.show_and_wait_close">
+    
+  </a>
+  <a name="show_and_wait_close">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">show_and_wait_close</span><span class="function-signature">(window_name, img)</span>:
+    
+    <a class="headerLink" href="#show_and_wait_close" title="niryo_libraries.niryo_robot_vision.image_functions.show_and_wait_close">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Display an image and wait that the user close it</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">window<wbr></wbr>_name:</span>str</td><td class="fieldArgDesc">window's name</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">None</td><td class="fieldArgDesc">None</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.show_img">
+    
+  </a>
+  <a name="show_img">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">show_img</span><span class="function-signature">(window_name, img, wait_ms=1)</span>:
+    
+    <a class="headerLink" href="#show_img" title="niryo_libraries.niryo_robot_vision.image_functions.show_img">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Display an image during a certain time</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">window<wbr></wbr>_name:</span>str</td><td class="fieldArgDesc">window's name</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">wait<wbr></wbr>_ms:</span>int</td><td class="fieldArgDesc">Wait time in milliseconds</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">int</td><td class="fieldArgDesc">value of the key pressed during the display</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.threshold_blue">
+    
+  </a>
+  <a name="threshold_blue">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">threshold_blue</span><span class="function-signature">(img_hsv)</span>:
+    
+    <a class="headerLink" href="#threshold_blue" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_blue">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Threshold hsv image of blue component
+:param img_hsv: hsv image to be threshold
+:type img_hsv: numpy.array
+:param blue_img: threshold img
+:rtype: numpy.array</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.threshold_green">
+    
+  </a>
+  <a name="threshold_green">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">threshold_green</span><span class="function-signature">(img_hsv)</span>:
+    
+    <a class="headerLink" href="#threshold_green" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_green">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Threshold hsv image of green component
+:param img_hsv: hsv image to be threshold
+:type img_hsv: numpy.array
+:param green_img: threshold img
+:rtype: numpy.array</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.threshold_hsv">
+    
+  </a>
+  <a name="threshold_hsv">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">threshold_hsv</span><span class="function-signature">(img, color_hsv)</span>:
+    
+    <a class="headerLink" href="#threshold_hsv" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_hsv">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Take BGR image (OpenCV imread result) and return thresholded image
+according to values on HSV (Hue, Saturation, Value)
+Pixel will worth 1 if a pixel has a value between min_v and max_v for all channels</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">image BGR if rgb_space = False</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">color<wbr></wbr>_hsv</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">threshold image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.threshold_red">
+    
+  </a>
+  <a name="threshold_red">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">threshold_red</span><span class="function-signature">(img_hsv)</span>:
+    
+    <a class="headerLink" href="#threshold_red" title="niryo_libraries.niryo_robot_vision.image_functions.threshold_red">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Threshold hsv image of red component
+:param img_hsv: hsv image to be threshold
+:type img_hsv: numpy.array
+:param red_img: threshold img
+:rtype: numpy.array</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.uncompress_image">
+    
+  </a>
+  <a name="uncompress_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">uncompress_image</span><span class="function-signature">(compressed_image)</span>:
+    
+    <a class="headerLink" href="#uncompress_image" title="niryo_libraries.niryo_robot_vision.image_functions.uncompress_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Take a compressed img and return an OpenCV image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">compressed<wbr></wbr>_image:</span>str</td><td class="fieldArgDesc">compressed image</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">OpenCV image</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.undistort_image">
+    
+  </a>
+  <a name="undistort_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">undistort_image</span><span class="function-signature">(img, mtx, dist)</span>:
+    
+    <a class="headerLink" href="#undistort_image" title="niryo_libraries.niryo_robot_vision.image_functions.undistort_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Use camera intrinsics to undistort raw image</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img:</span>numpy.array</td><td class="fieldArgDesc">Raw Image</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">mtx:</span>list[list[float]]</td><td class="fieldArgDesc">Camera Intrinsics matrix</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">dist:</span>list[list[float]]</td><td class="fieldArgDesc">Distortion Coefficient</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.array</td><td class="fieldArgDesc">Undistorted image</td></tr></table></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="niryo_libraries.niryo_robot_vision.image_functions.keys_leave">
+    
+  </a>
+  <a name="keys_leave">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">keys_leave</span> =
+    
+    <a class="headerLink" href="#keys_leave" title="niryo_libraries.niryo_robot_vision.image_functions.keys_leave">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

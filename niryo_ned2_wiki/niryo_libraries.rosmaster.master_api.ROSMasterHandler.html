@@ -1,0 +1,2276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.rosmaster.master_api.ROSMasterHandler</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.rosmaster.master_api.ROSMasterHandler.html" class="internal-link" title="This class"><wbr></wbr>ROSMaster<wbr></wbr>Handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#deleteParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.deleteParam">delete<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParam">get<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getParamNames" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParamNames">get<wbr></wbr>Param<wbr></wbr>Names</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getPid" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPid">get<wbr></wbr>Pid</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getPublishedTopics" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPublishedTopics">get<wbr></wbr>Published<wbr></wbr>Topics</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getSystemState" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getSystemState">get<wbr></wbr>System<wbr></wbr>State</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getTopicTypes" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getTopicTypes">get<wbr></wbr>Topic<wbr></wbr>Types</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getUri" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getUri">get<wbr></wbr>Uri</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hasParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.hasParam">has<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#lookupNode" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupNode">lookup<wbr></wbr>Node</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#lookupService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupService">lookup<wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#param_update_task" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_update_task">param<wbr></wbr>_update<wbr></wbr>_task</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registerPublisher" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerPublisher">register<wbr></wbr>Publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registerService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerService">register<wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#registerSubscriber" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerSubscriber">register<wbr></wbr>Subscriber</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#searchParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.searchParam">search<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#setParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.setParam">set<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.shutdown">shutdown</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#subscribeParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribeParam">subscribe<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unregisterPublisher" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterPublisher">unregister<wbr></wbr>Publisher</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unregisterService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterService">unregister<wbr></wbr>Service</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unregisterSubscriber" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterSubscriber">unregister<wbr></wbr>Subscriber</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#unsubscribeParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unsubscribeParam">unsubscribe<wbr></wbr>Param</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_notify" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify">_notify</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_notify_param_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_param_subscribers">_notify<wbr></wbr>_param<wbr></wbr>_subscribers</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_notify_topic_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_topic_subscribers">_notify<wbr></wbr>_topic<wbr></wbr>_subscribers</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_ok" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ok">_ok</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_ready" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ready">_ready</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_shutdown" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._shutdown">_shutdown</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#done" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.done">done</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#param_server" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_server">param<wbr></wbr>_server</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#param_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_subscribers">param<wbr></wbr>_subscribers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#ps_lock" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.ps_lock">ps<wbr></wbr>_lock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#publishers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.publishers">publishers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#reg_manager" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.reg_manager">reg<wbr></wbr>_manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#services" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.services">services</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribers">subscribers</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#thread_pool" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.thread_pool">thread<wbr></wbr>_pool</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#topics_types" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.topics_types">topics<wbr></wbr>_types</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#uri" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.uri">uri</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.rosmaster.master_api.html" class="internal-link" title="The parent of this class">master<wbr></wbr>_api</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.ROSMasterHandler.html" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler"><wbr></wbr>ROSMaster<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#mloginfo" class="internal-link" title="niryo_libraries.rosmaster.master_api.mloginfo">mloginfo</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#mlogwarn" class="internal-link" title="niryo_libraries.rosmaster.master_api.mlogwarn">mlogwarn</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#publisher_update_task" class="internal-link" title="niryo_libraries.rosmaster.master_api.publisher_update_task">publisher<wbr></wbr>_update<wbr></wbr>_task</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#service_update_task" class="internal-link" title="niryo_libraries.rosmaster.master_api.service_update_task">service<wbr></wbr>_update<wbr></wbr>_task</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#LOG_API" class="internal-link" title="niryo_libraries.rosmaster.master_api.LOG_API">LOG<wbr></wbr>_API</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#MSG" class="internal-link" title="niryo_libraries.rosmaster.master_api.MSG">MSG</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#NUM_WORKERS" class="internal-link" title="niryo_libraries.rosmaster.master_api.NUM_WORKERS">NUM<wbr></wbr>_WORKERS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#STATUS" class="internal-link" title="niryo_libraries.rosmaster.master_api.STATUS">STATUS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#VAL" class="internal-link" title="niryo_libraries.rosmaster.master_api.VAL">VAL</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.rosmaster.master_api.html#_logger" class="internal-link" title="niryo_libraries.rosmaster.master_api._logger">_logger</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmaster.html" class="internal-link" title="niryo_libraries.rosmaster">rosmaster</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmaster.master_api.html" class="internal-link" title="niryo_libraries.rosmaster.master_api">master_api</a></code><wbr></wbr>.<code><a href="niryo_libraries.rosmaster.master_api.ROSMasterHandler.html" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler">ROSMasterHandler</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ROSMasterHandler</span>(object):</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.__init__">ROSMasterHandler(num_workers)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.rosmaster.master_api.ROSMasterHandler">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>XML-RPC handler for ROS master APIs.
+API routines for the ROS Master Node. The Master Node is a
+superset of the Slave Node and contains additional API methods for
+creating and monitoring a graph of slave nodes.</p>
+<p>By convention, ROS nodes take in caller_id as the first parameter
+of any API call.  The setting of this parameter is rarely done by
+client code as ros::msproxy::MasterProxy automatically inserts
+this parameter (see ros::client::getMaster()).</p>
+</div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2443">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.__init__">__init__</a></code></td>
+    <td>ctor.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#deleteParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.deleteParam">delete<wbr></wbr>Param</a></code></td>
+    <td>Parameter Server: delete parameter @param caller_id: ROS caller id @type  caller_id: str @param key: parameter name @type  key: str @return: [code, msg, 0] @rtype: [int, str, int]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParam">get<wbr></wbr>Param</a></code></td>
+    <td>Retrieve parameter value from server. @param caller_id: ROS caller id @type  caller_id: str @param key: parameter to lookup. If key is a namespace, getParam() will return a parameter tree. @type  key: str getParam() will return a parameter tree.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getParamNames" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParamNames">get<wbr></wbr>Param<wbr></wbr>Names</a></code></td>
+    <td>Get list of all parameter names stored on this server. This does not adjust parameter names for caller's scope.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getPid" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPid">get<wbr></wbr>Pid</a></code></td>
+    <td>Get the PID of this server @param caller_id: ROS caller id @type  caller_id: str @return: [1, "", serverProcessPID] @rtype: [int, str, int]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getPublishedTopics" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPublishedTopics">get<wbr></wbr>Published<wbr></wbr>Topics</a></code></td>
+    <td>Get list of topics that can be subscribed to. This does not return topics that have no publishers. See L{getSystemState()} to get more comprehensive list. @param caller_id: ROS caller id @type  caller_id: str @param subgraph: Restrict topic names to match within the specified subgraph...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getSystemState" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getSystemState">get<wbr></wbr>System<wbr></wbr>State</a></code></td>
+    <td>Retrieve list representation of system state (i.e. publishers, subscribers, and services). @param caller_id: ROS caller id @type  caller_id: str @rtype: (int, str, [[str,[str]], [str,[str]], [str,[str]]]) @return: (code, statusMessage, systemState).</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getTopicTypes" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getTopicTypes">get<wbr></wbr>Topic<wbr></wbr>Types</a></code></td>
+    <td>Retrieve list topic names and their types. @param caller_id: ROS caller id @type  caller_id: str @rtype: (int, str, [[str,str]] ) @return: (code, statusMessage, topicTypes). topicTypes is a list of [topicName, topicType] pairs.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getUri" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getUri">get<wbr></wbr>Uri</a></code></td>
+    <td>Get the XML-RPC URI of this server. @param caller_id str: ROS caller id @return [int, str, str]: [1, "", xmlRpcUri]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#hasParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.hasParam">has<wbr></wbr>Param</a></code></td>
+    <td>Check if parameter is stored on server. @param caller_id str: ROS caller id @type  caller_id: str @param key: parameter to check @type  key: str @return: [code, statusMessage, hasParam] @rtype: [int, str, bool]...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#lookupNode" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupNode">lookup<wbr></wbr>Node</a></code></td>
+    <td>Get the XML-RPC URI of the node with the associated name/caller_id.  This API is for looking information about publishers and subscribers. Use lookupService instead to lookup ROS-RPC URIs. @param caller_id: ROS caller id @type  caller_id: str @param node: name of node to lookup @type  node: str @return: (code, msg, URI) @rtype: (int, str, str)...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#lookupService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupService">lookup<wbr></wbr>Service</a></code></td>
+    <td>Lookup all provider of a particular service. @param caller_id str: ROS caller id @type  caller_id: str @param service: fully-qualified name of service to lookup. @type: service: str @return: (code, message, serviceUrl)...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#param_update_task" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_update_task">param<wbr></wbr>_update<wbr></wbr>_task</a></code></td>
+    <td>Contact api.paramUpdate with specified parameters @param caller_id: caller ID @type  caller_id: str @param caller_api: XML-RPC URI of node to contact @type  caller_api: str @param param_key: parameter key to pass to node @type  param_key: str @param param_value: parameter value to pass to node @type  param_value: str...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#registerPublisher" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerPublisher">register<wbr></wbr>Publisher</a></code></td>
+    <td>Register the caller as a publisher the topic. @param caller_id: ROS caller id @type  caller_id: str @param topic: Fully-qualified name of topic to register. @type  topic: str @param topic_type: Datatype for topic...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#registerService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerService">register<wbr></wbr>Service</a></code></td>
+    <td>Register the caller as a provider of the specified service. @param caller_id str: ROS caller id @type  caller_id: str @param service: Fully-qualified name of service @type  service: str @param service_api: Service URI @type  service_api: str @param caller_api: XML-RPC URI of caller node @type  caller_api: str @return: (code, message, ignore) @rtype: (int, str, int)...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#registerSubscriber" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerSubscriber">register<wbr></wbr>Subscriber</a></code></td>
+    <td>Subscribe the caller to the specified topic. In addition to receiving a list of current publishers, the subscriber will also receive notifications of new publishers via the publisherUpdate API. @param caller_id: ROS caller id @type  caller_id: str @param topic str: Fully-qualified name of topic to subscribe to...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#searchParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.searchParam">search<wbr></wbr>Param</a></code></td>
+    <td>Search for parameter key on parameter server. Search starts in caller's namespace and proceeds upwards through parent namespaces until Parameter Server finds a matching key.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.setParam">set<wbr></wbr>Param</a></code></td>
+    <td>Parameter Server: set parameter.  NOTE: if value is a dictionary it will be treated as a parameter tree, where key is the parameter namespace. For example::</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#shutdown" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.shutdown">shutdown</a></code></td>
+    <td>Stop this server @param caller_id: ROS caller id @type  caller_id: str @param msg: a message describing why the node is being shutdown. @type  msg: str @return: [code, msg, 0] @rtype: [int, str, int]</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#subscribeParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribeParam">subscribe<wbr></wbr>Param</a></code></td>
+    <td>Retrieve parameter value from server and subscribe to updates to that param. See paramUpdate() in the Node API. @param caller_id str: ROS caller id @type  caller_id: str @param key: parameter to lookup...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unregisterPublisher" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterPublisher">unregister<wbr></wbr>Publisher</a></code></td>
+    <td>Unregister the caller as a publisher of the topic. @param caller_id: ROS caller id @type  caller_id: str @param topic: Fully-qualified name of topic to unregister. @type  topic: str @param caller_api str: API URI of service to...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unregisterService" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterService">unregister<wbr></wbr>Service</a></code></td>
+    <td>Unregister the caller as a provider of the specified service. @param caller_id str: ROS caller id @type  caller_id: str @param service: Fully-qualified name of service @type  service: str @param service_api: API URI of service to unregister...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unregisterSubscriber" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterSubscriber">unregister<wbr></wbr>Subscriber</a></code></td>
+    <td>Unregister the caller as a subscriber of the topic. @param caller_id: ROS caller id @type  caller_id: str @param topic: Fully-qualified name of topic to unregister. @type  topic: str @param caller_api: API URI of service to unregister...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#unsubscribeParam" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unsubscribeParam">unsubscribe<wbr></wbr>Param</a></code></td>
+    <td>Retrieve parameter value from server and subscribe to updates to that param. See paramUpdate() in the Node API. @param caller_id str: ROS caller id @type  caller_id: str @param key: parameter to lookup...</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#done" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.done">done</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#param_server" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_server">param<wbr></wbr>_server</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#param_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_subscribers">param<wbr></wbr>_subscribers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#ps_lock" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.ps_lock">ps<wbr></wbr>_lock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#publishers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.publishers">publishers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#reg_manager" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.reg_manager">reg<wbr></wbr>_manager</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#services" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.services">services</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribers">subscribers</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#thread_pool" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.thread_pool">thread<wbr></wbr>_pool</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#topics_types" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.topics_types">topics<wbr></wbr>_types</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#uri" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.uri">uri</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_notify" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify">_notify</a></code></td>
+    <td>Generic implementation of callback notification @param registrations: Registrations @type  registrations: L{Registrations} @param task: task to queue @type  task: fn @param key: registration key @type  key: str @param value: value to pass to task @type  value: Any...</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_notify_param_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_param_subscribers">_notify<wbr></wbr>_param<wbr></wbr>_subscribers</a></code></td>
+    <td>Notify parameter subscribers of new parameter value @param updates [([str], str, any)*]: [(subscribers, param_key, param_value)*] @param param_value str: parameter value</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_notify_topic_subscribers" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_topic_subscribers">_notify<wbr></wbr>_topic<wbr></wbr>_subscribers</a></code></td>
+    <td>Notify subscribers with new publisher list @param topic: name of topic @type  topic: str @param pub_uris: list of URIs of publishers. @type  pub_uris: [str]</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_ok" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ok">_ok</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_ready" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ready">_ready</a></code></td>
+    <td>Initialize the handler with the XMLRPC URI. This is a standard callback from the XmlRpcNode API.</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#_shutdown" class="internal-link" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._shutdown">_shutdown</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, num_workers=<a href="niryo_libraries.rosmaster.master_api.html#NUM_WORKERS" class="internal-link" title="niryo_libraries.rosmaster.master_api.NUM_WORKERS">NUM_WORKERS</a>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>ctor.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.deleteParam">
+    
+  </a>
+  <a name="deleteParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">deleteParam</span><span class="function-signature">(self, caller_id, key)</span>:
+    
+    <a class="headerLink" href="#deleteParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.deleteParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parameter Server: delete parameter
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param key: parameter name
+@type  key: str
+@return: [code, msg, 0]
+@rtype: [int, str, int]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParam">
+    
+  </a>
+  <a name="getParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getParam</span><span class="function-signature">(self, caller_id, key)</span>:
+    
+    <a class="headerLink" href="#getParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve parameter value from server.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param key: parameter to lookup. If key is a namespace,
+getParam() will return a parameter tree.
+@type  key: str
+getParam() will return a parameter tree.</p>
+<dl class="rst-docutils">
+<dt>@return: [code, statusMessage, parameterValue]. If code is not</dt>
+<dd>1, parameterValue should be ignored. If key is a namespace,
+the return value will be a dictionary, where each key is a
+parameter in that namespace. Sub-namespaces are also
+represented as dictionaries.</dd>
+</dl>
+<p>@rtype: [int, str, XMLRPCLegalValue]</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParamNames">
+    
+  </a>
+  <a name="getParamNames">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>[])<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getParamNames</span><span class="function-signature">(self, caller_id)</span>:
+    
+    <a class="headerLink" href="#getParamNames" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getParamNames">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get list of all parameter names stored on this server.
+This does not adjust parameter names for caller's scope.</p>
+<p>@param caller_id: ROS caller id
+@type  caller_id: str
+@return: [code, statusMessage, parameterNameList]
+@rtype: [int, str, [str]]</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPid">
+    
+  </a>
+  <a name="getPid">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>(-1))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getPid</span><span class="function-signature">(self, caller_id)</span>:
+    
+    <a class="headerLink" href="#getPid" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPid">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the PID of this server
+@param caller_id: ROS caller id
+@type  caller_id: str
+@return: [1, "", serverProcessPID]
+@rtype: [int, str, int]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPublishedTopics">
+    
+  </a>
+  <a name="getPublishedTopics">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>empty_or_valid_name(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">subgraph</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getPublishedTopics</span><span class="function-signature">(self, caller_id, subgraph)</span>:
+    
+    <a class="headerLink" href="#getPublishedTopics" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getPublishedTopics">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get list of topics that can be subscribed to. This does not return topics that have no publishers.
+See L{getSystemState()} to get more comprehensive list.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param subgraph: Restrict topic names to match within the specified subgraph. Subgraph namespace</p>
+<blockquote>
+is resolved relative to the caller's namespace. Use '' to specify all names.</blockquote>
+<p>@type  subgraph: str
+@return: (code, msg, [[topic1, type1]...[topicN, typeN]])
+@rtype: (int, str, [[str, str],])</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getSystemState">
+    
+  </a>
+  <a name="getSystemState">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>[<wbr></wbr>[], <wbr></wbr>[], <wbr></wbr>[]])<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getSystemState</span><span class="function-signature">(self, caller_id)</span>:
+    
+    <a class="headerLink" href="#getSystemState" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getSystemState">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve list representation of system state (i.e. publishers, subscribers, and services).
+@param caller_id: ROS caller id
+@type  caller_id: str
+@rtype: (int, str, [[str,[str]], [str,[str]], [str,[str]]])
+@return: (code, statusMessage, systemState).</p>
+<blockquote>
+<dl class="rst-docutils">
+<dt>System state is in list representation::</dt>
+<dd>[publishers, subscribers, services].</dd>
+<dt>publishers is of the form::</dt>
+<dd>[ [topic1, [topic1Publisher1...topic1PublisherN]] ... ]</dd>
+<dt>subscribers is of the form::</dt>
+<dd>[ [topic1, [topic1Subscriber1...topic1SubscriberN]] ... ]</dd>
+<dt>services is of the form::</dt>
+<dd>[ [service1, [service1Provider1...service1ProviderN]] ... ]</dd>
+</dl>
+</blockquote>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getTopicTypes">
+    
+  </a>
+  <a name="getTopicTypes">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>[])<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getTopicTypes</span><span class="function-signature">(self, caller_id)</span>:
+    
+    <a class="headerLink" href="#getTopicTypes" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getTopicTypes">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve list topic names and their types.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@rtype: (int, str, [[str,str]] )
+@return: (code, statusMessage, topicTypes). topicTypes is a list of [topicName, topicType] pairs.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getUri">
+    
+  </a>
+  <a name="getUri">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)<br />
+    <span class="py-keyword">def</span> <span class="py-defname">getUri</span><span class="function-signature">(self, caller_id)</span>:
+    
+    <a class="headerLink" href="#getUri" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.getUri">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the XML-RPC URI of this server.
+@param caller_id str: ROS caller id
+@return [int, str, str]: [1, "", xmlRpcUri]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.hasParam">
+    
+  </a>
+  <a name="hasParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>False, <wbr></wbr>(<wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">hasParam</span><span class="function-signature">(self, caller_id, key)</span>:
+    
+    <a class="headerLink" href="#hasParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.hasParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Check if parameter is stored on server.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param key: parameter to check
+@type  key: str
+@return: [code, statusMessage, hasParam]
+@rtype: [int, str, bool]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupNode">
+    
+  </a>
+  <a name="lookupNode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, <wbr></wbr>(<wbr></wbr>valid_name(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">node</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">lookupNode</span><span class="function-signature">(self, caller_id, node_name)</span>:
+    
+    <a class="headerLink" href="#lookupNode" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupNode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Get the XML-RPC URI of the node with the associated
+name/caller_id.  This API is for looking information about
+publishers and subscribers. Use lookupService instead to lookup
+ROS-RPC URIs.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param node: name of node to lookup
+@type  node: str
+@return: (code, msg, URI)
+@rtype: (int, str, str)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupService">
+    
+  </a>
+  <a name="lookupService">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>, <wbr></wbr>(<wbr></wbr>is_service(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">service</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">lookupService</span><span class="function-signature">(self, caller_id, service)</span>:
+    
+    <a class="headerLink" href="#lookupService" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.lookupService">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Lookup all provider of a particular service.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param service: fully-qualified name of service to lookup.
+@type: service: str
+@return: (code, message, serviceUrl). service URL is provider's</p>
+<blockquote>
+ROSRPC URI with address and port.  Fails if there is no provider.</blockquote>
+<p>@rtype: (int, str, str)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_update_task">
+    
+  </a>
+  <a name="param_update_task">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">param_update_task</span><span class="function-signature">(self, caller_id, caller_api, param_key, param_value)</span>:
+    
+    <a class="headerLink" href="#param_update_task" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_update_task">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Contact api.paramUpdate with specified parameters
+@param caller_id: caller ID
+@type  caller_id: str
+@param caller_api: XML-RPC URI of node to contact
+@type  caller_api: str
+@param param_key: parameter key to pass to node
+@type  param_key: str
+@param param_value: parameter value to pass to node
+@type  param_value: str</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerPublisher">
+    
+  </a>
+  <a name="registerPublisher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>[], <wbr></wbr>(<wbr></wbr>is_topic(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic</span><span class="rst-variable-quote">'</span>), <wbr></wbr>valid_type_name(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic_type</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">registerPublisher</span><span class="function-signature">(self, caller_id, topic, topic_type, caller_api)</span>:
+    
+    <a class="headerLink" href="#registerPublisher" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerPublisher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Register the caller as a publisher the topic.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param topic: Fully-qualified name of topic to register.
+@type  topic: str
+@param topic_type: Datatype for topic. Must be a
+package-resource name, i.e. the .msg name.
+@type  topic_type: str
+@param caller_api str: ROS caller XML-RPC API URI
+@type  caller_api: str
+@return: (code, statusMessage, subscriberApis).
+List of current subscribers of topic in the form of XMLRPC URIs.
+@rtype: (int, str, [str])</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerService">
+    
+  </a>
+  <a name="registerService">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_service(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">service</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">service_api</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">registerService</span><span class="function-signature">(self, caller_id, service, service_api, caller_api)</span>:
+    
+    <a class="headerLink" href="#registerService" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerService">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Register the caller as a provider of the specified service.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param service: Fully-qualified name of service
+@type  service: str
+@param service_api: Service URI
+@type  service_api: str
+@param caller_api: XML-RPC URI of caller node
+@type  caller_api: str
+@return: (code, message, ignore)
+@rtype: (int, str, int)</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerSubscriber">
+    
+  </a>
+  <a name="registerSubscriber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>[], <wbr></wbr>(<wbr></wbr>is_topic(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic</span><span class="rst-variable-quote">'</span>), <wbr></wbr>valid_type_name(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic_type</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">registerSubscriber</span><span class="function-signature">(self, caller_id, topic, topic_type, caller_api)</span>:
+    
+    <a class="headerLink" href="#registerSubscriber" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.registerSubscriber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Subscribe the caller to the specified topic. In addition to receiving
+a list of current publishers, the subscriber will also receive notifications
+of new publishers via the publisherUpdate API.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param topic str: Fully-qualified name of topic to subscribe to.
+@param topic_type: Datatype for topic. Must be a package-resource name, i.e. the .msg name.
+@type  topic_type: str
+@param caller_api: XML-RPC URI of caller node for new publisher notifications
+@type  caller_api: str
+@return: (code, message, publishers). Publishers is a list of XMLRPC API URIs</p>
+<blockquote>
+for nodes currently publishing the specified topic.</blockquote>
+<p>@rtype: (int, str, [str])</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.searchParam">
+    
+  </a>
+  <a name="searchParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">searchParam</span><span class="function-signature">(self, caller_id, key)</span>:
+    
+    <a class="headerLink" href="#searchParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.searchParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Search for parameter key on parameter server. Search starts in caller's namespace and proceeds
+upwards through parent namespaces until Parameter Server finds a matching key.</p>
+<p>searchParam's behavior is to search for the first partial match.
+For example, imagine that there are two 'robot_description' parameters:</p>
+<pre class="rst-literal-block">
+/robot_description
+  /robot_description/arm
+  /robot_description/base
+/pr2/robot_description
+  /pr2/robot_description/base
+</pre>
+<p>If I start in the namespace /pr2/foo and search for
+'robot_description', searchParam will match
+/pr2/robot_description. If I search for 'robot_description/arm'
+it will return /pr2/robot_description/arm, even though that
+parameter does not exist (yet).</p>
+<p>@param caller_id str: ROS caller id
+@type  caller_id: str
+@param key: parameter key to search for.
+@type  key: str
+@return: [code, statusMessage, foundKey]. If code is not 1, foundKey should be</p>
+<blockquote>
+ignored.</blockquote>
+<p>@rtype: [int, str, str]</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.setParam">
+    
+  </a>
+  <a name="setParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>), <wbr></wbr>not_none(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">value</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">setParam</span><span class="function-signature">(self, caller_id, key, value)</span>:
+    
+    <a class="headerLink" href="#setParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.setParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Parameter Server: set parameter.  NOTE: if value is a
+dictionary it will be treated as a parameter tree, where key
+is the parameter namespace. For example::</p>
+<pre class="rst-literal-block">
+{'x':1,'y':2,'sub':{'z':3}}
+</pre>
+<p>will set key/x=1, key/y=2, and key/sub/z=3. Furthermore, it
+will replace all existing parameters in the key parameter
+namespace with the parameters in value. You must set
+parameters individually if you wish to perform a union update.</p>
+<p>@param caller_id: ROS caller id
+@type  caller_id: str
+@param key: parameter name
+@type  key: str
+@param value: parameter value.
+@type  value: XMLRPCLegalValue
+@return: [code, msg, 0]
+@rtype: [int, str, int]</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.shutdown">
+    
+  </a>
+  <a name="shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>None))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">shutdown</span><span class="function-signature">(self, caller_id, msg=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#shutdown" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop this server
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param msg: a message describing why the node is being shutdown.
+@type  msg: str
+@return: [code, msg, 0]
+@rtype: [int, str, int]</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribeParam">
+    
+  </a>
+  <a name="subscribeParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>), <wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">subscribeParam</span><span class="function-signature">(self, caller_id, caller_api, key)</span>:
+    
+    <a class="headerLink" href="#subscribeParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribeParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve parameter value from server and subscribe to updates to that param. See
+paramUpdate() in the Node API.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param key: parameter to lookup.
+@type  key: str
+@param caller_api: API URI for paramUpdate callbacks.
+@type  caller_api: str
+@return: [code, statusMessage, parameterValue]. If code is not</p>
+<blockquote>
+1, parameterValue should be ignored. parameterValue is an empty dictionary if the parameter
+has not been set yet.</blockquote>
+<p>@rtype: [int, str, XMLRPCLegalValue]</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterPublisher">
+    
+  </a>
+  <a name="unregisterPublisher">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_topic(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">unregisterPublisher</span><span class="function-signature">(self, caller_id, topic, caller_api)</span>:
+    
+    <a class="headerLink" href="#unregisterPublisher" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterPublisher">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unregister the caller as a publisher of the topic.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param topic: Fully-qualified name of topic to unregister.
+@type  topic: str
+@param caller_api str: API URI of service to</p>
+<blockquote>
+unregister. Unregistration will only occur if current
+registration matches.</blockquote>
+<p>@type  caller_api: str
+@return: (code, statusMessage, numUnregistered).</p>
+<blockquote>
+If numUnregistered is zero it means that the caller was not registered as a publisher.
+The call still succeeds as the intended final state is reached.</blockquote>
+<p>@rtype: (int, str, int)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterService">
+    
+  </a>
+  <a name="unregisterService">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_service(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">service</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">service_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">unregisterService</span><span class="function-signature">(self, caller_id, service, service_api)</span>:
+    
+    <a class="headerLink" href="#unregisterService" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterService">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unregister the caller as a provider of the specified service.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param service: Fully-qualified name of service
+@type  service: str
+@param service_api: API URI of service to unregister. Unregistration will only occur if current</p>
+<blockquote>
+registration matches.</blockquote>
+<p>@type  service_api: str
+@return: (code, message, numUnregistered). Number of unregistrations (either 0 or 1).</p>
+<blockquote>
+If this is zero it means that the caller was not registered as a service provider.
+The call still succeeds as the intended final state is reached.</blockquote>
+<p>@rtype: (int, str, int)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterSubscriber">
+    
+  </a>
+  <a name="unregisterSubscriber">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_topic(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">topic</span><span class="rst-variable-quote">'</span>), <wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">unregisterSubscriber</span><span class="function-signature">(self, caller_id, topic, caller_api)</span>:
+    
+    <a class="headerLink" href="#unregisterSubscriber" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unregisterSubscriber">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Unregister the caller as a subscriber of the topic.
+@param caller_id: ROS caller id
+@type  caller_id: str
+@param topic: Fully-qualified name of topic to unregister.
+@type  topic: str
+@param caller_api: API URI of service to unregister. Unregistration will only occur if current</p>
+<blockquote>
+registration matches.</blockquote>
+<p>@type  caller_api: str
+@return: (code, statusMessage, numUnsubscribed).</p>
+<blockquote>
+If numUnsubscribed is zero it means that the caller was not registered as a subscriber.
+The call still succeeds as the intended final state is reached.</blockquote>
+<p>@rtype: (int, str, int)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unsubscribeParam">
+    
+  </a>
+  <a name="unsubscribeParam">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @<a href="niryo_libraries.rosmaster.master_api.html#apivalidate" class="internal-link" title="niryo_libraries.rosmaster.master_api.apivalidate">apivalidate</a>(<wbr></wbr>0, <wbr></wbr>(<wbr></wbr>is_api(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">caller_api</span><span class="rst-variable-quote">'</span>), <wbr></wbr>non_empty_str(<wbr></wbr><span class="rst-variable-quote">'</span><span class="rst-variable-string">key</span><span class="rst-variable-quote">'</span>)))<br />
+    <span class="py-keyword">def</span> <span class="py-defname">unsubscribeParam</span><span class="function-signature">(self, caller_id, caller_api, key)</span>:
+    
+    <a class="headerLink" href="#unsubscribeParam" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.unsubscribeParam">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieve parameter value from server and subscribe to updates to that param. See
+paramUpdate() in the Node API.
+@param caller_id str: ROS caller id
+@type  caller_id: str
+@param key: parameter to lookup.
+@type  key: str
+@param caller_api: API URI for paramUpdate callbacks.
+@type  caller_api: str
+@return: [code, statusMessage, numUnsubscribed].</p>
+<blockquote>
+If numUnsubscribed is zero it means that the caller was not subscribed to the parameter.</blockquote>
+<p>@rtype: [int, str, int]</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.done">
+    
+  </a>
+  <a name="done">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">done</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#done" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.done">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_server">
+    
+  </a>
+  <a name="param_server">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">param_server</span> =
+    
+    <a class="headerLink" href="#param_server" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_server">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_subscribers">
+    
+  </a>
+  <a name="param_subscribers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">param_subscribers</span> =
+    
+    <a class="headerLink" href="#param_subscribers" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.param_subscribers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.ps_lock">
+    
+  </a>
+  <a name="ps_lock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">ps_lock</span> =
+    
+    <a class="headerLink" href="#ps_lock" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.ps_lock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.publishers">
+    
+  </a>
+  <a name="publishers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">publishers</span> =
+    
+    <a class="headerLink" href="#publishers" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.publishers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.reg_manager">
+    
+  </a>
+  <a name="reg_manager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">reg_manager</span> =
+    
+    <a class="headerLink" href="#reg_manager" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.reg_manager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.services">
+    
+  </a>
+  <a name="services">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">services</span> =
+    
+    <a class="headerLink" href="#services" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.services">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribers">
+    
+  </a>
+  <a name="subscribers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">subscribers</span> =
+    
+    <a class="headerLink" href="#subscribers" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.subscribers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.thread_pool">
+    
+  </a>
+  <a name="thread_pool">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">thread_pool</span> =
+    
+    <a class="headerLink" href="#thread_pool" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.thread_pool">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.topics_types">
+    
+  </a>
+  <a name="topics_types">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">topics_types</span>: <code>dict</code> =
+    
+    <a class="headerLink" href="#topics_types" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.topics_types">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler.uri">
+    
+  </a>
+  <a name="uri">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">uri</span> =
+    
+    <a class="headerLink" href="#uri" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler.uri">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify">
+    
+  </a>
+  <a name="_notify">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_notify</span><span class="function-signature">(self, registrations, task, key, value, node_apis)</span>:
+    
+    <a class="headerLink" href="#_notify" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Generic implementation of callback notification
+@param registrations: Registrations
+@type  registrations: L{Registrations}
+@param task: task to queue
+@type  task: fn
+@param key: registration key
+@type  key: str
+@param value: value to pass to task
+@type  value: Any</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_param_subscribers">
+    
+  </a>
+  <a name="_notify_param_subscribers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_notify_param_subscribers</span><span class="function-signature">(self, updates)</span>:
+    
+    <a class="headerLink" href="#_notify_param_subscribers" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_param_subscribers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Notify parameter subscribers of new parameter value
+@param updates [([str], str, any)*]: [(subscribers, param_key, param_value)*]
+@param param_value str: parameter value</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_topic_subscribers">
+    
+  </a>
+  <a name="_notify_topic_subscribers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_notify_topic_subscribers</span><span class="function-signature">(self, topic, pub_uris, sub_uris)</span>:
+    
+    <a class="headerLink" href="#_notify_topic_subscribers" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._notify_topic_subscribers">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Notify subscribers with new publisher list
+@param topic: name of topic
+@type  topic: str
+@param pub_uris: list of URIs of publishers.
+@type  pub_uris: [str]</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ok">
+    
+  </a>
+  <a name="_ok">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_ok</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#_ok" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ok">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ready">
+    
+  </a>
+  <a name="_ready">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_ready</span><span class="function-signature">(self, uri)</span>:
+    
+    <a class="headerLink" href="#_ready" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._ready">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Initialize the handler with the XMLRPC URI. This is a standard callback from the XmlRpcNode API.</p>
+<p>@param uri: XML-RPC URI
+@type  uri: str</p>
+</div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.rosmaster.master_api.ROSMasterHandler._shutdown">
+    
+  </a>
+  <a name="_shutdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">_shutdown</span><span class="function-signature">(self, reason=<span class="rst-variable-quote">'</span><span class="rst-variable-string"></span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#_shutdown" title="niryo_libraries.rosmaster.master_api.ROSMasterHandler._shutdown">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

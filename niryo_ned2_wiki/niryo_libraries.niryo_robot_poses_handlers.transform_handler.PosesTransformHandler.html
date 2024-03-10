@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a> <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.html" class="internal-link" title="This class"><wbr></wbr>Poses<wbr></wbr>Transform<wbr></wbr>Handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#transform_from_euler" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.transform_from_euler">transform<wbr></wbr>_from<wbr></wbr>_euler</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__del__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__del__">__del__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#disable_debug" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.disable_debug">disable<wbr></wbr>_debug</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#enable_debug" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.enable_debug">enable<wbr></wbr>_debug</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_calibration_tip_position" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_calibration_tip_position">get<wbr></wbr>_calibration<wbr></wbr>_tip<wbr></wbr>_position</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_gripping_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_gripping_transform">get<wbr></wbr>_gripping<wbr></wbr>_transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_object_base_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_base_transform">get<wbr></wbr>_object<wbr></wbr>_base<wbr></wbr>_transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#get_object_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_transform">get<wbr></wbr>_object<wbr></wbr>_transform</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_grip" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_grip">set<wbr></wbr>_grip</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_relative_pose_object" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_relative_pose_object">set<wbr></wbr>_relative<wbr></wbr>_pose<wbr></wbr>_object</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__debug_loop" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_loop">__debug<wbr></wbr>_loop</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__debug_current_ws" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_current_ws">__debug<wbr></wbr>_current<wbr></wbr>_ws</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__debug_stop_event" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_stop_event">__debug<wbr></wbr>_stop<wbr></wbr>_event</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__debug_thread" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_thread">__debug<wbr></wbr>_thread</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__grip_manager" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__grip_manager">__grip<wbr></wbr>_manager</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__pose_handler_node" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__pose_handler_node">__pose<wbr></wbr>_handler<wbr></wbr>_node</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__tf_buffer" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__tf_buffer">__tf<wbr></wbr>_buffer</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="niryo_libraries.niryo_robot_poses_handlers.transform_handler.html" class="internal-link" title="The parent of this class">transform<wbr></wbr>_handler</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler"><wbr></wbr>Poses<wbr></wbr>Transform<wbr></wbr>Handler</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">niryo_libraries</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers">niryo_robot_poses_handlers</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.transform_handler.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler">transform_handler</a></code><wbr></wbr>.<code><a href="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.html" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler">PosesTransformHandler</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">PosesTransformHandler</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__init__">PosesTransformHandler(grip_manager, pose_handler_node)</a></code></p>
+          <p><a href="classIndex.html#niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>This class uses a tfBuffer to handle transforms related to the vision kit.</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1372">
+  
+  
+  <tr class="staticmethod">
+    
+    <td>Static Method</td>
+    <td><code><a href="#transform_from_euler" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.transform_from_euler">transform<wbr></wbr>_from<wbr></wbr>_euler</a></code></td>
+    <td>Creates a new stamped transform from translation and euler-orientation</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__del__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__del__">__del__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#disable_debug" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.disable_debug">disable<wbr></wbr>_debug</a></code></td>
+    <td>Stop publishing debug inforation</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#enable_debug" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.enable_debug">enable<wbr></wbr>_debug</a></code></td>
+    <td>Start publishing debug information on /tf and /visualization_marker for debugging using rviz. This will happen in a separate thread.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_calibration_tip_position" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_calibration_tip_position">get<wbr></wbr>_calibration<wbr></wbr>_tip<wbr></wbr>_position</a></code></td>
+    <td>Retrieves the position of the calibration tip from a given robot pose.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_gripping_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_gripping_transform">get<wbr></wbr>_gripping<wbr></wbr>_transform</a></code></td>
+    <td>Reads the transform base_link -&gt; tool_link_target from local tfBuffer</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_object_base_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_base_transform">get<wbr></wbr>_object<wbr></wbr>_base<wbr></wbr>_transform</a></code></td>
+    <td>Reads the transform base_link -&gt; object_base from local tfBuffer</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#get_object_transform" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_transform">get<wbr></wbr>_object<wbr></wbr>_transform</a></code></td>
+    <td>Reads the transform base_link -&gt; object_base from local tfBuffer</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_grip" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_grip">set<wbr></wbr>_grip</a></code></td>
+    <td>Updates the transform object_base -&gt; tool_link_target in local tfBuffer :param grip:</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_relative_pose_object" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_relative_pose_object">set<wbr></wbr>_relative<wbr></wbr>_pose<wbr></wbr>_object</a></code></td>
+    <td>Updates the transform base_link -&gt; object_base in local tfBuffer</td>
+  </tr><tr class="method private">
+    
+    <td>Method</td>
+    <td><code><a href="#__debug_loop" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_loop">__debug<wbr></wbr>_loop</a></code></td>
+    <td>Debug loop that will run in a separate thread. (tfBuffer should be threadsafe)</td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__debug_current_ws" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_current_ws">__debug<wbr></wbr>_current<wbr></wbr>_ws</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__debug_stop_event" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_stop_event">__debug<wbr></wbr>_stop<wbr></wbr>_event</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__debug_thread" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_thread">__debug<wbr></wbr>_thread</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__grip_manager" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__grip_manager">__grip<wbr></wbr>_manager</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__pose_handler_node" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__pose_handler_node">__pose<wbr></wbr>_handler<wbr></wbr>_node</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#__tf_buffer" class="internal-link" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__tf_buffer">__tf<wbr></wbr>_buffer</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basestaticmethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.transform_from_euler">
+    
+  </a>
+  <a name="transform_from_euler">
+    
+  </a>
+  <div class="functionHeader">
+    
+    @staticmethod<br />
+    <span class="py-keyword">def</span> <span class="py-defname">transform_from_euler</span><span class="function-signature">(x, y, z, roll, pitch, yaw, header_frame_id, child_frame_id)</span>:
+    
+    <a class="headerLink" href="#transform_from_euler" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.transform_from_euler">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Creates a new stamped transform from translation and euler-orientation</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">x</span></td><td class="fieldArgDesc">x translation</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">y</span></td><td class="fieldArgDesc">y translation</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">z</span></td><td class="fieldArgDesc">z translation</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">roll</span></td><td class="fieldArgDesc">orientation roll</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">pitch</span></td><td class="fieldArgDesc">orientation pitch</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">yaw</span></td><td class="fieldArgDesc">orientation yaw</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">header<wbr></wbr>_frame<wbr></wbr>_id</span></td><td class="fieldArgDesc">transform from this frame</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">child<wbr></wbr>_frame<wbr></wbr>_id</span></td><td class="fieldArgDesc">transform to this frame</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">transform</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__del__">
+    
+  </a>
+  <a name="__del__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__del__</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__del__" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__del__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, grip_manager, pose_handler_node)</span>:
+    
+    <a class="headerLink" href="#__init__" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.disable_debug">
+    
+  </a>
+  <a name="disable_debug">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">disable_debug</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#disable_debug" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.disable_debug">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Stop publishing debug inforation</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.enable_debug">
+    
+  </a>
+  <a name="enable_debug">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">enable_debug</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#enable_debug" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.enable_debug">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Start publishing debug information on /tf and /visualization_marker for
+debugging using rviz. This will happen in a separate thread.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_calibration_tip_position">
+    
+  </a>
+  <a name="get_calibration_tip_position">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_calibration_tip_position</span><span class="function-signature">(self, robot_pose)</span>:
+    
+    <a class="headerLink" href="#get_calibration_tip_position" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_calibration_tip_position">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Retrieves the position of the calibration tip from a given robot pose.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">robot<wbr></wbr>_pose</span></td><td class="fieldArgDesc">pose of the robot's tool_link</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">xyz position of calibration tip in robot coordinates</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_gripping_transform">
+    
+  </a>
+  <a name="get_gripping_transform">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_gripping_transform</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_gripping_transform" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_gripping_transform">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Reads the transform base_link -&gt; tool_link_target from local tfBuffer</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">transform base_link -&gt; tool_link_target</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_base_transform">
+    
+  </a>
+  <a name="get_object_base_transform">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_object_base_transform</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#get_object_base_transform" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_base_transform">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Reads the transform base_link -&gt; object_base from local tfBuffer</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">transform base_link -&gt; object_base</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_transform">
+    
+  </a>
+  <a name="get_object_transform">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">get_object_transform</span><span class="function-signature">(self, x_off=0.0, y_off=0.0, z_off=0.0, roll_off=0.0, pitch_off=1.5708, yaw_off=0.0)</span>:
+    
+    <a class="headerLink" href="#get_object_transform" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.get_object_transform">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Reads the transform base_link -&gt; object_base from local tfBuffer</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">transform base_link -&gt; object_base</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_grip">
+    
+  </a>
+  <a name="set_grip">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_grip</span><span class="function-signature">(self, grip)</span>:
+    
+    <a class="headerLink" href="#set_grip" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_grip">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Updates the transform object_base -&gt; tool_link_target in local tfBuffer
+:param grip:</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_relative_pose_object">
+    
+  </a>
+  <a name="set_relative_pose_object">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_relative_pose_object</span><span class="function-signature">(self, workspace, x_rel, y_rel, yaw_rel, yaw_center=None)</span>:
+    
+    <a class="headerLink" href="#set_relative_pose_object" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.set_relative_pose_object">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Updates the transform base_link -&gt; object_base in local tfBuffer</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">workspace</span></td><td class="fieldArgDesc">reference workspace object</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">x<wbr></wbr>_rel</span></td><td class="fieldArgDesc">object base x position relative to workspace</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">y<wbr></wbr>_rel</span></td><td class="fieldArgDesc">object base y position relative to workspace</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">yaw<wbr></wbr>_rel</span></td><td class="fieldArgDesc">object base rotation on z relative to workspace</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">yaw<wbr></wbr>_center</span></td><td class="fieldArgDesc">Avoid over rotation</td></tr></table></div>
+  </div>
+</div><div class="basemethod private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_loop">
+    
+  </a>
+  <a name="__debug_loop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__debug_loop</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#__debug_loop" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_loop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Debug loop that will run in a separate thread.
+(tfBuffer should be threadsafe)</p></div>
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_current_ws">
+    
+  </a>
+  <a name="__debug_current_ws">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__debug_current_ws</span> =
+    
+    <a class="headerLink" href="#__debug_current_ws" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_current_ws">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_stop_event">
+    
+  </a>
+  <a name="__debug_stop_event">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__debug_stop_event</span> =
+    
+    <a class="headerLink" href="#__debug_stop_event" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_stop_event">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_thread">
+    
+  </a>
+  <a name="__debug_thread">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__debug_thread</span> =
+    
+    <a class="headerLink" href="#__debug_thread" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__debug_thread">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__grip_manager">
+    
+  </a>
+  <a name="__grip_manager">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__grip_manager</span> =
+    
+    <a class="headerLink" href="#__grip_manager" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__grip_manager">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__pose_handler_node">
+    
+  </a>
+  <a name="__pose_handler_node">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__pose_handler_node</span> =
+    
+    <a class="headerLink" href="#__pose_handler_node" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__pose_handler_node">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__tf_buffer">
+    
+  </a>
+  <a name="__tf_buffer">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">__tf_buffer</span> =
+    
+    <a class="headerLink" href="#__tf_buffer" title="niryo_libraries.niryo_robot_poses_handlers.transform_handler.PosesTransformHandler.__tf_buffer">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for <a href="https://github.com/NiryoRobotics/ned_ros" class="projecthome">Niryo Ned 2</a>,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      23.9.1 at 2024-03-10 14:48:02.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
