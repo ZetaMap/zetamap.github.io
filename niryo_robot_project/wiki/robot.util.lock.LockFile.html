@@ -6,7 +6,7 @@
 
   <head>
     
-    <title>robot.trajectory.controller.TrajectoryStep</title>
+    <title>robot.util.lock.LockFile</title>
     <meta name="generator" content="pydoctor 23.9.1"> 
         
     </meta>
@@ -73,7 +73,7 @@
 
       <div class="thingTitle">
         <span>Class</span>
-        <code class="thisobject"><a href="robot.trajectory.controller.TrajectoryStep.html" class="internal-link" title="This class"><wbr></wbr>Trajectory<wbr></wbr>Step</a></code> 
+        <code class="thisobject"><a href="robot.util.lock.LockFile.html" class="internal-link" title="This class"><wbr></wbr>Lock<wbr></wbr>File</a></code> 
       </div>
       
       <div>
@@ -94,7 +94,7 @@
         
 
         
-            <div class="itemName"><code><a href="#__init__" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.__init__">__init__</a></code>
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="robot.util.lock.LockFile.__init__">__init__</a></code>
             </div>
         
 
@@ -104,7 +104,7 @@
         
 
         
-            <div class="itemName"><code><a href="#__repr__" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.__repr__">__repr__</a></code>
+            <div class="itemName"><code><a href="#acquire" class="internal-link" title="robot.util.lock.LockFile.acquire">acquire</a></code>
             </div>
         
 
@@ -114,7 +114,7 @@
         
 
         
-            <div class="itemName"><code><a href="#deserialize" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.deserialize">deserialize</a></code>
+            <div class="itemName"><code><a href="#handled" class="internal-link" title="robot.util.lock.LockFile.handled">handled</a></code>
             </div>
         
 
@@ -124,7 +124,7 @@
         
 
         
-            <div class="itemName"><code><a href="#get_value" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.get_value">get<wbr></wbr>_value</a></code>
+            <div class="itemName"><code><a href="#handler" class="internal-link" title="robot.util.lock.LockFile.handler">handler</a></code>
             </div>
         
 
@@ -134,7 +134,7 @@
         
 
         
-            <div class="itemName"><code><a href="#is_property" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.is_property">is<wbr></wbr>_property</a></code>
+            <div class="itemName"><code><a href="#notify_release" class="internal-link" title="robot.util.lock.LockFile.notify_release">notify<wbr></wbr>_release</a></code>
             </div>
         
 
@@ -144,17 +144,7 @@
         
 
         
-            <div class="itemName"><code><a href="#run" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.run">run</a></code>
-            </div>
-        
-
-    </li><li class="">
-        
-        
-        
-
-        
-            <div class="itemName"><code><a href="#serialize" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.serialize">serialize</a></code>
+            <div class="itemName"><code><a href="#release" class="internal-link" title="robot.util.lock.LockFile.release">release</a></code>
             </div>
         
 
@@ -173,7 +163,7 @@
         
 
         
-            <div class="itemName"><code><a href="#type" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.type">type</a></code>
+            <div class="itemName"><code><a href="#lockfile" class="internal-link" title="robot.util.lock.LockFile.lockfile">lockfile</a></code>
             </div>
         
 
@@ -183,7 +173,17 @@
         
 
         
-            <div class="itemName"><code><a href="#value" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.value">value</a></code>
+            <div class="itemName"><code><a href="#present" class="internal-link" title="robot.util.lock.LockFile.present">present</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__lock_file" class="internal-link" title="robot.util.lock.LockFile.__lock_file">__lock<wbr></wbr>_file</a></code>
             </div>
         
 
@@ -198,7 +198,7 @@
 
       <div class="thingTitle">
         <span>Module</span>
-        <code><a href="robot.trajectory.controller.html" class="internal-link" title="The parent of this class">controller</a></code> 
+        <code><a href="robot.util.lock.html" class="internal-link" title="The parent of this class">lock</a></code> 
       </div>
       
       <div>
@@ -210,33 +210,13 @@
         <div class="childrenKindTitle">Classes</div>
         <ul>
     
-    <li class="">
+    <li class=" thisobject">
         
         
         
 
         
-            <div class="itemName"><code><a href="robot.trajectory.controller.PropertyStep.html" class="internal-link" title="robot.trajectory.controller.PropertyStep"><wbr></wbr>Property<wbr></wbr>Step</a></code>
-            </div>
-        
-
-    </li><li class="">
-        
-        
-        
-
-        
-            <div class="itemName"><code><a href="robot.trajectory.controller.TrajectoryController.html" class="internal-link" title="robot.trajectory.controller.TrajectoryController"><wbr></wbr>Trajectory<wbr></wbr>Controller</a></code>
-            </div>
-        
-
-    </li><li class=" thisobject">
-        
-        
-        
-
-        
-            <div class="itemName"><code><a href="robot.trajectory.controller.TrajectoryStep.html" class="internal-link" title="robot.trajectory.controller.TrajectoryStep"><wbr></wbr>Trajectory<wbr></wbr>Step</a></code>
+            <div class="itemName"><code><a href="robot.util.lock.LockFile.html" class="internal-link" title="robot.util.lock.LockFile"><wbr></wbr>Lock<wbr></wbr>File</a></code>
             </div>
         
 
@@ -339,7 +319,7 @@
         </div>
 
         <div class="page-header">
-          <h1 class="class"><code><code><a href="index.html" class="internal-link">robot</a></code><wbr></wbr>.<code><a href="robot.trajectory.html" class="internal-link" title="robot.trajectory">trajectory</a></code><wbr></wbr>.<code><a href="robot.trajectory.controller.html" class="internal-link" title="robot.trajectory.controller">controller</a></code><wbr></wbr>.<code><a href="robot.trajectory.controller.TrajectoryStep.html" class="internal-link" title="robot.trajectory.controller.TrajectoryStep">TrajectoryStep</a></code></code></h1>
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">robot</a></code><wbr></wbr>.<code><a href="robot.util.html" class="internal-link" title="robot.util">util</a></code><wbr></wbr>.<code><a href="robot.util.lock.html" class="internal-link" title="robot.util.lock">lock</a></code><wbr></wbr>.<code><a href="robot.util.lock.LockFile.html" class="internal-link" title="robot.util.lock.LockFile">LockFile</a></code></code></h1>
           <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
@@ -350,8 +330,8 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TrajectoryStep</span>:</code></p><p>Known subclasses: <code><a href="robot.trajectory.controller.PropertyStep.html" class="internal-link">robot.trajectory.controller.PropertyStep</a></code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.__init__">TrajectoryStep(type, value)</a></code></p>
-          <p><a href="classIndex.html#robot.trajectory.controller.TrajectoryStep">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">LockFile</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="robot.util.lock.LockFile.__init__">LockFile(file)</a></code></p>
+          <p><a href="classIndex.html#robot.util.lock.LockFile">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -359,53 +339,53 @@
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id14">
+          <table class="children sortable" id="id65">
   
   
   <tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#__init__" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.__init__">__init__</a></code></td>
+    <td><code><a href="#__init__" class="internal-link" title="robot.util.lock.LockFile.__init__">__init__</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#__repr__" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.__repr__">__repr__</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><code><a href="#acquire" class="internal-link" title="robot.util.lock.LockFile.acquire">acquire</a></code></td>
+    <td>Acquire the lock file. 'who' is an object no matter what, but will represent the handler by an id</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#deserialize" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.deserialize">deserialize</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><code><a href="#handled" class="internal-link" title="robot.util.lock.LockFile.handled">handled</a></code></td>
+    <td>Return if the lock file has an handler</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#get_value" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.get_value">get<wbr></wbr>_value</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><code><a href="#handler" class="internal-link" title="robot.util.lock.LockFile.handler">handler</a></code></td>
+    <td>Return the handler id, or 0 if no handler, else -1 if handler is invalid</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#is_property" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.is_property">is<wbr></wbr>_property</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><code><a href="#notify_release" class="internal-link" title="robot.util.lock.LockFile.notify_release">notify<wbr></wbr>_release</a></code></td>
+    <td>Notify that the lock file will be released soon</td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#run" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.run">run</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="method">
+    <td><code><a href="#release" class="internal-link" title="robot.util.lock.LockFile.release">release</a></code></td>
+    <td>Remove the lock file</td>
+  </tr><tr class="property">
     
-    <td>Method</td>
-    <td><code><a href="#serialize" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.serialize">serialize</a></code></td>
+    <td>Property</td>
+    <td><code><a href="#lockfile" class="internal-link" title="robot.util.lock.LockFile.lockfile">lockfile</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
+  </tr><tr class="property">
+    
+    <td>Property</td>
+    <td><code><a href="#present" class="internal-link" title="robot.util.lock.LockFile.present">present</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
     
     <td>Instance Variable</td>
-    <td><code><a href="#type" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.type">type</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="instancevariable">
-    
-    <td>Instance Variable</td>
-    <td><code><a href="#value" class="internal-link" title="robot.trajectory.controller.TrajectoryStep.value">value</a></code></td>
+    <td><code><a href="#__lock_file" class="internal-link" title="robot.util.lock.LockFile.__lock_file">__lock<wbr></wbr>_file</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr>
 </table>
@@ -418,7 +398,7 @@
           <div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.__init__">
+  <a name="robot.util.lock.LockFile.__init__">
     
   </a>
   <a name="__init__">
@@ -427,9 +407,9 @@
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, type: <code><a href="robot.trajectory.step.type.StepType.html" class="internal-link" title="robot.trajectory.step.type.StepType">StepType</a></code>, value: <code><a href="robot.trajectory.step.value.StepValue.html" class="internal-link" title="robot.trajectory.step.value.StepValue">StepValue</a></code> = <a href="robot.trajectory.step.value.StepValue.html" class="internal-link" title="robot.trajectory.step.value.StepValue">StepValue</a>())</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, file: <code>str</code>)</span>:
     
-    <a class="headerLink" href="#__init__" title="robot.trajectory.controller.TrajectoryStep.__init__">
+    <a class="headerLink" href="#__init__" title="robot.util.lock.LockFile.__init__">
       
       
       ¶
@@ -442,18 +422,18 @@
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.__repr__">
+  <a name="robot.util.lock.LockFile.acquire">
     
   </a>
-  <a name="__repr__">
+  <a name="acquire">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">__repr__</span><span class="function-signature">(self)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">acquire</span><span class="function-signature">(self, who: <code>object</code>)</span>:
     
-    <a class="headerLink" href="#__repr__" title="robot.trajectory.controller.TrajectoryStep.__repr__">
+    <a class="headerLink" href="#acquire" title="robot.util.lock.LockFile.acquire">
       
       
       ¶
@@ -461,23 +441,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Acquire the lock file. 'who' is an object no matter what, but will represent the handler by an id</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.deserialize">
+  <a name="robot.util.lock.LockFile.handled">
     
   </a>
-  <a name="deserialize">
+  <a name="handled">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">deserialize</span><span class="function-signature">(self, buffer: <code>str</code>)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">handled</span><span class="function-signature">(self) -&gt; <code>bool</code></span>:
     
-    <a class="headerLink" href="#deserialize" title="robot.trajectory.controller.TrajectoryStep.deserialize">
+    <a class="headerLink" href="#handled" title="robot.util.lock.LockFile.handled">
       
       
       ¶
@@ -485,23 +465,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Return if the lock file has an handler</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.get_value">
+  <a name="robot.util.lock.LockFile.handler">
     
   </a>
-  <a name="get_value">
+  <a name="handler">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">get_value</span><span class="function-signature">(self) -&gt; <code>object</code></span>:
+    <span class="py-keyword">def</span> <span class="py-defname">handler</span><span class="function-signature">(self) -&gt; <code>int</code></span>:
     
-    <a class="headerLink" href="#get_value" title="robot.trajectory.controller.TrajectoryStep.get_value">
+    <a class="headerLink" href="#handler" title="robot.util.lock.LockFile.handler">
       
       
       ¶
@@ -509,23 +489,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Return the handler id, or 0 if no handler, else -1 if handler is invalid</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.is_property">
+  <a name="robot.util.lock.LockFile.notify_release">
     
   </a>
-  <a name="is_property">
+  <a name="notify_release">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">is_property</span><span class="function-signature">(self) -&gt; <code>bool</code></span>:
+    <span class="py-keyword">def</span> <span class="py-defname">notify_release</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#is_property" title="robot.trajectory.controller.TrajectoryStep.is_property">
+    <a class="headerLink" href="#notify_release" title="robot.util.lock.LockFile.notify_release">
       
       
       ¶
@@ -533,23 +513,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Notify that the lock file will be released soon</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.run">
+  <a name="robot.util.lock.LockFile.release">
     
   </a>
-  <a name="run">
+  <a name="release">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">run</span><span class="function-signature">(self, robot: <code>NiryoRosWrapper</code>) -&gt; <code><a href="robot.trajectory.step.goal.GoalReport.html" class="internal-link" title="robot.trajectory.step.goal.GoalReport">GoalReport</a></code></span>:
+    <span class="py-keyword">def</span> <span class="py-defname">release</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#run" title="robot.trajectory.controller.TrajectoryStep.run">
+    <a class="headerLink" href="#release" title="robot.util.lock.LockFile.release">
       
       
       ¶
@@ -557,46 +537,22 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Remove the lock file</p></div>
   </div>
-</div><div class="basemethod">
+</div><div class="baseproperty">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.serialize">
+  <a name="robot.util.lock.LockFile.lockfile">
     
   </a>
-  <a name="serialize">
+  <a name="lockfile">
     
   </a>
   <div class="functionHeader">
+    @property<br />
+    <span class="py-defname">lockfile</span> =
     
-    
-    <span class="py-keyword">def</span> <span class="py-defname">serialize</span><span class="function-signature">(self) -&gt; <code>str</code></span>:
-    
-    <a class="headerLink" href="#serialize" title="robot.trajectory.controller.TrajectoryStep.serialize">
-      
-      
-      ¶
-    </a>
-  </div>
-  <div class="docstring functionBody">
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="baseinstancevariable">
-  
-  
-  <a name="robot.trajectory.controller.TrajectoryStep.type">
-    
-  </a>
-  <a name="type">
-    
-  </a>
-  <div class="functionHeader">
-    
-    <span class="py-defname">type</span> =
-    
-    <a class="headerLink" href="#type" title="robot.trajectory.controller.TrajectoryStep.type">
+    <a class="headerLink" href="#lockfile" title="robot.util.lock.LockFile.lockfile">
       
       
       ¶
@@ -607,20 +563,44 @@
     <div><p class="undocumented">Undocumented</p></div>
     
   </div>
-</div><div class="baseinstancevariable">
+</div><div class="baseproperty">
   
   
-  <a name="robot.trajectory.controller.TrajectoryStep.value">
+  <a name="robot.util.lock.LockFile.present">
     
   </a>
-  <a name="value">
+  <a name="present">
+    
+  </a>
+  <div class="functionHeader">
+    @property<br />
+    <span class="py-defname">present</span> =
+    
+    <a class="headerLink" href="#present" title="robot.util.lock.LockFile.present">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="robot.util.lock.LockFile.__lock_file">
+    
+  </a>
+  <a name="__lock_file">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">value</span> =
+    <span class="py-defname">__lock_file</span> =
     
-    <a class="headerLink" href="#value" title="robot.trajectory.controller.TrajectoryStep.value">
+    <a class="headerLink" href="#__lock_file" title="robot.util.lock.LockFile.__lock_file">
       
       
       ¶

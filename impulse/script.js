@@ -26,7 +26,8 @@ function init(){
     resize();
     setupFiles();
     setPrototypes();
-
+    unfade(document.getElementById("over"));
+    unfade(document.getElementById("back"));
     addShapes();
 }
 

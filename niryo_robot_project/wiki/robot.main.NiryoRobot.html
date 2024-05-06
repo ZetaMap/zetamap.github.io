@@ -6,7 +6,7 @@
 
   <head>
     
-    <title>robot.trajectory.player.TrajectoryPlayer</title>
+    <title>robot.main.NiryoRobot</title>
     <meta name="generator" content="pydoctor 23.9.1"> 
         
     </meta>
@@ -73,7 +73,7 @@
 
       <div class="thingTitle">
         <span>Class</span>
-        <code class="thisobject"><a href="robot.trajectory.player.TrajectoryPlayer.html" class="internal-link" title="This class"><wbr></wbr>Trajectory<wbr></wbr>Player</a></code> 
+        <code class="thisobject"><a href="robot.main.NiryoRobot.html" class="internal-link" title="This class"><wbr></wbr>Niryo<wbr></wbr>Robot</a></code> 
       </div>
       
       <div>
@@ -94,7 +94,7 @@
         
 
         
-            <div class="itemName"><code><a href="#play_trajectory" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_trajectory">play<wbr></wbr>_trajectory</a></code>
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="robot.main.NiryoRobot.__init__">__init__</a></code>
             </div>
         
 
@@ -104,7 +104,7 @@
         
 
         
-            <div class="itemName"><code><a href="#__init__" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.__init__">__init__</a></code>
+            <div class="itemName"><code><a href="#acquire_lockfile" class="internal-link" title="robot.main.NiryoRobot.acquire_lockfile">acquire<wbr></wbr>_lockfile</a></code>
             </div>
         
 
@@ -114,7 +114,7 @@
         
 
         
-            <div class="itemName"><code><a href="#is_playing" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.is_playing">is<wbr></wbr>_playing</a></code>
+            <div class="itemName"><code><a href="#loop" class="internal-link" title="robot.main.NiryoRobot.loop">loop</a></code>
             </div>
         
 
@@ -124,7 +124,7 @@
         
 
         
-            <div class="itemName"><code><a href="#play_all" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_all">play<wbr></wbr>_all</a></code>
+            <div class="itemName"><code><a href="#setup" class="internal-link" title="robot.main.NiryoRobot.setup">setup</a></code>
             </div>
         
 
@@ -134,7 +134,7 @@
         
 
         
-            <div class="itemName"><code><a href="#play_async" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_async">play<wbr></wbr>_async</a></code>
+            <div class="itemName"><code><a href="#start" class="internal-link" title="robot.main.NiryoRobot.start">start</a></code>
             </div>
         
 
@@ -144,7 +144,7 @@
         
 
         
-            <div class="itemName"><code><a href="#play_next_step" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_next_step">play<wbr></wbr>_next<wbr></wbr>_step</a></code>
+            <div class="itemName"><code><a href="#stop" class="internal-link" title="robot.main.NiryoRobot.stop">stop</a></code>
             </div>
         
 
@@ -154,7 +154,17 @@
         
 
         
-            <div class="itemName"><code><a href="#stop" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.stop">stop</a></code>
+            <div class="itemName"><code><a href="#stop_complete" class="internal-link" title="robot.main.NiryoRobot.stop_complete">stop<wbr></wbr>_complete</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#stopped_prematurely" class="internal-link" title="robot.main.NiryoRobot.stopped_prematurely">stopped<wbr></wbr>_prematurely</a></code>
             </div>
         
 
@@ -173,7 +183,7 @@
         
 
         
-            <div class="itemName"><code><a href="#ignore_errors" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.ignore_errors">ignore<wbr></wbr>_errors</a></code>
+            <div class="itemName"><code><a href="#error_occur" class="internal-link" title="robot.main.NiryoRobot.error_occur">error<wbr></wbr>_occur</a></code>
             </div>
         
 
@@ -183,7 +193,7 @@
         
 
         
-            <div class="itemName"><code><a href="#logger" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.logger">logger</a></code>
+            <div class="itemName"><code><a href="#logger" class="internal-link" title="robot.main.NiryoRobot.logger">logger</a></code>
             </div>
         
 
@@ -193,7 +203,7 @@
         
 
         
-            <div class="itemName"><code><a href="#play_started" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_started">play<wbr></wbr>_started</a></code>
+            <div class="itemName"><code><a href="#modbus" class="internal-link" title="robot.main.NiryoRobot.modbus">modbus</a></code>
             </div>
         
 
@@ -203,7 +213,7 @@
         
 
         
-            <div class="itemName"><code><a href="#robot" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.robot">robot</a></code>
+            <div class="itemName"><code><a href="#robot" class="internal-link" title="robot.main.NiryoRobot.robot">robot</a></code>
             </div>
         
 
@@ -213,7 +223,7 @@
         
 
         
-            <div class="itemName"><code><a href="#thread" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.thread">thread</a></code>
+            <div class="itemName"><code><a href="#status_sounds" class="internal-link" title="robot.main.NiryoRobot.status_sounds">status<wbr></wbr>_sounds</a></code>
             </div>
         
 
@@ -223,7 +233,17 @@
         
 
         
-            <div class="itemName"><code><a href="#trajectory" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.trajectory">trajectory</a></code>
+            <div class="itemName"><code><a href="#terminal" class="internal-link" title="robot.main.NiryoRobot.terminal">terminal</a></code>
+            </div>
+        
+
+    </li><li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#_already_stopped" class="internal-link" title="robot.main.NiryoRobot._already_stopped">_already<wbr></wbr>_stopped</a></code>
             </div>
         
 
@@ -238,7 +258,7 @@
 
       <div class="thingTitle">
         <span>Module</span>
-        <code><a href="robot.trajectory.player.html" class="internal-link" title="The parent of this class">player</a></code> 
+        <code><a href="robot.main.html" class="internal-link" title="The parent of this class">main</a></code> 
       </div>
       
       <div>
@@ -256,7 +276,7 @@
         
 
         
-            <div class="itemName"><code><a href="robot.trajectory.player.TrajectoryPlayer.html" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer"><wbr></wbr>Trajectory<wbr></wbr>Player</a></code>
+            <div class="itemName"><code><a href="robot.main.NiryoRobot.html" class="internal-link" title="robot.main.NiryoRobot"><wbr></wbr>Niryo<wbr></wbr>Robot</a></code>
             </div>
         
 
@@ -269,8 +289,21 @@
         
          
 
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
         
-         
+        
+        
+
+        
+            <div class="itemName"><code><a href="robot.main.html#cli_args" class="internal-link" title="robot.main.cli_args">cli<wbr></wbr>_args</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
 
         
          
@@ -359,7 +392,7 @@
         </div>
 
         <div class="page-header">
-          <h1 class="class"><code><code><a href="index.html" class="internal-link">robot</a></code><wbr></wbr>.<code><a href="robot.trajectory.html" class="internal-link" title="robot.trajectory">trajectory</a></code><wbr></wbr>.<code><a href="robot.trajectory.player.html" class="internal-link" title="robot.trajectory.player">player</a></code><wbr></wbr>.<code><a href="robot.trajectory.player.TrajectoryPlayer.html" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer">TrajectoryPlayer</a></code></code></h1>
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">robot</a></code><wbr></wbr>.<code><a href="robot.main.html" class="internal-link" title="robot.main">main</a></code><wbr></wbr>.<code><a href="robot.main.NiryoRobot.html" class="internal-link" title="robot.main.NiryoRobot">NiryoRobot</a></code></code></h1>
           <div id="showPrivate">
             <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
           </div>
@@ -370,8 +403,8 @@
         </div>
 
         <div class="extrasDocstring">
-          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">TrajectoryPlayer</span>:</code></p><p>Known subclasses: <code><a href="robot.trajectory.executor.TrajectoryExecutor.html" class="internal-link">robot.trajectory.executor.TrajectoryExecutor</a></code></p><p>Constructors: <code><a href="#play_trajectory" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_trajectory">TrajectoryPlayer.play_trajectory(robot, id_or_name, play_async)</a></code>, <code><a href="#__init__" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.__init__">TrajectoryPlayer(robot, trajectory, ignore_errors)</a></code></p>
-          <p><a href="classIndex.html#robot.trajectory.player.TrajectoryPlayer">View In Hierarchy</a></p>
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">NiryoRobot</span>:</code></p>
+          <p><a href="classIndex.html#robot.main.NiryoRobot">View In Hierarchy</a></p>
         </div>
 
         <div class="moduleDocstring">
@@ -379,73 +412,83 @@
         </div>
 
         <div id="splitTables">
-          <table class="children sortable" id="id27">
+          <table class="children sortable" id="id4">
   
   
-  <tr class="staticmethod">
+  <tr class="method">
     
-    <td>Static Method</td>
-    <td><code><a href="#play_trajectory" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_trajectory">play<wbr></wbr>_trajectory</a></code></td>
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="robot.main.NiryoRobot.__init__">__init__</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#__init__" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.__init__">__init__</a></code></td>
+    <td><code><a href="#acquire_lockfile" class="internal-link" title="robot.main.NiryoRobot.acquire_lockfile">acquire<wbr></wbr>_lockfile</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#is_playing" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.is_playing">is<wbr></wbr>_playing</a></code></td>
+    <td><code><a href="#loop" class="internal-link" title="robot.main.NiryoRobot.loop">loop</a></code></td>
+    <td>Main loop of program, will be called every iteration. Must not be a blocking method.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#setup" class="internal-link" title="robot.main.NiryoRobot.setup">setup</a></code></td>
+    <td>Setup function of program, will be called one time. Put the variable creation or other things here.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="robot.main.NiryoRobot.start">start</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#play_all" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_all">play<wbr></wbr>_all</a></code></td>
+    <td><code><a href="#stop" class="internal-link" title="robot.main.NiryoRobot.stop">stop</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#play_async" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_async">play<wbr></wbr>_async</a></code></td>
+    <td><code><a href="#stop_complete" class="internal-link" title="robot.main.NiryoRobot.stop_complete">stop<wbr></wbr>_complete</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
-    <td><code><a href="#play_next_step" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_next_step">play<wbr></wbr>_next<wbr></wbr>_step</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
-  </tr><tr class="method">
-    
-    <td>Method</td>
-    <td><code><a href="#stop" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.stop">stop</a></code></td>
+    <td><code><a href="#stopped_prematurely" class="internal-link" title="robot.main.NiryoRobot.stopped_prematurely">stopped<wbr></wbr>_prematurely</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#ignore_errors" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.ignore_errors">ignore<wbr></wbr>_errors</a></code></td>
+    <td><code><a href="#error_occur" class="internal-link" title="robot.main.NiryoRobot.error_occur">error<wbr></wbr>_occur</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#logger" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.logger">logger</a></code></td>
+    <td><code><a href="#logger" class="internal-link" title="robot.main.NiryoRobot.logger">logger</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#play_started" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.play_started">play<wbr></wbr>_started</a></code></td>
+    <td><code><a href="#modbus" class="internal-link" title="robot.main.NiryoRobot.modbus">modbus</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#robot" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.robot">robot</a></code></td>
+    <td><code><a href="#robot" class="internal-link" title="robot.main.NiryoRobot.robot">robot</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#thread" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.thread">thread</a></code></td>
+    <td><code><a href="#status_sounds" class="internal-link" title="robot.main.NiryoRobot.status_sounds">status<wbr></wbr>_sounds</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
-    <td><code><a href="#trajectory" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer.trajectory">trajectory</a></code></td>
+    <td><code><a href="#terminal" class="internal-link" title="robot.main.NiryoRobot.terminal">terminal</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable private">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#_already_stopped" class="internal-link" title="robot.main.NiryoRobot._already_stopped">_already<wbr></wbr>_stopped</a></code></td>
     <td><span class="undocumented">Undocumented</span></td>
   </tr>
 </table>
@@ -455,34 +498,10 @@
         </div>
 
         <div id="childList">
-          <div class="basestaticmethod">
+          <div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.play_trajectory">
-    
-  </a>
-  <a name="play_trajectory">
-    
-  </a>
-  <div class="functionHeader">
-    
-    @staticmethod<br />
-    <span class="py-keyword">def</span> <span class="py-defname">play_trajectory</span><span class="function-signature">(robot: <code>NiryoRosWrapper</code>, id_or_name: <code>typing.Union[<wbr></wbr>int, <wbr></wbr>str]</code>, play_async: <code>bool</code> = False) -&gt; <code><a href="robot.trajectory.player.TrajectoryPlayer.html" class="internal-link" title="robot.trajectory.player.TrajectoryPlayer">TrajectoryPlayer</a></code></span>:
-    
-    <a class="headerLink" href="#play_trajectory" title="robot.trajectory.player.TrajectoryPlayer.play_trajectory">
-      
-      
-      ¶
-    </a>
-  </div>
-  <div class="docstring functionBody">
-    
-    <div><p class="undocumented">Undocumented</p></div>
-  </div>
-</div><div class="basemethod">
-  
-  
-  <a name="robot.trajectory.player.TrajectoryPlayer.__init__">
+  <a name="robot.main.NiryoRobot.__init__">
     
   </a>
   <a name="__init__">
@@ -491,33 +510,33 @@
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, robot: <code>NiryoRosWrapper</code>, trajectory: <code><a href="robot.trajectory.trajectory.Trajectory.html" class="internal-link" title="robot.trajectory.trajectory.Trajectory">Trajectory</a></code>, ignore_errors: <code>bool</code> = False)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#__init__" title="robot.trajectory.player.TrajectoryPlayer.__init__">
+    <a class="headerLink" href="#__init__" title="robot.main.NiryoRobot.__init__">
       
       
       ¶
     </a>
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="robot.trajectory.executor.TrajectoryExecutor.html" class="internal-link">robot.trajectory.executor.TrajectoryExecutor</a></code></div>
+    
     <div><p class="undocumented">Undocumented</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.is_playing">
+  <a name="robot.main.NiryoRobot.acquire_lockfile">
     
   </a>
-  <a name="is_playing">
+  <a name="acquire_lockfile">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">is_playing</span><span class="function-signature">(self) -&gt; <code>bool</code></span>:
+    <span class="py-keyword">def</span> <span class="py-defname">acquire_lockfile</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#is_playing" title="robot.trajectory.player.TrajectoryPlayer.is_playing">
+    <a class="headerLink" href="#acquire_lockfile" title="robot.main.NiryoRobot.acquire_lockfile">
       
       
       ¶
@@ -530,18 +549,18 @@
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.play_all">
+  <a name="robot.main.NiryoRobot.loop">
     
   </a>
-  <a name="play_all">
+  <a name="loop">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">play_all</span><span class="function-signature">(self)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">loop</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#play_all" title="robot.trajectory.player.TrajectoryPlayer.play_all">
+    <a class="headerLink" href="#loop" title="robot.main.NiryoRobot.loop">
       
       
       ¶
@@ -549,23 +568,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Main loop of program, will be called every iteration. Must not be a blocking method.</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.play_async">
+  <a name="robot.main.NiryoRobot.setup">
     
   </a>
-  <a name="play_async">
+  <a name="setup">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">play_async</span><span class="function-signature">(self)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">setup</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#play_async" title="robot.trajectory.player.TrajectoryPlayer.play_async">
+    <a class="headerLink" href="#setup" title="robot.main.NiryoRobot.setup">
       
       
       ¶
@@ -573,23 +592,23 @@
   </div>
   <div class="docstring functionBody">
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Setup function of program, will be called one time. Put the variable creation or other things here.</p></div>
   </div>
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.play_next_step">
+  <a name="robot.main.NiryoRobot.start">
     
   </a>
-  <a name="play_next_step">
+  <a name="start">
     
   </a>
   <div class="functionHeader">
     
     
-    <span class="py-keyword">def</span> <span class="py-defname">play_next_step</span><span class="function-signature">(self)</span>:
+    <span class="py-keyword">def</span> <span class="py-defname">start</span><span class="function-signature">(self, do_calibration=True, load_trajectories=True, start_modbus=True, use_terminal=True, status_sounds=True, default_pose=True)</span>:
     
-    <a class="headerLink" href="#play_next_step" title="robot.trajectory.player.TrajectoryPlayer.play_next_step">
+    <a class="headerLink" href="#start" title="robot.main.NiryoRobot.start">
       
       
       ¶
@@ -602,7 +621,7 @@
 </div><div class="basemethod">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.stop">
+  <a name="robot.main.NiryoRobot.stop">
     
   </a>
   <a name="stop">
@@ -613,7 +632,55 @@
     
     <span class="py-keyword">def</span> <span class="py-defname">stop</span><span class="function-signature">(self)</span>:
     
-    <a class="headerLink" href="#stop" title="robot.trajectory.player.TrajectoryPlayer.stop">
+    <a class="headerLink" href="#stop" title="robot.main.NiryoRobot.stop">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="robot.main.NiryoRobot.stop_complete">
+    
+  </a>
+  <a name="stop_complete">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stop_complete</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stop_complete" title="robot.main.NiryoRobot.stop_complete">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="robot.main.NiryoRobot.stopped_prematurely">
+    
+  </a>
+  <a name="stopped_prematurely">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">stopped_prematurely</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#stopped_prematurely" title="robot.main.NiryoRobot.stopped_prematurely">
       
       
       ¶
@@ -626,17 +693,17 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.ignore_errors">
+  <a name="robot.main.NiryoRobot.error_occur">
     
   </a>
-  <a name="ignore_errors">
+  <a name="error_occur">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">ignore_errors</span> =
+    <span class="py-defname">error_occur</span>: <code>bool</code> =
     
-    <a class="headerLink" href="#ignore_errors" title="robot.trajectory.player.TrajectoryPlayer.ignore_errors">
+    <a class="headerLink" href="#error_occur" title="robot.main.NiryoRobot.error_occur">
       
       
       ¶
@@ -650,7 +717,7 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.logger">
+  <a name="robot.main.NiryoRobot.logger">
     
   </a>
   <a name="logger">
@@ -660,7 +727,7 @@
     
     <span class="py-defname">logger</span> =
     
-    <a class="headerLink" href="#logger" title="robot.trajectory.player.TrajectoryPlayer.logger">
+    <a class="headerLink" href="#logger" title="robot.main.NiryoRobot.logger">
       
       
       ¶
@@ -674,17 +741,17 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.play_started">
+  <a name="robot.main.NiryoRobot.modbus">
     
   </a>
-  <a name="play_started">
+  <a name="modbus">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">play_started</span>: <code>bool</code> =
+    <span class="py-defname">modbus</span>: <code><a href="robot.modbus.server.ModbusServer.html" class="internal-link" title="robot.modbus.server.ModbusServer">ModbusServer</a></code> =
     
-    <a class="headerLink" href="#play_started" title="robot.trajectory.player.TrajectoryPlayer.play_started">
+    <a class="headerLink" href="#modbus" title="robot.main.NiryoRobot.modbus">
       
       
       ¶
@@ -698,7 +765,7 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.robot">
+  <a name="robot.main.NiryoRobot.robot">
     
   </a>
   <a name="robot">
@@ -708,7 +775,7 @@
     
     <span class="py-defname">robot</span> =
     
-    <a class="headerLink" href="#robot" title="robot.trajectory.player.TrajectoryPlayer.robot">
+    <a class="headerLink" href="#robot" title="robot.main.NiryoRobot.robot">
       
       
       ¶
@@ -722,17 +789,17 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.thread">
+  <a name="robot.main.NiryoRobot.status_sounds">
     
   </a>
-  <a name="thread">
+  <a name="status_sounds">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">thread</span> =
+    <span class="py-defname">status_sounds</span> =
     
-    <a class="headerLink" href="#thread" title="robot.trajectory.player.TrajectoryPlayer.thread">
+    <a class="headerLink" href="#status_sounds" title="robot.main.NiryoRobot.status_sounds">
       
       
       ¶
@@ -746,17 +813,41 @@
 </div><div class="baseinstancevariable">
   
   
-  <a name="robot.trajectory.player.TrajectoryPlayer.trajectory">
+  <a name="robot.main.NiryoRobot.terminal">
     
   </a>
-  <a name="trajectory">
+  <a name="terminal">
     
   </a>
   <div class="functionHeader">
     
-    <span class="py-defname">trajectory</span> =
+    <span class="py-defname">terminal</span>: <code><a href="robot.util.shell.ShellManager.html" class="internal-link" title="robot.util.shell.ShellManager">ShellManager</a></code> =
     
-    <a class="headerLink" href="#trajectory" title="robot.trajectory.player.TrajectoryPlayer.trajectory">
+    <a class="headerLink" href="#terminal" title="robot.main.NiryoRobot.terminal">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable private">
+  
+  
+  <a name="robot.main.NiryoRobot._already_stopped">
+    
+  </a>
+  <a name="_already_stopped">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">_already_stopped</span>: <code>bool</code> =
+    
+    <a class="headerLink" href="#_already_stopped" title="robot.main.NiryoRobot._already_stopped">
       
       
       ¶
