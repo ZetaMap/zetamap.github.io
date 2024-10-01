@@ -7,7 +7,7 @@
         let htmlString = '<ul>';
         
         for (let file of data) {
-          if (!file.name.includes("index.")
+          if (!file.name.includes("index."))
             htmlString += `<li><a href="https://zetamap.fr/${file.path}">${file.name}</a></li>`;
         }
 
