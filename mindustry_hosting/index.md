@@ -25,7 +25,7 @@ Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez chois
 ## PRÉSENTATION DES LOGICIELS
 ### CLaJ
 [CLaJ](https://github.com/xpdustry/claj) (Copy Link and Join) est un système utilisant un serveur distant pour créer des salons, partager le lien à vos amis, et rejoindre votre partie de manière transparente et anonyme. <br>
-C'est un système similaire à Hamachi, mais intégré à Mindustry pour une utilisation pour simple et sans compte à créer.
+C'est un système similaire à Hamachi, mais intégré à Mindustry pour une utilisation plus simple et sans création de compte.
 
 C'est l'outil parfait pour les personnes ne souhaitant pas s'attarder sur la création d'un serveur ou l'exécution d'étapes fastidieuses.
 
@@ -65,14 +65,14 @@ Vous pouvez directement l'installer en [cliquant ici](https://f-droid.org/repo/c
 
 ## TUTOS
 ### Solution CLaJ
-Cette solution est dédiée à Mindustry, utilisant le mod CLaJ, disponible dans le navigateur de mods. <br>
-**Note:** le mod doit être installé pour tout le monde, sinon les autres ne pourront pas rejoindre la partie.
+Cette solution est dédiée à Mindustry. Elle utilise le mod CLaJ, disponible dans le navigateur de mods. <br>
+**Note:** le mod doit être installé par tout le monde, sinon les autres ne pourront pas rejoindre la partie.
 
-Une fois le mod installé, vous devez d'abord héberger un serveur. Pour cela, lancez une carte ou votre campagne, puis dans le menu pause, faites ``Héberger une partie multijoueur`` puis ``Héberger``. <br>
-Maintenant vous devez créer un salon, pour cela dans le menu pause, cliquez sur ``Gérer le salon CLaJ`` puis sélectionnez un serveur (ou ajoutez le votre), cliqez sur ``Cléer le salon``, attendez un peu et cliquez sur ``Copier le lien``. <br>
-Le lien du salon a normalement été copié dans votre presse-papier, il vous reste plus qu'à le coller et l'envoyer à vos amis.
+Une fois le mod installé, vous devez d'abord héberger un serveur. Pour cela, lancez une carte ou votre campagne, puis, dans le menu pause, faites ``Héberger une partie multijoueur`` **>** ``Héberger``. <br>
+Maintenant, vous devez créer un salon. Pour cela, dans le menu pause, cliquez sur ``Gérer le salon CLaJ`` puis sélectionnez un serveur (ou ajoutez le vôtre), cliquez sur ``Créer le salon``, attendez un peu et cliquez sur ``Copier le lien``. <br>
+Le lien du salon a normalement été copié dans votre presse-papier, il ne vous reste plus qu'à le coller et l'envoyer à vos amis.
 
-Pour rejoindre un salon, rien de plus simple, copiez le lien que votre ami vous a envoyé, puis allez dans ``Jouer`` **>** ``Rejoindre une partie`` **>** ``Rejoindre via CLaJ``, collez le lien, puis cliquez sur ``OK``. <br>
+Pour rejoindre un salon, rien de plus simple : copiez le lien que votre ami vous a envoyé, allez ensuite dans ``Jouer`` **>** ``Rejoindre une partie`` **>** ``Rejoindre via CLaJ``, collez le lien, puis cliquez sur ``OK``. <br>
 Normalement, si tout s'est bien passé, vous pouvez jouer de manière transparente avec vos amis.
 
 
