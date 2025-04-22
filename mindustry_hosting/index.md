@@ -5,8 +5,6 @@ Dernière mise à jour : **22/04/2025**
 # Comment jouer avec des amis ? - Tutoriel
 Pour pouvoir jouer avec des amis, je vous propose un tuto où vous pourrez choisir entre plusieurs logiciels. Ce que je propose est valable pour mobile et PC.
 
-⚠️ Lisez bien tout le tutoriel pour bien tout comprendre. ⚠️
-
 
 ## SOMMAIRE
 * [PRÉSENTATION DES LOGICIELS](#présentation-des-logiciels)
